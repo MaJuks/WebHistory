@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+/* font-family: 'Special Elite', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Special+Elite&display=swap');
+/* font-family: 'Shadows Into Light', cursive; */
+
+/* variaveis das cores */
+:root{
+    --branco: #faf5f0;
+    --marromclaro: #e8dacf;
+    --marromintermediario: #d4bda7;
+    --amareloclaro: #f8ab48;
+    --amareloescuro: #f79d25;
+    --rosaclaro: #f63876;
+    --rosa: #f2165f;
+    --roxoescuro: #66308d;
+    --roxoclaro: #7c4f9c;
+    --marromescuro: #5b3e26;
+    --preto: #201d18;
+}
+
+/* imagem de fundo */
+body{
+    background-image: url("fundo.png");
+}
+
+/* titulo da pagina  */
+#titulo{
+    /* configuração da letra */
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 64px;
+
+    /* cor */
+    color: var(--marromescuro);
+    -webkit-text-stroke: 1px var(--preto);
+}
+
+/* nome do tcc */
+#titulo2{
+    /* posição */
+
+
+    /* configuração da letra */
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 87px;
+    line-height: 87px;
+    text-align: center;
+
+    /* cor*/
+    color: var(--marromescuro);
+    -webkit-text-stroke: 1px var(--preto);
+    border: px solid var(--preto);
+
+}
+
+
+/* linha que separa cabeçario do main */
+.linhaCabeca{
+    /* posição */
+    position: relative;
+    display: flex;
+    top: -100px;
+
+    /* cor*/
+    border: 1px solid var(--marromescuro);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    transform: rotate(-0.04deg);
+}
+
+/* escrita ao lado da seleçao "topico especifico" */
+#label-topico{
+    /* posição */
+    display: flex;
+    text-align: left;
+    justify-content: left;
+
+
+    /* configuração da letra */
+    font-family: 'Shadows Into Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 51px;
+
+    /* cor*/
+    color: var(--marromclaro);
+    -webkit-text-stroke: 0.5px var(--marromclaro);
+}
+
+/* configuração das escritas dentro da select */
+select{
+    /* posição */
+    display: flex;
+    justify-content: left;
+    top: 10px;
+
+    /* configuraçao da seleção */
+    text-align: center;
+    background-color: transparent;
+    color: var(--marromescuro);
+    font-family: 'Special Elite', cursive;
+    width: 7%;
+    height: 10%;
+    border:  1px solid var(--marromintermediario);
+    border-radius: 10px;
+    padding: 8px 16px;
+
+}
+
+/* icone de pesquisa feather icon */
+.icon-pesquisa svg{
+    width: 57px;
+    height: 57px;
+    color: var(--marromclaro);
+}
+
+/* texto sobrenos */
+#sobre-nos{
+    font-family: 'Shadows Into Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 144.5%;
+    /* or 36px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+
+    color: var(--marromclaro);
+    -webkit-text-stroke: 1px var(--marromclaro);
+    color: #E8DACF;
+
+}
+/* icones de redes */
+.icon-redes svg{
+    width: 20px;
+    height: 20px;
+    color: var(--marromclaro);
+}
+
+/* configurando botão */
+.git, .insta, .linke{
+    background-color: transparent;
+    border: transparent;
+    color: transparent;
+}
+
+/* posição do footer */
+.footer{
+    /* posição */
+    display: flex;
+    justify-content: right;
+}
+
+.caixas-epocas{
+    align-items: center;
+    text-align: center;
+}
+.linha-tempo{
+    /* linha */
+    border: 3px solid #5B3E26;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
