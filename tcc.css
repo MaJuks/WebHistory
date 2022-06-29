@@ -140,6 +140,7 @@ select{
     color: #E8DACF;
 
 }
+
 /* icones de redes */
 .icon-redes svg{
     width: 20px;
@@ -161,12 +162,45 @@ select{
     justify-content: right;
 }
 
+/* caixas onde esta escrito as epocas  */
 .caixas-epocas{
     align-items: center;
     text-align: center;
 }
+
+/* linha do tempo  */
 .linha-tempo{
     /* linha */
     border: 3px solid #5B3E26;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+/* sombra planta 1 */
+.sombra1{
+    display: flex;
+    justify-content: left;
+}
+.sombra2{
+    display: flex;
+    justify-content: right;
+    top: 0;
+}
+
+/* pegada */
+.pegada{
+    display: flex;
+    justify-content: right;
+    top: 0;
+}
+.pegada2{
+    display: flex;
+    justify-content: right;
+    top: 0;
+}
+
+/* sombra fundo */
+.sombrafundo{
+    position: absolute;
+    top: 0px;
+}
+
