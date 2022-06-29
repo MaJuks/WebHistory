@@ -4,6 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Special+Elite&display=swap');
 /* font-family: 'Shadows Into Light', cursive; */
 
+/* zera algumas coisas de css */
+*{
+    box-sizing: border-box;
+}
+
+
 /* variaveis das cores */
 :root{
     --branco: #faf5f0;
@@ -21,17 +27,22 @@
 
 /* imagem de fundo */
 body{
+    margin: 0;
     background-image: url("fundo.png");
 }
 
 /* titulo da pagina  */
 #titulo{
+    /* posicao */
+    position: relative;
+    top: 0px;
+
     /* configuração da letra */
     text-align: center;
     font-family: 'Shadows Into Light', cursive; 
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 64px;
 
     /* cor */
@@ -49,8 +60,8 @@ body{
     font-family: 'Special Elite', cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 87px;
-    line-height: 87px;
+    font-size: 55px;
+    line-height: 60px;
     text-align: center;
 
     /* cor*/
@@ -66,7 +77,9 @@ body{
     /* posição */
     position: relative;
     display: flex;
-    top: -100px;
+    margin-top: -4.5rem;
+
+
 
     /* cor*/
     border: 1px solid var(--marromescuro);
@@ -74,13 +87,17 @@ body{
     transform: rotate(-0.04deg);
 }
 
+.input-pesquisa{
+    margin: 0;
+    display: flex;
+    position: static;
+    align-items: center;
+    justify-items: top;
+}
+
 /* escrita ao lado da seleçao "topico especifico" */
 #label-topico{
     /* posição */
-    display: flex;
-    text-align: left;
-    justify-content: left;
-
 
     /* configuração da letra */
     font-family: 'Shadows Into Light';
@@ -97,6 +114,7 @@ body{
 /* configuração das escritas dentro da select */
 select{
     /* posição */
+    position: sticky;
     display: flex;
     justify-content: left;
     top: 10px;
@@ -121,6 +139,8 @@ select{
     color: var(--marromclaro);
 }
 
+
+
 /* texto sobrenos */
 #sobre-nos{
     font-family: 'Shadows Into Light';
@@ -143,9 +163,17 @@ select{
 
 /* icones de redes */
 .icon-redes svg{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     color: var(--marromclaro);
+}
+
+.rodape{
+    /* posição */
+    padding: 15px;
+    position: relative;
+    top: 11.5rem;
+    display: flex;
 }
 
 /* configurando botão */
@@ -162,45 +190,58 @@ select{
     justify-content: right;
 }
 
+
+
 /* caixas onde esta escrito as epocas  */
 .caixas-epocas{
-    align-items: center;
+    /* posiçao */
     text-align: center;
+    /* configuraçao */    
 }
+
+/* caixas onde esta escrito as epocas  */
+.caixas-epocas img{
+    /* configuraçao */
+    height: 11rem;    
+}
+
+
 
 /* linha do tempo  */
 .linha-tempo{
+    /* posiçao */
+    position: relative;
+    top: 5.5rem;
+    margin: auto;
+
+    /* configuraçoes */
+    width: 70rem;
+
+
     /* linha */
-    border: 3px solid #5B3E26;
+    border: 2px solid #5B3E26;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* sombra planta 1 */
-.sombra1{
-    display: flex;
-    justify-content: left;
-}
-.sombra2{
-    display: flex;
-    justify-content: right;
-    top: 0;
-}
+/* <div class="fundo">
+            <!-- sombra plantas  -->
+            <div class="sombra1">
+                <img src="sombra_planta1.png" alt="sombra_planta1"></a>
+            </div>
+            <div class="sombra2">
+                <img src="sombra_planta2.png" alt="sombra_planta2"></a>
+            </div>
 
-/* pegada */
-.pegada{
-    display: flex;
-    justify-content: right;
-    top: 0;
-}
-.pegada2{
-    display: flex;
-    justify-content: right;
-    top: 0;
-}
+            <!-- pegada fundo -->
+            <div class="pegada">
+                <img src="pegada.png" alt="pegada1"></a>
+            </div>
+            <div class="pegada2">
+                <img src="pegada.png" alt="pegada2"></a>
+            </div>
 
-/* sombra fundo */
-.sombrafundo{
-    position: absolute;
-    top: 0px;
-}
-
+            <!-- sombrafundo -->
+            <div class="sombrafundo">
+                <img src="sombra_fundo.png" alt="sombra_fundo"></a>
+            </div>
+</div> */
