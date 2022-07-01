@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+/* font-family: 'Special Elite', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Special+Elite&display=swap');
+
+/* font-family: 'Shadows Into Light', cursive; */
+
+
+/* zera algumas coisas de css */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* variaveis das cores */
+
+:root {
+    --branco: #faf5f0;
+    --marromclaro: #e8dacf;
+    --marromintermediario: #d4bda7;
+    --amareloclaro: #f8ab48;
+    --amareloescuro: #f79d25;
+    --rosaclaro: #f63876;
+    --rosa: #f2165f;
+    --roxoescuro: #66308d;
+    --roxoclaro: #7c4f9c;
+    --marromescuro: #5b3e26;
+    --preto: #201d18;
+}
+
+
+/* imagem de fundo */
+
+body {
+    margin: 0;
+    background-image: url("assets/fundo.png");
+}
+
+.container {
+    margin-top: 0%;
+    display: flex;
+    justify-content: space-around;
+    height: 120px;
+    align-items: flex-start;
+}
+
+
+/* titulo da pagina  */
+
+#titulo {
+    /* posicao */
+    position: relative;
+    top: 0px;
+    width: 150%;
+    /* configuração da letra */
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 6px;
+    /* cor */
+    color: var(--marromescuro);
+    -webkit-text-stroke: 1px var(--preto);
+}
+
+
+/* escrita ao lado da seleçao "topico especifico" */
+
+#label-topico {
+    /* posição */
+    margin-right: 5px;
+    /* configuração da letra */
+    font-family: 'Shadows Into Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    /* cor*/
+    color: var(--marromclaro);
+    -webkit-text-stroke: 0.5px var(--marromclaro);
+}
+
+.input-pesquisa {
+    margin: 0;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+select {
+    /* posição */
+    position: sticky;
+    display: flex;
+    justify-content: left;
+    /* configuraçao da seleção */
+    text-align: center;
+    background-color: transparent;
+    color: var(--marromescuro);
+    font-family: 'Special Elite', cursive;
+    font-weight: bold;
+    width: 25%;
+    height: 25%;
+    border: 2px solid var(--marromintermediario);
+    border-radius: 10px;
+    padding: 8px 16px;
+}
+
+hr {
+    margin-top: 30px;
+    /* cor*/
+    border: 2px solid var(--marromescuro);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(-0.04deg);
+}
+
+
+/* nome do tcc */
+
+#titulo2 {
+    /* posição */
+    /* configuração da letra */
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 60px;
+    text-align: center;
+    /* cor*/
+    color: var(--marromescuro);
+    -webkit-text-stroke: 1px var(--preto);
+    border: px solid var(--preto);
+}
+
+
+/* linha do tempo  */
+
+.linha-tempo {
+    /* posiçao */
+    position: relative;
+    top: 5.5rem;
+    margin: auto;
+    /* configuraçoes */
+    width: 70rem;
+    /* linha */
+    border: 2px solid #5B3E26;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* caixas onde esta escrito as epocas  */
+
+.caixas-epocas {
+    /* posiçao */
+    position: relative;
+    text-align: center;
+    /* configuraçao */
+}
+
+
+/* caixas onde esta escrito as epocas  */
+
+.caixas-epocas img {
+    /* configuraçao */
+    height: 11rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.rodape {
+    /* posição */
+    padding: 15px;
+    position: relative;
+    top: 11.5rem;
+    display: flex;
+}
+
+
+/* icone de pesquisa feather icon */
+
+.icon-pesquisa svg {
+    width: 57px;
+    height: 57px;
+    color: var(--marromclaro);
+}
+
+
+/* texto sobrenos */
+
+#sobre-nos {
+    margin-right: 20px;
+    font-family: 'Shadows Into Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 144.5%;
+    /* or 36px */
+    color: var(--marromclaro);
+    -webkit-text-stroke: 1px var(--marromclaro);
+    color: #E8DACF;
+}
+
+
+/* icones de redes */
+
+.icon-redes svg {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    color: var(--marromclaro);
+}
+
+
+/* configurando botão */
+
+.git,
+.insta,
+.linke {
+    background-color: transparent;
+    border: transparent;
+    color: transparent;
+}
+
+
+/* <div class="fundo">
+            <!-- sombra plantas  -->
+            <div class="sombra1">
+                <img src="sombra_planta1.png" alt="sombra_planta1"></a>
+            </div>
+            <div class="sombra2">
+                <img src="sombra_planta2.png" alt="sombra_planta2"></a>
+            </div>
+            <!-- pegada fundo -->
+            <div class="pegada">
+                <img src="pegada.png" alt="pegada1"></a>
+            </div>
+            <div class="pegada2">
+                <img src="pegada.png" alt="pegada2"></a>
+            </div>
+            <!-- sombrafundo -->
+            <div class="sombrafundo">
+                <img src="sombra_fundo.png" alt="sombra_fundo"></a>
+            </div>
+</div> */
