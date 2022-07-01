@@ -52,14 +52,15 @@ body {
 #titulo {
     /* posicao */
     position: relative;
-    top: 0px;
+    top: 1rem;
     width: 150%;
+    left: 70rem;
     /* configuração da letra */
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 90px;
+    font-size: 60px;
     line-height: 6px;
     /* cor */
     color: var(--marromescuro);
@@ -83,10 +84,12 @@ body {
 }
 
 .input-pesquisa {
-    margin: 0;
+    position: relative;
+    top: 2rem;
+    right: 35rem;
     width: 50%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -126,8 +129,8 @@ hr {
     font-family: 'Special Elite', cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 55px;
-    line-height: 60px;
+    font-size: 65px;
+    line-height: 70px;
     text-align: center;
     /* cor*/
     color: var(--marromescuro);
@@ -141,7 +144,7 @@ hr {
 .linha-tempo {
     /* posiçao */
     position: relative;
-    top: 5.5rem;
+    top: 6.5rem;
     margin: auto;
     /* configuraçoes */
     width: 70rem;
@@ -165,7 +168,7 @@ hr {
 
 .caixas-epocas img {
     /* configuraçao */
-    height: 11rem;
+    height: 13rem;
 }
 
 .footer {
@@ -179,6 +182,7 @@ hr {
     position: relative;
     top: 11.5rem;
     display: flex;
+    align-items: center;
 }
 
 
@@ -198,7 +202,7 @@ hr {
     font-family: 'Shadows Into Light';
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 35px;
     line-height: 144.5%;
     /* or 36px */
     color: var(--marromclaro);
