@@ -1,2 +1,2 @@
 # TCC
-tcc - maju e rita
+TCC - Raju e Mita
