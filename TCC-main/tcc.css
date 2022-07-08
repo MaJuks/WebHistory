@@ -101,7 +101,8 @@ select {
     justify-content: left;
     /* configuraçao da seleção */
     text-align: center;
-    background-color: transparent;
+    background-color: var(--marromclaro);
+    opacity: 0.5;
     color: var(--marromescuro);
     font-family: 'Special Elite', cursive;
     font-weight: bold;
@@ -264,9 +265,12 @@ hr {
     margin-top: -50rem;
     position: relative;
     display: flex;
-    height: 60.2rem;
+    /* conversar com o professor sobre isso  */
+    height: 975px; 
     width: auto;
-    background: url(assets/vinheta.png);
+    background-image: url(assets/vinheta.png);
+    background-size: 100%;
+    opacity: 0.6;
 }
 
 /* <div class="fundo">
