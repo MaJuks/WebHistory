@@ -84,7 +84,7 @@ body {
 }
 
 .input-pesquisa {
-    z-index:1000;
+    z-index:100;
     position: relative;
     top: 2rem;
     right: 35rem;
@@ -175,7 +175,7 @@ hr {
     position: relative;
     text-align: center;
     /* configuraçao */
-    z-index:1000;
+    z-index:100;
     
 }
 
@@ -199,6 +199,7 @@ hr {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
 }
 
+/* div pai */
 .footer {
     display: flex;
     justify-content: center;
@@ -211,7 +212,7 @@ hr {
     top: 9rem;
     display: flex;
     align-items: center;
-    z-index:1000;
+    z-index:100;
 }
 
 
@@ -260,17 +261,36 @@ hr {
     color: transparent;
 }
 
+
+/* sectio pai */
 /* conversar com o professor sobre  */
 .vinheta{
     margin-top: -50rem;
     position: relative;
     display: flex;
     /* conversar com o professor sobre isso  */
-    height: 975px; 
+    height: 1010px; 
     width: auto;
     background-image: url(assets/vinheta.png);
     background-size: 100%;
-    opacity: 0.6;
+    /* arrumar opaciodade da imagem */
+    opacity: 0.7;
+}
+
+.sombraplata{
+    z-index: 1000;
+    height: 473px; 
+    width: 384px;
+    opacity: 1;
+
+}
+.sombraplata img{
+    z-index: 1000;
+    position: relative;
+    display: flex;
+    opacity: 2;
+    margin-top: 33rem;
+    right: 4rem;
 }
 
 /* <div class="fundo">
