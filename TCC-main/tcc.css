@@ -97,18 +97,27 @@ select {
     position: sticky;
     display: flex;
     justify-content: left;
+
+
     /* configuraçao da seleção */
     text-align: center;
     background-color: var(--marromclaro);
     opacity: 0.5;
-    color: var(--marromescuro);
-    font-family: 'Special Elite', cursive;
-    font-weight: bold;
+    color: var(--preto);
     width: 25%;
     height: 25%;
-    border: 2px solid var(--marromintermediario);
-    border-radius: 10px;
-    padding: 8px 16px;
+    border-radius: 20px;
+    padding: 8px 0px;
+
+    /* configuração letra */
+    font-family: 'Habibi', serif;
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid var(--marromescuro);
+    
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
 }
 
 /* linhs que separa o cabecalho do main */
@@ -292,20 +301,20 @@ hr {
     height: 473px;
     width: 384px;
 }
-
 #pegada-inferior{
     /* posição */
-    margin-top: -28rem;
+    margin-top: -20%;
     margin-left: -20%;
-
 
     /* configuração */
     z-index: 100;
-    width: 25%;
-    height: 25%;
+    width: 20%;
+    height: 20%;
 }
 
+/* sombra da planta no canto superior direito */
 .sombraplanta2{
+    margin: 0;
     /* posição */
     position: relative;
     display: flex;
@@ -313,8 +322,8 @@ hr {
 #sombra-superior{
     /* posição */
     margin-top: -48.3%;
-    margin-left: 94.8rem;
-
+    /* margin-left: 94.8rem; */
+    margin-left: 72%;
     /* configuração */
     z-index: 101;
     height: 473px;
@@ -327,10 +336,10 @@ hr {
 
 
     /* configuração */
-    z-index: 100;
     width: 20%;
     height: 20%;
 }
+
 
 /* comentar codigo */
 /* arrumar porentagem (trocar e testar) */
