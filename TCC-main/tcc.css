@@ -8,14 +8,12 @@
 
 
 /* zera algumas coisas de css */
-
 * {
     box-sizing: border-box;
 }
 
 
 /* variaveis das cores */
-
 :root {
     --branco: #faf5f0;
     --marromclaro: #e8dacf;
@@ -32,12 +30,12 @@
 
 
 /* imagem de fundo */
-
 body {
     margin: 0;
     background-image: url("assets/fundo.png");
 }
 
+/* div pai da sectio header */
 .container {
     margin-top: 0%;
     display: flex;
@@ -47,8 +45,7 @@ body {
 }
 
 
-/* titulo da pagina  */
-
+/* titulo da pagina "web history */
 #titulo {
     /* posicao */
     position: relative;
@@ -69,7 +66,6 @@ body {
 
 
 /* escrita ao lado da seleçao "topico especifico" */
-
 #label-topico {
     /* posição */
     margin-right: 5px;
@@ -83,6 +79,7 @@ body {
     -webkit-text-stroke: 0.5px var(--marromclaro);
 }
 
+/* div (de todo icone de pesquisa) */
 .input-pesquisa {
     z-index:100;
     position: relative;
@@ -94,6 +91,7 @@ body {
     align-items: center;
 }
 
+/* apenas a area de pesquisa (clicavel) */
 select {
     /* posição */
     position: sticky;
@@ -113,6 +111,7 @@ select {
     padding: 8px 16px;
 }
 
+/* linhs que separa o cabecalho do main */
 hr {
     margin-top: 30px;
     /* cor*/
@@ -123,7 +122,6 @@ hr {
 
 
 /* nome do tcc */
-
 #titulo2 {
     /* posição */
     /* configuração da letra */
@@ -140,6 +138,7 @@ hr {
     border: px solid var(--preto);
 }
 
+/* sombra atras do titulo "a trajetoria da mulher na historia" */
 .fundo-sombra-titulo{
     display: flex;
     position: relative;
@@ -154,7 +153,6 @@ hr {
 
 
 /* linha do tempo  */
-
 .linha-tempo {
     /* posiçao */
     position: relative;
@@ -169,14 +167,13 @@ hr {
 
 
 /* caixas onde esta escrito as epocas  */
-
 .caixas-epocas {
     /* posiçao */
     position: relative;
     text-align: center;
     /* configuraçao */
     z-index:100;
-    
+
 }
 
 
@@ -199,12 +196,13 @@ hr {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
 }
 
-/* div pai */
+/* section */
 .footer {
     display: flex;
     justify-content: center;
 }
 
+/* div pai do section footer */
 .rodape {
     /* posição */
     padding: 15px;
@@ -217,7 +215,6 @@ hr {
 
 
 /* icone de pesquisa feather icon */
-
 .icon-pesquisa svg {
     width: 57px;
     height: 57px;
@@ -226,7 +223,6 @@ hr {
 
 
 /* texto sobrenos */
-
 #sobre-nos {
     margin-right: 20px;
     font-family: 'Shadows Into Light';
@@ -242,7 +238,6 @@ hr {
 
 
 /* icones de redes */
-
 .icon-redes svg {
     margin-right: 10px;
     width: 35px;
@@ -252,24 +247,28 @@ hr {
 
 
 /* configurando botão */
-
-.git,
-.insta,
-.linke {
+.git, .insta, .linke {
     background-color: transparent;
     border: transparent;
     color: transparent;
 }
 
 
+
+
+/* div pai das sombras */
+.sombras-pai{
+
+}
+
 /* sectio pai */
 /* conversar com o professor sobre  */
 .vinheta{
-    margin-top: -50rem;
+    margin-top: -52.9rem;
     position: relative;
     display: flex;
     /* conversar com o professor sobre isso  */
-    height: 1010px; 
+    height: 1010px;
     width: auto;
     background-image: url(assets/vinheta.png);
     background-size: 100%;
@@ -277,39 +276,61 @@ hr {
     opacity: 0.7;
 }
 
-.sombraplata{
-    z-index: 1000;
-    height: 473px; 
-    width: 384px;
-    opacity: 1;
-
-}
-.sombraplata img{
-    z-index: 1000;
+/* sombra da planta no canto inferior esquerdo */
+.sombraplanta1{
+    /* posição */
     position: relative;
     display: flex;
-    opacity: 2;
-    margin-top: 33rem;
-    right: 4rem;
+}
+#sombra-inferior{
+    /* posição */
+    margin-top: -30.5rem;
+    z-index: 101;
+
+
+    /* configuração */
+    height: 473px;
+    width: 384px;
 }
 
-/* <div class="fundo">
-            <!-- sombra plantas  -->
-            <div class="sombra1">
-                <img src="sombra_planta1.png" alt="sombra_planta1"></a>
-            </div>
-            <div class="sombra2">
-                <img src="sombra_planta2.png" alt="sombra_planta2"></a>
-            </div>
-            <!-- pegada fundo -->
-            <div class="pegada">
-                <img src="pegada.png" alt="pegada1"></a>
-            </div>
-            <div class="pegada2">
-                <img src="pegada.png" alt="pegada2"></a>
-            </div>
-            <!-- sombrafundo -->
-            <div class="sombrafundo">
-                <img src="sombra_fundo.png" alt="sombra_fundo"></a>
-            </div>
-</div> */
+#pegada-inferior{
+    /* posição */
+    margin-top: -28rem;
+    margin-left: -20%;
+
+
+    /* configuração */
+    z-index: 100;
+    width: 25%;
+    height: 25%;
+}
+
+.sombraplanta2{
+    /* posição */
+    position: relative;
+    display: flex;
+}
+#sombra-superior{
+    /* posição */
+    margin-top: -48.3%;
+    margin-left: 94.8rem;
+
+    /* configuração */
+    z-index: 101;
+    height: 473px;
+    width: 384px;
+}
+#pegada-superior{
+    /* posição */
+    margin-top: -50.3%;
+    margin-left: -19%;
+
+
+    /* configuração */
+    z-index: 100;
+    width: 20%;
+    height: 20%;
+}
+
+/* comentar codigo */
+/* arrumar porentagem (trocar e testar) */
