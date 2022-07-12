@@ -15,13 +15,13 @@
 
 <body>
     <section class="header">
+        <!-- div pai -->
         <div class="container">
+            <!-- nome do site -->
             <div class="titulo">
                 <h1 id="titulo">Web History</h1>
             </div>
-            
-            <!-- nome do site -->
-            <!-- caixa de seleção e topc -->
+            <!-- caixa de seleção e topic -->
             <div class="input-pesquisa">
                 <!-- feather icon de pesquisa -->
                 <div class="icon-pesquisa">
@@ -38,10 +38,8 @@
                 </select>
             </div>
         </div>
-        <hr>
         <!-- linha que separa o cabeçario -->
-        <!-- <div class = "linhaCabeca"></div> -->
-        <!-- titulo do tcc -->
+        <hr>
     </section>
 
 
@@ -49,10 +47,10 @@
     <section class="main">
         <!-- titulo do site -->
         <h1 id="titulo2">A Trajetória da Mulher na<br> História do Brasil</h1>
+        <!-- sombra atras do titulo "a trajetoria da mulher na história" -->
         <div class="fundo-sombra-titulo"></div>
         <!-- linha do tempo - linha -->
-        <div class="linha-tempo">
-        </div>
+        <div class="linha-tempo"></div>
         <!-- caixas que separam as epocas -->
         <div class="caixas-epocas">
             <a href="teste.html"><img src="assets/caixa.png" alt="brasil-colonia"></a>
@@ -69,6 +67,7 @@
     </section>
 
     <section class="footer">
+        <!-- div pai rodape -->
         <div class="rodape">
             <!-- escrita sobre nos -->
             <label for="icon-redes" id="sobre-nos">SOBRE NÓS</label>
@@ -81,11 +80,26 @@
         </div>
     </section>
 
-    <section class="vinheta">
-        <div class="sombraplata">
-            <img src="assets/sombra_planta1.png" alt="">
+
+    <section class="shadows">
+        <!-- div pai das sombras -->
+        <div class="sombras-pai">
+            <div class="vinheta"></div>
+            <!-- sombra da planta no canto inferior esquerdo -->
+            <div class="sombraplanta1">
+                <img src="assets/sombra_planta1.png" id="sombra-inferior">
+                <img src="assets/pegada.png" id="pegada-inferior">
+            </div>
+
+            <!-- sombra da planta no canto superior direito -->
+            <div class="sombraplanta2">
+                <img src="assets/sombra_planta2.png" id="sombra-superior">
+                <img src="assets/pegada.png" id="pegada-superior">
+            </div>
         </div>
     </section>
+
+
     <script>
         feather.replace()
     </script>
