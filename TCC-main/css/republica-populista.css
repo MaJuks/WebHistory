@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+/* font-family: 'Special Elite', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Special+Elite&display=swap');
+
+/* font-family: 'Shadows Into Light', cursive; */
+
+
+/* zera algumas coisas de css */
+* {
+    box-sizing: border-box;
+}
+
+
+/* variaveis das cores */
+:root {
+    --branco: #faf5f0;
+    --marromclaro: #e8dacf;
+    --marromintermediario: #d4bda7;
+    --amareloclaro: #f8ab48;
+    --amareloescuro: #f79d25;
+    --rosaclaro: #f63876;
+    --rosa: #f2165f;
+    --roxoescuro: #66308d;
+    --roxoclaro: #7c4f9c;
+    --marromescuro: #5b3e26;
+    --preto: #201d18;
+}
+
+
+/* imagem de fundo */
+body{
+    margin: 0;
+    background-image: url("../assets/fundo.png");
+}
+
+/* div pai da sectio header */
+.container {
+    display: flex;
+    height: 120px;
+    align-items: center;
+}
+
+
+/* titulo da pagina "web history */
+#titulo {
+    /* posicao */
+    position: relative;
+    top: 1rem;
+    width: 150%;
+    z-index: 101;
+    /* configuração da letra */
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 6px;
+    text-decoration: none;
+    /* cor */
+    color: var(--marromescuro);
+    -webkit-text-stroke: 1px var(--preto);
+}
+
+/* retirar linha do link */
+a{
+    text-decoration: none;
+}
+
+
+/* linhs que separa o cabecalho do main */
+hr{
+    margin-top: 30px;
+    /* cor*/
+    border: 2px solid var(--marromescuro);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(-0.04deg);
+    background-color: var(--marromescuro);
+}
+
+
+/* nome do subsite "BRASIL COLONIA" */
+#titulo2 {
+    /* posição */
+    /* configuração da letra */
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 70px;
+    text-align: center;
+    /* cor*/
+    color: var(--marromescuro);
+    -webkit-text-stroke: 1px var(--preto);
+    border: px solid var(--preto);
+}
+
+/* sombra atras do titulo "a trajetoria da mulher na historia" */
+.fundo-sombra-titulo{
+    display: flex;
+    position: relative;
+    opacity: 0.5;
+    height: 15rem;
+    width: auto;
+    margin-top: -12.5rem;
+    /* configuração */
+    background: radial-gradient(50% 50% at 50% 50%, rgba(6, 0, 0, 0.4) 0%, rgba(217, 217, 217, 0) 100%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+/* sectio pai */
+/* conversar com o professor sobre  */
+.vinheta{
+    margin-top: -24%;
+    position: relative;
+    display: flex;
+    /* conversar com o professor sobre isso  */
+    height: 1010px;
+    width: auto;
+    background-image: url(../assets/vinheta.png);
+    background-size: 100%;
+    /* arrumar opaciodade da imagem */
+    opacity: 0.5;
+}
+@media screen and (min-width: 1000px) {
+    .vinheta {
+      height: 1057px;
+    }
+}
+
+
+
+
