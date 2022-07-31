@@ -20,7 +20,7 @@
     --marromintermediario: #d4bda7;
     --amareloclaro: #f8ab48;
     --amareloescuro: #f79d25;
-    --rosaclaro: #f63876;
+    --rosaescuro: #AD0039;
     --rosa: #f2165f;
     --roxoescuro: #66308d;
     --roxoclaro: #7c4f9c;
@@ -195,15 +195,117 @@ hr{
     text-align: center;
     /* configuraçao */
     z-index:100;
-    
-
 }
+
+
 
 
 /* caixas onde esta escrito as epocas  */
 .caixas-epocas img {
     /* configuraçao */
     height: 13rem;
+
+
+    /* transição */
+    transition-duration: 0.5s;
+}
+
+/* mudanças ao passar o mouse */
+.caixas-epocas img:hover {
+    transform: scale(1.1);
+    
+}
+
+
+/* animação de cada caixa */
+#caixa1{
+    animation-name: caixas;
+    animation-duration: 0.8s;
+    animation-timing-function:ease-in-out;
+}
+#caixa1:hover{
+    /* sombra atras*/
+    box-sizing: border-box;
+    background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--amareloescuro) 52.36%, rgba(217, 217, 217, 0) 100%);
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+}
+
+#caixa2{
+    animation-name: caixas;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.2s;
+}
+#caixa2:hover{
+    /* sombra atras*/
+    box-sizing: border-box;
+    background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--amareloescuro) 52.36%, rgba(217, 217, 217, 0) 100%);
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+}
+
+#caixa3{
+    animation-name: caixas;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.4s;
+}
+#caixa3:hover{
+    /* sombra atras*/
+    box-sizing: border-box;
+    background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--rosaescuro) 52.36%, rgba(217, 217, 217, 0) 100%);
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+}
+
+#caixa4{
+    animation-name: caixas;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.6s;
+}
+#caixa4:hover{
+    /* sombra atras*/
+    box-sizing: border-box;
+    background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--rosaescuro) 52.36%, rgba(217, 217, 217, 0) 100%);
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+}
+
+#caixa5{
+    animation-name: caixas;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.8s;
+}
+#caixa5:hover{
+    /* sombra atras*/
+    box-sizing: border-box;
+    background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--rosaescuro) 52.36%, rgba(217, 217, 217, 0) 100%);
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+}
+
+#caixa6{
+    animation-name: caixas;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+}
+#caixa6:hover{
+    /* sombra atras*/
+    box-sizing: border-box;
+    background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--roxoescuro) 52.36%, rgba(217, 217, 217, 0) 100%);
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+}
+
+#caixa7{
+    animation-name: caixas;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1.2s;
+}
+#caixa7:hover{
+    /* sombra atras*/
+    box-sizing: border-box;
+    background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--roxoescuro) 52.36%, rgba(217, 217, 217, 0) 100%);
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
 }
 
 /* configuração da sombra */
@@ -255,15 +357,27 @@ hr{
 
 /* icones de redes */
 .icon-redes svg {
+    /* configuração */
     margin-right: 10px;
     width: 35px;
     height: 35px;
     color: var(--marromclaro);
+
+    /* transição */
+
 }
-#git {
+
+/* transição quando passa o mouse */
+.icon-redes svg:hover {
+    transform: scale(1.1);
+    /* transição */
+    transition-timing-function: ease-in-out;  /*suavizando animação */
+}
+
+#insta1{
     color: var(--amareloescuro);
 }
-#insta1{
+#git {
     color: var(--rosa);
 }
 #insta2{
@@ -306,6 +420,14 @@ hr{
     /* posição */
     position: relative;
     display: flex;
+
+    /* animaçoes */
+    animation-name: teste1;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
 }
 #sombra-inferior{
     /* posição */
@@ -334,6 +456,13 @@ hr{
     /* posição */
     position: relative;
     display: flex;
+
+    /* animaçoes */
+    animation-name: teste;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 #sombra-superior{
     /* posição */
@@ -354,8 +483,71 @@ hr{
     width: 15%;
     height: 15%;
 }
-/* comentar codigo */
-/* arrumar porentagem (trocar e testar) v */
+
+/* keyframes animações */
+@keyframes teste{
+    0%{
+        transform: translateY(-50px);
+        z-index: 101;
+    }
+    100%{
+        transform: translateY(0px);
+        z-index: 101;
+    }
+}
+@keyframes teste1{
+    0%{
+        transform: translateY(50px);
+        z-index: 101;
+
+    }
+    100%{
+        transform: translateY(0px);
+        z-index: 101;
+
+    }
+}
+@keyframes caixas{
+    0%{
+        transform: translatey(0px);  
+        box-sizing: border-box;
+        background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--amareloclaro) 52.36%, rgba(217, 217, 217, 0) 100%);
+        filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+
+    }
+    20%{
+        box-sizing: border-box;
+        background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--amareloescuro) 52.36%, rgba(217, 217, 217, 0) 100%);
+        mix-blend-mode: lighten;
+        filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+
+    }
+    40%{
+        transform: translatey(-25px);
+        box-sizing: border-box;
+        background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--roxoclaro) 52.36%, rgba(217, 217, 217, 0) 100%);
+        filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));  
+    }
+    60%{
+        box-sizing: border-box;
+        background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--roxoescuro) 52.36%, rgba(217, 217, 217, 0) 100%);
+        filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+    }
+    80%{
+        box-sizing: border-box;
+        background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--rosa) 52.36%, rgba(217, 217, 217, 0) 100%);
+        filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+    }
+    100%{
+        box-sizing: border-box;
+        background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--rosaescuro) 52.36%, rgba(217, 217, 217, 0) 100%);
+        filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+        
+    }
+}
+
+
+
 
 
 /* reponsividade */
@@ -379,3 +571,6 @@ hr{
 
 
 
+/* perguntar para o professor sobre as muitas variaveis de transção e cor dar caixar(tentar reduzir) */
+/* arrumar nome das transições */
+/* arrumar problema das cores nas fases (escrita "home" ficando escura) */
