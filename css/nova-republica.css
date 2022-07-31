@@ -20,7 +20,7 @@
     --marromintermediario: #d4bda7;
     --amareloclaro: #f8ab48;
     --amareloescuro: #f79d25;
-    --rosaclaro: #f63876;
+    --rosaescuro: #AD0039;
     --rosa: #f2165f;
     --roxoescuro: #66308d;
     --roxoclaro: #7c4f9c;
@@ -81,8 +81,8 @@ body{
      line-height: 6px;
      text-decoration: none;
      /* cor */
-     color: var(--amareloescuro);
-     -webkit-text-stroke: 1px var(--amareloescuro);
+     color: var(--roxoescuro);
+     -webkit-text-stroke: 1px var(--roxoescuro);
 }
 
 /* retirar linha do link */
@@ -101,7 +101,7 @@ a{
 .icon-home svg{
     width: 50px;
     height: 50px;
-    color: var(--amareloescuro);
+    color: var(--roxoescuro);
 }
 
 /* linhs que separa o cabecalho do main */
