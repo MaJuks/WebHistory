@@ -64,7 +64,17 @@ body{
     color: var(--marromescuro2);
     -webkit-text-stroke: 1px var(--preto);
 }
-
+#titulo:hover{
+        transform: scale(1.05);
+}
+/* div filho-primeiro */
+.home-svg{
+    display: flex;
+    position: relative;
+}
+#home:hover{
+    transform: scale(1.05);
+}
 #home{
      /* posicao */
      position: relative;
@@ -92,8 +102,8 @@ a{
 
 .icon-home{
     position: relative;
-    left: -7%;
-    top: 1rem;
+    left: -85%;
+    top: 2.8rem;
     display: flex;
     z-index: 100;
 }
