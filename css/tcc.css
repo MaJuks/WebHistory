@@ -332,15 +332,20 @@ hr{
 
 /* texto sobrenos */
 #sobre-nos {
+    /* posição */
     margin-right: 20px;
+
+    /* configuração */
     font-family: 'Shadows Into Light';
     font-style: normal;
     font-weight: 400;
     font-size: 35px;
     line-height: 144.5%;
+
+    /* cor */
     color: var(--marromclaro);
     -webkit-text-stroke: 1px var(--marromclaro);
-    color: #E8DACF;
+    color: var(--marromclaro);
 }
 
 
@@ -390,9 +395,25 @@ hr{
 }
 
 /* sectio pai */
+
+/* sombra atras do rodape */
+.fundo-sombra-rodape{
+    display: flex;
+    position: relative;
+    opacity: 0.6;
+    height: 7rem;
+    width: 30rem;
+    margin-left: 46rem;
+    margin-top: 3rem;
+    /* configuração */
+    background: radial-gradient(50% 50% at 50% 50%, rgba(6, 0, 0, 0.5) 0%, rgba(217, 217, 217, 0) 100%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+
+    
+}
 /* conversar com o professor sobre  */
 .vinheta{
-    margin-top: -52.9rem;
+    margin-top: -57.7rem;
     position: relative;
     display: flex;
     /* conversar com o professor sobre isso  */
@@ -529,9 +550,146 @@ hr{
 
 
 
+/* reponsividade 1600 x 900 */
+@media screen and (max-width: 1600px) {
+    
+    /* div pai da sectio header */
+    .header-pai {
+        height: 96px;
+    }
+
+    /* pagina "web history */
+    #titulo {
+        /* posicao */
+        top: 2.24rem;
+        left: 56rem;
+        /* configuração da letra */
+        font-size: 48px;
+    }
+    /* escrita ao lado da seleçao "topico especifico" */
+    #label-topico {
+        /* configuração da letra */
+        font-size: 25.60px;
+    }
+
+    /* div (de todo icone de pesquisa) */
+    .input-pesquisa {
+        /* posição */
+        top: 1.60rem;
+        right: 28rem;
+    }
+
+    /* apenas a area de pesquisa (clicavel) */
+    select {
+        /* configuraçao da seleção */
+        width: 20%;
+        height:  20%;
+        padding: 6.40px 0px;
+        /* configuração letra */
+        font-size: 14.40px;
+    }
+
+    /* linhs que separa o cabecalho do main */
+    hr{
+        margin-top: 24px;
+        /* cor*/
+        border: 1.60px solid var(--marromescuro);
+    }
+
+    /* icone de pesquisa feather icon */
+    .icon-pesquisa svg {
+        width: 45.60px;
+        height: 45.60px;
+    }
+
+    /* nome do tcc */
+    #titulo2 {
+        /* configuração da letra */
+        font-size: 52px;
+        line-height: 56px;
+    }
+
+    /* sombra atras do titulo "a trajetoria da mulher na historia" */
+    .fundo-sombra-titulo{
+        height: 12rem;
+        margin-top: -12.40rem;
+    }
+    
+    /* linha do tempo  */
+    .linha-temporal {
+        /* posiçao */
+        top: 4.20rem;
+        /* configuraçoes */
+        width: 56rem;
+        /* linha */
+        border: 1.60px solid #5B3E26;
+    }
+
+    /* caixas onde esta escrito as epocas  */
+    .caixas-epocas img {
+        /* configuraçao */
+        height: 10.40rem;
+    }
+    
+    /* configuração da sombra */
+    .fundo-sombra{
+        height: 16rem;
+        margin-top: -12.38rem;
+    }
 
 
-/* reponsividade 150% */
+    /* div pai do section footer */
+    .footer-pai {
+        /* posição */
+        padding: 12px;
+        top: 7.20rem;
+    }
+    /* texto sobrenos */
+    #sobre-nos {
+        margin-right: 13.33px;
+        font-size: 28px;
+    }
+
+    /* icones de redes */
+    .icon-redes svg {
+        /* configuração */
+        margin-right: 8px;
+        width: 28px;
+        height: 28px;
+    }
+
+    /* sombra atras do rodape */
+    .fundo-sombra-rodape{
+        height: 6rem;
+        width: 24rem;
+        margin-left: 36.40rem;
+        margin-top: 2.5rem;
+    }
+    /* conversar com o professor sobre  */
+    .vinheta{
+        margin-top: -46.7rem;
+        height: 750px;
+    }
+
+    #sombra-inferior{
+        /* posição */
+        margin-top: -24.7%;
+        /* configuração */
+    
+    }
+    #pegada-inferior{
+        /* posição */
+        margin-top: -19%;
+        margin-left: -13%;
+    }
+    #sombra-superior{
+        /* posição */
+        margin-left: 75%;
+    }
+}
+
+
+/* reponsividade 150% - apartid do 1920*/
 @media screen and (max-width: 1280px) {
     
     /* div pai da sectio header */
@@ -640,15 +798,23 @@ hr{
         width: 23.33px;
         height: 23.33px;
     }
+
+    /* sombra atras do rodape */
+    .fundo-sombra-rodape{
+        height: 4.50rem;
+        width: 20rem;
+        margin-left: 30rem;
+        margin-top: 1.88rem;
+    }
     /* conversar com o professor sobre  */
     .vinheta{
-        margin-top: -31.9rem;
+        margin-top: -38.3rem;
         height: 630px;
     }
 
     #sombra-inferior{
         /* posição */
-        margin-top: -25%;
+        margin-top: -28%;
         /* configuração */
     
     }
