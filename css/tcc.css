@@ -396,7 +396,7 @@ hr{
     position: relative;
     display: flex;
     /* conversar com o professor sobre isso  */
-    height: 1010px;
+    height: 1030px;
     width: auto;
     background-image: url(../assets/vinheta.png);
     background-size: 100%;
@@ -476,7 +476,6 @@ hr{
 }
 
 /* keyframes animações */
-
 @keyframes movimento-planta{
     from{
         transform: translate(-20px,-20px);
@@ -532,13 +531,147 @@ hr{
 
 
 
-/* reponsividade */
-@media screen and (min-width: 1000px) {
-    .vinheta {
-        height: 1030px;
+/* reponsividade 150% */
+@media screen and (max-width: 1280px) {
+    
+    /* div pai da sectio header */
+    .header-pai {
+        height: 80px;
+    }
+
+    /* pagina "web history */
+    #titulo {
+        /* posicao */
+        position: relative;
+        top: 1.33rem;
+        width: 100%;
+        left: 46.67rem;
+        /* configuração da letra */
+        font-size: 40px;
+    }
+    /* escrita ao lado da seleçao "topico especifico" */
+    #label-topico {
+        /* configuração da letra */
+        font-size: 21.33px;
+    }
+
+    /* div (de todo icone de pesquisa) */
+    .input-pesquisa {
+        /* posição */
+        top: 1.33rem;
+        right: 23.33rem;
+    }
+
+    /* apenas a area de pesquisa (clicavel) */
+    select {
+        /* configuraçao da seleção */
+        width: 16.57%;
+        height:  16.57%;
+        padding: 5.33px 0px;
+        /* configuração letra */
+        font-size: 12px;
+    }
+
+    /* linhs que separa o cabecalho do main */
+    hr{
+        margin-top: 20px;
+        /* cor*/
+        border: 1.33px solid var(--marromescuro);
+    }
+
+    /* icone de pesquisa feather icon */
+    .icon-pesquisa svg {
+        width: 38px;
+        height: 38px;
+    }
+
+    /* nome do tcc */
+    #titulo2 {
+        /* configuração da letra */
+        font-size: 43.33px;
+        line-height: 46.67px;
+    }
+
+    /* sombra atras do titulo "a trajetoria da mulher na historia" */
+    .fundo-sombra-titulo{
+        height: 10rem;
+        margin-top: -10.33rem;
     }
     
+    /* linha do tempo  */
+    .linha-temporal {
+        /* posiçao */
+        top: 4.33rem;
+        /* configuraçoes */
+        width: 46.67rem;
+        /* linha */
+        border: 1.33px solid #5B3E26;
+    }
+
+    /* caixas onde esta escrito as epocas  */
+    .caixas-epocas img {
+        /* configuraçao */
+        height: 8.67rem;
+    }
+    
+    /* configuração da sombra */
+    .fundo-sombra{
+        height: 13.33rem;
+        margin-top: -10.33rem;
+    }
+
+
+    /* div pai do section footer */
+    .footer-pai {
+        /* posição */
+        padding: 10px;
+        top: 6rem;
+    }
+    /* texto sobrenos */
+    #sobre-nos {
+        margin-right: 13.33px;
+        font-size: 23.33px;
+    }
+
+    /* icones de redes */
+    .icon-redes svg {
+        /* configuração */
+        margin-right: 6.67px;
+        width: 23.33px;
+        height: 23.33px;
+    }
+    /* conversar com o professor sobre  */
+    .vinheta{
+        margin-top: -31.9rem;
+        height: 630px;
+    }
+
+    #sombra-inferior{
+        /* posição */
+        margin-top: -25%;
+        /* configuração */
+    
+    }
+    #pegada-inferior{
+        /* posição */
+        margin-top: -19%;
+        margin-left: -13%;
+    }
+    #sombra-superior{
+        /* posição */
+        margin-left: 75%;
+    }
 }
+
+
+
+    
+
+
+
+
+
+
 @media screen and (min-width: 2100px) {
     .vinheta {
       height: 1130px;
@@ -553,6 +686,6 @@ hr{
 
 
 
-/* perguntar para o professor sobre as muitas variaveis de transção e cor dar caixa(tentar reduzir) */
+/* perguntar para o professor sobre as muitas variaveis de transção e cor dar caixar(tentar reduzir) */
 /* arrumar nome das transições */
 /* arrumar problema das cores nas fases (escrita "home" ficando escura) */
