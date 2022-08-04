@@ -688,6 +688,142 @@ hr{
     }
 }
 
+@media screen and (max-width: 1745.45px) {
+    
+    /* div pai da sectio header */
+    .header-pai {
+        height: 109px;
+    }
+
+    /* pagina "web history */
+    #titulo {
+        /* posicao */
+        top: 2.55rem;
+        left: 63.64rem;
+        /* configuração da letra */
+        font-size: 54.55px;
+    }
+    /* escrita ao lado da seleçao "topico especifico" */
+    #label-topico {
+        /* configuração da letra */
+        font-size: 29.09px;
+    }
+
+    /* div (de todo icone de pesquisa) */
+    .input-pesquisa {
+        /* posição */
+        top: 1.82rem;
+        right: 31.39rem;
+    }
+
+    /* apenas a area de pesquisa (clicavel) */
+    select {
+        /* configuraçao da seleção */
+        width: 22.73%;
+        height:  22.73%;
+        padding: 7.27px 0px;
+        /* configuração letra */
+        font-size: 16.36px;
+    }
+
+    /* linhs que separa o cabecalho do main */
+    hr{
+        margin-top: 27.27px;
+        /* cor*/
+        border: 1.82px solid var(--marromescuro);
+    }
+
+    /* icone de pesquisa feather icon */
+    .icon-pesquisa svg {
+        width:51.82px;
+        height: 51.82px;
+    }
+
+    /* nome do tcc */
+    #titulo2 {
+        /* configuração da letra */
+        font-size: 59.09px;
+        line-height: 63.64px;
+    }
+
+    /* sombra atras do titulo "a trajetoria da mulher na historia" */
+    .fundo-sombra-titulo{
+        height: 13.64rem;
+        margin-top: -14.09rem;
+    }
+    
+    /* linha do tempo  */
+    .linha-temporal {
+        /* posiçao */
+        top: 5.91rem;
+        /* configuraçoes */
+        width: 63.64rem;
+        /* linha */
+        border: 1.82px solid #5B3E26;
+    }
+
+    /* caixas onde esta escrito as epocas  */
+    .caixas-epocas img {
+        /* configuraçao */
+        height: 11.82rem;
+    }
+    
+    /* configuração da sombra */
+    .fundo-sombra{
+        height: 18.18rem;
+        margin-top: -13.73rem;
+    }
+
+
+    /* div pai do section footer */
+    .footer-pai {
+        /* posição */
+        padding: 13.64px;
+        top: 8.18rem;
+    }
+    /* texto sobrenos */
+    #sobre-nos {
+        margin-right: 18.18px;
+        font-size: 31.89px;
+    }
+
+    /* icones de redes */
+    .icon-redes svg {
+        /* configuração */
+        margin-right: 9.09px;
+        width: 31.89px;
+        height: 31.89px;
+    }
+
+    /* sombra atras do rodape */
+    .fundo-sombra-rodape{
+        height: 6.36rem;
+        width: 27.27rem;
+        margin-left: 41.82rem;
+        margin-top: 2.73rem;
+    }
+    /* conversar com o professor sobre  */
+    .vinheta{
+        margin-top: -52.8rem;
+        height: 860px;
+    }
+
+    #sombra-inferior{
+        /* posição */
+        margin-top: -24.7%;
+        /* configuração */
+    
+    }
+    #pegada-inferior{
+        /* posição */
+        margin-top: -19%;
+        margin-left: -13%;
+    }
+    #sombra-superior{
+        /* posição */
+        margin-left: 75%;
+    }
+}
 
 /* reponsividade 150% - apartid do 1920*/
 @media screen and (max-width: 1280px) {
@@ -830,8 +966,11 @@ hr{
 }
 
 
-
-    
+@media screen and (min-width: 2400px) {
+    .fundo-sombra-rodape{
+        left: 13rem;
+    }
+} 
 
 
 
