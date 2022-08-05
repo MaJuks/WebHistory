@@ -159,8 +159,8 @@ hr{
     color: var(--marromescuro);
     -webkit-text-stroke: 1px var(--preto);
     border: px solid var(--preto);
-}
 
+}
 /* sombra atras do titulo "a trajetoria da mulher na historia" */
 .fundo-sombra-titulo{
     display: flex;
@@ -993,4 +993,4 @@ hr{
 
 /* perguntar para o professor sobre as muitas variaveis de transção e cor dar caixar(tentar reduzir) */
 /* arrumar nome das transições */
-/* arrumar problema das cores nas fases (escrita "home" ficando escura) */
+/* arrumar problema das cores nas fases (escrita "home" ficando escura) */w
