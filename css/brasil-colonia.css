@@ -142,45 +142,144 @@ hr{
     background-color: var(--marromescuro);
 }
 
-
+.main-pai{
+    display: grid;
+    box-sizing: border-box;
+    justify-content:center ;
+    justify-items: center;
+    justify-items: center;
+}
 /* nome do subsite "BRASIL COLONIA" */
 #titulo2 {
     /* posição */
+    margin-top: 3rem;
+    
     /* configuração da letra */
+    z-index: 101;
     text-align: center;
     font-family: 'Special Elite', cursive;
     font-style: normal;
     font-weight: 400;
     font-size: 65px;
-    line-height: 70px;
+    line-height: 100px;
     text-align: center;
-    /* cor*/
+
+    /* cor */
     color: var(--marromescuro);
     -webkit-text-stroke: 1px var(--preto);
     border: px solid var(--preto);
     z-index: 101;
 
+    /* para a animação */
+    white-space: nowrap;
+    overflow: hidden;
+    width: 25em;
+    animation: type 4s steps(60, end) ; 
 }
+#risco{
+    animation: blink 1s infinite;
+
+}
+/* animações */
+@keyframes type{ 
+    from { width: 0; } 
+  } 
+  
+@keyframes blink{
+    to{opacity: .0;}
+}
+
 
 /* sombra atras do titulo "a trajetoria da mulher na historia" */
 .fundo-sombra-titulo{
     /* posição */
     display: flex;
     position: relative;
-    margin-top: -12.5rem;
+    margin-top: -11.5rem;
 
     /* configuração */
-    opacity: 0.4;
+    opacity: 0.7;
     height: 15rem;
-    width: auto;
+    width: -;
     background: radial-gradient(50% 50% at 50% 50%, rgba(6, 0, 0, 0.4) 0%, rgba(217, 217, 217, 0) 100%);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+
+.teste{
+    
+    display: flex;
+    position: relative;
+    width: 80rem;
+    height: 627px;
+
+
+    background: #8A7666;
+    mix-blend-mode: multiply;
+    border: 1px solid #000000;
+    border-radius: 43px;
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 43px;
+    animation: aa 1s linear;
+}
+
+.preguinhos{
+    /* Rectangle 6 */
+
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    
+
+    /* amarelo claro */
+
+    background: var(--amareloclaro);
+    mix-blend-mode: hard-light;
+    opacity: 0.9;
+    border: 1px solid #000000;
+    border-radius: 15px;
+}
+#prego1{
+    left: 1.5rem;
+    top: 1.5rem;
+}
+#prego2{
+    left: 77rem;
+    top: 1.5rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* vinheta na pagina toda */
 .vinheta{
     /* posição */
-    margin-top: -24%;
+    margin-top: -54.2%;
     position: relative;
     display: flex;
 
@@ -225,14 +324,6 @@ hr{
      height: 15%;
 }
 
-/* animações */
-@keyframes titulo{
-    from{
-        
-    }
-    to{
-    }
-}
 
 
 /* reponsividade */
