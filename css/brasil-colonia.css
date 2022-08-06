@@ -200,43 +200,40 @@ hr{
     /* configuração */
     opacity: 0.7;
     height: 15rem;
-    width: -;
     background: radial-gradient(50% 50% at 50% 50%, rgba(6, 0, 0, 0.4) 0%, rgba(217, 217, 217, 0) 100%);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 
 .teste{
-    
+    padding: 40px;
+
+    /* posção */
     display: flex;
     position: relative;
+    flex-wrap: wrap;
     width: 80rem;
-    height: 627px;
-
-
-    background: #8A7666;
-    mix-blend-mode: multiply;
+    background: var(--marromescuro2);
     border: 1px solid #000000;
     border-radius: 43px;
-    /* Note: backdrop-filter has minimal browser support */
 
-    border-radius: 43px;
 
+    /* configuração das letras*/
+    font-family: 'Habibi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 31px;
 }
 
 .preguinhos{
-    /* Rectangle 6 */
-
-
+    /* posição */
     box-sizing: border-box;
-
     position: absolute;
     width: 21px;
     height: 21px;
     
-
-    /* amarelo claro */
-
+    /* configuração */
     background: var(--amareloclaro);
     mix-blend-mode: hard-light;
     opacity: 0.9;
@@ -252,11 +249,365 @@ hr{
     top: 1.5rem;
 
 }
+#prego3{
+    left: 77rem;
+    top: 37.5rem;
+
+}
+#prego4{
+    left: 1.5rem;
+    top: 37.5rem;
+
+}
+
+.texto1{
+    width: 41rem;
+    height: 15rem;
+}
+#texto1{
+    /* posição */
+    margin-top: 3rem;
+    margin-left: 3rem;
+
+    
+
+    /* cor */
+    color: var(--marromclaro);
+}
+#imagem1{
+    /* posição    */
+    position: relative;
+    margin-left: 6rem;
+    margin-top: 3rem;
+
+    
+ 
+}
+
+.botao1{
+    position: relative;
+    top: 32rem;
+    left: -62rem;
+}
+
+.input-botao1{
+    top: 14px;
+    position: absolute;
+}
+.label-botao1{    
+    z-index: 100;
+
+    display: flex;
+    position: relative;
+}
+.label-botao1::before,
+.label-botao1::after { 
+    content: "";
+    transition: all 0.2s ease;
+    
+}
+.label-botao1::before{
+    display:flex ;
+    width: 0; 
+    height: 0; 
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid var(--amareloescuro);
+}
+.input-botao1:checked + .label-botao1::before{
+    width: 0; 
+    height: 0; 
+    margin-left: -14px;
+    margin-top: 14px;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid var(--amareloescuro);
+}
+.input-botao1:focus+.label-botao1::before{
+    outline:3px dotted #CCC;
+}
 
 
 
+.texto2{
+    /* posição */
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    /* configuração */
+    width: 80rem;
+    color: var(--marromclaro);
+    text-align: center;
+
+}
+.linha1{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+
+    width: 80rem;
+    height: 20px;
+    /* configuração */
+    
+}
+#linha-oculta{
+    position: relative;
+    top: -2rem;
+    width: 61rem;
+    z-index: 100;
+    border: 2px solid var(--preto);
+    filter: blur(1px);
+}
+.div-texto-oculto1{
+    display: none;
+    width: 80rem;
+    height: 15rem;
+    justify-content: center;
+    
+}
+.retangulo-texto-oculto1{
+    width: 60rem;
+
+    height: 14rem;
+    /* marrom claro */
+
+    background: var(--marromclaro);
+    /* #5B3E26 */
+
+    border: 1.84865px solid var(--marromescuro);
+    border-radius: 0px 0px 27px 27px;
+    padding: 0  10px;
+}
+#texto-oculto1{
+    font-family: 'Habibi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 29px;
+    color: var(--marromescuro);
+}
+
+    
+.mulheres-caixas{
+    display: flex;
+    position: relative;
+    width: 80rem;  
+    justify-content: space-around; 
+    margin: 5rem; 
+}
+.caixa-mulheres-indigenas{
+    /* posção */
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 13.5rem;
+    height: 13.5rem;
 
 
+    background: var(--marromescuro2);
+    border: 1px solid  var(--preto);
+    border-radius: 43px;
+
+
+}
+.caixa-mulheres-pretas{
+     /* posção */
+     display: flex;
+     position: relative;
+     justify-content: center;
+     align-items: center;
+     width: 13.5rem;
+     height: 13.5rem;
+ 
+     background: var(--marromescuro2);
+     border: 1px solid var(--preto);
+     border-radius: 43px;
+ 
+ 
+}
+.caixa-mulheres-brancas{
+     /* posção */
+     display: flex;
+     position: relative;
+     justify-content: center;
+     align-items: center;
+     width: 13.5rem;
+    height: 13.5rem;
+
+ 
+     background: var(--marromescuro2);
+     border: 1px solid var(--preto);
+     border-radius: 43px;
+ 
+}
+
+#titulo-mulheres{
+    z-index: 100;
+    width: 190px;
+    height: 66px;
+
+    font-family: 'Special Elite';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--marromclaro);
+}
+
+.mulheres-indigenas{
+    padding: 40px;
+     /* posção */
+     display: flex;
+     position: relative;
+     flex-wrap: wrap;
+     width: 80rem;
+     background: var(--marromescuro2);
+     border: 1px solid var(--preto);
+     border-radius: 43px;
+ 
+ 
+     /* configuração das letras*/
+     font-family: 'Habibi';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 25px;
+     line-height: 31px;
+}
+#titulo-mulheres-indigenas{
+    /* Mulheres Indígenas */
+
+
+    width: 463.57px;
+    height: 59px;
+
+font-family: 'Special Elite';
+font-style: normal;
+font-weight: 400;
+font-size: 42.1429px;
+line-height: 42px;
+text-align: center;
+
+color:var(--branco);
+}
+#texto3{
+width: 1082px;
+height: 169px;
+
+font-family: 'Habibi';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 31px;
+
+color: var(--marromclaro);
+}
+.imagens-indigenas{
+    display: flex;
+    width: 80rem;
+    justify-content: space-around;
+}
+#imagem2{
+    width: 15rem;
+    height: 15rem;
+}
+.legendas-imagens-indigenas{
+    width: 80rem;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+#legenda-indigenas{
+width: 212px;
+height: 30px;
+
+font-family: 'Habibi';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+text-align: center;
+
+color: var(--marromclaro);
+}
+#texto4{
+    
+    width: 80rem;
+    height: 109px;
+
+    font-family: 'Habibi';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 31px;
+text-align: center;
+
+color: var(--marromclaro);
+
+}
+#texto5{
+    
+width: 1082px;
+height: 130px;
+margin-left: 8rem;
+font-family: 'Habibi';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 31px;
+
+color:var(--marromclaro);
+}
+
+#botao2{
+    display: flex;
+    position: relative;
+    top: 2rem;
+}
+.div-texto-oculto2{
+    display: none;
+    width: 80rem;
+    height: 15rem;
+    justify-content: center;
+    
+}
+.retangulo-texto-oculto2{
+    width: 60rem;
+    height: 10rem;
+    /* marrom claro */
+
+    background: var(--marromclaro);
+    /* #5B3E26 */
+
+    border: 2px solid var(--marromescuro);
+    border-radius: 0px 0px 27px 27px;
+    padding: 0  10px;
+}
+#texto-oculto2{
+    font-family: 'Habibi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 29px;
+    color: var(--marromescuro);
+}
+#texto5{
+   margin-left: 0;
+width: 80rem;
+height: 222px;
+
+font-family: 'Habibi';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 31px;
+text-align: center;
+
+color: var(--marromclaro);
+
+}
 
 
 
