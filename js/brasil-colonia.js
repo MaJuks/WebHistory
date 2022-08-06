@@ -3,15 +3,15 @@ feather.replace()
 function botao_clicado1(){
     if(document.getElementById("botao1").checked){
         var xxx = document.getElementById('div-texto-oculto1').style.display = 'flex';
-        var xx = document.getElementById('prego3').style.top = '51.9rem';
-        var x = document.getElementById('prego4').style.top = '51.9rem';
+        var xx = document.getElementById('prego3').style.marginTop = '52.6rem';
+        var x = document.getElementById('prego4').style.marginTop = '52.6rem';
 
 
     }
     else{
         var xxx = document.getElementById('div-texto-oculto1').style.display = 'none';
-        var xx = document.getElementById('prego3').style.top = '37.5rem';
-        var x = document.getElementById('prego4').style.top = '37.5rem';
+        var xx = document.getElementById('prego3').style.marginTop = '38rem';
+        var x = document.getElementById('prego4').style.marginTop = '38rem';
 
 
     }
