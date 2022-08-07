@@ -213,7 +213,6 @@ hr{
     position: relative;
     
     /* configuração da div */
-    padding: 40px;
     padding: 40px 40px 20px 40px;
     flex-wrap: wrap;
     width: 80rem;
@@ -468,6 +467,16 @@ hr{
     font-size: 25px;
     line-height: 31px;
 }
+#prego6{
+    left: 76.2rem;
+}
+#prego7{
+    left: 76.2rem;
+    top:91rem
+}
+#prego8{
+    top:91rem
+}
 #titulo-mulheres-indigenas{
     /* configuração */
     width: 463.57px;
@@ -565,11 +574,17 @@ hr{
     line-height: 31px;
     color:var(--marromclaro);
 }
+.botao2{
+    display: flex;
+    position: relative;
+    top: -3rem;
+}
 #botao2{
     /* posição */
     display: flex;
     position: relative;
-    top: 2rem;
+    top: -0.5rem;
+    left: 1rem;
 }
 .div-texto-oculto2{
     /* posição */
@@ -614,6 +629,108 @@ hr{
     font-size: 25px;
     line-height: 31px;
     text-align: center;
+    color: var(--marromclaro);
+
+}
+.mulheres-pretas{
+    /* posição */
+    display: flex;
+    position: relative;
+
+    /* configuração */
+    margin: 5rem; 
+
+    padding: 40px;
+    flex-wrap: wrap;
+    width: 80rem;
+    background: var(--marromescuro2);
+    border: 1px solid var(--preto);
+    border-radius: 43px;
+ 
+    /* configuração das letras*/
+    font-family: 'Habibi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 31px;
+}
+#titulo-mulheres-pretas{
+    /* configuração */
+    width: 463.57px;
+    height: 59px;
+
+    /* configuração da letra */
+    font-family: 'Special Elite';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42.1429px;
+    line-height: 42px;
+    text-align: center;
+    color:var(--amareloclaro);
+}
+#texto6{
+    width: 1082px;
+    height: 169px;
+
+    font-family: 'Habibi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 31px;
+
+    color:var(--marromclaro);
+}
+#texto7{
+    width: 1082px;
+    height: 111px;
+
+    font-family: 'Habibi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 31px;
+    text-align: center;
+
+    color: var(--marromclaro);
+
+}
+#texto8{
+    width: 686px;
+    height: 205px;
+
+    font-family: 'Habibi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 31px;
+
+    color: var(--marromclaro);
+
+}
+#texto9{
+    
+    width: 677px;
+    height: 205px;
+
+    font-family: 'Habibi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 31px;
+    text-align: right;
+
+    color: var(--marromclaro);
+
+}
+#texto10{
+    
+
+
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 31px;
+    text-align: center;
+
     color: var(--marromclaro);
 
 }

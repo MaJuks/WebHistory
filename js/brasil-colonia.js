@@ -19,13 +19,15 @@ function botao_clicado1(){
 function botao_clicado2(){
     if(document.getElementById("botao2").checked){
         var xxx = document.getElementById('div-texto-oculto2').style.display = 'flex';
-        
+        var x = document.getElementById('prego7').style.top = '107.5rem';
+        var x = document.getElementById('prego8').style.top = '107.5rem';
 
 
     }
     else{
         var xxx = document.getElementById('div-texto-oculto2').style.display = 'none';
-      
+        var x = document.getElementById('prego7').style.top = '91rem';
+        var x = document.getElementById('prego8').style.top = '91rem';
 
 
     }
