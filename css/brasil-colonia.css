@@ -834,6 +834,153 @@ hr{
     color: var(--marromescuro);
 }
 
+.mulheres-destaque{
+     /* posição */
+     display: flex;
+     position: relative;
+ 
+     /* configuração */
+     margin: 5rem; 
+     padding: 40px;
+     flex-wrap: wrap;
+     width: 80rem;
+     background: var(--marromescuro2);
+     border: 1px solid var(--preto);
+     border-radius: 43px;
+  
+     /* configuração das letras*/
+     font-family: 'Habibi';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 25px;
+     line-height: 31px;
+     color: var(--branco);
+}
+#mulher1{
+    width: 80rem;
+
+    flex-wrap: wrap;
+    display: flex;
+    position: relative;
+
+}
+#mulher2{
+    width: 80rem;
+    flex-wrap: wrap;
+    display: none;
+    position: relative;
+
+}
+#mulher3{
+    width: 80rem;
+    flex-wrap: wrap;
+    display: none;
+    position: relative;
+}
+#mulher4{
+    width: 80rem;
+    flex-wrap: wrap;
+    display: none;
+    position: relative;
+}
+#mulher5{
+    width: 80rem;
+    flex-wrap: wrap;
+    display: none;
+    position: relative;
+}
+#mulher6{
+    width: 80rem;
+    flex-wrap: wrap;
+    display: none;
+    position: relative;
+}
+#mulher7{
+    width: 80rem;
+    flex-wrap: wrap;
+    display: none;
+    position: relative;
+}
+
+#titulo-mulheres-destaque{    
+    display: flex;
+    position: relative;
+    width: 80rem;
+    height: 42px;
+    font-family: 'Special Elite';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42.1429px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.imagem-mulher1{
+    display: flex;
+    position: relative;
+}
+
+
+#legenda-mulher1{
+    display: flex;
+    position: relative;
+    display: flex;
+    padding-left: 155px;
+
+    width: 80rem;
+    font-size: 20px;
+    text-align: center; 
+
+}
+#subtitulo-mulher1{
+    display: flex;
+    position: relative;
+    display: flex;
+
+    margin-top: 3rem;
+    left: 5.5rem;
+
+    
+width: 400px;
+height: 38px;
+
+font-family: 'Special Elite';
+font-style: normal;
+font-weight: 400;
+font-size: 38px;
+line-height: 38px;
+color: var(--rosa);
+
+}
+#texto-mulher1{
+    margin-top: 6rem;
+    margin-left: -8.5rem;
+    width: 550px;
+    height: 227px;
+
+
+}
+
+
+.botao4{
+    width: 0; 
+    height: 0; 
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid var(--amareloescuro);
+}
+#btn2{
+    /* posição */
+    display:flex ;
+
+    /* configuração */
+    width: 0; 
+    height: 0; 
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid var(--amareloescuro);
+}
+
 
 
 

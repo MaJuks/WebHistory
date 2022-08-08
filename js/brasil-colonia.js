@@ -46,4 +46,177 @@ function botao_clicado3(){
 
     }
 }
+var count = 0;
+var btn = document.getElementById("btn");
+var btn2 = document.getElementById("btn2");
+
+var disp = document.getElementById("display");
+  
+btn.onclick = function () {
+    count++;
+    disp.innerHTML = count;
+    
+    
+    if(count==0){
+        var sete = document.getElementById('mulher1').style.display = 'flex';
+        var seis = document.getElementById('mulher2').style.display = 'none';
+        var cinco = document.getElementById('mulher3').style.display = 'none';
+        var quatro = document.getElementById('mulher4').style.display = 'none';
+        var tres = document.getElementById('mulher5').style.display = 'none';
+        var dois = document.getElementById('mulher6').style.display = 'none';
+        var um = document.getElementById('mulher7').style.display = 'none';
+
+    }
+    if(count==1){
+        var sete = document.getElementById('mulher1').style.display = 'none';
+        var seis = document.getElementById('mulher2').style.display = 'flex';
+        var cinco = document.getElementById('mulher3').style.display = 'none';
+        var quatro = document.getElementById('mulher4').style.display = 'none';
+        var tres = document.getElementById('mulher5').style.display = 'none';
+        var dois = document.getElementById('mulher6').style.display = 'none';
+        var um = document.getElementById('mulher7').style.display = 'none';
+    }
+    if(count==2){
+        var sete = document.getElementById('mulher1').style.display = 'none';
+        var seis = document.getElementById('mulher2').style.display = 'none';
+        var cinco = document.getElementById('mulher3').style.display = 'flex';
+        var quatro = document.getElementById('mulher4').style.display = 'none';
+        var tres = document.getElementById('mulher5').style.display = 'none';
+        var dois = document.getElementById('mulher6').style.display = 'none';
+        var um = document.getElementById('mulher7').style.display = 'none';
+    }
+    if(count==3){
+        var sete = document.getElementById('mulher1').style.display = 'none';
+        var seis = document.getElementById('mulher2').style.display = 'none';
+        var cinco = document.getElementById('mulher3').style.display = 'none';
+        var quatro = document.getElementById('mulher4').style.display = 'flex';
+        var tres = document.getElementById('mulher5').style.display = 'none';
+        var dois = document.getElementById('mulher6').style.display = 'none';
+        var um = document.getElementById('mulher7').style.display = 'none';
+    }
+    if(count==4){
+        var sete = document.getElementById('mulher1').style.display = 'none';
+        var seis = document.getElementById('mulher2').style.display = 'none';
+        var cinco = document.getElementById('mulher3').style.display = 'none';
+        var quatro = document.getElementById('mulher4').style.display = 'none';
+        var tres = document.getElementById('mulher5').style.display = 'flex';
+        var dois = document.getElementById('mulher6').style.display = 'none';
+        var um = document.getElementById('mulher7').style.display = 'none';
+    }
+    if(count==5){
+        var sete = document.getElementById('mulher1').style.display = 'none';
+        var seis = document.getElementById('mulher2').style.display = 'none';
+        var cinco = document.getElementById('mulher3').style.display = 'none';
+        var quatro = document.getElementById('mulher4').style.display = 'none';
+        var tres = document.getElementById('mulher5').style.display = 'none';
+        var dois = document.getElementById('mulher6').style.display = 'flex';
+        var um = document.getElementById('mulher7').style.display = 'none';
+    }
+    if(count==6){
+        var sete = document.getElementById('mulher1').style.display = 'none';
+        var seis = document.getElementById('mulher2').style.display = 'none';
+        var cinco = document.getElementById('mulher3').style.display = 'none';
+        var quatro = document.getElementById('mulher4').style.display = 'none';
+        var tres = document.getElementById('mulher5').style.display = 'none';
+        var dois = document.getElementById('mulher6').style.display = 'none';
+        var um = document.getElementById('mulher7').style.display = 'flex';
+    }
+    if(count >= 7){
+        count = 0;
+        disp.innerHTML = count;
+        var sete = document.getElementById('mulher1').style.display = 'flex';
+        var seis = document.getElementById('mulher2').style.display = 'none';
+        var cinco = document.getElementById('mulher3').style.display = 'none';
+        var quatro = document.getElementById('mulher4').style.display = 'none';
+        var tres = document.getElementById('mulher5').style.display = 'none';
+        var dois = document.getElementById('mulher6').style.display = 'none';
+        var um = document.getElementById('mulher7').style.display = 'none';
+    }
+}
+btn2.onclick = function () {
+    count--;
+    disp.innerHTML = count;
+    if(count >= 7){
+        count = 0;
+        disp.innerHTML = count;
+
+    }
+    if(count==(1*-1)){
+        var sete = document.getElementById('mulher1').style.display = 'none';
+        var seis = document.getElementById('mulher2').style.display = 'flex';
+        var cinco = document.getElementById('mulher3').style.display = 'none';
+        var quatro = document.getElementById('mulher4').style.display = 'none';
+        var tres = document.getElementById('mulher5').style.display = 'none';
+        var dois = document.getElementById('mulher6').style.display = 'none';
+        var um = document.getElementById('mulher7').style.display = 'none';
+
+    }
+    if(count==0){
+        var sete = document.getElementById('mulher1').style.display = 'flex';
+        var seis = document.getElementById('mulher2').style.display = 'none';
+        var cinco = document.getElementById('mulher3').style.display = 'none';
+        var quatro = document.getElementById('mulher4').style.display = 'none';
+        var tres = document.getElementById('mulher5').style.display = 'none';
+        var dois = document.getElementById('mulher6').style.display = 'none';
+        var um = document.getElementById('mulher7').style.display = 'none';
+    }
+    if(count==1){
+        var sete = document.getElementById('mulher1').style.display = 'none';
+        var seis = document.getElementById('mulher2').style.display = 'flex';
+        var cinco = document.getElementById('mulher3').style.display = 'none';
+        var quatro = document.getElementById('mulher4').style.display = 'none';
+        var tres = document.getElementById('mulher5').style.display = 'none';
+        var dois = document.getElementById('mulher6').style.display = 'none';
+        var um = document.getElementById('mulher7').style.display = 'none';
+    }
+    if(count==2){
+        var sete = document.getElementById('mulher1').style.display = 'none';
+        var seis = document.getElementById('mulher2').style.display = 'none';
+        var cinco = document.getElementById('mulher3').style.display = 'flex';
+        var quatro = document.getElementById('mulher4').style.display = 'none';
+        var tres = document.getElementById('mulher5').style.display = 'none';
+        var dois = document.getElementById('mulher6').style.display = 'none';
+        var um = document.getElementById('mulher7').style.display = 'none';
+    }
+    if(count==3){
+        var sete = document.getElementById('mulher1').style.display = 'none';
+        var seis = document.getElementById('mulher2').style.display = 'none';
+        var cinco = document.getElementById('mulher3').style.display = 'none';
+        var quatro = document.getElementById('mulher4').style.display = 'flex';
+        var tres = document.getElementById('mulher5').style.display = 'none';
+        var dois = document.getElementById('mulher6').style.display = 'none';
+        var um = document.getElementById('mulher7').style.display = 'none';
+    }
+    if(count==4){
+        var sete = document.getElementById('mulher1').style.display = 'none';
+        var seis = document.getElementById('mulher2').style.display = 'none';
+        var cinco = document.getElementById('mulher3').style.display = 'none';
+        var quatro = document.getElementById('mulher4').style.display = 'none';
+        var tres = document.getElementById('mulher5').style.display = 'flex';
+        var dois = document.getElementById('mulher6').style.display = 'none';
+        var um = document.getElementById('mulher7').style.display = 'none';
+    }
+    if(count==5){
+        var sete = document.getElementById('mulher1').style.display = 'none';
+        var seis = document.getElementById('mulher2').style.display = 'none';
+        var cinco = document.getElementById('mulher3').style.display = 'none';
+        var quatro = document.getElementById('mulher4').style.display = 'none';
+        var tres = document.getElementById('mulher5').style.display = 'none';
+        var dois = document.getElementById('mulher6').style.display = 'flex';
+        var um = document.getElementById('mulher7').style.display = 'none';
+    }
+    if(count==6){
+        var sete = document.getElementById('mulher1').style.display = 'none';
+        var seis = document.getElementById('mulher2').style.display = 'none';
+        var cinco = document.getElementById('mulher3').style.display = 'none';
+        var quatro = document.getElementById('mulher4').style.display = 'none';
+        var tres = document.getElementById('mulher5').style.display = 'none';
+        var dois = document.getElementById('mulher6').style.display = 'none';
+        var um = document.getElementById('mulher7').style.display = 'flex';
+    }
+    
+}
+
+
+        
 
