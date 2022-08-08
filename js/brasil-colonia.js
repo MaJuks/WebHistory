@@ -67,7 +67,8 @@ btn.onclick = function () {
         var um = document.getElementById('mulher7').style.display = 'none';
 
     }
-    if(count==1){
+    // barbara alencar
+    if(count==1 || count == (1*-6)){
         var sete = document.getElementById('mulher1').style.display = 'none';
         var seis = document.getElementById('mulher2').style.display = 'flex';
         var cinco = document.getElementById('mulher3').style.display = 'none';
@@ -76,7 +77,7 @@ btn.onclick = function () {
         var dois = document.getElementById('mulher6').style.display = 'none';
         var um = document.getElementById('mulher7').style.display = 'none';
     }
-    if(count==2){
+    if(count==2 || count == (1*-5)){
         var sete = document.getElementById('mulher1').style.display = 'none';
         var seis = document.getElementById('mulher2').style.display = 'none';
         var cinco = document.getElementById('mulher3').style.display = 'flex';
@@ -85,7 +86,7 @@ btn.onclick = function () {
         var dois = document.getElementById('mulher6').style.display = 'none';
         var um = document.getElementById('mulher7').style.display = 'none';
     }
-    if(count==3){
+    if(count==3 || count == (1*-4)){
         var sete = document.getElementById('mulher1').style.display = 'none';
         var seis = document.getElementById('mulher2').style.display = 'none';
         var cinco = document.getElementById('mulher3').style.display = 'none';
@@ -94,7 +95,7 @@ btn.onclick = function () {
         var dois = document.getElementById('mulher6').style.display = 'none';
         var um = document.getElementById('mulher7').style.display = 'none';
     }
-    if(count==4){
+    if(count==4 || count == (1*-3)){
         var sete = document.getElementById('mulher1').style.display = 'none';
         var seis = document.getElementById('mulher2').style.display = 'none';
         var cinco = document.getElementById('mulher3').style.display = 'none';
@@ -103,7 +104,7 @@ btn.onclick = function () {
         var dois = document.getElementById('mulher6').style.display = 'none';
         var um = document.getElementById('mulher7').style.display = 'none';
     }
-    if(count==5){
+    if(count==5  || count == (1*-2)){
         var sete = document.getElementById('mulher1').style.display = 'none';
         var seis = document.getElementById('mulher2').style.display = 'none';
         var cinco = document.getElementById('mulher3').style.display = 'none';
@@ -112,7 +113,7 @@ btn.onclick = function () {
         var dois = document.getElementById('mulher6').style.display = 'flex';
         var um = document.getElementById('mulher7').style.display = 'none';
     }
-    if(count==6){
+    if(count==6 || count == (1*-1)){
         var sete = document.getElementById('mulher1').style.display = 'none';
         var seis = document.getElementById('mulher2').style.display = 'none';
         var cinco = document.getElementById('mulher3').style.display = 'none';
@@ -141,16 +142,6 @@ btn2.onclick = function () {
         disp.innerHTML = count;
 
     }
-    if(count==(1*-1)){
-        var sete = document.getElementById('mulher1').style.display = 'none';
-        var seis = document.getElementById('mulher2').style.display = 'flex';
-        var cinco = document.getElementById('mulher3').style.display = 'none';
-        var quatro = document.getElementById('mulher4').style.display = 'none';
-        var tres = document.getElementById('mulher5').style.display = 'none';
-        var dois = document.getElementById('mulher6').style.display = 'none';
-        var um = document.getElementById('mulher7').style.display = 'none';
-
-    }
     if(count==0){
         var sete = document.getElementById('mulher1').style.display = 'flex';
         var seis = document.getElementById('mulher2').style.display = 'none';
@@ -159,8 +150,10 @@ btn2.onclick = function () {
         var tres = document.getElementById('mulher5').style.display = 'none';
         var dois = document.getElementById('mulher6').style.display = 'none';
         var um = document.getElementById('mulher7').style.display = 'none';
+
     }
-    if(count==1){
+    // barbara alencar
+    if(count==1 || count == (1*-6)){
         var sete = document.getElementById('mulher1').style.display = 'none';
         var seis = document.getElementById('mulher2').style.display = 'flex';
         var cinco = document.getElementById('mulher3').style.display = 'none';
@@ -169,7 +162,7 @@ btn2.onclick = function () {
         var dois = document.getElementById('mulher6').style.display = 'none';
         var um = document.getElementById('mulher7').style.display = 'none';
     }
-    if(count==2){
+    if(count==2 || count == (1*-5)){
         var sete = document.getElementById('mulher1').style.display = 'none';
         var seis = document.getElementById('mulher2').style.display = 'none';
         var cinco = document.getElementById('mulher3').style.display = 'flex';
@@ -178,7 +171,7 @@ btn2.onclick = function () {
         var dois = document.getElementById('mulher6').style.display = 'none';
         var um = document.getElementById('mulher7').style.display = 'none';
     }
-    if(count==3){
+    if(count==3 || count == (1*-4)){
         var sete = document.getElementById('mulher1').style.display = 'none';
         var seis = document.getElementById('mulher2').style.display = 'none';
         var cinco = document.getElementById('mulher3').style.display = 'none';
@@ -187,7 +180,7 @@ btn2.onclick = function () {
         var dois = document.getElementById('mulher6').style.display = 'none';
         var um = document.getElementById('mulher7').style.display = 'none';
     }
-    if(count==4){
+    if(count==4 || count == (1*-3)){
         var sete = document.getElementById('mulher1').style.display = 'none';
         var seis = document.getElementById('mulher2').style.display = 'none';
         var cinco = document.getElementById('mulher3').style.display = 'none';
@@ -196,7 +189,7 @@ btn2.onclick = function () {
         var dois = document.getElementById('mulher6').style.display = 'none';
         var um = document.getElementById('mulher7').style.display = 'none';
     }
-    if(count==5){
+    if(count==5  || count == (1*-2)){
         var sete = document.getElementById('mulher1').style.display = 'none';
         var seis = document.getElementById('mulher2').style.display = 'none';
         var cinco = document.getElementById('mulher3').style.display = 'none';
@@ -205,7 +198,7 @@ btn2.onclick = function () {
         var dois = document.getElementById('mulher6').style.display = 'flex';
         var um = document.getElementById('mulher7').style.display = 'none';
     }
-    if(count==6){
+    if(count==6 || count == (1*-1)){
         var sete = document.getElementById('mulher1').style.display = 'none';
         var seis = document.getElementById('mulher2').style.display = 'none';
         var cinco = document.getElementById('mulher3').style.display = 'none';
@@ -214,7 +207,17 @@ btn2.onclick = function () {
         var dois = document.getElementById('mulher6').style.display = 'none';
         var um = document.getElementById('mulher7').style.display = 'flex';
     }
-    
+    if(count >= 7 || count == (1*-7)){
+        count = 0;
+        disp.innerHTML = count;
+        var sete = document.getElementById('mulher1').style.display = 'flex';
+        var seis = document.getElementById('mulher2').style.display = 'none';
+        var cinco = document.getElementById('mulher3').style.display = 'none';
+        var quatro = document.getElementById('mulher4').style.display = 'none';
+        var tres = document.getElementById('mulher5').style.display = 'none';
+        var dois = document.getElementById('mulher6').style.display = 'none';
+        var um = document.getElementById('mulher7').style.display = 'none';
+    }
 }
 
 
