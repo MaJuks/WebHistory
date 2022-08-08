@@ -26,18 +26,73 @@
     --roxoclaro: #7c4f9c;
     --marromescuro: #5b3e26;
     --marromescuro2: #483322;
+    --maromescuro2rgba:72, 51, 34, 1;
     --preto: #201d18;
 }
 
 
 /* imagem de fundo */
 body{
+    mix-blend-mode: multiply;
     margin: 0;
     background-image: url("../assets/fundo.png");
 }
 
+
+
+
+
+
+/* vinheta na pagina toda */
+.vinheta{
+    /* posição */
+    margin-top: rem;
+    position: absolute;
+    display: flex;
+
+    /* conversar com o professor sobre isso  */
+    
+    /* configuração */
+    background-image: url(../assets/vinheta.png);
+    height: 6935px;
+    width: 100%;
+    background-size: 100%;
+    opacity: 0.5;
+}
+.sombras-teste{
+    height: 0rem;
+}
+#pegada-inferior{
+    z-index: 100;
+    display: flex;
+    position: relative;
+    left: 84rem;
+
+    top: 90rem;    
+}
+#sombra-superior{
+    z-index: 100;
+    display: flex;
+    position: relative;
+    left: 84rem;
+    top: -30rem;
+}
+#pegada-superior{
+    display: flex;
+    position: relative;
+    left: 15rem;
+}
+
+
+
+
+
+
+
+
 /* div-pai da section header */
 .header-pai {
+
     display: flex;
     height: 120px;
     align-items: center;
@@ -45,6 +100,7 @@ body{
 
 /* titulo da sub-pagina "web history */
 #titulo {
+    
     /* posicao */
     position: relative;
     top: 1rem;
@@ -78,6 +134,7 @@ body{
 }
 
 #home{
+    
      /* posicao */
      position: relative;
      top: 1rem;
@@ -143,6 +200,7 @@ hr{
 }
 
 .main-pai{
+
     display: grid;
     box-sizing: border-box;
     justify-content:center ;
@@ -225,8 +283,9 @@ hr{
     font-weight: 400;
     font-size: 25px;
     line-height: 31px;
-}
+    color: var(--branco);
 
+}
 .preguinhos{
     /* posição */
     box-sizing: border-box;
@@ -276,7 +335,6 @@ hr{
     margin-left: 3rem;
 
     /* cor */
-    color: var(--marromclaro);
 }
 #imagem1{
     /* posição    */
@@ -302,6 +360,7 @@ hr{
 .label-botao1{  
     /* posição */
     z-index: 100;
+    cursor: pointer;
     display: flex;
     position: relative;
 }
@@ -349,7 +408,6 @@ hr{
     /* configuração */
     justify-content: center;
     width: 80rem;
-    color: var(--marromclaro);
     text-align: center;
 
 }
@@ -466,6 +524,7 @@ hr{
     font-weight: 400;
     font-size: 25px;
     line-height: 31px;
+    color: var(--branco);
 }
 #prego6{
     left: 76.2rem;
@@ -501,12 +560,6 @@ hr{
     height: 169px;
 
     /* configuração da letra */
-    font-family: 'Habibi';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 31px;
-    color: var(--marromclaro);
 }
 .imagens-indigenas{
     /* posição */
@@ -536,13 +589,7 @@ hr{
     height: 30px;
 
     /* configuração da letra */
-    font-family: 'Habibi';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
     text-align: center;
-    color: var(--marromclaro);
 }
 #texto4{
     /* configuração */
@@ -550,14 +597,7 @@ hr{
     height: 109px;
 
     /* configuração da letra */
-    font-family: 'Habibi';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 31px;
-    text-align: center;
-    color: var(--marromclaro);
-}
+    text-align: center;}
 #texto5{
     /* posição */
     margin-left: 8rem;
@@ -567,12 +607,6 @@ hr{
     height: 130px;
 
     /* configuração da letra */
-    font-family: 'Habibi';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 31px;
-    color:var(--marromclaro);
 }
 .botao2{
     display: flex;
@@ -607,11 +641,6 @@ hr{
 }
 #texto-oculto2{
     /* configuração da letra */
-    font-family: 'Habibi';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 23px;
-    line-height: 29px;
     color: var(--marromescuro);
 }
 #texto5{
@@ -623,13 +652,7 @@ hr{
     height: 222px;
 
     /* configuração da letra */
-    font-family: 'Habibi';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 31px;
     text-align: center;
-    color: var(--marromclaro);
 
 }
 .mulheres-pretas{
@@ -639,7 +662,6 @@ hr{
 
     /* configuração */
     margin: 5rem; 
-
     padding: 40px;
     flex-wrap: wrap;
     width: 80rem;
@@ -653,10 +675,11 @@ hr{
     font-weight: 400;
     font-size: 25px;
     line-height: 31px;
+    color: var(--branco);
 }
 #titulo-mulheres-pretas{
     /* configuração */
-    width: 463.57px;
+    width: 600px;
     height: 59px;
 
     /* configuração da letra */
@@ -669,151 +692,156 @@ hr{
     color:var(--amareloclaro);
 }
 #texto6{
-    width: 1082px;
+    padding: 10px;
     height: 169px;
-
-    font-family: 'Habibi';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 31px;
-
-    color:var(--marromclaro);
 }
 #texto7{
-    width: 1082px;
+    padding: 10px;
     height: 111px;
-
-    font-family: 'Habibi';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 31px;
     text-align: center;
-
-    color: var(--marromclaro);
 
 }
 #texto8{
     width: 686px;
     height: 205px;
 
-    font-family: 'Habibi';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 31px;
-
-    color: var(--marromclaro);
-
 }
 #texto9{
     
     width: 677px;
     height: 205px;
+    text-align: right;
 
+}
+#texto10{
+    padding: 10px;
+    height: 138px;
+    text-align: center;
+
+
+}
+.mulheres-brancas{
+    /* posição */
+    display: flex;
+    position: relative;
+
+    /* configuração */
+    padding: 40px;
+
+    flex-wrap: wrap;
+    width: 80rem;
+    background: var(--marromescuro2);
+    border: 1px solid var(--preto);
+    border-radius: 43px;
+ 
+    /* configuração das letras*/
     font-family: 'Habibi';
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 31px;
-    text-align: right;
-
-    color: var(--marromclaro);
+    color: var(--branco);
 
 }
-#texto10{
-    
+#titulo-mulheres-brancas{
+    width: 409px;
+    height: 46px;
 
-
+    font-family: 'Special Elite';
+    font-style: normal;
     font-weight: 400;
-    font-size: 25px;
-    line-height: 31px;
+    font-size: 42.1429px;
+    line-height: 42px;
     text-align: center;
 
-    color: var(--marromclaro);
-
+    color: var(--roxoclaro);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* vinheta na pagina toda */
-.vinheta{
+#texto11{
+    height: 104px;
+    text-align: center;
+}
+#texto12{
+    height: 198px;    
+}
+.imagens-brancas{
     /* posição */
-    margin-top: -54.2%;
-    position: relative;
     display: flex;
 
-    /* conversar com o professor sobre isso  */
+    /* configuração */
+    width: 80rem;
+    justify-content: space-around;
+}
+#imagem5{
+    /* configuração */
+    width: 15rem;
+    height: 15rem;
+}
+.legendas-imagens-brancas{
+    /* posição */
+    display: flex;
+    position: relative;
+
+    /* configuração */
+    width: 80rem;
+    justify-content: space-around;
+}
+#legenda-brancas{
+    /* configuração */
+    width: 212px;
+    height: 30px;
+
+    /* configuração da letra */
+    text-align: center;
+}
+
+.botao3{
+    display: flex;
+    position: relative;
+    top: -3rem;
+}
+#botao3{
+    /* posição */
+    display: flex;
+    position: relative;
+    top: -0.5rem;
+    left: 1rem;
+}
+.div-texto-oculto3{
+    /* posição */
+    display: none;
+
+    /* configuração */
+    width: 80rem;
+    height: 15rem;
+    justify-content: center;
     
+}
+.retangulo-texto-oculto3{
     /* configuração */
-    background-image: url(../assets/vinheta.png);
-    height: 1010px;
-    width: auto;
-    background-size: 100%;
-    opacity: 0.5;
+    justify-content: center;
+    width: 60rem;
+    height: 11rem;
+    background: var(--marromclaro);
+    border: 1.84865px solid var(--marromescuro);
+    border-radius: 0px 0px 27px 27px;
+    padding: 0  10px;
 }
-
-/* div das pegadas */
-.sombra-pegada{
-    /* posição */
-    position: relative;
-    display: flex;
-    margin-top: -50%;
-
-}
-
-/* pegada localizada no inferior da pagina */
-#pegada-inferior{
-    /* posição */
-    margin-left: 10rem;
-    margin-top: 40rem;
-
+#texto-oculto3{
     /* configuração */
-    width: 15%;
-    height: 15%;
-}
+    padding: 0 20px;
 
-/* pegada localizada no superior da pagina */
-#pegada-superior{
-     /* posição */
-    margin-left: 56rem;
-    margin-top: 11rem;
-
-     /* configuração */
-     width: 15%;
-     height: 15%;
+    /* configuração letra */
+    color: var(--marromescuro);
 }
 
 
 
-/* reponsividade */
-@media screen and (min-width: 1000px) {
-    .vinheta {
-      height: 1030px;
-    }
-}
-@media screen and (min-width: 2200px) {
-    .vinheta {
-      height: 1400px;
-    }
-}
+
+
+
+
+
+
 
 
 

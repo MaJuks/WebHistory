@@ -18,16 +18,30 @@ function botao_clicado1(){
 }
 function botao_clicado2(){
     if(document.getElementById("botao2").checked){
-        var xxx = document.getElementById('div-texto-oculto2').style.display = 'flex';
-        var x = document.getElementById('prego7').style.top = '107.5rem';
-        var x = document.getElementById('prego8').style.top = '107.5rem';
+        var yyy = document.getElementById('div-texto-oculto2').style.display = 'flex';
+        var y = document.getElementById('prego7').style.top = '107.5rem';
+        var y = document.getElementById('prego8').style.top = '107.5rem';
 
 
     }
     else{
-        var xxx = document.getElementById('div-texto-oculto2').style.display = 'none';
-        var x = document.getElementById('prego7').style.top = '91rem';
-        var x = document.getElementById('prego8').style.top = '91rem';
+        var yyy = document.getElementById('div-texto-oculto2').style.display = 'none';
+        var y = document.getElementById('prego7').style.top = '91rem';
+        var y = document.getElementById('prego8').style.top = '91rem';
+
+
+    }
+}
+function botao_clicado3(){
+    if(document.getElementById("botao3").checked){
+        var zzz = document.getElementById('div-texto-oculto3').style.display = 'flex';
+ 
+
+
+    }
+    else{
+        var zzz = document.getElementById('div-texto-oculto3').style.display = 'none';
+
 
 
     }

@@ -12,6 +12,26 @@
         <title>My Dames's History</title>
     </head>
 <body>
+
+    <section class="shadows">
+         <!-- div pai das sombras -->
+        <div class="shadows-pai">
+            <div class="vinheta"></div>
+            <div class="sombras-teste">
+                <div class="sombra-planta1">
+                    <!-- <img src="../assets/sombra_planta1.png" id="sombra-inferior"> -->
+                    <img src="../assets/pegada.png" id="pegada-inferior">
+                </div>
+
+                <!-- sombra da planta no canto superior direito -->
+                <div class="sombra-planta2">
+                    <img src="../assets/sombra_planta2.png" id="sombra-superior">
+                    <img src="../assets/pegada.png" id="pegada-superior">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="header">
         <!-- div pai -->
         <div class="header-pai">
@@ -31,7 +51,7 @@
         <!-- linha que separa o cabeçario -->
         <hr>
     </section>
-    
+
 
 
     <section class="main">
@@ -42,7 +62,7 @@
             <div class="fundo-sombra-titulo"></div>
 
             <!-- box de introduçao -->
-            <div class="introducao">
+            <div class="introducao" id="aa">
                 <!-- preguinhos no canto -->
                 <div class="preguinhos" id="prego1" ></div>
                 <div class="preguinhos" id="prego2" ></div>
@@ -56,7 +76,7 @@
                         do período colonial, fator que contribuiu para a <br>
                         miscigenação de brancos com <span style="color: var(--amareloclaro)"> negras</span> e  <span style="color: var(--rosa)">índias</span> - nos <br>
                         primeiros e pequenos povoados que se formavam, havia <br>
-                        tanto <span style="color: var(--roxoclaro)"> mulheres portuguesas</span> quanto<span style="color: var(--rosa)"> índias</span>, <span style="color: var(--amareloclaro)">africanas</span>  e <br> 
+                        tanto <span style="color: var(--roxoclaro)"> mulheres portuguesas</span> quanto<span style="color: var(--rosa)"> índias</span>, <span style="color: var(--amareloclaro)">africanas</span>  e <br>
                         <span style="color: var(--amareloclaro)">mestiças</span>, sendo estas livres ou escravas.</p>
                 </div>
 
@@ -70,7 +90,7 @@
                     <input type="checkbox" class="input-botao1" id="botao1" onclick="botao_clicado1()">
                     <label for="botao1" class="label-botao1"></label>
                 </div>
-                
+
                 <!-- texto2 -->
                 <div class="texto2">
                     <p id="texto2">A sociedade colonizadora como um todo foi explicitamente dividida por etnia, o <br>
@@ -109,10 +129,10 @@
                     <a href="#titulo-mulheres-indigenas" id="titulo-mulheres"><span style="color: var(--rosa)">Mulheres Indígenas</span></a>
                 </div>
                 <div class="caixa-mulheres">
-                    <a href="" id="titulo-mulheres"><span style="color: var(--amareloclaro)">Mulheres Pretas</span> </a>
+                    <a href="#titulo-mulheres-pretas" id="titulo-mulheres"><span style="color: var(--amareloclaro)">Mulheres Pretas</span> </a>
                 </div>
                 <div class="caixa-mulheres">
-                    <a href="" id="titulo-mulheres"><span style="color: var(--roxoclaro)">Mulheres Brancas</span></a>
+                    <a href="#titulo-mulheres-brancas" id="titulo-mulheres"><span style="color: var(--roxoclaro)">Mulheres Brancas</span></a>
                 </div>
             </div>
 
@@ -146,10 +166,10 @@
                     esmagada que se torna extremamente difícil seu resgate” (Breve <br>
                     História do Feminismo no Brasil)</p>
                 <!-- texto5 -->
-                <p id="texto5">A cultura indígena foi duramente reprimida e apagada. Os 
+                <p id="texto5">A cultura indígena foi duramente reprimida e apagada. Os
                     colonizadores viam os índios da seguinte maneira: os homens para o
-                    trabalho escravo e as mulheres como concubinas ou empregadas domésticas. 
-                    Eram proibidos de falar suas línguas nativas e praticar tradições de seus 
+                    trabalho escravo e as mulheres como concubinas ou empregadas domésticas.
+                    Eram proibidos de falar suas línguas nativas e praticar tradições de seus
                     povos. </p>
                 <!-- linha que indica que há texto (para ler mais sobre) -->
                 <div class="linha1"><hr id="linha-oculta"></div>
@@ -169,9 +189,9 @@
                 </nav>
                 <!-- texto5 -->
                 <p id="texto5">“[...] o indígena, que via na <span style="color: var(--rosa)">mulher</span> uma companheira,
-                     não via razão para as diferenças de oportunidades educacionais. Não 
-                     viam o “perigo” que pudesse representar o fato de suas mulheres aprenderem 
-                     a ler e a escrever, como os brancos afirmavam. Condenar ao analfabetismo e 
+                     não via razão para as diferenças de oportunidades educacionais. Não
+                     viam o “perigo” que pudesse representar o fato de suas mulheres aprenderem
+                     a ler e a escrever, como os brancos afirmavam. Condenar ao analfabetismo e
                      a ignorância o sexo feminino lhes parecia uma ideia absurda.” - Arilda Inês Miranda
                       Ribeiro, A Educação das Mulheres na Colônia.</p>
                 <div class="preguinhos" id="prego7" ></div>
@@ -181,21 +201,21 @@
             <div class="mulheres-pretas">
                 <div class="preguinhos" id="prego9" ></div>
                 <div class="preguinhos" id="prego10" ></div>
-                <h1 id="titulo-mulheres-pretas">Mulheres Pretas</h1>
-                <p id="texto6">As negras, quando na lavoura, executavam as mesmas tarefas dos homens. O trabalho era <br>
-                    de tal forma árduo que a média de vida de um escravo nas plantações ou minas era estimada <br>
-                    entre sete e dez anos. Já no meio doméstico, além de trabalharem na casa como tal, eram usadas <br>
-                    como instrumento de prazer sexual de seu senhor, frequentemente sendo “alugadas” a <br>
+                <h1 id="titulo-mulheres-pretas">Mulheres Pretas e Mestiças</h1>
+                <p id="texto6">As <span style="color: var(--amareloclaro)">negras</span>, quando na lavoura, executavam as mesmas tarefas dos homens. O trabalho era
+                    de tal forma árduo que a média de vida de um escravo nas plantações ou minas era estimada
+                    entre sete e dez anos. Já no meio doméstico, além de trabalharem na casa como tal, eram usadas
+                    como instrumento de prazer sexual de seu senhor, frequentemente sendo “alugadas” a
                     outros ricos.</p>
                 <p id="texto7">Em sua condição de escrava, também lhe era atribuída a função de reproduzir a força de
                      trabalho. “Muitas resistiram [...], praticando o aborto clandestino como forma de impedir que
                       novos escravos surgissem” (Breve História do Feminismo no Brasil).</p>
                 <p id="texto8">
-                    Muitas escravas aceitavam ser concubinas para conquistar <br>
-                    liberdade e alforria, além da ascensão social e a <br>
-                    possibilidade de ter um filho de pele clara, o que muitas <br>
-                    vezes livrava a criança da escravidão. Porém, negras de <br>
-                    riqueza e prestígio sustentadas por homens ricos sofriam <br>
+                    Muitas <span style="color: var(--amareloclaro)">escravas</span> aceitavam ser concubinas para conquistar
+                    liberdade e alforria, além da ascensão social e a
+                    possibilidade de ter um filho de pele clara, o que muitas
+                    vezes livrava a criança da escravidão. Porém, <span style="color: var(--amareloclaro)">negras </span>de
+                    riqueza e prestígio sustentadas por homens ricos sofriam
                     intensa discriminação, consideradas “promíscuas” e “desvirtuadas”.
                 </p>
                 <div class="imagem3">
@@ -204,16 +224,67 @@
                 <div class="imagem4">
                     <img src="../assets/teste1.png" alt="">
                 </div>
-                <p id="texto9">Nos quilombos, forma principal de resistência negra, as
-                     mulheres eram minoria, sobretudo devido ao tráfico
+                <p id="texto9">Nos quilombos, forma principal de <span style="color: var(--amareloclaro)">resistência negra</span>, as
+                    <span style="color: var(--amareloclaro)">mulheres</span> eram minoria, sobretudo devido ao tráfico
                       escravo que priorizava homens. Isso trouxe dificuldades
                        para a proposta organizativa dos negros e uma das
                         soluções foi a formação da família poliândrica, em que
-                         uma mulher tinha até cinco maridos.</p>
+                         uma <span style="color: var(--amareloclaro)">mulher </span>tinha até cinco maridos.</p>
                 <p id="texto10">Nos séculos XVII e XVIII, organizaram-se as Bandeiras, expedições que percorriam os sertões
                      por meses em busca de metais, pedras preciosas e captura de indígenas. Somente concubinas
                       e mestiças atuaram nas bandeiras, levadas para “servir os maridos na cama e na mesa” (Breve
                        História do Feminismo no Brasil).</p>
+                <div class="preguinhos" id="prego11" ></div>
+                <div class="preguinhos" id="prego12" ></div>
+            </div>
+
+            <div class="mulheres-brancas">
+                <div class="preguinhos" id="prego13" ></div>
+                <div class="preguinhos" id="prego14" ></div>
+                 <!-- titulo -->
+                <h1 id="titulo-mulheres-brancas">Mulheres Brancas</h1>
+                <p id="texto11">O papel que cabia a <span style="color: var(--roxoclaro)">mulher </span>da classe dominante (branca, esposa de proprietários de terras
+                     e escravos) era, obrigatoriamente, o de esposa e mãe. Suas únicas funções seriam gerar
+                      descendentes, realizar os cuidados do lar e satisfazer os maridos.</p>
+                <p id="texto12">A valorização do casamento era forte na era colonial, instituindo às <span style="color: var(--roxoclaro)">mulheres</span> um padrão
+                     social de “boa esposa”. Somente o casamento constituía uma família. Filhos concebidos fora
+                      do casamento não tinham nenhum direito, rotulados como filhos “ilegítimos”. O pai não
+                      assumia qualquer responsabilidade por frutos de relacionamentos extraconjugais - quem era
+                      punida era a mãe, que acabava tendo que sustentar sozinha o filho, pagando o preço pela
+                      “desonra” de ter um filho bastardo.</p>
+                <div class="imagens-brancas">
+                    <img src="../assets/teste1.png" id="imagem5" alt="">
+                    <img src="../assets/teste1.png" id="imagem5" alt="">
+                    <img src="../assets/teste1.png" id="imagem5" alt="">
+                </div>
+                <div class="legendas-imagens-brancas">
+                    <p id="legenda-brancas">legenda</p>
+                    <p id="legenda-brancas">legenda</p>
+                    <p id="legenda-brancas">legenda</p>
+                </div>
+                <p id="texto13">
+                    A educação das  <span style="color: var(--roxoclaro)">meninas</span>, que ficava a cargo da Igreja e dos conventos, era extremamente
+                    rasa, apenas para reproduzir os costumes da sociedade colonial. Era voltada a atividades do lar
+                    como costura e cozinha em vez de instrução propriamente dita: as <span style="color: var(--roxoclaro)">jovens</span> eram ensinadas a
+                    lavar, coser e fazer renda, com o propósito de se tornarem “boas esposas”.
+                </p>
+                <!-- linha que indica que há texto (para ler mais sobre) -->
+                <div class="linha1"><hr id="linha-oculta"></div>
+                <!-- botão para clicar e saber mais -->
+                <div class="botao3">
+                    <input type="checkbox" class="input-botao1" id="botao3" onclick="botao_clicado3()">
+                    <label for="botao3" class="label-botao1"></label>
+                </div>
+                <!-- texto oculto (aparece quando clica) -->
+                <nav class="div-texto-oculto3" id="div-texto-oculto3">
+                    <div class="retangulo-texto-oculto3" >
+                        <p id="texto-oculto3">
+                            Caso a menina, quando jovem, demonstrasse sinais de rebeldia ou mal comportamento, era
+                            encaminhada diretamente para internatos e conventos. Essa era também uma das poucas
+                            alternativas para as mulheres brancas quando não conseguiam casamento.
+                        </p>
+                </nav>
+
 
             </div>
 
@@ -221,7 +292,7 @@
 
     </section>
 
-    
+
     <section class="footer">
         <div class="footer-pai">
 
@@ -230,16 +301,7 @@
 
 
 
-    <section class="shadows">
-         <!-- div pai das sombras -->
-        <!-- <div class="shadows-pai">
-            <div class="vinheta"></div>
-            <div class="sombra-pegada">
-                <img src="../assets/pegada.png" id="pegada-inferior">
-                <img src="../assets/pegada.png" id="pegada-superior">
-            </div>
-        </div> -->
-    </section>
+
 
 
 
