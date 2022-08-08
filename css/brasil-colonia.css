@@ -352,6 +352,7 @@ hr{
 
 /* escondendo checkbox */
 .input-botao1{
+    
     /* posição */
     position: absolute;
     top: 14px;
@@ -526,16 +527,7 @@ hr{
     line-height: 31px;
     color: var(--branco);
 }
-#prego6{
-    left: 76.2rem;
-}
-#prego7{
-    left: 76.2rem;
-    top:91rem
-}
-#prego8{
-    top:91rem
-}
+
 #titulo-mulheres-indigenas{
     /* configuração */
     width: 463.57px;
@@ -797,7 +789,7 @@ hr{
 .botao3{
     display: flex;
     position: relative;
-    top: -3rem;
+    top: -2rem;
 }
 #botao3{
     /* posição */
@@ -913,11 +905,21 @@ hr{
     font-size: 42.1429px;
     line-height: 42px;
     text-align: center;
+    color: var(--amareloclaro);
+
 }
 
 .imagem-mulher1{
     display: flex;
     position: relative;
+}
+#imagem6{
+    display: flex;
+    position: relative;
+    width: 80%;
+    height: 80%;
+    top: 3rem;
+    left: 6rem;
 }
 
 
@@ -925,7 +927,7 @@ hr{
     display: flex;
     position: relative;
     display: flex;
-    padding-left: 155px;
+    padding-left: 14rem;
 
     width: 80rem;
     font-size: 20px;
@@ -938,54 +940,76 @@ hr{
     display: flex;
 
     margin-top: 3rem;
-    left: 5.5rem;
+    left: 4.5rem;
 
     
-width: 400px;
-height: 38px;
+    width: 550px;
+    height: 38px;
 
-font-family: 'Special Elite';
-font-style: normal;
-font-weight: 400;
-font-size: 38px;
-line-height: 38px;
-color: var(--rosa);
+    font-family: 'Special Elite';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 38px;
+    color: var(--rosa);
 
 }
 #texto-mulher1{
     margin-top: 6rem;
-    margin-left: -8.5rem;
+    margin-left: -30rem;
     width: 550px;
     height: 227px;
 
 
 }
+#texto-mulher2{
+    display: flex;
+    position: relative;
+    width: 550px;
+    height: 227px;
+}
 
 
 .botao4{
+    z-index: 100;
+    height: 0;
+    width: 80rem;
+    top: 10rem;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+#btn{
+    z-index: 100;
+
+    /* posição */
+    display:flex ;
+    position: relative;
+    /* configuração */
     width: 0; 
-    height: 0; 
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid transparent;
+    height: 0;
+    background-color: var(--marromescuro2); ;
+    border-top: 25px solid var(--marromescuro2);
+    border-bottom: 25px solid var(--marromescuro2);
+    border-right: 25px solid var(--marromescuro2);
     border-left: 25px solid var(--amareloescuro);
 }
 #btn2{
+    z-index: 100;
+
     /* posição */
     display:flex ;
+    position: relative;
 
     /* configuração */
     width: 0; 
-    height: 0; 
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid transparent;
-    border-left: 25px solid var(--amareloescuro);
+    height: 0;
+    background-color: var(--marromescuro2); ;
+    border-top: 25px solid var(--marromescuro2);
+    border-bottom: 25px solid var(--marromescuro2);
+    border-left: 25px solid var(--marromescuro2);
+    border-right: 25px solid var(--amareloescuro);
 }
-
-
-
-
-
-
 
 
 
