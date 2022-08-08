@@ -40,11 +40,11 @@ body{
 
 
 
+/* ------------------------------------------------------ */
+/* section shadows */
+/* ------------------------------------------------------ */
 
-
-
-/* vinheta na pagina toda */
-.vinheta{
+.vignette{
     /* posição */
     margin-top: rem;
     position: absolute;
@@ -59,10 +59,10 @@ body{
     background-size: 100%;
     opacity: 0.5;
 }
-.sombras-teste{
+.shadows-div{
     height: 0rem;
 }
-#pegada-inferior{
+#bottom-shadowtrack{
     z-index: 100;
     display: flex;
     position: relative;
@@ -70,25 +70,22 @@ body{
 
     top: 90rem;    
 }
-#sombra-superior{
+#top-shadowplant{
     z-index: 100;
     display: flex;
     position: relative;
     left: 84rem;
     top: -30rem;
 }
-#pegada-superior{
+#top-shadowtrack{
     display: flex;
     position: relative;
     left: 15rem;
 }
 
-
-
-
-
-
-
+/* ------------------------------------------------------ */
+/* header */
+/* ------------------------------------------------------ */
 
 /* div-pai da section header */
 .header-pai {
@@ -99,7 +96,7 @@ body{
 }
 
 /* titulo da sub-pagina "web history */
-#titulo {
+#name-web{
     
     /* posicao */
     position: relative;
@@ -122,7 +119,7 @@ body{
     -webkit-text-stroke: 1px var(--preto);
 }
 /* alteração quando passa o mouse */
-#titulo:hover{
+#name-web:hover{
     /* posição */
     transform: scale(1.05);
 }
@@ -208,7 +205,7 @@ hr{
     justify-items: center;
 }
 /* nome do subsite "BRASIL COLONIA" */
-#titulo2 {
+#title{
     /* posição */
     margin-top: 3rem;
     
@@ -235,7 +232,7 @@ hr{
     animation: type 4s steps(60, end) ; 
 }
 /* falso cursor piscando */
-#risco{
+#cursor{
     animation: blink 1s infinite;
 
 }
@@ -250,22 +247,8 @@ hr{
 }
 
 
-/* sombra atras do titulo "a trajetoria da mulher na historia" */
-.fundo-sombra-titulo{
-    /* posição */
-    display: flex;
-    position: relative;
-    margin-top: -11.5rem;
-
-    /* configuração */
-    opacity: 0.7;
-    height: 15rem;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(6, 0, 0, 0.4) 0%, rgba(217, 217, 217, 0) 100%);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
 /* bloco de introdução */
-.introducao{
+.introduction{
     /* posição */
     display: flex;
     position: relative;
@@ -286,7 +269,7 @@ hr{
     color: var(--branco);
 
 }
-.preguinhos{
+.circle{
     /* posição */
     box-sizing: border-box;
     position: absolute;
@@ -302,48 +285,48 @@ hr{
     border: 1px solid #000000;
     border-radius: 15px;
 }
-#prego1{
+#circle1{
     /* posição */
     left: 1.5rem;
     top: 1.5rem;
 }
-#prego2{
+#circle2{
     /* posição */
     left: 77rem;
     top: 1.5rem;
 }
-#prego3{
+#circle3{
     /* posição */
     left: 77rem;
     margin-top: 38rem;
 }
-#prego4{
+#circle4{
     /* posição */
     left: 1.5rem;
     margin-top: 38rem;
 }
 
 
-.texto1{
+.text1{
     /* configuração */
     width: 41rem;
     height: 15rem;
 }
-#texto1{
+#text1{
     /* posição */
     margin-top: 3rem;
     margin-left: 3rem;
 
     /* cor */
 }
-#imagem1{
+#img1{
     /* posição    */
     position: relative;
     margin-left: 6rem;
     margin-top: 3rem;
 }
 
-.botao1{
+.btn1{
     /* posição */
     position: relative;
     top: 29rem;
@@ -351,14 +334,14 @@ hr{
 }
 
 /* escondendo checkbox */
-.input-botao1{
+.input-btn1{
     
     /* posição */
     position: absolute;
     top: 14px;
 }
 /* posicionando o label por cima */
-.label-botao1{  
+.label-btn1{  
     /* posição */
     z-index: 100;
     cursor: pointer;
@@ -366,12 +349,12 @@ hr{
     position: relative;
 }
 /* transição do botao clicado e nao clicado */
-.label-botao1::before,
-.label-botao1::after { 
+.label-btn1::before,
+.label-btn1::after { 
     content: "";    
 }
 /* botão antes de ser clicado (formato de triangulo) */
-.label-botao1::before{
+.label-btn1::before{
     /* posição */
     display:flex ;
 
@@ -383,7 +366,7 @@ hr{
     border-left: 25px solid var(--amareloescuro);
 }
 /* botão depois de ser clicado (formato de triangulo) */
-.input-botao1:checked + .label-botao1::before{
+.input-btn1:checked + .label-btn1::before{
     /* posição */
     margin-left: -15px;
     margin-top: 14px;
@@ -397,11 +380,11 @@ hr{
 }
 
 /* linha na seleção (propósito: acessibilidade) */
-.input-botao1:focus+.label-botao1::before{
+.input-btn1:focus+.label-btn1::before{
     outline:1px dotted #CCC;
 }
 
-.texto2{
+.text2{
     /* posição */
     position: relative;
     display: flex;
@@ -412,7 +395,7 @@ hr{
     text-align: center;
 
 }
-.linha1{
+.line{
     /* posição */
     position: relative;
     display: flex;
@@ -422,7 +405,7 @@ hr{
     height: 20px;
     justify-content: flex-start;
 }
-#linha-oculta{
+#hidden-line{
     /* posição */
     z-index: 100;
     position: relative;
@@ -433,7 +416,7 @@ hr{
     border: 2px solid var(--preto);
     filter: blur(1px);
 }
-.div-texto-oculto1{
+.div-hidden-text1{
     /* posição */
     display: none;
 
@@ -443,7 +426,7 @@ hr{
     justify-content: center;
     
 }
-.retangulo-texto-oculto1{
+.box-hidden-text1{
     /* configuração */
     justify-content: center;
     width: 60rem;
@@ -453,7 +436,7 @@ hr{
     border-radius: 0px 0px 27px 27px;
     padding: 0  10px;
 }
-#texto-oculto1{
+#hidden-text1{
     /* configuração */
     padding: 0 20px;
 
@@ -466,7 +449,7 @@ hr{
     color: var(--marromescuro);
 }
  
-.mulheres-caixas{
+.div-box-women{
     /* posição */
     display: flex;
     position: relative;
@@ -476,7 +459,7 @@ hr{
     justify-content: space-around; 
     margin: 5rem; 
 }
-.caixa-mulheres{
+.box-women{
     /* posição */
     display: flex;
     position: relative;
@@ -490,7 +473,7 @@ hr{
     border: 1px solid  var(--preto);
     border-radius: 43px;
 }
-#titulo-mulheres{
+#title-women{
     /* configuração */
     z-index: 100;
     width: 190px;
@@ -506,7 +489,7 @@ hr{
     color: var(--marromclaro);
 }
 
-.mulheres-indigenas{
+.women-native{
     /* posição */
     display: flex;
     position: relative;
@@ -528,7 +511,7 @@ hr{
     color: var(--branco);
 }
 
-#titulo-mulheres-indigenas{
+#title-women-native{
     /* configuração */
     width: 463.57px;
     height: 59px;
@@ -542,7 +525,7 @@ hr{
     text-align: center;
     color:var(--rosa);
 }
-#texto3{
+#text3{
     /* posição */
     position: relative;
     left: 1rem;
@@ -553,7 +536,7 @@ hr{
 
     /* configuração da letra */
 }
-.imagens-indigenas{
+.img-native{
     /* posição */
     display: flex;
 
@@ -561,12 +544,12 @@ hr{
     width: 80rem;
     justify-content: space-around;
 }
-#imagem2{
+#img2{
     /* configuração */
     width: 15rem;
     height: 15rem;
 }
-.legendas-imagens-indigenas{
+.subtitle-img-native{
     /* posição */
     display: flex;
     position: relative;
@@ -575,7 +558,7 @@ hr{
     width: 80rem;
     justify-content: space-around;
 }
-#legenda-indigenas{
+#subtitle-native{
     /* configuração */
     width: 212px;
     height: 30px;
@@ -583,14 +566,14 @@ hr{
     /* configuração da letra */
     text-align: center;
 }
-#texto4{
+#text4{
     /* configuração */
     width: 80rem;
     height: 109px;
 
     /* configuração da letra */
     text-align: center;}
-#texto5{
+#text5{
     /* posição */
     margin-left: 8rem;
 
@@ -600,19 +583,19 @@ hr{
 
     /* configuração da letra */
 }
-.botao2{
+.btn2{
     display: flex;
     position: relative;
     top: -3rem;
 }
-#botao2{
+#btn2{
     /* posição */
     display: flex;
     position: relative;
     top: -0.5rem;
     left: 1rem;
 }
-.div-texto-oculto2{
+.div-hidden-text2{
     /* posição */
     display: none;
 
@@ -622,7 +605,7 @@ hr{
     justify-content: center;
     
 }
-.retangulo-texto-oculto2{
+.box-hidden-text2{
     /* configuração */
     width: 60rem;
     height: 10rem;
@@ -631,11 +614,11 @@ hr{
     border-radius: 0px 0px 27px 27px;
     padding: 0  10px;
 }
-#texto-oculto2{
+#hidden-text2{
     /* configuração da letra */
     color: var(--marromescuro);
 }
-#texto5{
+#text5{
     /* posição */
     margin-left: 0;
 
@@ -647,7 +630,7 @@ hr{
     text-align: center;
 
 }
-.mulheres-pretas{
+.women-black{
     /* posição */
     display: flex;
     position: relative;
@@ -669,7 +652,7 @@ hr{
     line-height: 31px;
     color: var(--branco);
 }
-#titulo-mulheres-pretas{
+#title-women-black{
     /* configuração */
     width: 600px;
     height: 59px;
@@ -683,36 +666,36 @@ hr{
     text-align: center;
     color:var(--amareloclaro);
 }
-#texto6{
+#text6{
     padding: 10px;
     height: 169px;
 }
-#texto7{
+#text7{
     padding: 10px;
     height: 111px;
     text-align: center;
 
 }
-#texto8{
+#text8{
     width: 686px;
     height: 205px;
 
 }
-#texto9{
+#text9{
     
     width: 677px;
     height: 205px;
     text-align: right;
 
 }
-#texto10{
+#text10{
     padding: 10px;
     height: 138px;
     text-align: center;
 
 
 }
-.mulheres-brancas{
+.women-white{
     /* posição */
     display: flex;
     position: relative;
@@ -735,7 +718,7 @@ hr{
     color: var(--branco);
 
 }
-#titulo-mulheres-brancas{
+#title-women-white{
     width: 409px;
     height: 46px;
 
@@ -748,14 +731,14 @@ hr{
 
     color: var(--roxoclaro);
 }
-#texto11{
+#text11{
     height: 104px;
     text-align: center;
 }
-#texto12{
+#text12{
     height: 198px;    
 }
-.imagens-brancas{
+.img-white{
     /* posição */
     display: flex;
 
@@ -763,12 +746,12 @@ hr{
     width: 80rem;
     justify-content: space-around;
 }
-#imagem5{
+#img5{
     /* configuração */
     width: 15rem;
     height: 15rem;
 }
-.legendas-imagens-brancas{
+.subtitle-img-white{
     /* posição */
     display: flex;
     position: relative;
@@ -777,7 +760,7 @@ hr{
     width: 80rem;
     justify-content: space-around;
 }
-#legenda-brancas{
+#subtitle-white{
     /* configuração */
     width: 212px;
     height: 30px;
@@ -786,19 +769,19 @@ hr{
     text-align: center;
 }
 
-.botao3{
+.btn3{
     display: flex;
     position: relative;
     top: -2rem;
 }
-#botao3{
+#btn3{
     /* posição */
     display: flex;
     position: relative;
     top: -0.5rem;
     left: 1rem;
 }
-.div-texto-oculto3{
+.div-hidden-text3{
     /* posição */
     display: none;
 
@@ -808,7 +791,7 @@ hr{
     justify-content: center;
     
 }
-.retangulo-texto-oculto3{
+.box-hidden-text3{
     /* configuração */
     justify-content: center;
     width: 60rem;
@@ -818,7 +801,7 @@ hr{
     border-radius: 0px 0px 27px 27px;
     padding: 0  10px;
 }
-#texto-oculto3{
+#hidden-text3{
     /* configuração */
     padding: 0 20px;
 
@@ -826,7 +809,7 @@ hr{
     color: var(--marromescuro);
 }
 
-.mulheres-destaque{
+.women-especific{
      /* posição */
      display: flex;
      position: relative;
@@ -848,53 +831,8 @@ hr{
      line-height: 31px;
      color: var(--branco);
 }
-#mulher1{
-    width: 80rem;
 
-    flex-wrap: wrap;
-    display: flex;
-    position: relative;
-
-}
-#mulher2{
-    width: 80rem;
-    flex-wrap: wrap;
-    display: none;
-    position: relative;
-
-}
-#mulher3{
-    width: 80rem;
-    flex-wrap: wrap;
-    display: none;
-    position: relative;
-}
-#mulher4{
-    width: 80rem;
-    flex-wrap: wrap;
-    display: none;
-    position: relative;
-}
-#mulher5{
-    width: 80rem;
-    flex-wrap: wrap;
-    display: none;
-    position: relative;
-}
-#mulher6{
-    width: 80rem;
-    flex-wrap: wrap;
-    display: none;
-    position: relative;
-}
-#mulher7{
-    width: 80rem;
-    flex-wrap: wrap;
-    display: none;
-    position: relative;
-}
-
-#titulo-mulheres-destaque{    
+#title-women-especific{    
     display: flex;
     position: relative;
     width: 80rem;
@@ -909,11 +847,98 @@ hr{
 
 }
 
-.imagem-mulher1{
+
+.btn4{
+    z-index: 100;
+    height: 0;
+    width: 80rem;
+    top: 10rem;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+#btn4-5{
+    z-index: 100;
+
+    /* posição */
+    display:flex ;
+    position: relative;
+    /* configuração */
+    width: 0; 
+    height: 0;
+    background-color: var(--marromescuro2); ;
+    border-top: 25px solid var(--marromescuro2);
+    border-bottom: 25px solid var(--marromescuro2);
+    border-right: 25px solid var(--marromescuro2);
+    border-left: 25px solid var(--amareloescuro);
+}
+#btn4{
+    z-index: 100;
+
+    /* posição */
+    display:flex ;
+    position: relative;
+
+    /* configuração */
+    width: 0; 
+    height: 0;
+    background-color: var(--marromescuro2); ;
+    border-top: 25px solid var(--marromescuro2);
+    border-bottom: 25px solid var(--marromescuro2);
+    border-left: 25px solid var(--marromescuro2);
+    border-right: 25px solid var(--amareloescuro);
+}
+#woman1{
+    width: 80rem;
+
+    flex-wrap: wrap;
+    display: flex;
+    position: relative;
+
+}
+#woman2{
+    width: 80rem;
+    flex-wrap: wrap;
+    display: none;
+    position: relative;
+
+}
+#woman3{
+    width: 80rem;
+    flex-wrap: wrap;
+    display: none;
+    position: relative;
+}
+#woman4{
+    width: 80rem;
+    flex-wrap: wrap;
+    display: none;
+    position: relative;
+}
+#woman5{
+    width: 80rem;
+    flex-wrap: wrap;
+    display: none;
+    position: relative;
+}
+#woman6{
+    width: 80rem;
+    flex-wrap: wrap;
+    display: none;
+    position: relative;
+}
+#woman7{
+    width: 80rem;
+    flex-wrap: wrap;
+    display: none;
+    position: relative;
+}
+
+.img-woman1{
     display: flex;
     position: relative;
 }
-#imagem6{
+#img6{
     display: flex;
     position: relative;
     width: 80%;
@@ -923,7 +948,7 @@ hr{
 }
 
 
-#legenda-mulher1{
+#subtitle-woman1{
     display: flex;
     position: relative;
     display: flex;
@@ -934,7 +959,7 @@ hr{
     text-align: center; 
 
 }
-#subtitulo-mulher1{
+#title-woman1{
     display: flex;
     position: relative;
     display: flex;
@@ -954,7 +979,7 @@ hr{
     color: var(--rosa);
 
 }
-#texto-mulher1{
+#text-woman1{
     margin-top: 6rem;
     margin-left: -30rem;
     width: 550px;
@@ -962,54 +987,9 @@ hr{
 
 
 }
-#texto-mulher2{
-    display: flex;
-    position: relative;
-    width: 550px;
-    height: 227px;
-}
 
 
-.botao4{
-    z-index: 100;
-    height: 0;
-    width: 80rem;
-    top: 10rem;
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-}
-#btn{
-    z-index: 100;
 
-    /* posição */
-    display:flex ;
-    position: relative;
-    /* configuração */
-    width: 0; 
-    height: 0;
-    background-color: var(--marromescuro2); ;
-    border-top: 25px solid var(--marromescuro2);
-    border-bottom: 25px solid var(--marromescuro2);
-    border-right: 25px solid var(--marromescuro2);
-    border-left: 25px solid var(--amareloescuro);
-}
-#btn2{
-    z-index: 100;
-
-    /* posição */
-    display:flex ;
-    position: relative;
-
-    /* configuração */
-    width: 0; 
-    height: 0;
-    background-color: var(--marromescuro2); ;
-    border-top: 25px solid var(--marromescuro2);
-    border-bottom: 25px solid var(--marromescuro2);
-    border-left: 25px solid var(--marromescuro2);
-    border-right: 25px solid var(--amareloescuro);
-}
 
 
 
