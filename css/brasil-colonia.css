@@ -256,15 +256,34 @@ hr{
 }
 
 .click-here{
-    width: 200px;
+    z-index: 100;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 250px;
     justify-content: center;
-
     height: 0;   
+    top: 45rem;
+    left: 13rem;
+    transform: rotate(-10deg);
+}
+.click-here2{
+    z-index: 100;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 250px;
+    justify-content: center;
+    height: 0;   
+    top: 149rem;
+    left: 10rem;
+    transform: rotate(-10deg);
 }
 #text-click-here{
     position: relative;
     width: 200px;
     height: 44px;
+    margin: 0;
 
 font-family: 'Shadows Into Light';
 font-style: normal;
@@ -280,6 +299,8 @@ color: #E8DACF;
 }
 #img-click-here{
     position: relative;
+    width: 124px;
+    height: 76px;
 }
 /* bloco de introdução */
 .introduction{
