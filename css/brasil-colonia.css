@@ -15,6 +15,7 @@
 
 /* variaveis das cores */
 :root {
+    --branco2:#ffffff ;
     --branco: #faf5f0;
     --marromclaro: #e8dacf;
     --marromintermediario: #d4bda7;
@@ -82,8 +83,26 @@ width: 15%;
     display: flex;
     position: relative;
     left: 84rem;
-    top: -30rem;
+    top: -16rem;
+    /* animações */
+    animation-name: moviment-plant;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
+@keyframes moviment-plant{
+    from{
+        transform: translate(-20px,-20px);
+        z-index: 101;
+
+    }
+    to{
+        z-index: 101;
+
+    }
+}
+
 #top-shadowtrack{
     mix-blend-mode: multiply;
     width: 15%;
@@ -216,14 +235,15 @@ hr{
 /* nome do subsite "BRASIL COLONIA" */
 #title{
     /* posição */
-    margin: 5rem;
+    margin-top:5rem;
+    margin-left:5rem;
+    margin-right: 5rem;
 
     /* configuração da letra */
     z-index: 101;
     text-align: center;
     font-family: 'Special Elite', cursive;
     font-style: normal;
-    font-weight: 400;
     font-size: 65px;
     line-height: 100px;
     text-align: center;
@@ -239,6 +259,38 @@ hr{
     overflow: hidden;
     width: 25em;
     animation: type 4s steps(60, end) ;
+}
+#title2{
+    /* posição */
+    position: relative;
+    top:-2rem;
+
+    /* configuração da letra */
+    z-index: 101;
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 100px;
+    text-align: center;
+
+    /* cor */
+    color: var(--amareloescuro);
+    -webkit-text-stroke: 1px var(--amareloescuro);
+    z-index: 101;
+
+    /* para a animação */
+    white-space: nowrap;
+    overflow: hidden;
+    width: 25em;
+    animation: fade 2s ease-in-out;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    
 }
 /* falso cursor piscando */
 #cursor{
@@ -265,18 +317,6 @@ hr{
     height: 0;   
     top: 45rem;
     left: 13rem;
-    transform: rotate(-10deg);
-}
-.click-here2{
-    z-index: 100;
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    width: 250px;
-    justify-content: center;
-    height: 0;   
-    top: 149rem;
-    left: 10rem;
     transform: rotate(-10deg);
 }
 #text-click-here{
@@ -313,15 +353,15 @@ color: #E8DACF;
     flex-wrap: wrap;
     width: 80rem;
     border: 1px solid #000000;
-    background:var(--marromescuro2);
-    border-radius: 30px;
+    background:var(--marromescuro3);
+    border-radius: 5px;
     /* configuração das letras*/
     font-family: 'Habibi';
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 31px;
-    color: var(--marromclaro);
+    color: var(--branco2);
 
 
 }
@@ -547,7 +587,7 @@ color: #E8DACF;
     font-size: 30px;
     line-height: 30px;
     text-align: center;
-    color: var(--marromclaro);
+    color: var(--branco2);
 }
 
 .women-native{
@@ -562,7 +602,7 @@ color: #E8DACF;
     width: 80rem;
     background: var(--marromescuro2);
     border: 1px solid var(--preto);
-    border-radius: 30px;
+    border-radius: 5px;
 
     /* configuração das letras*/
     font-family: 'Habibi';
@@ -570,7 +610,7 @@ color: #E8DACF;
     font-weight: 400;
     font-size: 25px;
     line-height: 31px;
-    color: var(--marromclaro);
+    color: var(--branco2);
 }
 
 #title-women-native{
@@ -585,7 +625,7 @@ color: #E8DACF;
     font-size: 42.1429px;
     line-height: 42px;
     text-align: center;
-    color:var(--rosa);
+    color:var(--amareloclaro);
 }
 #text3{
     /* posição */
@@ -719,7 +759,7 @@ color: #E8DACF;
     width: 80rem;
     background: var(--marromescuro2);
     border: 1px solid var(--preto);
-    border-radius: 30px;
+    border-radius: 5px;
 
     /* configuração das letras*/
     font-family: 'Habibi';
@@ -727,7 +767,7 @@ color: #E8DACF;
     font-weight: 400;
     font-size: 25px;
     line-height: 31px;
-    color: var(--marromclaro);
+    color: var(--branco2);
 }
 #title-women-black{
     /* configuração */
@@ -784,7 +824,7 @@ color: #E8DACF;
     width: 80rem;
     background: var(--marromescuro2);
     border: 1px solid var(--preto);
-    border-radius: 30px;
+    border-radius: 5px;
 
     /* configuração das letras*/
     font-family: 'Habibi';
@@ -792,7 +832,7 @@ color: #E8DACF;
     font-weight: 400;
     font-size: 25px;
     line-height: 31px;
-    color: var(--marromclaro);
+    color: var(--branco2);
 
 }
 #title-women-white{
@@ -806,7 +846,7 @@ color: #E8DACF;
     line-height: 42px;
     text-align: center;
 
-    color: var(--roxoclaro);
+    color: var(--amareloclaro);
 }
 #text11{
     height: 104px;
@@ -902,7 +942,7 @@ color: #E8DACF;
      width: 80rem;
      background: var(--marromescuro2);
      border: 1px solid var(--preto);
-     border-radius: 30px;
+     border-radius: 5px;
 
      /* configuração das letras*/
      font-family: 'Habibi';
@@ -910,7 +950,7 @@ color: #E8DACF;
      font-weight: 400;
      font-size: 25px;
      line-height: 31px;
-     color: var(--marromclaro);
+     color: var(--branco2);
 }
 
 #title-women-especific{
@@ -951,7 +991,7 @@ color: #E8DACF;
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
     border-right: 25px solid transparent;
-    border-left: 25px solid var(--amareloescuro);
+    border-left: 25px solid var(--roxoescuro);
 }
 #btn4{
     z-index: 100;
@@ -967,7 +1007,7 @@ color: #E8DACF;
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
     border-left: 25px transparent;
-    border-right: 25px solid var(--amareloescuro);
+    border-right: 25px solid var(--roxoescuro);
 }
 #woman1{
     width: 80rem;
@@ -1048,8 +1088,6 @@ color: #E8DACF;
 
 
 }
-
-
 
 
 
