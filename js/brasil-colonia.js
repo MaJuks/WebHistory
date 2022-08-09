@@ -167,11 +167,11 @@ btn4.onclick = function () {
     }
     if(count==2 || count == (1*-5)){
         var sete = document.getElementById('woman1').style.display = 'none';
+        var seis = document.getElementById('woman2').style.display = 'none';
 
-        var seis = document.getElementById('woman2').style.display = 'flex';
-        var anim = document.getElementById('woman2').style.animation = 'fade-left 1s';
+        var cinco = document.getElementById('woman3').style.display = 'flex';
+        var anim = document.getElementById('woman3').style.animation = 'fade-left 1s';
 
-        var cinco = document.getElementById('woman3').style.display = 'none';
         var quatro = document.getElementById('woman4').style.display = 'none';
         var tres = document.getElementById('woman5').style.display = 'none';
         var dois = document.getElementById('woman6').style.display = 'none';
