@@ -314,7 +314,7 @@ color: #E8DACF;
     width: 80rem;
     border: 1px solid #000000;
     background:var(--marromescuro2);
-    border-radius: 43px;
+    border-radius: 30px;
     /* configuração das letras*/
     font-family: 'Habibi';
     font-style: normal;
@@ -532,7 +532,7 @@ color: #E8DACF;
     height: 13.5rem;
     background: var(--marromescuro2);
     border: 1px solid  var(--preto);
-    border-radius: 43px;
+    border-radius: 30px;
 }
 #title-women{
     /* configuração */
@@ -562,7 +562,7 @@ color: #E8DACF;
     width: 80rem;
     background: var(--marromescuro2);
     border: 1px solid var(--preto);
-    border-radius: 43px;
+    border-radius: 30px;
 
     /* configuração das letras*/
     font-family: 'Habibi';
@@ -719,7 +719,7 @@ color: #E8DACF;
     width: 80rem;
     background: var(--marromescuro2);
     border: 1px solid var(--preto);
-    border-radius: 43px;
+    border-radius: 30px;
 
     /* configuração das letras*/
     font-family: 'Habibi';
@@ -784,7 +784,7 @@ color: #E8DACF;
     width: 80rem;
     background: var(--marromescuro2);
     border: 1px solid var(--preto);
-    border-radius: 43px;
+    border-radius: 30px;
 
     /* configuração das letras*/
     font-family: 'Habibi';
@@ -902,7 +902,7 @@ color: #E8DACF;
      width: 80rem;
      background: var(--marromescuro2);
      border: 1px solid var(--preto);
-     border-radius: 43px;
+     border-radius: 30px;
 
      /* configuração das letras*/
      font-family: 'Habibi';
