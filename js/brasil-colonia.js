@@ -3,13 +3,9 @@ feather.replace()
 function botao_clicado1(){
     if(document.getElementById("btn1").checked){
         var xxx = document.getElementById('div-hidden-text1').style.display = 'flex';
-        var xx = document.getElementById('circle3').style.marginTop = '52.6rem';
-        var x = document.getElementById('circle4').style.marginTop = '52.6rem';
     }
     else{
         var xxx = document.getElementById('div-hidden-text1').style.display = 'none';
-        var xx = document.getElementById('circle3').style.marginTop = '38rem';
-        var x = document.getElementById('circle4').style.marginTop = '38rem';
     }
 }
 function botao_clicado2(){
@@ -39,6 +35,8 @@ btn5.onclick = function () {
     disp.innerHTML = count;
     if(count==0){
         var sete = document.getElementById('woman1').style.display = 'flex';
+        var anim = document.getElementById('woman1').style.animation = 'fade-right 1s';
+
         var seis = document.getElementById('woman2').style.display = 'none';
         var cinco = document.getElementById('woman3').style.display = 'none';
         var quatro = document.getElementById('woman4').style.display = 'none';
@@ -50,7 +48,10 @@ btn5.onclick = function () {
     // barbara alencar
     if(count==1 || count == (1*-6)){
         var sete = document.getElementById('woman1').style.display = 'none';
+
         var seis = document.getElementById('woman2').style.display = 'flex';
+        var anim = document.getElementById('woman2').style.animation = 'fade-right 1s';
+
         var cinco = document.getElementById('woman3').style.display = 'none';
         var quatro = document.getElementById('woman4').style.display = 'none';
         var tres = document.getElementById('woman5').style.display = 'none';
@@ -60,7 +61,10 @@ btn5.onclick = function () {
     if(count==2 || count == (1*-5)){
         var sete = document.getElementById('woman1').style.display = 'none';
         var seis = document.getElementById('woman2').style.display = 'none';
+
         var cinco = document.getElementById('woman3').style.display = 'flex';
+        var anim = document.getElementById('woman3').style.animation = 'fade-right 1s';
+
         var quatro = document.getElementById('woman4').style.display = 'none';
         var tres = document.getElementById('woman5').style.display = 'none';
         var dois = document.getElementById('woman6').style.display = 'none';
@@ -70,7 +74,10 @@ btn5.onclick = function () {
         var sete = document.getElementById('woman1').style.display = 'none';
         var seis = document.getElementById('woman2').style.display = 'none';
         var cinco = document.getElementById('woman3').style.display = 'none';
+
         var quatro = document.getElementById('woman4').style.display = 'flex';
+        var anim = document.getElementById('woman4').style.animation = 'fade-right 1s';
+
         var tres = document.getElementById('woman5').style.display = 'none';
         var dois = document.getElementById('woman6').style.display = 'none';
         var um = document.getElementById('woman7').style.display = 'none';
@@ -80,7 +87,10 @@ btn5.onclick = function () {
         var seis = document.getElementById('woman2').style.display = 'none';
         var cinco = document.getElementById('woman3').style.display = 'none';
         var quatro = document.getElementById('woman4').style.display = 'none';
+
         var tres = document.getElementById('woman5').style.display = 'flex';
+        var anim = document.getElementById('woman5').style.animation = 'fade-right 1s';
+
         var dois = document.getElementById('woman6').style.display = 'none';
         var um = document.getElementById('woman7').style.display = 'none';
     }
@@ -90,7 +100,10 @@ btn5.onclick = function () {
         var cinco = document.getElementById('woman3').style.display = 'none';
         var quatro = document.getElementById('woman4').style.display = 'none';
         var tres = document.getElementById('woman5').style.display = 'none';
+
         var dois = document.getElementById('woman6').style.display = 'flex';
+        var anim = document.getElementById('woman6').style.animation = 'fade-right 1s';
+
         var um = document.getElementById('woman7').style.display = 'none';
     }
     if(count==6 || count == (1*-1)){
@@ -100,12 +113,17 @@ btn5.onclick = function () {
         var quatro = document.getElementById('woman4').style.display = 'none';
         var tres = document.getElementById('woman5').style.display = 'none';
         var dois = document.getElementById('woman6').style.display = 'none';
+
         var um = document.getElementById('woman7').style.display = 'flex';
+        var anim = document.getElementById('woman7').style.animation = 'fade-right 1s';
+
     }
     if(count >= 7){
         count = 0;
         disp.innerHTML = count;
         var sete = document.getElementById('woman1').style.display = 'flex';
+        var anim = document.getElementById('woman1').style.animation = 'fade-right 1s';
+
         var seis = document.getElementById('woman2').style.display = 'none';
         var cinco = document.getElementById('woman3').style.display = 'none';
         var quatro = document.getElementById('woman4').style.display = 'none';
@@ -124,6 +142,8 @@ btn4.onclick = function () {
     }
     if(count==0){
         var sete = document.getElementById('woman1').style.display = 'flex';
+        var anim = document.getElementById('woman1').style.animation = 'fade-left 1s';
+
         var seis = document.getElementById('woman2').style.display = 'none';
         var cinco = document.getElementById('woman3').style.display = 'none';
         var quatro = document.getElementById('woman4').style.display = 'none';
@@ -135,7 +155,10 @@ btn4.onclick = function () {
     // barbara alencar
     if(count==1 || count == (1*-6)){
         var sete = document.getElementById('woman1').style.display = 'none';
+
         var seis = document.getElementById('woman2').style.display = 'flex';
+        var anim = document.getElementById('woman2').style.animation = 'fade-left 1s';
+
         var cinco = document.getElementById('woman3').style.display = 'none';
         var quatro = document.getElementById('woman4').style.display = 'none';
         var tres = document.getElementById('woman5').style.display = 'none';
@@ -144,8 +167,11 @@ btn4.onclick = function () {
     }
     if(count==2 || count == (1*-5)){
         var sete = document.getElementById('woman1').style.display = 'none';
-        var seis = document.getElementById('woman2').style.display = 'none';
-        var cinco = document.getElementById('woman3').style.display = 'flex';
+
+        var seis = document.getElementById('woman2').style.display = 'flex';
+        var anim = document.getElementById('woman2').style.animation = 'fade-left 1s';
+
+        var cinco = document.getElementById('woman3').style.display = 'none';
         var quatro = document.getElementById('woman4').style.display = 'none';
         var tres = document.getElementById('woman5').style.display = 'none';
         var dois = document.getElementById('woman6').style.display = 'none';
@@ -155,7 +181,10 @@ btn4.onclick = function () {
         var sete = document.getElementById('woman1').style.display = 'none';
         var seis = document.getElementById('woman2').style.display = 'none';
         var cinco = document.getElementById('woman3').style.display = 'none';
+
         var quatro = document.getElementById('woman4').style.display = 'flex';
+        var anim = document.getElementById('woman4').style.animation = 'fade-left 1s';
+
         var tres = document.getElementById('woman5').style.display = 'none';
         var dois = document.getElementById('woman6').style.display = 'none';
         var um = document.getElementById('woman7').style.display = 'none';
@@ -165,7 +194,10 @@ btn4.onclick = function () {
         var seis = document.getElementById('woman2').style.display = 'none';
         var cinco = document.getElementById('woman3').style.display = 'none';
         var quatro = document.getElementById('woman4').style.display = 'none';
+
         var tres = document.getElementById('woman5').style.display = 'flex';
+        var anim = document.getElementById('woman5').style.animation = 'fade-left 1s';
+
         var dois = document.getElementById('woman6').style.display = 'none';
         var um = document.getElementById('woman7').style.display = 'none';
     }
@@ -175,7 +207,10 @@ btn4.onclick = function () {
         var cinco = document.getElementById('woman3').style.display = 'none';
         var quatro = document.getElementById('woman4').style.display = 'none';
         var tres = document.getElementById('woman5').style.display = 'none';
+
         var dois = document.getElementById('woman6').style.display = 'flex';
+        var anim = document.getElementById('woman6').style.animation = 'fade-left 1s';
+
         var um = document.getElementById('woman7').style.display = 'none';
     }
     if(count==6 || count == (1*-1)){
@@ -185,12 +220,16 @@ btn4.onclick = function () {
         var quatro = document.getElementById('woman4').style.display = 'none';
         var tres = document.getElementById('woman5').style.display = 'none';
         var dois = document.getElementById('woman6').style.display = 'none';
+
         var um = document.getElementById('woman7').style.display = 'flex';
+        var anim = document.getElementById('woman7').style.animation = 'fade-left 1s';
     }
     if(count >= 7 || count == (1*-7)){
         count = 0;
         disp.innerHTML = count;
         var sete = document.getElementById('woman1').style.display = 'flex';
+        var anim = document.getElementById('woman1').style.animation = 'fade-left 1s';
+
         var seis = document.getElementById('woman2').style.display = 'none';
         var cinco = document.getElementById('woman3').style.display = 'none';
         var quatro = document.getElementById('woman4').style.display = 'none';
@@ -200,6 +239,7 @@ btn4.onclick = function () {
     }
 }
 
+AOS.init();
 
         
 

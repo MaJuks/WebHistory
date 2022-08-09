@@ -8,7 +8,7 @@
 
 
 /* zera algumas coisas de css */
-* {
+*{
     box-sizing: border-box;
 }
 
@@ -26,18 +26,24 @@
     --roxoclaro: #7c4f9c;
     --marromescuro: #5b3e26;
     --marromescuro2: #483322;
-    --maromescuro2rgba:72, 51, 34, 1;
+    --marromescuro3:rgba(53, 25, 5, 0.9);
     --preto: #201d18;
 }
 
 
 /* imagem de fundo */
 body{
-    mix-blend-mode: multiply;
     margin: 0;
     background-image: url("../assets/fundo.png");
+    /* ,url("../assets/fundo.png");
+    background-blend-mode: multiply; */
+    /* mix-blend-mode: multiply; */
 }
 
+main,footer{
+    mix-blend-mode: multiply; 
+
+}
 
 
 /* ------------------------------------------------------ */
@@ -51,7 +57,7 @@ body{
     display: flex;
 
     /* conversar com o professor sobre isso  */
-    
+
     /* configuração */
     background-image: url(../assets/vinheta.png);
     height: 6935px;
@@ -63,12 +69,13 @@ body{
     height: 0rem;
 }
 #bottom-shadowtrack{
+    mix-blend-mode: multiply;
     z-index: 100;
     display: flex;
     position: relative;
     left: 84rem;
-
-    top: 90rem;    
+width: 15%;
+    top: 90rem;
 }
 #top-shadowplant{
     z-index: 100;
@@ -78,6 +85,9 @@ body{
     top: -30rem;
 }
 #top-shadowtrack{
+    mix-blend-mode: multiply;
+    width: 15%;
+
     display: flex;
     position: relative;
     left: 15rem;
@@ -97,7 +107,7 @@ body{
 
 /* titulo da sub-pagina "web history */
 #name-web{
-    
+
     /* posicao */
     position: relative;
     top: 1rem;
@@ -115,7 +125,7 @@ body{
     text-decoration: none;
 
     /* cor */
-    color: var(--marromescuro2);
+    color: var(--marromescuro3);
     -webkit-text-stroke: 1px var(--preto);
 }
 /* alteração quando passa o mouse */
@@ -131,7 +141,7 @@ body{
 }
 
 #home{
-    
+
      /* posicao */
      position: relative;
      top: 1rem;
@@ -170,7 +180,7 @@ a{
     position: relative;
     display: flex;
     left: -85%;
-    top: 2.8rem;
+    top: 2.2rem;
     z-index: 100;
 }
 
@@ -190,14 +200,13 @@ hr{
     margin-top: 30px;
 
     /* cor*/
-    border: 2px solid var(--marromescuro);
+    border: 2px solid var(--marromescuro3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transform: rotate(-0.04deg);
-    background-color: var(--marromescuro);
+    background-color: var(--marromescuro3);
 }
 
 .main-pai{
-
     display: grid;
     box-sizing: border-box;
     justify-content:center ;
@@ -207,8 +216,8 @@ hr{
 /* nome do subsite "BRASIL COLONIA" */
 #title{
     /* posição */
-    margin-top: 3rem;
-    
+    margin: 5rem;
+
     /* configuração da letra */
     z-index: 101;
     text-align: center;
@@ -229,7 +238,7 @@ hr{
     white-space: nowrap;
     overflow: hidden;
     width: 25em;
-    animation: type 4s steps(60, end) ; 
+    animation: type 4s steps(60, end) ;
 }
 /* falso cursor piscando */
 #cursor{
@@ -238,27 +247,52 @@ hr{
 }
 
 /* animações */
-@keyframes type{ 
-    from { width: 0; } 
-  } 
-  
+@keyframes type{
+    from { width: 0; }
+  }
+
 @keyframes blink{
     to{opacity: .0;}
 }
 
+.click-here{
+    width: 200px;
+    justify-content: center;
 
+    height: 0;   
+}
+#text-click-here{
+    position: relative;
+    width: 200px;
+    height: 44px;
+
+font-family: 'Shadows Into Light';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 40px;
+text-align: center;
+
+/* marrom claro */
+
+color: #E8DACF;
+
+}
+#img-click-here{
+    position: relative;
+}
 /* bloco de introdução */
 .introduction{
     /* posição */
     display: flex;
     position: relative;
-    
+
     /* configuração da div */
     padding: 40px 40px 20px 40px;
     flex-wrap: wrap;
     width: 80rem;
     border: 1px solid #000000;
-    background: var(--marromescuro2);
+    background:var(--marromescuro2);
     border-radius: 43px;
     /* configuração das letras*/
     font-family: 'Habibi';
@@ -266,7 +300,8 @@ hr{
     font-weight: 400;
     font-size: 25px;
     line-height: 31px;
-    color: var(--branco);
+    color: var(--marromclaro);
+
 
 }
 .circle{
@@ -274,8 +309,8 @@ hr{
     box-sizing: border-box;
     position: absolute;
     display: flex;
-    
-    
+
+
     /* configuração */
     width: 21px;
     height: 21px;
@@ -286,6 +321,7 @@ hr{
     border-radius: 15px;
 }
 #circle1{
+
     /* posição */
     left: 1.5rem;
     top: 1.5rem;
@@ -295,17 +331,6 @@ hr{
     left: 77rem;
     top: 1.5rem;
 }
-#circle3{
-    /* posição */
-    left: 77rem;
-    margin-top: 38rem;
-}
-#circle4{
-    /* posição */
-    left: 1.5rem;
-    margin-top: 38rem;
-}
-
 
 .text1{
     /* configuração */
@@ -335,13 +360,13 @@ hr{
 
 /* escondendo checkbox */
 .input-btn1{
-    
+
     /* posição */
     position: absolute;
     top: 14px;
 }
 /* posicionando o label por cima */
-.label-btn1{  
+.label-btn1{
     /* posição */
     z-index: 100;
     cursor: pointer;
@@ -350,8 +375,8 @@ hr{
 }
 /* transição do botao clicado e nao clicado */
 .label-btn1::before,
-.label-btn1::after { 
-    content: "";    
+.label-btn1::after {
+    content: "";
 }
 /* botão antes de ser clicado (formato de triangulo) */
 .label-btn1::before{
@@ -359,8 +384,8 @@ hr{
     display:flex ;
 
     /* configuração */
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
     border-left: 25px solid var(--amareloescuro);
@@ -372,8 +397,8 @@ hr{
     margin-top: 14px;
 
     /* configuração */
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
     border-top: 25px solid var(--amareloescuro);
@@ -397,6 +422,7 @@ hr{
 }
 .line{
     /* posição */
+    z-index: 100;
     position: relative;
     display: flex;
 
@@ -413,7 +439,7 @@ hr{
 
     /* configuração */
     width: 61rem;
-    border: 2px solid var(--preto);
+    border: 3px solid var(--preto);
     filter: blur(1px);
 }
 .div-hidden-text1{
@@ -424,10 +450,13 @@ hr{
     width: 80rem;
     height: 15rem;
     justify-content: center;
-    
+
 }
 .box-hidden-text1{
     /* configuração */
+
+    position: relative;
+    top: -20px;
     justify-content: center;
     width: 60rem;
     height: 14rem;
@@ -435,6 +464,16 @@ hr{
     border: 1.84865px solid var(--marromescuro);
     border-radius: 0px 0px 27px 27px;
     padding: 0  10px;
+    animation: slide-down 0.5s ;
+}
+@keyframes slide-down {
+    0%{
+        top: -30px;
+        opacity: 0;  
+    }
+    25%{
+        opacity: 0;
+    }
 }
 #hidden-text1{
     /* configuração */
@@ -448,16 +487,17 @@ hr{
     line-height: 29px;
     color: var(--marromescuro);
 }
- 
+
 .div-box-women{
+
     /* posição */
     display: flex;
     position: relative;
 
     /* configuração */
-    width: 80rem;  
-    justify-content: space-around; 
-    margin: 5rem; 
+    width: 80rem;
+    justify-content: space-around;
+    margin: 5rem;
 }
 .box-women{
     /* posição */
@@ -490,6 +530,7 @@ hr{
 }
 
 .women-native{
+
     /* posição */
     display: flex;
     position: relative;
@@ -501,14 +542,14 @@ hr{
     background: var(--marromescuro2);
     border: 1px solid var(--preto);
     border-radius: 43px;
- 
+
     /* configuração das letras*/
     font-family: 'Habibi';
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 31px;
-    color: var(--branco);
+    color: var(--marromclaro);
 }
 
 #title-women-native{
@@ -601,18 +642,32 @@ hr{
 
     /* configuração */
     width: 80rem;
-    height: 15rem;
+    height: 9rem;
     justify-content: center;
-    
+
 }
+
 .box-hidden-text2{
     /* configuração */
+    position: relative;
+    top: -80px;
     width: 60rem;
     height: 10rem;
     background: var(--marromclaro);
     border: 2px solid var(--marromescuro);
     border-radius: 0px 0px 27px 27px;
     padding: 0  10px;
+    animation: slide-down2 0.5s ;
+
+}
+@keyframes slide-down2 {
+    0%{
+        top: -90px;
+        opacity: 0;  
+    }
+    25%{
+        opacity: 0;
+    }
 }
 #hidden-text2{
     /* configuração da letra */
@@ -631,26 +686,27 @@ hr{
 
 }
 .women-black{
+
     /* posição */
     display: flex;
     position: relative;
 
     /* configuração */
-    margin: 5rem; 
+    margin: 5rem;
     padding: 40px;
     flex-wrap: wrap;
     width: 80rem;
     background: var(--marromescuro2);
     border: 1px solid var(--preto);
     border-radius: 43px;
- 
+
     /* configuração das letras*/
     font-family: 'Habibi';
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 31px;
-    color: var(--branco);
+    color: var(--marromclaro);
 }
 #title-women-black{
     /* configuração */
@@ -682,7 +738,7 @@ hr{
 
 }
 #text9{
-    
+
     width: 677px;
     height: 205px;
     text-align: right;
@@ -708,14 +764,14 @@ hr{
     background: var(--marromescuro2);
     border: 1px solid var(--preto);
     border-radius: 43px;
- 
+
     /* configuração das letras*/
     font-family: 'Habibi';
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 31px;
-    color: var(--branco);
+    color: var(--marromclaro);
 
 }
 #title-women-white{
@@ -736,7 +792,7 @@ hr{
     text-align: center;
 }
 #text12{
-    height: 198px;    
+    height: 198px;
 }
 .img-white{
     /* posição */
@@ -789,17 +845,21 @@ hr{
     width: 80rem;
     height: 15rem;
     justify-content: center;
-    
+
 }
 .box-hidden-text3{
     /* configuração */
     justify-content: center;
+    position: relative;
+    top: -80px;
     width: 60rem;
     height: 11rem;
     background: var(--marromclaro);
     border: 1.84865px solid var(--marromescuro);
     border-radius: 0px 0px 27px 27px;
     padding: 0  10px;
+    animation: slide-down2 0.5s;
+
 }
 #hidden-text3{
     /* configuração */
@@ -813,26 +873,26 @@ hr{
      /* posição */
      display: flex;
      position: relative;
- 
+
      /* configuração */
-     margin: 5rem; 
+     margin: 5rem;
      padding: 40px;
      flex-wrap: wrap;
      width: 80rem;
      background: var(--marromescuro2);
      border: 1px solid var(--preto);
      border-radius: 43px;
-  
+
      /* configuração das letras*/
      font-family: 'Habibi';
      font-style: normal;
      font-weight: 400;
      font-size: 25px;
      line-height: 31px;
-     color: var(--branco);
+     color: var(--marromclaro);
 }
 
-#title-women-especific{    
+#title-women-especific{
     display: flex;
     position: relative;
     width: 80rem;
@@ -864,12 +924,12 @@ hr{
     display:flex ;
     position: relative;
     /* configuração */
-    width: 0; 
+    width: 0;
     height: 0;
-    background-color: var(--marromescuro2); ;
-    border-top: 25px solid var(--marromescuro2);
-    border-bottom: 25px solid var(--marromescuro2);
-    border-right: 25px solid var(--marromescuro2);
+    background-color: transparent ;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 25px solid transparent;
     border-left: 25px solid var(--amareloescuro);
 }
 #btn4{
@@ -880,58 +940,38 @@ hr{
     position: relative;
 
     /* configuração */
-    width: 0; 
+    width: 0;
     height: 0;
-    background-color: var(--marromescuro2); ;
-    border-top: 25px solid var(--marromescuro2);
-    border-bottom: 25px solid var(--marromescuro2);
-    border-left: 25px solid var(--marromescuro2);
+    background-color: transparent; ;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px transparent;
     border-right: 25px solid var(--amareloescuro);
 }
 #woman1{
     width: 80rem;
-
     flex-wrap: wrap;
     display: flex;
     position: relative;
 
 }
-#woman2{
-    width: 80rem;
-    flex-wrap: wrap;
-    display: none;
-    position: relative;
-
-}
-#woman3{
+#woman2,#woman3,#woman4,#woman5,#woman6,#woman7{
     width: 80rem;
     flex-wrap: wrap;
     display: none;
     position: relative;
 }
-#woman4{
-    width: 80rem;
-    flex-wrap: wrap;
-    display: none;
-    position: relative;
+@keyframes fade-left {
+    0%{
+        transform: translatex(-100px);
+        opacity: 0;
+    }
 }
-#woman5{
-    width: 80rem;
-    flex-wrap: wrap;
-    display: none;
-    position: relative;
-}
-#woman6{
-    width: 80rem;
-    flex-wrap: wrap;
-    display: none;
-    position: relative;
-}
-#woman7{
-    width: 80rem;
-    flex-wrap: wrap;
-    display: none;
-    position: relative;
+@keyframes fade-right {
+    0%{
+        transform: translatex(100px);
+        opacity: 0;
+    }
 }
 
 .img-woman1{
@@ -956,7 +996,7 @@ hr{
 
     width: 80rem;
     font-size: 20px;
-    text-align: center; 
+    text-align: center;
 
 }
 #title-woman1{
@@ -967,7 +1007,7 @@ hr{
     margin-top: 3rem;
     left: 4.5rem;
 
-    
+
     width: 550px;
     height: 38px;
 
@@ -980,7 +1020,7 @@ hr{
 
 }
 #text-woman1{
-    margin-top: 6rem;
+    margin-top: 7.5rem;
     margin-left: -30rem;
     width: 550px;
     height: 227px;
