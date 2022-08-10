@@ -310,13 +310,15 @@ hr{
     position: relative;
 
     /* div config */
-    padding: 40px 40px 20px 40px;
+    /* superior | direita | inferior | esquerda */
+    padding: 50px 70px 60px 60px;
     margin: 2.5rem;
     flex-wrap: wrap;
     width: 80rem;
     border: 1px solid #000000;
     background:var(--marromescuro3);
-    border-radius: 5px;
+    border-radius: 30px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
 
     /* letter config*/
     font-family: 'Habibi';
@@ -331,13 +333,15 @@ hr{
 
     /* config */
     width: 80rem;
-    height: 42px;
+    height: 72px;
     font-family: 'Special Elite';
     font-style: normal;
     font-weight: 400;
-    font-size: 42.1429px;
-    line-height: 42px;
+    font-size: 55px;
+    line-height: 62px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     color: var(--amareloclaro);
 }
 #text-educ1{
