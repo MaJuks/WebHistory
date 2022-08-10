@@ -8,13 +8,14 @@
 
 
 /* zera algumas coisas de css */
-* {
+*{
     box-sizing: border-box;
 }
 
 
 /* variaveis das cores */
 :root {
+    --branco2:#ffffff ;
     --branco: #faf5f0;
     --marromclaro: #e8dacf;
     --marromintermediario: #d4bda7;
@@ -26,6 +27,7 @@
     --roxoclaro: #7c4f9c;
     --marromescuro: #5b3e26;
     --marromescuro2: #483322;
+    --marromescuro3:rgba(53, 25, 5, 0.9);
     --preto: #201d18;
 }
 
@@ -34,24 +36,103 @@
 body{
     margin: 0;
     background-image: url("../assets/fundo.png");
+    /* ,url("../assets/fundo.png");
+    background-blend-mode: multiply; */
+    /* mix-blend-mode: multiply; */
 }
 
-/* div pai da sectio header */
-.container {
+main,footer{
+    mix-blend-mode: multiply; 
+
+}
+
+
+/* ------------------------------------------------------ */
+/* section shadows */
+/* ------------------------------------------------------ */
+
+.vignette{
+    /* posição */
+    margin-top: rem;
+    position: absolute;
+    display: flex;
+
+    /* conversar com o professor sobre isso  */
+
+    /* configuração */
+    background-image: url(../assets/vinheta.png);
+    height: 6935px;
+    width: 100%;
+    background-size: 100%;
+    opacity: 0.5;
+}
+.shadows-div{
+    height: 0rem;
+}
+#bottom-shadowtrack{
+    mix-blend-mode: multiply;
+    z-index: 100;
+    display: flex;
+    position: relative;
+    left: 84rem;
+width: 15%;
+    top: 90rem;
+}
+#top-shadowplant{
+    z-index: 100;
+    display: flex;
+    position: relative;
+    left: 84rem;
+    top: -16rem;
+    /* animações */
+    animation-name: moviment-plant;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes moviment-plant{
+    from{
+        transform: translate(-20px,-20px);
+        z-index: 101;
+
+    }
+    to{
+        z-index: 101;
+
+    }
+}
+
+#top-shadowtrack{
+    mix-blend-mode: multiply;
+    width: 15%;
+
+    display: flex;
+    position: relative;
+    left: 15rem;
+}
+
+/* ------------------------------------------------------ */
+/* header */
+/* ------------------------------------------------------ */
+
+/* div-pai da section header */
+.header-pai {
+
     display: flex;
     height: 120px;
     align-items: center;
 }
 
-
-/* titulo da pagina "web history */
-#titulo {
+/* titulo da sub-pagina "web history */
+#name-web{
     /* posicao */
     position: relative;
     top: 1rem;
     left: 470%;
     width: 150%;
     z-index: 101;
+
     /* configuração da letra */
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
@@ -60,17 +141,31 @@ body{
     font-size: 60px;
     line-height: 6px;
     text-decoration: none;
+
     /* cor */
-    color: var(--marromescuro2);
+    color: var(--marromescuro3);
     -webkit-text-stroke: 1px var(--preto);
+}
+/* alteração quando passa o mouse */
+#name-web:hover{
+    /* posição */
+    transform: scale(1.05);
+}
+
+/* div escrita home e svg */
+.home-svg{
+    display: flex;
+    position: relative;
 }
 
 #home{
+
      /* posicao */
      position: relative;
      top: 1rem;
      width: 150%;
      z-index: 101;
+
      /* configuração da letra */
      text-align: center;
      font-family: 'Shadows Into Light', cursive;
@@ -79,10 +174,17 @@ body{
      font-size: 60px;
      line-height: 6px;
      text-decoration: none;
+
      /* cor */
      color: var(--amareloescuro);
      -webkit-text-stroke: 1px var(--amareloescuro);
 }
+/* alteração quando passa o mouse */
+#home:hover{
+    /* configuração */
+    transform: scale(1.05);
+}
+
 
 /* retirar linha do link */
 a{
@@ -90,116 +192,501 @@ a{
     color: none;
 }
 
+/* configuração da div do svg */
 .icon-home{
+    /* posição */
     position: relative;
-    left: -7%;
-    top: 1rem;
     display: flex;
+    left: -85%;
+    top: 2.2rem;
     z-index: 100;
 }
+
+/* configuração do svg*/
 .icon-home svg{
+    /* configuração */
     width: 50px;
     height: 50px;
+
+    /* cor */
     color: var(--amareloescuro);
 }
 
-/* linhs que separa o cabecalho do main */
+/* linhs que separa o header do main */
 hr{
+    /* posição */
     margin-top: 30px;
+
     /* cor*/
-    border: 2px solid var(--marromescuro);
+    border: 2px solid var(--marromescuro3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transform: rotate(-0.04deg);
-    background-color: var(--marromescuro);
+    background-color: var(--marromescuro3);
 }
 
+/* ------------------------------------------------------ */
+/* main */
+/* ------------------------------------------------------ */
 
-/* nome do subsite "BRASIL Império" */
-#titulo2 {
-    /* posição */
-    /* configuração da letra */
-    text-align: center;
+
+
+.main-pai{
+    /* config */
+    display: grid;
+    box-sizing: border-box;
+    justify-content:center ;
+    justify-items: center;
+    justify-items: center;
+}
+#title{
+    /* position */
+    margin-top:5rem;
+    margin-left:5rem;
+    margin-right: 5rem;
+
+    /*letter config*/
+    z-index: 101;
     font-family: 'Special Elite', cursive;
-    font-style: normal;
-    font-weight: 400;
     font-size: 65px;
-    line-height: 70px;
+    line-height: 100px;
     text-align: center;
-    /* cor*/
+
+    /* color */
     color: var(--marromescuro);
     -webkit-text-stroke: 1px var(--preto);
     border: px solid var(--preto);
+
+    /* for animation*/
+    white-space: nowrap;
+    overflow: hidden;
+    width: 25em;
+    animation: type 4s steps(60, end) ;
+}
+#title2{
+    /* position */
+    position: relative;
+    top:-2rem;
+
+    /* letter config*/
     z-index: 101;
+    font-family: 'Special Elite', cursive;
+    font-size: 45px;
+    line-height: 100px;
+    text-align: center;
+
+    /* color */
+    color: var(--amareloescuro);
+    -webkit-text-stroke: 1px var(--amareloescuro);
+
+    /* for animation */
+    animation: fade 2s ease-in-out;
 }
 
-/* sombra atras do titulo "a trajetoria da mulher na historia" */
-.fundo-sombra-titulo{
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    
+}
+#cursor{
+    animation: blink 1s infinite;
+
+}
+
+@keyframes type{
+    from { width: 0; }
+  }
+
+@keyframes blink{
+    to{opacity: .0;}
+}
+
+.education,
+.policy,
+.midia,
+.women-especific{
+    /* position */
     display: flex;
     position: relative;
-    opacity: 0.4;
-    height: 15rem;
-    width: auto;
-    margin-top: -12.5rem;
-    /* configuração */
-    background: radial-gradient(50% 50% at 50% 50%, rgba(6, 0, 0, 0.4) 0%, rgba(217, 217, 217, 0) 100%);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
 
-/* seciton shadoes------------------------------------------------------------------ */
-/* sectio pai */
-/* conversar com o professor sobre  */
-.vinheta{
-    margin-top: -24%;
-    position: relative;
+    /* div config */
+    padding: 40px 40px 20px 40px;
+    margin: 2.5rem;
+    flex-wrap: wrap;
+    width: 80rem;
+    border: 1px solid #000000;
+    background:var(--marromescuro3);
+    border-radius: 5px;
+
+    /* letter config*/
+    font-family: 'Habibi';
+    font-size: 25px;
+    line-height: 31px;
+    color: var(--branco2);
+}
+#title-box{
+    /* position */
     display: flex;
-    /* conversar com o professor sobre isso  */
-    height: 1010px;
-    width: auto;
-    background-image: url(../assets/vinheta.png);
-    background-size: 100%;
-    /* arrumar opaciodade da imagem */
-    opacity: 0.5;
-}
-
-.sombra-pegada{
     position: relative;
-    display: flex;
-    margin-top: -50%;
 
+    /* config */
+    width: 80rem;
+    height: 42px;
+    font-family: 'Special Elite';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42.1429px;
+    line-height: 42px;
+    text-align: center;
+    color: var(--amareloclaro);
+}
+#text-educ1{
+    /* config */
+    height: 101px;
+    text-align: center;
+}
+#text-educ2{  
+    /* config */
+    height: 197px;
 }
 
 
-#pegada-inferior{
+.img-educ{
+    /* config */
+    display: flex;
+    width: 80rem;
+    justify-content: space-around;
+}
+#img1{
+    /* config */
+    width: 20rem;
+    height: 20rem;
+}
+.subtitle-educ{
+    /* config */
+    display: flex;
+    width: 80rem;
+    justify-content: space-around;
+}
+
+#text-educ3{
+    /* config */
+    height: 140px;
+    text-align: center;
+}
+
+#text-policy1{
+    /* config */
+    height: 101px;
+    text-align: center;
+}
+.img-policy{
+    /* config */
+    display: flex;
+    justify-content: space-around;
+    width: 80rem;
+}
+#img2{
+    /* config */
+    width: 20rem;
+    height: 20rem;
+}
+
+.subtitle-policy{
+    /* config */
+    display: flex;
+    width: 80rem;
+    justify-content: space-around;
+}
+
+#text-midia1{
+    /* config */
+    height: 96px;
+    text-align: center;
+}
+
+.img-midia{
+    /* config */
+    flex-wrap: wrap;
+    display: flex;
+    width: 80rem;
+    justify-content: space-around; 
+    align-items: center;
+}
+.box-midia1{
+    display: flex;
+    flex-flow: column;
+    display: flex;
+    align-items: center;    
+}
+#img3{
+    /* config */
+    width: 20rem;
+    height: 20rem;
+    padding: 1rem;
+}
+#subtitle-midia{
+    /* config */
+    width: 245px;
+    height: 159px;
+    text-align: center;
+
+}
+#text-midia2{  
+    height: 161px;
+    text-align: center;
+}
+
+.btn-midia{
     /* posição */
-    margin-left: 10rem;
-    margin-top: 40rem;
+    position: relative;
+    left: 2.5rem;
+}
+
+/* escondendo checkbox */
+.label-btn1{
+    /* posição */
+    position: relative;
+    top: -2.3rem;
+}
+/* posicionando o label por cima */
+.label-btn1{
+    /* posição */
+    z-index: 100;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+}
+/* transição do botao clicado e nao clicado */
+.label-btn1::before,
+.label-btn1::after {
+    content: "";
+}
+/* botão antes de ser clicado (formato de triangulo) */
+.label-btn1::before{
+    /* posição */
+    display:flex ;
 
     /* configuração */
-    width: 15%;
-    height: 15%;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid var(--amareloescuro);
 }
-#pegada-superior{
-     /* posição */
-    margin-left: 56rem;
-    margin-top: 11rem;
+/* botão depois de ser clicado (formato de triangulo) */
+.input-btn1:checked + .label-btn1::before{
+    /* posição */
+    margin-left: -15px;
+    margin-top: 14px;
 
-     /* configuração */
-     width: 15%;
-     height: 15%;
+    /* configuração */
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid var(--amareloescuro);
 }
 
+/* linha na seleção (propósito: acessibilidade) */
+.input-btn1:focus+.label-btn1::before{
+    outline:1px dotted #CCC;
+}
 
+.line{
+    /* posição */
+    z-index: 100;
+    position: relative;
+    display: flex;
 
-@media screen and (min-width: 1000px) {
-    .vinheta {
-      height: 1030px;
+    /* configuração */
+    width: 80rem;
+    height: 20px;
+    justify-content: flex-start;
+}
+#hidden-line{
+    /* posição */
+    z-index: 100;
+    position: relative;
+    top: -6rem;
+
+    /* configuração */
+    width: 61rem;
+    border: 3px solid var(--preto);
+    filter: blur(1px);
+}
+
+.nav-hidden-midia{
+    /* posição */
+    display: none;
+
+    /* configuração */
+    width: 80rem;
+    height: 15rem;
+    justify-content: center;
+
+}
+.box-hidden-midia{
+    /* configuração */
+
+    position: relative;
+    top: -80px;
+    justify-content: center;
+    width: 60rem;
+    height: 14rem;
+    background: var(--marromclaro);
+    border: 1.84865px solid var(--marromescuro);
+    border-radius: 0px 0px 27px 27px;
+    padding: 0  10px;
+    animation: slide-down 0.5s ;
+}
+@keyframes slide-down {
+    0%{
+        top: -90px;
+        opacity: 0;  
+    }
+    25%{
+        opacity: 0;
     }
 }
-@media screen and (min-width: 2200px) {
-    .vinheta {
-      height: 1400px;
+#hidden-text1{
+    /* configuração */
+    padding: 0 20px;
+
+    /* configuração letra */
+    font-family: 'Habibi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 29px;
+    color: var(--marromescuro);
+}
+
+
+
+
+
+.btn-especific{
+    z-index: 100;
+    height: 0;
+    width: 80rem;
+    top: 10rem;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+#btn-especific2{
+    z-index: 100;
+
+    /* posição */
+    display:flex ;
+    position: relative;
+    /* configuração */
+    width: 0;
+    height: 0;
+    background-color: transparent ;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-left: 25px solid var(--roxoescuro);
+}
+#btn-especific{
+    z-index: 100;
+
+    /* posição */
+    display:flex ;
+    position: relative;
+
+    /* configuração */
+    width: 0;
+    height: 0;
+    background-color: transparent; ;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px transparent;
+    border-right: 25px solid var(--roxoescuro);
+}
+#woman1{
+    width: 80rem;
+    flex-wrap: wrap;
+    display: flex;
+    position: relative;
+
+}
+#woman2,#woman3,#woman4{
+    width: 80rem;
+    flex-wrap: wrap;
+    display: none;
+    position: relative;
+}
+@keyframes fade-left {
+    0%{
+        transform: translatex(-100px);
+        opacity: 0;
     }
 }
+@keyframes fade-right {
+    0%{
+        transform: translatex(100px);
+        opacity: 0;
+    }
+}
+
+.img-woman1{
+    display: flex;
+    position: relative;
+}
+#img6{
+    display: flex;
+    position: relative;
+    width: 80%;
+    height: 80%;
+    top: 3rem;
+    left: 6rem;
+}
+#subtitle-woman1{
+    display: flex;
+    position: relative;
+    display: flex;
+    padding-left: 14rem;
+
+    width: 80rem;
+    font-size: 20px;
+    text-align: center;
+
+}
+#title-woman1{
+    display: flex;
+    position: relative;
+    display: flex;
+
+    margin-top: 3rem;
+    left: 4.5rem;
+
+
+    width: 550px;
+    height: 38px;
+
+    font-family: 'Special Elite';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 38px;
+    color: var(--rosa);
+
+}
+#text-woman1{
+    margin-top: 7.5rem;
+    margin-left: -30rem;
+    width: 550px;
+    height: 227px;
+
+
+}
+
+
+
+
 
 
 
