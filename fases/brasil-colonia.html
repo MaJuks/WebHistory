@@ -14,6 +14,7 @@
     </head>
 <body>
 
+    <!-- vignette and shadows (plant and track) -->
     <section class="shadows">
             <div class="vignette"></div>
             <div class="shadows-div">
@@ -24,10 +25,9 @@
             </div>
     </section>
 
+    <!-- header - icon + home + "web history" -->
     <header>
-        <!-- div pai -->
         <div class="header-pai">
-            <!-- nome do sub-site "BRASIL COLONIA" -->
             <a href="../index.html"><h1 id="name-web">Web History</h1></a>
             <div class="home-svg">
                 <div class="home">
@@ -38,28 +38,25 @@
                 </div>
             </div>
         </div>
-        <!-- linha que separa o cabeçario -->
         <hr>
     </header>
 
-
+    <!-- test... click here -->
     <div class="click-here">
         <p id="text-click-here">Clique para ler mais</p>
         <img id="img-click-here" src="../assets/arrow.png" alt="">
     </div>
+
+    <!-- boxes and texts -->
     <main>
         <div class="main-father">
-            <!-- titulo do site -->
+            <!-- title -->
             <span id="title">BRASIL COLÔNIA<span id="cursor">|</span></span>
             <span id="title2"> (1500 - 1822)</span>
-            <!-- sombra atras do titulo "a trajetoria da mulher na história" -->
-
-            <!-- box de introduçao -->
+            <!-- box 1 "introdução"-->
             <div class="introduction"  data-aos="zoom-in">
-                <!-- preguinhos no canto -->
                 <div class="circle" id="circle1" ></div>
                 <div class="circle" id="circle2" ></div>
-                <!-- texto1 -->
                 <div  class="text1">
                     <p id="text1">Os primeiros portugueses que vieram para o Brasil eram <br>
                         homens. Depois de um período, a Coroa portuguesa <br>
@@ -71,17 +68,12 @@
                         tanto <span style="color: var(--roxoclaro)"> mulheres portuguesas</span> quanto<span style="color: var(--rosa)"> índias</span>, <span style="color: var(--amareloclaro)">africanas</span>  e <br>
                         <span style="color: var(--amareloclaro)">mestiças</span>, sendo estas livres ou escravas.</p>
                 </div>
-
-                <!-- img historica - pintura/arte -->
                 <img src="../assets/teste1.png" id="img1" alt="">
-
-                <!-- botão para clicar e saber mais -->
-                <div class="btn1">
-                    <input type="checkbox" class="input-btn1" id="btn1" onclick="botao_clicado1()">
-                    <label for="btn1" class="label-btn1"></label>
+                <!-- button -->
+                <div class="btn-intro">
+                    <input type="checkbox" class="input-btn" id="btn-intro" onclick="botao_clicado1()">
+                    <label for="btn-intro" class="label-btn"></label>
                 </div>
-
-                <!-- texto2 -->
                 <div class="text2">
                     <p id="text2">A sociedade colonizadora como um todo foi explicitamente dividida por etnia, o <br>
                         que também se aplica às <span style="color: var(--rosa)">mulheres</span>. Enquanto as<span style="color: var(--amareloclaro)"> negras</span> eram escravizadas e vistas <br>
@@ -90,11 +82,9 @@
                         Nesse contexto, a alfabetização foi fundamental para ampliar a atuação das <br>
                         <span style="color: var(--rosa)">mulheres</span> na sociedade.</p>
                 </div>
-
-                <!-- linha que indica que há texto (para ler mais sobre) -->
+                <!-- line for hidden text -->
                 <div class="line"><hr id="hidden-line"></div>
-
-                <!-- texto oculto (aparece quando clica) -->
+                <!-- hidden text -->
                 <nav class="div-hidden-text1" id="div-hidden-text1">
                     <div class="box-hidden-text1">
                         <p id="hidden-text1">
@@ -108,9 +98,7 @@
                     </div>
                 </nav>
             </div>
-
-            
-            <!-- botão de ancoragem para texto de mulheres específicas -->
+            <!-- box 2 (3 boxes) -->
             <div class="div-box-women" data-aos="fade-up" >
                 <div class="box-women">
                     <a href="#title-women-native" id="title-women">────────<br>Mulheres Indígenas<br>────────</a>
@@ -122,48 +110,37 @@
                     <a href="#title-women-white" id="title-women">────────<br>Mulheres Brancas<br>────────</a>
                 </div>
             </div>
-
-            <!-- texto mulheres indigenas -->
+            <!-- box 3 "Mulheres Indígenas"  -->
             <div class="women-native" data-aos="fade-up">
-                <!-- titulo -->
                 <h1 id="title-women-native">Mulheres Indígenas ─────────────────────────</h1>
-                <!-- texto3 -->
                 <p id="text3">Os povos indígenas que habitavam o Brasil no período colonial possuíam costumes muito 
                         diferentes entre si, o que se reflete nos papéis desempenhados pelas <span style="color: var(--roxoclaro)">mulheres</span>. Algumas eram 
                         escravas de seus maridos; outras, companheiras, tratadas como iguais; e ainda havia aquelas 
                         que chefiavam grupos. Em algumas tribos, as <span style="color: var(--amareloclaro)">mulheres</span> tinham direito de posse de moradias e 
                         áreas de cultivo. Em outras, eram somente responsáveis pela plantação e colheita.</p>
-                <!-- img historica - pintura/arte -->
                 <div class="img-native">
                     <img src="../assets/teste1.png" id="img2" alt="">
                     <img src="../assets/teste1.png" id="img2" alt="">
                     <img src="../assets/teste1.png" id="img2" alt="">
                 </div>
-                <!-- legenda para as imagens -->
                 <div class="subtitle-img-native">
                     <p id="subtitle-native">legenda</p>
                     <p id="subtitle-native">legenda</p>
                     <p id="subtitle-native">legenda</p>
                 </div>
-
-                <!-- texto4 -->
                 <p id="text4"><span style="color: var(--amareloclaro)">“</span>Deixemos de fora a cultura anterior ao descobrimento, de tal forma <br>
                     esmagada que se torna extremamente difícil seu resgate<span style="color: var(--amareloclaro)">”</span> <span style="color: var(--amareloclaro)">(Breve <br>
                     História do Feminismo no Brasil)</span>.</p>
-                <!-- texto5 -->
                 <p id="text5">A <span style="color: var(--rosa)">cultura indígena</span> foi duramente reprimida e apagada. Os
                     colonizadores viam os índios da seguinte maneira: os homens para o
                     trabalho escravo e as <span style="color: var(--roxoclaro)">mulheres</span> como concubinas ou empregadas domésticas.
                     Eram proibidos de falar suas línguas nativas e praticar tradições de seus
                     povos. </p>
-                <!-- linha que indica que há texto (para ler mais sobre) -->
                 <div class="line"><hr id="hidden-line"></div>
-                <!-- botão para clicar e saber mais -->
-                <div class="btn2">
-                    <input type="checkbox" class="input-btn1" id="btn2" onclick="botao_clicado2()">
-                    <label for="btn2" class="label-btn1"></label>
+                <div class="btn-native">
+                    <input type="checkbox" class="input-btn" id="btn-native" onclick="botao_clicado2()">
+                    <label for="btn-native" class="label-btn"></label>
                 </div>
-                <!-- texto oculto (aparece quando clica) -->
                 <nav class="div-hidden-text2" id="div-hidden-text2">
                     <div class="box-hidden-text2" >
                         <p id="hidden-text2">
@@ -172,7 +149,6 @@
                             diretamente relacionadas aos povos indígenas que aqui viviam.
                         </p>
                 </nav>
-                <!-- texto5 -->
                 <p id="text5"><span style="color: var(--roxoclaro)">“</span>[...] o indígena, que via na <span style="color: var(--rosa)">mulher</span> uma <span style="color: var(--amareloclaro)">companheira</span>,
                      não via razão para as diferenças de oportunidades educacionais. Não
                      viam o “perigo” que pudesse representar o fato de suas  <span style="color: var(--roxoclaro)">mulheres</span> aprenderem
@@ -180,7 +156,7 @@
                      a ignorância o  <span style="color: var(--rosa)">sexo feminino</span> lhes parecia uma ideia absurda.<span style="color: var(--roxoclaro)">”</span> - <span style="color: var(--roxoclaro)">Arilda Inês Miranda
                       Ribeiro, A Educação das Mulheres na Colônia</span>.</p>
             </div>
-
+            <!-- box 4 "Mulheres Pretas e Mestiças" -->
             <div class="women-black" data-aos="fade-up">
                 <h1 id="title-women-black">Mulheres Pretas e Mestiças ────────────────────</h1>
                 <p id="text6">As <span style="color: var(--amareloclaro)">negras</span>, quando na lavoura, executavam as mesmas tarefas dos homens. O trabalho era
@@ -216,9 +192,8 @@
                       e <span style="color: var(--roxoclaro)">mestiças</span> atuaram nas bandeiras, levadas para <span style="color: var(--amareloclaro)">“</span>servir os maridos na cama e na mesa<span style="color: var(--amareloclaro)">” (Breve
                        História do Feminismo no Brasil)</span>.</p>
             </div>
-
+            <!-- box 5 "Mulheres Brancas" -->
             <div class="women-white" data-aos="fade-up">
-                 <!-- titulo -->
                 <h1 id="title-women-white">Mulheres Brancas ───────────────────────────</h1>
                 <p id="text11">O papel que cabia a <span style="color: var(--roxoclaro)">mulher </span>da classe dominante (branca, <span style="color: var(--rosa)">esposa</span> de proprietários de terras
                      e escravos) era, obrigatoriamente, o de <span style="color: var(--amareloclaro)">esposa</span> e <span style="color: var(--rosa)">mãe</span>. Suas únicas funções seriam gerar
@@ -245,14 +220,11 @@
                     como costura e cozinha em vez de instrução propriamente dita: as <span style="color: var(--roxoclaro)">jovens</span> eram ensinadas a
                     lavar, coser e fazer renda, com o propósito de se tornarem <span style="color: var(--roxoclaro)">“boas esposas”</span>.
                 </p>
-                <!-- linha que indica que há texto (para ler mais sobre) -->
                 <div class="line"><hr id="hidden-line"></div>
-                <!-- botão para clicar e saber mais -->
-                <div class="btn3">
-                    <input type="checkbox" class="input-btn1" id="btn3" onclick="botao_clicado3()">
-                    <label for="btn3" class="label-btn1"></label>
+                <div class="btn-white">
+                    <input type="checkbox" class="input-btn" id="btn-white" onclick="botao_clicado3()">
+                    <label for="btn-white" class="label-btn"></label>
                 </div>
-                <!-- texto oculto (aparece quando clica) -->
                 <nav class="div-hidden-text3" id="div-hidden-text3">
                     <div class="box-hidden-text3" >
                         <p id="hidden-text3">
@@ -260,15 +232,15 @@
                             encaminhada diretamente para internatos e conventos. Essa era também uma das poucas
                             alternativas para as mulheres brancas quando não conseguiam casamento.
                         </p>
+                    </div>
                 </nav>
             </div>
-
+            <!-- box 6 "Mulheres que se destacaram" -->
             <div class="women-especific" data-aos="fade-up">
                 <h1 id="title-women-especific">Mulheres que se destacaram <br>────────────</h1>
-                <div class="btn4">
-                    <button type="button" id="btn4"></button>
-                    <button type="button" id="btn4-5"></button>
-
+                <div class="btn-especific">
+                    <button type="button" id="btn-right"></button>
+                    <button type="button" id="btn-left"></button>
                     
                 </div>
                 <div class="woman1"  id="woman1">
@@ -285,7 +257,6 @@
                     <p id="subtitle-woman1">legenda</p>
                 </div>
 
-
                 <div class="woman1" id="woman2">
                     <div class="img-woman1">
                         <img src="../assets/teste1.png" id="img6" alt="">
@@ -298,7 +269,6 @@
                         do Equador.</p>
                     <p id="subtitle-woman1">legenda</p>
                 </div>
-
 
                 <div class="woman1" id="woman3">
                     <div class="img-woman1">
@@ -330,7 +300,6 @@
                     <p id="subtitle-woman1">legenda</p>
                 </div>
 
-
                 <div class="woman1" id="woman5">
                     <div class="img-woman1">
                         <img src="../assets/teste1.png" id="img6" alt="">
@@ -361,7 +330,6 @@
                     <p id="subtitle-woman1">legenda</p>
                 </div>
 
-
                 <div class="woman1" id="woman7">
                     <div class="img-woman1">
                         <img src="../assets/teste1.png" id="img6" alt="">
@@ -376,32 +344,19 @@
                     </p>
                     <p id="subtitle-woman1">legenda</p>
                 </div>
-
                 <p>
                     Button Clicked <span 
                     id="display">0</span> Times
                 </p>
-
             </div>
         </div>
         <!-- mudar nome das div de img -->
-        <!-- arrumar logica de js  -->
-
     </main>
-
 
     <footer>
         <div class="footer-pai">
-
         </div>
     </footer>
-
-
-
-
-
-
-
     <script src="../js/brasil-colonia.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -411,4 +366,3 @@
     </script>
 </body>
 </html>
-
