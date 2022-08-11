@@ -1,20 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-
 /* font-family: 'Special Elite', cursive; */
 
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Special+Elite&display=swap');
-
 /* font-family: 'Shadows Into Light', cursive; */
 
 
-/* zera algumas coisas de css */
 *{
+    /* zera algumas coisas de css */
     box-sizing: border-box;
 }
-
-
-/* variaveis das cores */
 :root {
+    /* variaveis das cores */
     --branco2:#ffffff ;
     --branco: #faf5f0;
     --marromclaro: #e8dacf;
@@ -30,349 +26,270 @@
     --marromescuro3:rgba(53, 25, 5, 0.9);
     --preto: #201d18;
 }
-
-
-/* imagem de fundo */
 body{
     margin: 0;
     background-image: url("../assets/fundo.png");
-    /* ,url("../assets/fundo.png");
-    background-blend-mode: multiply; */
-    /* mix-blend-mode: multiply; */
 }
-
 main,footer{
     mix-blend-mode: multiply; 
-
 }
-
 
 /* ------------------------------------------------------ */
 /* section shadows */
 /* ------------------------------------------------------ */
 
 .vignette{
-    /* posição */
-    margin-top: rem;
+    /* position */
     position: absolute;
     display: flex;
-
-    /* conversar com o professor sobre isso  */
-
-    /* configuração */
+    /* config */
     background-image: url(../assets/vinheta.png);
-    height: 6935px;
+    height: 7100px;
     width: 100%;
     background-size: 100%;
     opacity: 0.5;
 }
 .shadows-div{
-    height: 0rem;
-}
-#bottom-shadowtrack{
+    /* config */
+    height: 0;
     mix-blend-mode: multiply;
-    z-index: 100;
+}
+#top-shadowtrack{
+    /* position */
     display: flex;
     position: relative;
+    left: 15rem;
+    /* config */
+    mix-blend-mode: multiply;
+    width: 15%;
+}
+#bottom-shadowtrack{
+    /* position*/
+    display: flex;
+    position: relative;
+    z-index: 100;
     left: 84rem;
-width: 15%;
     top: 90rem;
+    /* config */
+    width: 15%;
 }
 #top-shadowplant{
     z-index: 100;
     display: flex;
     position: relative;
-    left: 84rem;
-    top: -16rem;
-    /* animações */
-    animation-name: moviment-plant;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    left: 82rem;
+    animation: moviment-plant 5s ease-in-out infinite alternate;
 }
-@keyframes moviment-plant{
-    from{
-        transform: translate(-20px,-20px);
-        z-index: 101;
-
-    }
-    to{
-        z-index: 101;
-
-    }
-}
-
-#top-shadowtrack{
-    mix-blend-mode: multiply;
-    width: 15%;
-
+#mid-shadowplant{
+    /* position */
+    z-index: 100;
     display: flex;
     position: relative;
-    left: 15rem;
+    left: -3rem;
+    top: 120rem;
+
+    /* config */
+    opacity: 0.6;
+    width: 40%;
+    animation: moviment-plant 8s ease-in-out infinite alternate;
 }
+
 
 /* ------------------------------------------------------ */
 /* header */
 /* ------------------------------------------------------ */
 
-/* div-pai da section header */
 .header-pai {
-
+    /* position */
     display: flex;
+    /* config */
     height: 120px;
     align-items: center;
 }
-
-/* titulo da sub-pagina "web history */
 #name-web{
-
-    /* posicao */
+    /* "web history" */
+    /* position */
     position: relative;
     top: 1rem;
     left: 470%;
     width: 150%;
-    z-index: 101;
-
-    /* configuração da letra */
+    z-index: 100;
+    /* letter config */
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
-    font-style: normal;
     font-weight: 400;
     font-size: 60px;
-    line-height: 6px;
-    text-decoration: none;
-
-    /* cor */
     color: var(--marromescuro3);
     -webkit-text-stroke: 1px var(--preto);
 }
-/* alteração quando passa o mouse */
 #name-web:hover{
-    /* posição */
+    /* animation cursor*/
+    /* config */
     transform: scale(1.05);
 }
-
-/* div escrita home e svg */
 .home-svg{
+    /* "home" + svg */
+    /* position */
     display: flex;
     position: relative;
 }
-
 #home{
-
-     /* posicao */
-     position: relative;
-     top: 1rem;
-     width: 150%;
-     z-index: 101;
-
-     /* configuração da letra */
-     text-align: center;
-     font-family: 'Shadows Into Light', cursive;
-     font-style: normal;
-     font-weight: 400;
-     font-size: 60px;
-     line-height: 6px;
-     text-decoration: none;
-
-     /* cor */
-     color: var(--amareloescuro);
-     -webkit-text-stroke: 1px var(--amareloescuro);
+    /* position */
+    position: relative;
+    top: 1rem;
+    width: 150%;
+    /* letter config */
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 6px;
+    color: var(--amareloescuro);
+    -webkit-text-stroke: 1px var(--amareloescuro);
 }
-/* alteração quando passa o mouse */
 #home:hover{
-    /* configuração */
+    /* animation cursor */
+    /* config */
     transform: scale(1.05);
 }
-
-
-/* retirar linha do link */
 a{
+    /* config link */
     text-decoration: none;
-    color: none;
 }
-
-/* configuração da div do svg */
 .icon-home{
-    /* posição */
+    /* div-svg */
+    /* position */
     position: relative;
     display: flex;
     left: -85%;
     top: 2.2rem;
-    z-index: 100;
 }
-
-/* configuração do svg*/
 .icon-home svg{
-    /* configuração */
+    /* config*/
     width: 50px;
     height: 50px;
-
-    /* cor */
     color: var(--amareloescuro);
 }
-
-/* linhs que separa o header do main */
 hr{
-    /* posição */
+    /* line to separate*/
+    /* position */
     margin-top: 30px;
-
-    /* cor*/
     border: 2px solid var(--marromescuro3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transform: rotate(-0.04deg);
     background-color: var(--marromescuro3);
 }
+.click-here{
+    /* "clique para ler mais" + png */
+    /* position */
+    z-index: 100;
+    display: flex;
+    position: relative;
+    top: 45rem;
+    left: 13rem;
+    /* config */
+    flex-wrap: wrap;
+    width: 250px;
+    justify-content: center;
+    height: 0;   
+    transform: rotate(-10deg);
+}
+#text-click-here{
+    /* "clique para ler mais" */
+    /* config */
+    width: 200px;
+    height: 44px;
+    margin: 0;
+    font-family: 'Shadows Into Light';
+    font-size: 25px;
+    text-align: center;
+    color: var(--marromclaro);
+}
+#img-click-here{
+    /* config */
+    width: 124px;
+    height: 76px;
+}
 
-.main-pai{
+/* ------------------------------------------------------ */
+/* main */
+/* ------------------------------------------------------ */
+
+.main-father{
+    /* position */
     display: grid;
-    box-sizing: border-box;
-    justify-content:center ;
-    justify-items: center;
+    /* config */
     justify-items: center;
 }
-/* nome do subsite "BRASIL COLONIA" */
 #title{
-    /* posição */
-    margin-top:5rem;
-    margin-left:5rem;
-    margin-right: 5rem;
-
-    /* configuração da letra */
-    z-index: 101;
-    text-align: center;
-    font-family: 'Special Elite', cursive;
-    font-style: normal;
+    /* "BRASIL COLONIA" */
+    /* position */
+    margin: 5rem 5rem 0 5rem;
+    /* letter config*/
+    font-family: 'Special Elite';
     font-size: 65px;
     line-height: 100px;
     text-align: center;
-
-    /* cor */
     color: var(--marromescuro);
     -webkit-text-stroke: 1px var(--preto);
     border: px solid var(--preto);
-    z-index: 101;
-
-    /* para a animação */
+    /* for animation*/
     white-space: nowrap;
     overflow: hidden;
     width: 25em;
     animation: type 4s steps(60, end) ;
 }
+#cursor{
+    /* cursor the end "|" */
+    animation: blink 1s infinite;
+}
 #title2{
-    /* posição */
+    /* "(1500 - 1822)" */
+    /* position */
     position: relative;
     top:-2rem;
-
-    /* configuração da letra */
-    z-index: 101;
+    /* letter config */
     text-align: center;
-    font-family: 'Special Elite', cursive;
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Special Elite';
     font-size: 45px;
     line-height: 100px;
     text-align: center;
-
-    /* cor */
     color: var(--amareloescuro);
     -webkit-text-stroke: 1px var(--amareloescuro);
-    z-index: 101;
-
-    /* para a animação */
+    /* for animation*/
     white-space: nowrap;
     overflow: hidden;
     width: 25em;
     animation: fade 2s ease-in-out;
 }
-@keyframes fade {
-    0%{
-        opacity: 0;
-    }
-    
-}
-/* falso cursor piscando */
-#cursor{
-    animation: blink 1s infinite;
-
-}
-
-/* animações */
-@keyframes type{
-    from { width: 0; }
-  }
-
-@keyframes blink{
-    to{opacity: .0;}
-}
-
-.click-here{
-    z-index: 100;
+.introduction,.women-native,
+.women-black,
+.women-white,
+.women-especific{
+    /* containers */
+    /* position */
     display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    width: 250px;
-    justify-content: center;
-    height: 0;   
-    top: 45rem;
-    left: 13rem;
-    transform: rotate(-10deg);
-}
-#text-click-here{
-    position: relative;
-    width: 200px;
-    height: 44px;
-    margin: 0;
-
-font-family: 'Shadows Into Light';
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-line-height: 40px;
-text-align: center;
-
-/* marrom claro */
-
-color: #E8DACF;
-
-}
-#img-click-here{
-    position: relative;
-    width: 124px;
-    height: 76px;
-}
-/* bloco de introdução */
-.introduction{
-    /* posição */
-    display: flex;
-    position: relative;
-
-    /* configuração da div */
-    padding: 40px 40px 20px 40px;
+    /* config */
+    margin: 3rem;
+    padding: 40px;
     flex-wrap: wrap;
     width: 80rem;
-    border: 1px solid #000000;
-    background:var(--marromescuro3);
-    border-radius: 5px;
-    /* configuração das letras*/
+    background: var(--marromescuro2);
+    border: 1px solid var(--preto);
+    border-radius: 15px;
+    box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.3), -8px -8px 10px 1px rgba(0, 0, 0, 0.3);
+    /* letter config*/
     font-family: 'Habibi';
-    font-style: normal;
-    font-weight: 400;
     font-size: 25px;
     line-height: 31px;
     color: var(--branco2);
-
-
 }
 .circle{
-    /* posição */
-    box-sizing: border-box;
+    /* circle in top*/
+    /* position */
     position: absolute;
     display: flex;
-
-
-    /* configuração */
+    /* config */
     width: 21px;
     height: 21px;
     background: var(--amareloclaro);
@@ -382,142 +299,122 @@ color: #E8DACF;
     border-radius: 15px;
 }
 #circle1{
-
-    /* posição */
+    /* position */
     left: 1.5rem;
     top: 1.5rem;
 }
 #circle2{
-    /* posição */
+    /* position */
     left: 77rem;
     top: 1.5rem;
 }
-
 .text1{
-    /* configuração */
+    /* config*/
     width: 41rem;
     height: 15rem;
 }
 #text1{
-    /* posição */
+    /* position */
     margin-top: 3rem;
     margin-left: 3rem;
-
-    /* cor */
 }
 #img1{
-    /* posição    */
-    position: relative;
+    /* position */
     margin-left: 6rem;
     margin-top: 3rem;
 }
-
 .btn1{
-    /* posição */
+    /* button  */
+    /* position */
     position: relative;
     top: 29rem;
     left: -67rem;
 }
-
-/* escondendo checkbox */
 .input-btn1{
-
-    /* posição */
+    /* hidden checkbox */
+    /* position */
     position: absolute;
     top: 14px;
 }
-/* posicionando o label por cima */
 .label-btn1{
-    /* posição */
+    /* moving the label for the top */
+    /* position */
     z-index: 100;
     cursor: pointer;
     display: flex;
     position: relative;
 }
-/* transição do botao clicado e nao clicado */
 .label-btn1::before,
 .label-btn1::after {
     content: "";
 }
-/* botão antes de ser clicado (formato de triangulo) */
 .label-btn1::before{
-    /* posição */
-    display:flex ;
-
-    /* configuração */
+    /* button before being checked (triangulo shape) */
+    /* position */
+    display:flex;
+    /* config */
     width: 0;
     height: 0;
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
     border-left: 25px solid var(--amareloescuro);
 }
-/* botão depois de ser clicado (formato de triangulo) */
 .input-btn1:checked + .label-btn1::before{
-    /* posição */
+    /* button after being checked (triangulo shape) */
+    /* position */
     margin-left: -15px;
     margin-top: 14px;
-
-    /* configuração */
+    /* config */
     width: 0;
     height: 0;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
     border-top: 25px solid var(--amareloescuro);
 }
-
-/* linha na seleção (propósito: acessibilidade) */
 .input-btn1:focus+.label-btn1::before{
+/* line in select (for accessibility) */
     outline:1px dotted #CCC;
 }
-
 .text2{
-    /* posição */
+    /* posiçtion */
     position: relative;
     display: flex;
-
-    /* configuração */
+    /* config */
     justify-content: center;
     width: 80rem;
     text-align: center;
-
 }
 .line{
-    /* posição */
+    /* position */
     z-index: 100;
-    position: relative;
-    display: flex;
-
-    /* configuração */
+    /* config */
     width: 80rem;
     height: 20px;
     justify-content: flex-start;
 }
 #hidden-line{
-    /* posição */
+    /* position */
     z-index: 100;
     position: relative;
     top: -2rem;
-
-    /* configuração */
+    /* config */
     width: 61rem;
     border: 3px solid var(--preto);
     filter: blur(1px);
 }
 .div-hidden-text1{
-    /* posição */
+    /* position */
     display: none;
-
-    /* configuração */
+    /* config */
     width: 80rem;
     height: 15rem;
     justify-content: center;
-
 }
 .box-hidden-text1{
-    /* configuração */
-
+    /* config */
     position: relative;
     top: -20px;
+    /* config */
     justify-content: center;
     width: 60rem;
     height: 14rem;
@@ -527,100 +424,56 @@ color: #E8DACF;
     padding: 0  10px;
     animation: slide-down 0.5s ;
 }
-@keyframes slide-down {
-    0%{
-        top: -30px;
-        opacity: 0;  
-    }
-    25%{
-        opacity: 0;
-    }
-}
 #hidden-text1{
-    /* configuração */
+    /* config */
     padding: 0 20px;
-
-    /* configuração letra */
-    font-family: 'Habibi';
-    font-style: normal;
-    font-weight: 400;
+    /* letter config  */
     font-size: 23px;
     line-height: 29px;
     color: var(--marromescuro);
 }
-
 .div-box-women{
-
-    /* posição */
+    /* position */
     display: flex;
-    position: relative;
-
-    /* configuração */
+    /* config */
     width: 80rem;
     justify-content: space-around;
-    margin: 5rem;
+    margin: 3rem;
 }
 .box-women{
-    /* posição */
+    /* position */
     display: flex;
     position: relative;
-
-    /* configração */
+    /* config */
     justify-content: center;
     align-items: center;
     width: 13.5rem;
     height: 13.5rem;
     background: var(--marromescuro2);
     border: 1px solid  var(--preto);
-    border-radius: 30px;
+    border-radius: 15px;
+    box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.3), -8px -8px 10px 1px rgba(0, 0, 0, 0.3);
 }
 #title-women{
-    /* configuração */
-    z-index: 100;
+    /* config */
     width: 190px;
-    height: 66px;
-
-    /* configuração das letras*/
+    height: 120px;
+    /* letter config */
     font-family: 'Special Elite';
-    font-style: normal;
-    font-weight: 400;
     font-size: 30px;
     line-height: 30px;
     text-align: center;
-    color: var(--branco2);
+    color: var(--amareloclaro);
 }
-
-.women-native{
-
-    /* posição */
-    display: flex;
-    position: relative;
-
-    /* configuração */
-    padding: 40px;
-    flex-wrap: wrap;
+#title-women-native,
+#title-women-black,
+#title-women-white,
+#title-women-especific{
+    /* config */
     width: 80rem;
-    background: var(--marromescuro2);
-    border: 1px solid var(--preto);
-    border-radius: 5px;
-
-    /* configuração das letras*/
-    font-family: 'Habibi';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 31px;
-    color: var(--branco2);
-}
-
-#title-women-native{
-    /* configuração */
-    width: 463.57px;
     height: 59px;
-
-    /* configuração da letra */
+    /* letter config */
     font-family: 'Special Elite';
-    font-style: normal;
     font-weight: 400;
     font-size: 42.1429px;
     line-height: 42px;
@@ -628,62 +481,51 @@ color: #E8DACF;
     color:var(--amareloclaro);
 }
 #text3{
-    /* posição */
+    /* position */
     position: relative;
     left: 1rem;
-
-    /* configuração */
+    /* config */
     width: 1082px;
     height: 169px;
-
-    /* configuração da letra */
 }
 .img-native{
-    /* posição */
+    /* position */
     display: flex;
-
-    /* configuração */
+    /* config */
     width: 80rem;
     justify-content: space-around;
 }
 #img2{
-    /* configuração */
+    /* config */
     width: 15rem;
     height: 15rem;
 }
 .subtitle-img-native{
-    /* posição */
+    /* position */
     display: flex;
-    position: relative;
-
-    /* configuração */
+    /* config */
     width: 80rem;
     justify-content: space-around;
 }
 #subtitle-native{
-    /* configuração */
+    /* config */
     width: 212px;
     height: 30px;
-
-    /* configuração da letra */
+    /* letter config  */
     text-align: center;
 }
 #text4{
-    /* configuração */
+    /* config */
     width: 80rem;
     height: 109px;
-
-    /* configuração da letra */
+    /* letter config  */
     text-align: center;}
 #text5{
-    /* posição */
+    /* position */
     margin-left: 8rem;
-
-    /* configuração */
+    /* config */
     width: 1082px;
     height: 130px;
-
-    /* configuração da letra */
 }
 .btn2{
     display: flex;
@@ -691,27 +533,25 @@ color: #E8DACF;
     top: -3rem;
 }
 #btn2{
-    /* posição */
+    /* position */
     display: flex;
     position: relative;
     top: -0.5rem;
     left: 1rem;
 }
 .div-hidden-text2{
-    /* posição */
+    /* position */
     display: none;
-
-    /* configuração */
+    /* config */
     width: 80rem;
     height: 9rem;
     justify-content: center;
-
 }
-
 .box-hidden-text2{
-    /* configuração */
+    /* position */
     position: relative;
     top: -80px;
+    /* config */
     width: 60rem;
     height: 10rem;
     background: var(--marromclaro);
@@ -719,79 +559,29 @@ color: #E8DACF;
     border-radius: 0px 0px 27px 27px;
     padding: 0  10px;
     animation: slide-down2 0.5s ;
-
-}
-@keyframes slide-down2 {
-    0%{
-        top: -90px;
-        opacity: 0;  
-    }
-    25%{
-        opacity: 0;
-    }
-}
-#hidden-text2{
-    /* configuração da letra */
+    /* letter config */
     color: var(--marromescuro);
+
 }
 #text5{
-    /* posição */
+    /* position */
     margin-left: 0;
-
-    /* configuração */
+    /* config */
     width: 80rem;
     height: 222px;
-
-    /* configuração da letra */
+    /*  letter config  */
     text-align: center;
-
-}
-.women-black{
-
-    /* posição */
-    display: flex;
-    position: relative;
-
-    /* configuração */
-    margin: 5rem;
-    padding: 40px;
-    flex-wrap: wrap;
-    width: 80rem;
-    background: var(--marromescuro2);
-    border: 1px solid var(--preto);
-    border-radius: 5px;
-
-    /* configuração das letras*/
-    font-family: 'Habibi';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 31px;
-    color: var(--branco2);
-}
-#title-women-black{
-    /* configuração */
-    width: 600px;
-    height: 59px;
-
-    /* configuração da letra */
-    font-family: 'Special Elite';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 42.1429px;
-    line-height: 42px;
-    text-align: center;
-    color:var(--amareloclaro);
 }
 #text6{
+    /* config */
     padding: 10px;
     height: 169px;
 }
 #text7{
+    /* config */
     padding: 10px;
     height: 111px;
     text-align: center;
-
 }
 #text8{
     width: 686px;
@@ -812,42 +602,7 @@ color: #E8DACF;
 
 
 }
-.women-white{
-    /* posição */
-    display: flex;
-    position: relative;
 
-    /* configuração */
-    padding: 40px;
-
-    flex-wrap: wrap;
-    width: 80rem;
-    background: var(--marromescuro2);
-    border: 1px solid var(--preto);
-    border-radius: 5px;
-
-    /* configuração das letras*/
-    font-family: 'Habibi';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 31px;
-    color: var(--branco2);
-
-}
-#title-women-white{
-    width: 409px;
-    height: 46px;
-
-    font-family: 'Special Elite';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 42.1429px;
-    line-height: 42px;
-    text-align: center;
-
-    color: var(--amareloclaro);
-}
 #text11{
     height: 104px;
     text-align: center;
@@ -856,33 +611,33 @@ color: #E8DACF;
     height: 198px;
 }
 .img-white{
-    /* posição */
+    /* position */
     display: flex;
 
-    /* configuração */
+    /* config */
     width: 80rem;
     justify-content: space-around;
 }
 #img5{
-    /* configuração */
+    /* config */
     width: 15rem;
     height: 15rem;
 }
 .subtitle-img-white{
-    /* posição */
+    /* position */
     display: flex;
     position: relative;
 
-    /* configuração */
+    /* config */
     width: 80rem;
     justify-content: space-around;
 }
 #subtitle-white{
-    /* configuração */
+    /* config */
     width: 212px;
     height: 30px;
 
-    /* configuração da letra */
+    /* config da letra */
     text-align: center;
 }
 
@@ -892,24 +647,24 @@ color: #E8DACF;
     top: -2rem;
 }
 #btn3{
-    /* posição */
+    /* position */
     display: flex;
     position: relative;
     top: -0.5rem;
     left: 1rem;
 }
 .div-hidden-text3{
-    /* posição */
+    /* position */
     display: none;
 
-    /* configuração */
+    /* config */
     width: 80rem;
     height: 15rem;
     justify-content: center;
 
 }
 .box-hidden-text3{
-    /* configuração */
+    /* config */
     justify-content: center;
     position: relative;
     top: -80px;
@@ -923,50 +678,14 @@ color: #E8DACF;
 
 }
 #hidden-text3{
-    /* configuração */
+    /* config */
     padding: 0 20px;
 
-    /* configuração letra */
+    /* config letra */
     color: var(--marromescuro);
 }
 
-.women-especific{
-     /* posição */
-     display: flex;
-     position: relative;
 
-     /* configuração */
-     margin: 5rem;
-     padding: 40px;
-     flex-wrap: wrap;
-     width: 80rem;
-     background: var(--marromescuro2);
-     border: 1px solid var(--preto);
-     border-radius: 5px;
-
-     /* configuração das letras*/
-     font-family: 'Habibi';
-     font-style: normal;
-     font-weight: 400;
-     font-size: 25px;
-     line-height: 31px;
-     color: var(--branco2);
-}
-
-#title-women-especific{
-    display: flex;
-    position: relative;
-    width: 80rem;
-    height: 42px;
-    font-family: 'Special Elite';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 42.1429px;
-    line-height: 42px;
-    text-align: center;
-    color: var(--amareloclaro);
-
-}
 
 
 .btn4{
@@ -981,10 +700,10 @@ color: #E8DACF;
 #btn4-5{
     z-index: 100;
 
-    /* posição */
+    /* position */
     display:flex ;
     position: relative;
-    /* configuração */
+    /* config */
     width: 0;
     height: 0;
     background-color: transparent ;
@@ -996,11 +715,11 @@ color: #E8DACF;
 #btn4{
     z-index: 100;
 
-    /* posição */
+    /* position */
     display:flex ;
     position: relative;
 
-    /* configuração */
+    /* config */
     width: 0;
     height: 0;
     background-color: transparent; ;
@@ -1089,6 +808,52 @@ color: #E8DACF;
 
 }
 
+
+/* animations */
+@keyframes moviment-plant{
+    from{
+        transform: rotate(0.1rad);
+        z-index: 101;
+
+    }
+    to{
+        z-index: 101;
+
+    }
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    
+}
+@keyframes type{
+    /* efect digitation */
+    from { width: 0; }
+}
+@keyframes blink{
+    to{opacity: .0;}
+}
+@keyframes slide-down {
+    0%{
+        top: -30px;
+        opacity: 0;  
+    }
+    25%{
+        opacity: 0;
+    }
+}
+
+
+@keyframes slide-down2 {
+    0%{
+        top: -90px;
+        opacity: 0;  
+    }
+    25%{
+        opacity: 0;
+    }
+}
 
 
 

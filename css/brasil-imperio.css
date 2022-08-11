@@ -82,18 +82,33 @@ width: 15%;
     z-index: 100;
     display: flex;
     position: relative;
-    left: 84rem;
-    top: -16rem;
+    left: 82rem;
+    top: -19rem;
     /* animações */
     animation-name: moviment-plant;
-    animation-duration: 3s;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#mid-shadowplant{
+    opacity: 0.6;
+    width: 40%;
+    z-index: 100;
+    display: flex;
+    position: relative;
+    left: -3rem;
+    top: 120rem;
+    /* animações */
+    animation-name: moviment-plant;
+    animation-duration: 8s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 @keyframes moviment-plant{
     from{
-        transform: translate(-20px,-20px);
+        transform: rotate(0.1rad);
         z-index: 101;
 
     }
@@ -102,7 +117,6 @@ width: 15%;
 
     }
 }
-
 #top-shadowtrack{
     mix-blend-mode: multiply;
     width: 15%;
@@ -317,14 +331,42 @@ hr{
     width: 80rem;
     border: 1px solid #000000;
     background:var(--marromescuro3);
-    border-radius: 30px;
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.3), -8px -8px 10px 1px rgba(0, 0, 0, 0.3);
 
     /* letter config*/
     font-family: 'Habibi';
     font-size: 25px;
     line-height: 31px;
     color: var(--branco2);
+}
+
+.circle{
+    /* posição */
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+
+
+    /* configuração */
+    width: 21px;
+    height: 21px;
+    background: var(--amareloclaro);
+    mix-blend-mode: hard-light;
+    opacity: 0.9;
+    border: 1px solid #000000;
+    border-radius: 15px;
+}
+#circle1{
+
+    /* posição */
+    left: 1.5rem;
+    top: 1.5rem;
+}
+#circle2{
+    /* posição */
+    left: 77rem;
+    top: 1.5rem;
 }
 #title-box{
     /* position */
@@ -337,7 +379,7 @@ hr{
     font-family: 'Special Elite';
     font-style: normal;
     font-weight: 400;
-    font-size: 55px;
+    font-size: 42px;
     line-height: 62px;
     text-align: center;
     align-items: center;
@@ -500,7 +542,6 @@ hr{
 .line{
     /* posição */
     z-index: 100;
-    position: relative;
     display: flex;
 
     /* configuração */
@@ -511,8 +552,6 @@ hr{
 #hidden-line{
     /* posição */
     z-index: 100;
-    position: relative;
-    top: -6rem;
 
     /* configuração */
     width: 61rem;
@@ -523,6 +562,7 @@ hr{
 .nav-hidden-midia{
     /* posição */
     display: none;
+    position: relative;
 
     /* configuração */
     width: 80rem;
@@ -532,7 +572,7 @@ hr{
 }
 .box-hidden-midia{
     /* configuração */
-
+    display: flex;
     position: relative;
     top: -80px;
     justify-content: center;
@@ -617,7 +657,7 @@ hr{
     position: relative;
 
 }
-#woman2,#woman3,#woman4{
+#woman2,#woman3,#woman4,#woman5{
     width: 80rem;
     flex-wrap: wrap;
     display: none;
