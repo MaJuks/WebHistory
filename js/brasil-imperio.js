@@ -11,12 +11,12 @@ function btn_checked(){
 }
 
 var count = 0;
-var btn_esp = document.getElementById("btn-especific2");
-var btn_esp2 = document.getElementById("btn-especific");
+var btn_right = document.getElementById("btn-right");
+var btn_left = document.getElementById("btn-left");
 
 var disp = document.getElementById("display");
   
-btn_esp.onclick = function () {
+btn_right.onclick = function () {
     count++;
     disp.innerHTML = count;
     if(count==0){
@@ -82,7 +82,7 @@ btn_esp.onclick = function () {
         var wom5 = document.getElementById('woman5').style.display = 'none';
     }
 }
-btn_esp2.onclick = function () {
+btn_left.onclick = function () {
     count--;
     disp.innerHTML = count;
     if(count >= 5){
@@ -160,6 +160,3 @@ btn_esp2.onclick = function () {
 }
 
 AOS.init();
-
-        
-
