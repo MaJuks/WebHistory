@@ -125,7 +125,7 @@ main,footer{
 #name-web:hover{
     /* animation cursor*/
     /* config */
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 .home-svg{
     /* "home" + svg */
@@ -185,7 +185,7 @@ hr{
     z-index: 100;
     display: flex;
     position: relative;
-    top: 45rem;
+    top: 51rem;
     left: 13rem;
     /* config */
     flex-wrap: wrap;
@@ -206,9 +206,17 @@ hr{
     color: var(--marromclaro);
 }
 #img-click-here{
+    /* position */
+    margin-top: -2rem;
     /* config */
     width: 124px;
     height: 76px;
+    animation: slide-right 3s ease-in-out infinite alternate;
+}
+@keyframes slide-right{
+    50%{
+        transform: translatex(10px);
+    }
 }
 
 /* ------------------------------------------------------ */
@@ -330,6 +338,9 @@ hr{
     top: 29rem;
     left: -67rem;
 }
+.label-btn1:hover{
+    transform: scale(1.1);
+}
 .input-btn1{
     /* hidden checkbox */
     /* position */
@@ -343,6 +354,7 @@ hr{
     cursor: pointer;
     display: flex;
     position: relative;
+    transition-duration: 0.5s;
 }
 .label-btn1::before,
 .label-btn1::after {
@@ -530,7 +542,7 @@ hr{
     /* position */
     display: flex;
     position: relative;
-    top: -0.5rem;
+    top: -0.4rem;
     left: 1rem;
 }
 .div-hidden-text2{
@@ -676,6 +688,9 @@ hr{
     width: 80rem;
     justify-content: space-between;
 }
+#btn4:hover,#btn4-5:hover{
+    transform: scale(1.1);
+}
 #btn4-5{
     /* config */
     width: 0;
@@ -685,6 +700,8 @@ hr{
     border-bottom: 25px solid transparent;
     border-right: 25px solid transparent;
     border-left: 25px solid var(--roxoescuro);
+    cursor: pointer;
+    transition-duration: 0.5s;
 }
 #btn4{
     /* config */
@@ -695,6 +712,10 @@ hr{
     border-bottom: 25px solid transparent;
     border-left: 25px transparent;
     border-right: 25px solid var(--roxoescuro);
+    cursor: pointer;
+    transition-duration: 0.5s;
+
+
 }
 #woman1{
     /* config */

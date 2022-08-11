@@ -330,7 +330,7 @@ hr{
     flex-wrap: wrap;
     width: 80rem;
     border: 1px solid #000000;
-    background:var(--marromescuro3);
+    background:var(--marromescuro2);
     border-radius: 15px;
     box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.3), -8px -8px 10px 1px rgba(0, 0, 0, 0.3);
 
@@ -494,6 +494,10 @@ hr{
     /* posição */
     position: relative;
     top: -2.3rem;
+    transition-duration: 0.5s;
+}
+.label-btn1:hover{
+    transform: scale(1.1);
 }
 /* posicionando o label por cima */
 .label-btn1{
