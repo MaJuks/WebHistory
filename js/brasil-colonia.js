@@ -1,7 +1,7 @@
 feather.replace()
 
 function botao_clicado1(){
-    if(document.getElementById("btn1").checked){
+    if(document.getElementById("btn-intro").checked){
         var xxx = document.getElementById('div-hidden-text1').style.display = 'flex';
     }
     else{
@@ -9,7 +9,7 @@ function botao_clicado1(){
     }
 }
 function botao_clicado2(){
-    if(document.getElementById("btn2").checked){
+    if(document.getElementById("btn-native").checked){
         var yyy = document.getElementById('div-hidden-text2').style.display = 'flex';
     }
     else{
@@ -17,7 +17,7 @@ function botao_clicado2(){
     }
 }
 function botao_clicado3(){
-    if(document.getElementById("btn3").checked){
+    if(document.getElementById("btn-white").checked){
         var zzz = document.getElementById('div-hidden-text3').style.display = 'flex';
     }
     else{
@@ -25,12 +25,12 @@ function botao_clicado3(){
     }
 }
 var count = 0;
-var btn4 = document.getElementById("btn4");
-var btn5 = document.getElementById("btn4-5");
+var btn_right = document.getElementById("btn-left");
+var btn_left = document.getElementById("btn-right");
 
 var disp = document.getElementById("display");
   
-btn5.onclick = function () {
+btn_right.onclick = function () {
     count++;
     disp.innerHTML = count;
     if(count==0){
@@ -132,7 +132,7 @@ btn5.onclick = function () {
         var um = document.getElementById('woman7').style.display = 'none';
     }
 }
-btn4.onclick = function () {
+btn_left.onclick = function () {
     count--;
     disp.innerHTML = count;
     if(count >= 7){
