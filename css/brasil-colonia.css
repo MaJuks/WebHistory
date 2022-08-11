@@ -443,8 +443,8 @@ hr{
 .box-women{
     /* position */
     display: flex;
-    position: relative;
     /* config */
+    transition-duration: 0.5s;
     justify-content: center;
     align-items: center;
     width: 13.5rem;
@@ -453,6 +453,9 @@ hr{
     border: 1px solid  var(--preto);
     border-radius: 15px;
     box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.3), -8px -8px 10px 1px rgba(0, 0, 0, 0.3);
+}
+.box-women:hover{
+    transform: scale(1.1);
 }
 #title-women{
     /* config */
@@ -480,14 +483,11 @@ hr{
     text-align: center;
     color:var(--amareloclaro);
 }
-#text3{
-    /* position */
-    position: relative;
-    left: 1rem;
+#text3,#text6{
     /* config */
-    width: 1082px;
-    height: 169px;
+    margin: 20px;
 }
+
 .img-native{
     /* position */
     display: flex;
@@ -517,17 +517,11 @@ hr{
 #text4{
     /* config */
     width: 80rem;
-    height: 109px;
-    /* letter config  */
-    text-align: center;}
-#text5{
-    /* position */
-    margin-left: 8rem;
-    /* config */
-    width: 1082px;
-    height: 130px;
+    text-align: center;
+    margin: 20px;
 }
 .btn2{
+    /* position */
     display: flex;
     position: relative;
     top: -3rem;
@@ -565,55 +559,48 @@ hr{
 }
 #text5{
     /* position */
-    margin-left: 0;
-    /* config */
-    width: 80rem;
-    height: 222px;
-    /*  letter config  */
+    height: 150px;
     text-align: center;
+    margin: 20px;
 }
-#text6{
+/* blackwoman */
+
+#text7,#text11{
     /* config */
-    padding: 10px;
-    height: 169px;
-}
-#text7{
-    /* config */
-    padding: 10px;
-    height: 111px;
     text-align: center;
+    margin: 20px;
 }
 #text8{
-    width: 686px;
+    /* config */
+    margin: 20px;
+    width: 700px;
     height: 205px;
-
+    padding: 60px 0 0 0;
+}
+.img3,.img4{
+    margin: 20px;
 }
 #text9{
-
+    /* config */
+    margin: 20px;
     width: 677px;
-    height: 205px;
+    padding: 60px 0 0 0;
     text-align: right;
-
 }
 #text10{
-    padding: 10px;
-    height: 138px;
-    text-align: center;
-
-
-}
-
-#text11{
-    height: 104px;
+    /* config */
+    margin: 40px;
     text-align: center;
 }
-#text12{
-    height: 198px;
+
+#text12,#text13{
+        /* config */
+    margin: 20px;
+    height: 180px;
 }
 .img-white{
     /* position */
     display: flex;
-
     /* config */
     width: 80rem;
     justify-content: space-around;
@@ -627,7 +614,6 @@ hr{
     /* position */
     display: flex;
     position: relative;
-
     /* config */
     width: 80rem;
     justify-content: space-around;
@@ -636,12 +622,10 @@ hr{
     /* config */
     width: 212px;
     height: 30px;
-
-    /* config da letra */
     text-align: center;
 }
-
 .btn3{
+    /* position */
     display: flex;
     position: relative;
     top: -2rem;
@@ -656,18 +640,17 @@ hr{
 .div-hidden-text3{
     /* position */
     display: none;
-
     /* config */
     width: 80rem;
     height: 15rem;
     justify-content: center;
-
 }
 .box-hidden-text3{
-    /* config */
-    justify-content: center;
+    /* position */
     position: relative;
     top: -80px;
+    /* config */
+    justify-content: center;
     width: 60rem;
     height: 11rem;
     background: var(--marromclaro);
@@ -675,34 +658,25 @@ hr{
     border-radius: 0px 0px 27px 27px;
     padding: 0  10px;
     animation: slide-down2 0.5s;
-
 }
 #hidden-text3{
     /* config */
     padding: 0 20px;
-
-    /* config letra */
+    /* letter config */
     color: var(--marromescuro);
 }
-
-
-
-
 .btn4{
-    z-index: 100;
-    height: 0;
-    width: 80rem;
-    top: 10rem;
+    /* position */
     display: flex;
     position: relative;
+    top: 10rem;
+    z-index: 100;
+    /* config */
+    height: 0;
+    width: 80rem;
     justify-content: space-between;
 }
 #btn4-5{
-    z-index: 100;
-
-    /* position */
-    display:flex ;
-    position: relative;
     /* config */
     width: 0;
     height: 0;
@@ -713,12 +687,6 @@ hr{
     border-left: 25px solid var(--roxoescuro);
 }
 #btn4{
-    z-index: 100;
-
-    /* position */
-    display:flex ;
-    position: relative;
-
     /* config */
     width: 0;
     height: 0;
@@ -729,86 +697,59 @@ hr{
     border-right: 25px solid var(--roxoescuro);
 }
 #woman1{
+    /* config */
     width: 80rem;
     flex-wrap: wrap;
     display: flex;
-    position: relative;
-
 }
 #woman2,#woman3,#woman4,#woman5,#woman6,#woman7{
+    /* config */
     width: 80rem;
     flex-wrap: wrap;
     display: none;
-    position: relative;
-}
-@keyframes fade-left {
-    0%{
-        transform: translatex(-100px);
-        opacity: 0;
-    }
-}
-@keyframes fade-right {
-    0%{
-        transform: translatex(100px);
-        opacity: 0;
-    }
-}
-
-.img-woman1{
-    display: flex;
-    position: relative;
 }
 #img6{
+    /* position */
     display: flex;
     position: relative;
-    width: 80%;
-    height: 80%;
     top: 3rem;
     left: 6rem;
+    /* config */
+    width: 80%;
+    height: 80%;
+    
 }
-
-
 #subtitle-woman1{
-    display: flex;
-    position: relative;
+    /* position */
     display: flex;
     padding-left: 14rem;
-
-    width: 80rem;
+    /* config */
     font-size: 20px;
     text-align: center;
-
 }
 #title-woman1{
-    display: flex;
+    /* position */
     position: relative;
-    display: flex;
-
     margin-top: 3rem;
     left: 4.5rem;
-
-
+    /* config */
     width: 550px;
     height: 38px;
-
+    /* letter config */
     font-family: 'Special Elite';
-    font-style: normal;
     font-weight: 400;
     font-size: 38px;
     line-height: 38px;
     color: var(--rosa);
-
 }
 #text-woman1{
+    /* position */
     margin-top: 7.5rem;
     margin-left: -30rem;
+    /* config */
     width: 550px;
     height: 227px;
-
-
 }
-
-
 /* animations */
 @keyframes moviment-plant{
     from{
@@ -843,8 +784,6 @@ hr{
         opacity: 0;
     }
 }
-
-
 @keyframes slide-down2 {
     0%{
         top: -90px;
@@ -854,11 +793,15 @@ hr{
         opacity: 0;
     }
 }
-
-
-
-
-
-
-
-
+@keyframes fade-left {
+    0%{
+        transform: translatex(-100px);
+        opacity: 0;
+    }
+}
+@keyframes fade-right {
+    0%{
+        transform: translatex(100px);
+        opacity: 0;
+    }
+}
