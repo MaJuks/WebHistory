@@ -331,23 +331,23 @@ hr{
     margin-left: 6rem;
     margin-top: 3rem;
 }
-.btn1{
+.btn-intro{
     /* button  */
     /* position */
     position: relative;
     top: 29rem;
     left: -67rem;
 }
-.label-btn1:hover{
+.label-btn:hover{
     transform: scale(1.1);
 }
-.input-btn1{
+.input-btn{
     /* hidden checkbox */
     /* position */
     position: absolute;
     top: 14px;
 }
-.label-btn1{
+.label-btn{
     /* moving the label for the top */
     /* position */
     z-index: 100;
@@ -356,11 +356,11 @@ hr{
     position: relative;
     transition-duration: 0.5s;
 }
-.label-btn1::before,
-.label-btn1::after {
+.label-btn::before,
+.label-btn::after {
     content: "";
 }
-.label-btn1::before{
+.label-btn::before{
     /* button before being checked (triangulo shape) */
     /* position */
     display:flex;
@@ -371,7 +371,7 @@ hr{
     border-bottom: 25px solid transparent;
     border-left: 25px solid var(--amareloescuro);
 }
-.input-btn1:checked + .label-btn1::before{
+.input-btn:checked + .label-btn::before{
     /* button after being checked (triangulo shape) */
     /* position */
     margin-left: -15px;
@@ -383,7 +383,7 @@ hr{
     border-right: 25px solid transparent;
     border-top: 25px solid var(--amareloescuro);
 }
-.input-btn1:focus+.label-btn1::before{
+.input-btn:focus+.label-btn::before{
 /* line in select (for accessibility) */
     outline:1px dotted #CCC;
 }
@@ -532,13 +532,13 @@ hr{
     text-align: center;
     margin: 20px;
 }
-.btn2{
+.btn-native{
     /* position */
     display: flex;
     position: relative;
     top: -3rem;
 }
-#btn2{
+#btn-native{
     /* position */
     display: flex;
     position: relative;
@@ -636,13 +636,13 @@ hr{
     height: 30px;
     text-align: center;
 }
-.btn3{
+.btn-white{
     /* position */
     display: flex;
     position: relative;
     top: -2rem;
 }
-#btn3{
+#btn-white{
     /* position */
     display: flex;
     position: relative;
@@ -677,7 +677,7 @@ hr{
     /* letter config */
     color: var(--marromescuro);
 }
-.btn4{
+.btn-especific{
     /* position */
     display: flex;
     position: relative;
@@ -688,10 +688,10 @@ hr{
     width: 80rem;
     justify-content: space-between;
 }
-#btn4:hover,#btn4-5:hover{
+#btn-right:hover,#btn-left:hover{
     transform: scale(1.1);
 }
-#btn4-5{
+#btn-left{
     /* config */
     width: 0;
     height: 0;
@@ -703,7 +703,7 @@ hr{
     cursor: pointer;
     transition-duration: 0.5s;
 }
-#btn4{
+#btn-right{
     /* config */
     width: 0;
     height: 0;
@@ -714,8 +714,6 @@ hr{
     border-right: 25px solid var(--roxoescuro);
     cursor: pointer;
     transition-duration: 0.5s;
-
-
 }
 #woman1{
     /* config */
