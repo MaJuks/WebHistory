@@ -14,25 +14,22 @@
     </head>
 <body>
 
+    <!-- vignette and shadows (plant and track) -->
     <section class="shadows">
-         <!-- div pai das sombras -->
         <div class="shadows-pai">
             <div class="vignette"></div>
             <div class="shadows-div">
-                <!-- <img src="../assets/sombra_planta1.png" id="sombra-inferior"> -->
-                <img src="../assets/pegada.png" id="bottom-shadowtrack">
-                <!-- sombra da planta no canto superior direito -->
                 <img src="../assets/sombra_planta2.png" id="top-shadowplant">
-                <img src="../assets/pegada.png" id="top-shadowtrack">
                 <img src="../assets/sombra-planta3.png" id="mid-shadowplant">
+                <img src="../assets/pegada.png" id="top-shadowtrack">
+                <img src="../assets/pegada.png" id="bottom-shadowtrack">
             </div>
         </div>
     </section>
 
+    <!-- header - icon + home + "web history" -->
     <header>
-        <!-- div pai -->
         <div class="header-pai">
-            <!-- nome do sub-site "BRASIL COLONIA" -->
             <a href="../index.html"><h1 id="name-web">Web History</h1></a>
             <div class="home-svg">
                 <div class="home">
@@ -43,24 +40,23 @@
                 </div>
             </div>
         </div>
-        <!-- linha que separa o cabeçario -->
         <hr>
     </header>
 
+    <!-- test... click here -->
 
     <!-- <div class="click-here">
         <p id="text-click-here">Clique para ler mais</p>
         <img id="img-click-here" src="../assets/arrow.png" alt="">
     </div> -->
+        
+    <!-- boxes and texts -->
     <main>
         <div class="main-pai">
-            
-            <!-- titulo do site -->
+            <!-- tile -->
             <span id="title">BRASIL IMPÉRIO<span id="cursor">|</span></span>
             <span id="title2">(1822 - 1889)</span>
-            <!-- sombra atras do titulo "a trajetoria da mulher na história" -->
-
-            <!-- box de introduçao -->
+            <!-- box 1 "educação" -->
             <div class="education" data-aos="zoom-in">
                 <div class="circle" id="circle1" ></div>
                 <div class="circle" id="circle2" ></div>
@@ -91,7 +87,7 @@
                     a <span style="color: var(--roxoclaro)">Primeira doutora</span> em Medicina, <span style="color: var(--amareloclaro)">Rita Lobato Velho Lopes</span>.
                 </p>
             </div>
-
+            <!-- box 2 "política" -->
             <div class="policy" data-aos="fade-up">
                 <h1 id="title-box">Política ───────────────────────────────</h1>
                 <p id="text-policy1">Os ideais abolicionistas estavam em alta durante a década de 1860. 
@@ -108,7 +104,7 @@
                     <p id="subtitle-policy1">legenda</p>
                 </div>
             </div>
-
+            <!-- box 3 "imprensa" -->
             <div class="midia" data-aos="fade-up">
                 <h1 id="title-box">Imprensa ───────────────────────────────</h1>
                 <p id="text-midia1">
@@ -149,14 +145,14 @@
                     começassem a se questionar sobre seus direitos, a sociedade ainda acreditava 
                     que eram inferiores e incapazes, lhes impondo o papel da submissão. 
                 </p>
+                <!-- line for hidden text -->
                 <div class="line"><hr id="hidden-line"></div>
-
+                <!-- button -->
                 <div class="btn-midia">
                     <input type="checkbox" class="input-btn1" id="btn-midia" onclick="btn_checked()">
                     <label for="btn-midia" class="label-btn1"></label>
                 </div>
-                <!-- linha que indica que há texto (para ler mais sobre) -->
-                <!-- texto oculto (aparece quando clica) -->
+                <!-- hidden text -->
                 <nav class="nav-hidden-midia" id="nav-hidden-midia">
                     <div class="box-hidden-midia">
                         <p id="hidden-text1">
@@ -174,15 +170,13 @@
                     </div>
                 </nav>
             </div>
-         
+            <!-- box 6 "Mulheres que se destacaram" -->
             <div class="women-especific" data-aos="fade-up">
                 <h1 id="title-box">Mulheres que se destacaram ────────────</h1>
                 <div class="btn-especific">
-                    <button type="button" id="btn-especific"></button>
-                    <button type="button" id="btn-especific2"></button>
+                    <button type="button" id="btn-left"></button>
+                    <button type="button" id="btn-right"></button>
                 </div>
-
-
                 <div class="woman1"  id="woman1">
                     <div class="img-woman1">
                         <img src="../assets/teste1.png" id="img6" alt="">
@@ -196,7 +190,6 @@
                     </p>
                     <p id="subtitle-woman1">legenda</p>
                 </div>
-    
     
                 <div class="woman1" id="woman2">
                     <div class="img-woman1">
@@ -225,7 +218,6 @@
                     <p id="subtitle-woman1">legenda</p>
                 </div>
     
-    
                 <div class="woman1" id="woman4">
                         <div class="img-woman1">
                             <img src="../assets/teste1.png" id="img6" alt="">
@@ -240,7 +232,7 @@
                         <p id="subtitle-woman1">legenda</p>
                 </div>
     
-                 <div class="woman1" id="woman5">
+                <div class="woman1" id="woman5">
                         <div class="img-woman1">
                             <img src="../assets/teste1.png" id="img6" alt="">
                         </div>
@@ -258,27 +250,14 @@
                     Button Clicked <span 
                     id="display">0</span> Times
                 </p>
-    
-                </div>
             </div> 
-
-            
-
     </main>
-
 
     <footer>
         <div class="footer-pai">
 
         </div>
     </footer>
-
-
-
-
-
-
-
     <script src="../js/brasil-imperio.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -288,4 +267,3 @@
     </script>
 </body>
 </html>
-
