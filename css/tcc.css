@@ -402,93 +402,10 @@ footer {
         
     }
 }
-/* HD */
-@media screen and (max-width: 1280px) {
-    .header{
-        height: 80px;
-    }
-    #name-web{
-        position: relative;
-        top: 0.1rem;
-        width: 100%;
-        left: 46.67rem;
-        font-size: 40px;
-    }
-    #label-topics {
-        font-size: 21.33px;
-    }
-    .input-search {
-        /* position */
-        top: 1rem;
-        right: 23.33rem;
-    }
-    select {
-        width: 16.57%;
-        height:  16.57%;
-        padding: 5.33px 0px;
-        font-size: 12px;
-    }
-    hr{
-        margin-top: 20px;
-        border: 1.33px solid var(--marromescuro);
-    }
-    .icon-search svg {
-        width: 38px;
-        height: 38px;
-    }
-    #title {
-        font-size: 43.33px;
-        line-height: 46.67px;
-    }
-    .back-shadow-title{
-        height: 10rem;
-        margin-top: -10.33rem;
-    }
-    .timeline {
-        top: 4.33rem;
-        width: 46.67rem;
-        border: 1.33px solid #5B3E26;
-    }
-    .box-time img {
-        height: 8.67rem;
-    }
-    .back-shadow{
-        height: 13.33rem;
-        margin-top: -10.33rem;
-    }
-    .footer {
-        padding: 10px;
-        top: 6rem;
-    }
-    #about-us {
-        margin-right: 13.33px;
-        font-size: 23.33px;
-    }
-    .icon-network svg {
-        margin-right: 6.67px;
-        width: 23.33px;
-        height: 23.33px;
-    }
-    #back-shadow-footer{
-        /* config */
-        margin-top: 1rem;
-    }
-    .vignette{
-        margin-top: -39rem;
-        height: 650px;
-    }
-    #bottom-shadowplant{
-        margin-top: -28%;    
-    }
-    #bottom-shadowtrack{
-        margin-top: -19%;
-        margin-left: -13%;
-    }
-    #top-shadowplant{
-        margin-left: 75%;
-    }
-}
-/* HD+*/
+
+
+
+/* reponsividade 1600 x 900 */
 @media screen and (max-width: 1600px) {
     .header{
         height: 96px;
@@ -650,6 +567,92 @@ footer {
         margin-left: 75%;
     }
 }
+@media screen and (max-width: 1280px) {
+    .header{
+        height: 80px;
+    }
+    #name-web{
+        position: relative;
+        top: 0.1rem;
+        width: 100%;
+        left: 46.67rem;
+        font-size: 40px;
+    }
+    #label-topics {
+        font-size: 21.33px;
+    }
+    .input-search {
+        /* position */
+        top: 1rem;
+        right: 23.33rem;
+    }
+    select {
+        width: 16.57%;
+        height:  16.57%;
+        padding: 5.33px 0px;
+        font-size: 12px;
+    }
+    hr{
+        margin-top: 20px;
+        border: 1.33px solid var(--marromescuro);
+    }
+    .icon-search svg {
+        width: 38px;
+        height: 38px;
+    }
+    #title {
+        font-size: 43.33px;
+        line-height: 46.67px;
+    }
+    .back-shadow-title{
+        height: 10rem;
+        margin-top: -10.33rem;
+    }
+    .timeline {
+        top: 4.33rem;
+        width: 46.67rem;
+        border: 1.33px solid #5B3E26;
+    }
+    .box-time img {
+        height: 8.67rem;
+    }
+    .back-shadow{
+        height: 13.33rem;
+        margin-top: -10.33rem;
+    }
+    .footer {
+        padding: 10px;
+        top: 6rem;
+    }
+    #about-us {
+        margin-right: 13.33px;
+        font-size: 23.33px;
+    }
+    .icon-network svg {
+        margin-right: 6.67px;
+        width: 23.33px;
+        height: 23.33px;
+    }
+    #back-shadow-footer{
+        /* config */
+        margin-top: 1rem;
+    }
+    .vignette{
+        margin-top: -39rem;
+        height: 650px;
+    }
+    #bottom-shadowplant{
+        margin-top: -28%;    
+    }
+    #bottom-shadowtrack{
+        margin-top: -19%;
+        margin-left: -13%;
+    }
+    #top-shadowplant{
+        margin-left: 75%;
+    }
+}
+
 @media screen and (min-width: 2133.33px) {
     .vignette{
         height: 1100px;
