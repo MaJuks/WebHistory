@@ -83,7 +83,6 @@ width: 15%;
     display: flex;
     position: relative;
     left: 82rem;
-    top: -19rem;
     /* animações */
     animation-name: moviment-plant;
     animation-duration: 2s;
