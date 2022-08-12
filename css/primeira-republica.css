@@ -545,7 +545,7 @@ hr{
 }
 #text-suffrage2,#text-suffrage3{
     padding: 50px 0 0 10px;
-    width: 48rem;
+    width: 45rem;
 }
 .timeline-div{
     display: flex;
@@ -562,7 +562,7 @@ hr{
 .pinkline{
     width: 0px;
     height: 500.01px;
-    border: 3px solid var(--rosaescuro);
+    border: 3px solid var(--roxoclaro);
     transform: rotate(-90deg);
 }
 
@@ -618,7 +618,7 @@ hr{
     height: 30px;
     font-family: 'Special Elite';
     font-size: 35px;
-    color:var(--rosa);
+    color:var(--amareloescuro);
 }
 .timeline-text{
     display: grid;
