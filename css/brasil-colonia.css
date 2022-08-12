@@ -78,7 +78,7 @@ main,footer{
     display: flex;
     position: relative;
     left: 82rem;
-    animation: moviment-plant 5s ease-in-out infinite alternate;
+    animation: moviment-plant 2s ease-in-out infinite alternate;
 }
 #mid-shadowplant{
     /* position */
@@ -91,7 +91,7 @@ main,footer{
     /* config */
     opacity: 0.6;
     width: 40%;
-    animation: moviment-plant 8s ease-in-out infinite alternate;
+    animation: moviment-plant 2s ease-in-out infinite alternate;
 }
 
 
@@ -772,7 +772,7 @@ hr{
 /* animations */
 @keyframes moviment-plant{
     from{
-        transform: rotate(0.1rad);
+        transform: translate(-20px,-20px);
         z-index: 101;
 
     }
