@@ -7,13 +7,9 @@
 /* font-family: 'Shadows Into Light', cursive; */
 
 
-/* zera algumas coisas de css */
 *{
     box-sizing: border-box;
 }
-
-
-/* variaveis das cores */
 :root {
     --branco2:#ffffff ;
     --branco: #faf5f0;
@@ -30,36 +26,23 @@
     --marromescuro3:rgba(53, 25, 5, 0.9);
     --preto: #201d18;
 }
-
-
-/* imagem de fundo */
 body{
     margin: 0;
     background-image: url("../assets/fundo.png");
-    /* ,url("../assets/fundo.png");
-    background-blend-mode: multiply; */
-    /* mix-blend-mode: multiply; */
 }
-
 main,footer{
     mix-blend-mode: multiply; 
 
 }
 
-
 /* ------------------------------------------------------ */
 /* section shadows */
 /* ------------------------------------------------------ */
-
 .vignette{
-    /* posição */
-    margin-top: rem;
+    /* position */
     position: absolute;
     display: flex;
-
-    /* conversar com o professor sobre isso  */
-
-    /* configuração */
+    /* config */
     background-image: url(../assets/vinheta.png);
     height: 6935px;
     width: 100%;
@@ -67,208 +50,137 @@ main,footer{
     opacity: 0.5;
 }
 .shadows-div{
+    /* config */
     height: 0rem;
+    mix-blend-mode: multiply;
 }
 #bottom-shadowtrack{
-    mix-blend-mode: multiply;
-    z-index: 100;
+    /* position */
     display: flex;
     position: relative;
     left: 84rem;
-width: 15%;
     top: 90rem;
+    /* config */
+    width: 15%;
 }
 #top-shadowplant{
-    z-index: 100;
-    display: flex;
+    /* position */
     position: relative;
     left: 82rem;
-    /* animações */
-    animation-name: moviment-plant;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    /* config */
+    animation: moviment-plant 2s ease-in-out infinite alternate;
 }
 #mid-shadowplant{
-    opacity: 0.6;
-    width: 40%;
-    z-index: 100;
+    /* position */
     display: flex;
     position: relative;
     left: -3rem;
     top: 120rem;
-    /* animações */
-    animation-name: moviment-plant;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-@keyframes moviment-plant{
-    from{
-        transform: translate(-20px,-20px);
-        z-index: 101;
-
-    }
-    to{
-        z-index: 101;
-
-    }
+    /* config */
+    opacity: 0.6;
+    width: 40%;
+    animation: moviment-plant 2s ease-in-out infinite alternate;
 }
 #top-shadowtrack{
-    mix-blend-mode: multiply;
-    width: 15%;
-
-    display: flex;
+    /* position */
     position: relative;
     left: 15rem;
+    /* config */
+    width: 15%;
 }
 
 /* ------------------------------------------------------ */
 /* header */
 /* ------------------------------------------------------ */
-
-/* div-pai da section header */
-.header-pai {
-
+.header-div{
     display: flex;
     height: 120px;
     align-items: center;
 }
-
-/* titulo da sub-pagina "web history */
 #name-web{
-    /* posicao */
+    /* "web history */
+    /* position */
     position: relative;
     top: 1rem;
-    left: 470%;
+    left: 84rem;
     width: 150%;
-    z-index: 101;
-
-    /* configuração da letra */
-    text-align: center;
+    z-index: 100;
+    /* letter config */
     font-family: 'Shadows Into Light', cursive;
-    font-style: normal;
     font-weight: 400;
     font-size: 60px;
-    line-height: 6px;
-    text-decoration: none;
-
-    /* cor */
     color: var(--marromescuro3);
     -webkit-text-stroke: 1px var(--preto);
 }
-/* alteração quando passa o mouse */
 #name-web:hover{
-    /* posição */
+    /* position */
     transform: scale(1.05);
 }
-
-/* div escrita home e svg */
 .home-svg{
+    /* "home" + svg */
     display: flex;
-    position: relative;
 }
-
 #home{
-
-     /* posicao */
-     position: relative;
-     top: 1rem;
-     width: 150%;
-     z-index: 101;
-
-     /* configuração da letra */
-     text-align: center;
-     font-family: 'Shadows Into Light', cursive;
-     font-style: normal;
-     font-weight: 400;
-     font-size: 60px;
-     line-height: 6px;
-     text-decoration: none;
-
-     /* cor */
-     color: var(--amareloescuro);
-     -webkit-text-stroke: 1px var(--amareloescuro);
+    /* position */
+    position: relative;
+    top: 1rem;
+    width: 150%;
+    /* letter config */
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 6px;
+    color: var(--amareloescuro);
+    -webkit-text-stroke: 1px var(--amareloescuro);
 }
-/* alteração quando passa o mouse */
 #home:hover{
-    /* configuração */
-    transform: scale(1.05);
+    /* config */
+    transform: scale(1.1);
 }
-
-
-/* retirar linha do link */
 a{
     text-decoration: none;
-    color: none;
 }
-
-/* configuração da div do svg */
 .icon-home{
-    /* posição */
+    /* position */
     position: relative;
     display: flex;
     left: -85%;
     top: 2.2rem;
-    z-index: 100;
-}
-
-/* configuração do svg*/
-.icon-home svg{
-    /* configuração */
+}.icon-home svg{
+    /* config */
     width: 50px;
     height: 50px;
-
-    /* cor */
     color: var(--amareloescuro);
 }
-
-/* linhs que separa o header do main */
 hr{
-    /* posição */
+    /* position */
     margin-top: 30px;
-
-    /* cor*/
+    /* config */
     border: 2px solid var(--marromescuro3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transform: rotate(-0.04deg);
     background-color: var(--marromescuro3);
 }
-
 /* ------------------------------------------------------ */
 /* main */
 /* ------------------------------------------------------ */
-
-
-
 .main-pai{
     /* config */
     display: grid;
-    box-sizing: border-box;
-    justify-content:center ;
-    justify-items: center;
     justify-items: center;
 }
 #title{
     /* position */
-    margin-top:5rem;
-    margin-left:5rem;
-    margin-right: 5rem;
-
+    margin: 5rem 5rem 0 5rem;
     /*letter config*/
-    z-index: 101;
     font-family: 'Special Elite', cursive;
     font-size: 65px;
     line-height: 100px;
     text-align: center;
-
-    /* color */
     color: var(--marromescuro);
     -webkit-text-stroke: 1px var(--preto);
     border: px solid var(--preto);
-
     /* for animation*/
     white-space: nowrap;
     overflow: hidden;
@@ -279,51 +191,25 @@ hr{
     /* position */
     position: relative;
     top:-2rem;
-
     /* letter config*/
     z-index: 101;
     font-family: 'Special Elite', cursive;
     font-size: 45px;
     line-height: 100px;
     text-align: center;
-
-    /* color */
     color: var(--amareloescuro);
     -webkit-text-stroke: 1px var(--amareloescuro);
-
     /* for animation */
     animation: fade 2s ease-in-out;
 }
-
-@keyframes fade {
-    0%{
-        opacity: 0;
-    }
-    
-}
 #cursor{
     animation: blink 1s infinite;
-
 }
-
-@keyframes type{
-    from { width: 0; }
-  }
-
-@keyframes blink{
-    to{opacity: .0;}
-}
-
-.education,
-.policy,
-.midia,
-.women-especific{
+.container{
     /* position */
     display: flex;
     position: relative;
-
     /* div config */
-    /* superior | direita | inferior | esquerda */
     padding: 50px 70px 60px 60px;
     margin: 2.5rem;
     flex-wrap: wrap;
@@ -332,38 +218,31 @@ hr{
     background:var(--marromescuro2);
     border-radius: 15px;
     box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.3), -8px -8px 10px 1px rgba(0, 0, 0, 0.3);
-
     /* letter config*/
     font-family: 'Habibi';
     font-size: 25px;
     line-height: 31px;
     color: var(--branco2);
 }
-
 .circle{
-    /* posição */
-    box-sizing: border-box;
+    /* position */
     position: absolute;
-    display: flex;
-
-
-    /* configuração */
+    /* config */
     width: 21px;
     height: 21px;
     background: var(--amareloclaro);
     mix-blend-mode: hard-light;
-    opacity: 0.9;
+    opacity: 1;
     border: 1px solid #000000;
     border-radius: 15px;
 }
 #circle1{
-
-    /* posição */
+    /* position */
     left: 1.5rem;
     top: 1.5rem;
 }
 #circle2{
-    /* posição */
+    /* position */
     left: 77rem;
     top: 1.5rem;
 }
@@ -371,17 +250,14 @@ hr{
     /* position */
     display: flex;
     position: relative;
-
     /* config */
     width: 80rem;
     height: 72px;
     font-family: 'Special Elite';
-    font-style: normal;
     font-weight: 400;
     font-size: 42px;
     line-height: 42px;
     text-align: center;
-    align-items: center;
     justify-content: center;
     color: var(--amareloclaro);
 }
@@ -394,8 +270,6 @@ hr{
     /* config */
     height: 197px;
 }
-
-
 .img-educ{
     /* config */
     display: flex;
@@ -413,13 +287,11 @@ hr{
     width: 80rem;
     justify-content: space-around;
 }
-
 #text-educ3{
     /* config */
     height: 140px;
     text-align: center;
 }
-
 #text-policy1{
     /* config */
     height: 101px;
@@ -436,20 +308,17 @@ hr{
     width: 20rem;
     height: 20rem;
 }
-
 .subtitle-policy{
     /* config */
     display: flex;
     width: 80rem;
     justify-content: space-around;
 }
-
 #text-midia1{
     /* config */
     height: 96px;
     text-align: center;
 }
-
 .img-midia{
     /* config */
     flex-wrap: wrap;
@@ -478,103 +347,91 @@ hr{
 
 }
 #text-midia2{  
+    /* config */
     height: 161px;
     text-align: center;
 }
-
 .btn-midia{
-    /* posição */
+    /* position */
     position: relative;
     left: 2.5rem;
 }
-
-/* escondendo checkbox */
-.label-btn1{
-    /* posição */
+.label-btn{
+    /* position */
     position: relative;
     top: -2.3rem;
     transition-duration: 0.5s;
 }
-.label-btn1:hover{
+.label-btn:hover{
     transform: scale(1.1);
 }
-/* posicionando o label por cima */
-.label-btn1{
-    /* posição */
-    z-index: 100;
+.label-btn{
+    /* moving the label for the top */
+    /* position */
     cursor: pointer;
     display: flex;
     position: relative;
 }
-/* transição do botao clicado e nao clicado */
-.label-btn1::before,
-.label-btn1::after {
+.label-btn::before,
+.label-btn::after {
     content: "";
 }
-/* botão antes de ser clicado (formato de triangulo) */
-.label-btn1::before{
-    /* posição */
+.label-btn::before{
+    /* button before being checked (triangulo shape) */
+    /* position */
     display:flex ;
-
-    /* configuração */
+    /* config */
     width: 0;
     height: 0;
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
     border-left: 25px solid var(--amareloescuro);
 }
-/* botão depois de ser clicado (formato de triangulo) */
-.input-btn1:checked + .label-btn1::before{
-    /* posição */
+.input-btn:checked + .label-btn::before{
+    /* button after being checked (triangulo shape) */
+    /* position */
     margin-left: -15px;
     margin-top: 14px;
-
-    /* configuração */
+    /* config */
     width: 0;
     height: 0;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
     border-top: 25px solid var(--amareloescuro);
 }
-
-/* linha na seleção (propósito: acessibilidade) */
-.input-btn1:focus+.label-btn1::before{
+.input-btn:focus+.label-btn::before{
+    /* line in select (for accessibility) */
     outline:1px dotted #CCC;
 }
-
 .line{
-    /* posição */
+    /* position */
     z-index: 100;
     display: flex;
-
-    /* configuração */
+    /* config */
     width: 80rem;
     height: 20px;
     justify-content: flex-start;
 }
 #hidden-line{
-    /* posição */
+    /* position */
     z-index: 100;
-
-    /* configuração */
+    /* config */
     width: 61rem;
     border: 3px solid var(--preto);
     filter: blur(1px);
 }
-
 .nav-hidden-midia{
-    /* posição */
+    /* position */
     display: none;
     position: relative;
-
-    /* configuração */
+    /* config */
     width: 80rem;
     height: 15rem;
     justify-content: center;
 
 }
 .box-hidden-midia{
-    /* configuração */
+    /* config */
     display: flex;
     position: relative;
     top: -80px;
@@ -597,10 +454,10 @@ hr{
     }
 }
 #hidden-text1{
-    /* configuração */
+    /* config */
     padding: 0 20px;
 
-    /* configuração letra */
+    /* config letra */
     font-family: 'Habibi';
     font-style: normal;
     font-weight: 400;
@@ -608,11 +465,6 @@ hr{
     line-height: 29px;
     color: var(--marromescuro);
 }
-
-
-
-
-
 .btn-especific{
     z-index: 100;
     height: 0;
@@ -624,11 +476,10 @@ hr{
 }
 #btn-right{
     z-index: 100;
-
-    /* posição */
+    /* position */
     display:flex ;
     position: relative;
-    /* configuração */
+    /* config */
     width: 0;
     height: 0;
     background-color: transparent ;
@@ -640,11 +491,11 @@ hr{
 #btn-left{
     z-index: 100;
 
-    /* posição */
+    /* position */
     display:flex ;
     position: relative;
 
-    /* configuração */
+    /* config */
     width: 0;
     height: 0;
     background-color: transparent; ;
@@ -666,20 +517,8 @@ hr{
     display: none;
     position: relative;
 }
-@keyframes fade-left {
-    0%{
-        transform: translatex(-100px);
-        opacity: 0;
-    }
-}
-@keyframes fade-right {
-    0%{
-        transform: translatex(100px);
-        opacity: 0;
-    }
-}
 
-.img-woman1{
+.img-woman{
     display: flex;
     position: relative;
 }
@@ -691,7 +530,7 @@ hr{
     top: 3rem;
     left: 6rem;
 }
-#subtitle-woman1{
+#subtitle-woman{
     display: flex;
     position: relative;
     display: flex;
@@ -702,7 +541,7 @@ hr{
     text-align: center;
 
 }
-#title-woman1{
+#title-woman{
     display: flex;
     position: relative;
     display: flex;
@@ -722,7 +561,7 @@ hr{
     color: var(--rosa);
 
 }
-#text-woman1{
+#text-woman{
     margin-top: 7.5rem;
     margin-left: -30rem;
     width: 550px;
@@ -730,3 +569,40 @@ hr{
 
 
 }
+@keyframes moviment-plant{
+    from{
+        transform: translate(-20px,-20px);
+        z-index: 101;
+
+    }
+    to{
+        z-index: 101;
+
+    }
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    
+}
+@keyframes type{
+    from { width: 0; }
+  }
+
+@keyframes blink{
+    to{opacity: .0;}
+}
+@keyframes fade-left {
+    0%{
+        transform: translatex(-100px);
+        opacity: 0;
+    }
+}
+@keyframes fade-right {
+    0%{
+        transform: translatex(100px);
+        opacity: 0;
+    }
+}
+

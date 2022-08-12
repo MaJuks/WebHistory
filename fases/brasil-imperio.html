@@ -16,7 +16,6 @@
 
     <!-- vignette and shadows (plant and track) -->
     <section class="shadows">
-        <div class="shadows-pai">
             <div class="vignette"></div>
             <div class="shadows-div">
                 <img src="../assets/sombra_planta2.png" id="top-shadowplant">
@@ -24,12 +23,11 @@
                 <img src="../assets/pegada.png" id="top-shadowtrack">
                 <img src="../assets/pegada.png" id="bottom-shadowtrack">
             </div>
-        </div>
     </section>
 
     <!-- header - icon + home + "web history" -->
     <header>
-        <div class="header-pai">
+        <div class="header-div">
             <a href="../index.html"><h1 id="name-web">Web History</h1></a>
             <div class="home-svg">
                 <div class="home">
@@ -57,7 +55,7 @@
             <span id="title">BRASIL IMPÉRIO<span id="cursor">|</span></span>
             <span id="title2">(1822 - 1889)</span>
             <!-- box 1 "educação" -->
-            <div class="education" data-aos="zoom-in">
+            <div class="container" id="education" data-aos="zoom-in">
                 <div class="circle" id="circle1" ></div>
                 <div class="circle" id="circle2" ></div>
                 <h1 id="title-box">Educação ───────────────────────────────</h1>
@@ -88,7 +86,7 @@
                 </p>
             </div>
             <!-- box 2 "política" -->
-            <div class="policy" data-aos="fade-up">
+            <div class="container" id="policy" data-aos="fade-up">
                 <h1 id="title-box">Política ───────────────────────────────</h1>
                 <p id="text-policy1">Os ideais abolicionistas estavam em alta durante a década de 1860. 
                     Muitas <span style="color: var(--rosa)">mulheres</span> contribuíram para o movimento colaborando em atividades beneficentes, 
@@ -105,7 +103,7 @@
                 </div>
             </div>
             <!-- box 3 "imprensa" -->
-            <div class="midia" data-aos="fade-up">
+            <div class="container" id="midia" data-aos="fade-up">
                 <h1 id="title-box">Imprensa ───────────────────────────────</h1>
                 <p id="text-midia1">
                     Neste período, surgem no Brasil os primeiros jornais editados por mulheres, que 
@@ -149,8 +147,8 @@
                 <div class="line"><hr id="hidden-line"></div>
                 <!-- button -->
                 <div class="btn-midia">
-                    <input type="checkbox" class="input-btn1" id="btn-midia" onclick="btn_checked()">
-                    <label for="btn-midia" class="label-btn1"></label>
+                    <input type="checkbox" class="input-btn" id="btn-midia" onclick="btn_checked()">
+                    <label for="btn-midia" class="label-btn"></label>
                 </div>
                 <!-- hidden text -->
                 <nav class="nav-hidden-midia" id="nav-hidden-midia">
@@ -171,80 +169,80 @@
                 </nav>
             </div>
             <!-- box 4 "Mulheres que se destacaram" -->
-            <div class="women-especific" data-aos="fade-up">
+            <div class="container" id="women-especific" data-aos="fade-up">
                 <h1 id="title-box">Mulheres que se destacaram <br> ────────────</h1>
                 <div class="btn-especific">
                     <button type="button" id="btn-left"></button>
                     <button type="button" id="btn-right"></button>
                 </div>
-                <div class="woman1"  id="woman1">
-                    <div class="img-woman1">
+                <div class="woman"  id="woman1">
+                    <div class="img-woman">
                         <img src="../assets/teste1.png" id="img6" alt="">
                     </div>
-                    <h1 id="title-woman1">Ana Néri (1814-1880)</h1>
-                    <p id="text-woman1">Baiana, foi a primeira enfermeira de guerra do Brasil. 
+                    <h1 id="title-woman">Ana Néri (1814-1880)</h1>
+                    <p id="text-woman">Baiana, foi a primeira enfermeira de guerra do Brasil. 
                         Se voluntariou para atuar como enfermeira durante a Guerra do Paraguai, 
                         de 1865 a 1870, após a convocação de seus filhos. Segundo relatos, atendia 
                         até mesmo soldados inimigos. Primeira mulher a entrar para o Livro dos Heróis 
                         e Heroínas da Pátria, foi condecorada e recebeu homenagens do imperador D.Pedro II.
                     </p>
-                    <p id="subtitle-woman1">legenda</p>
+                    <p id="subtitle-woman">legenda</p>
                 </div>
     
-                <div class="woman1" id="woman2">
-                    <div class="img-woman1">
+                <div class="woman" id="woman2">
+                    <div class="img-woman">
                         <img src="../assets/teste1.png" id="img6" alt="">
                     </div>
-                    <h1 id="title-woman1">Anita Garibaldi (1821-1849)</h1>
-                    <p id="text-woman1">Catarinense que participou ativamente de batalhas e conflitos, 
+                    <h1 id="title-woman">Anita Garibaldi (1821-1849)</h1>
+                    <p id="text-woman">Catarinense que participou ativamente de batalhas e conflitos, 
                         tanto no Brasil quanto na Itália - para onde partiu com Giuseppe Garibaldi, por 
                         quem se apaixonou durante a Farroupilha. Por sua participação em guerras tanto 
                         na América quanto na Europa, é chamada de  “Heroína dos dois Mundos”</p>
-                    <p id="subtitle-woman1">legenda</p>
+                    <p id="subtitle-woman">legenda</p>
                 </div>
 
-                <div class="woman1" id="woman3">
-                    <div class="img-woman1">
+                <div class="woman" id="woman3">
+                    <div class="img-woman">
                         <img src="../assets/teste1.png" id="img6" alt="">
                     </div>
-                    <h1 id="title-woman1">Chiquinha Gonzaga (1847-1935)</h1>
-                    <p id="text-woman1">Compositora, pianista e maestrina, é a autora da famosa marcha 
+                    <h1 id="title-woman">Chiquinha Gonzaga (1847-1935)</h1>
+                    <p id="text-woman">Compositora, pianista e maestrina, é a autora da famosa marcha 
                         de carnaval "Ô Abre Alas". Seu primeiro casamento foi com um homem oito anos 
                         mais velho que não apoiava a sua vocação musical, então, após alguns anos, ela 
                         pediu o divórcio, um escândalo para a sociedade da época. Neta de escravos, se 
                         engajou na luta contra a escravidão e pelos direitos femininos, recusando-se a 
                         publicar suas partituras sob pseudônimo masculino.
                     </p>
-                    <p id="subtitle-woman1">legenda</p>
+                    <p id="subtitle-woman">legenda</p>
                 </div>
     
-                <div class="woman1" id="woman4">
-                        <div class="img-woman1">
+                <div class="woman" id="woman4">
+                        <div class="img-woman">
                             <img src="../assets/teste1.png" id="img6" alt="">
                         </div>
-                        <h1 id="title-woman1">Maria Firmina dos Reis (1822-1917)</h1>
-                        <p id="text-woman1">Escritora maranhense, é autora do considerado primeiro romance da 
+                        <h1 id="title-woman">Maria Firmina dos Reis (1822-1917)</h1>
+                        <p id="text-woman">Escritora maranhense, é autora do considerado primeiro romance da 
                             literatura afro-brasileira, “Úrsula”, no qual apresentava personagens escravos sem 
                             cair nos estereótipos da época. Fundou a primeira escola mista do Maranhão em 1880, 
                             e fez inúmeras contribuições à literatura brasileira.
 
                         </p>
-                        <p id="subtitle-woman1">legenda</p>
+                        <p id="subtitle-woman">legenda</p>
                 </div>
     
-                <div class="woman1" id="woman5">
-                        <div class="img-woman1">
+                <div class="woman" id="woman5">
+                        <div class="img-woman">
                             <img src="../assets/teste1.png" id="img6" alt="">
                         </div>
-                        <h1 id="title-woman1">Nísia Floresta Brasileira Augusta (1810-1885)</h1>
-                        <p id="text-woman1">Nascida no Rio Grande do Norte, foi professora e escritora, 
+                        <h1 id="title-woman">Nísia Floresta Brasileira Augusta (1810-1885)</h1>
+                        <p id="text-woman">Nascida no Rio Grande do Norte, foi professora e escritora, 
                             lutando pela abolição da escravatura e pelos direitos das mulheres. Publicou 
                             o considerado primeiro livro feminista do Brasil, “Direitos das mulheres e 
                             injustiça dos homens”, em 1832. Também fundou uma instituição de ensino para 
                             meninas revolucionária para os padrões da época: o Colégio Augusto contava com 
                             uma grande variedade de disciplinas, não se limitando ao ensino de costura e trabalhos domésticos.
                         </p>
-                        <p id="subtitle-woman1">legenda</p>
+                        <p id="subtitle-woman">legenda</p>
                 </div>
                 <p>
                     Button Clicked <span 

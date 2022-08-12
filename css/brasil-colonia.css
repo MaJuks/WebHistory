@@ -6,11 +6,9 @@
 
 
 *{
-    /* zera algumas coisas de css */
     box-sizing: border-box;
 }
 :root {
-    /* variaveis das cores */
     --branco2:#ffffff ;
     --branco: #faf5f0;
     --marromclaro: #e8dacf;
@@ -87,7 +85,6 @@ main,footer{
     position: relative;
     left: -3rem;
     top: 120rem;
-
     /* config */
     opacity: 0.6;
     width: 40%;
@@ -372,7 +369,7 @@ hr{
     border-left: 25px solid var(--amareloescuro);
 }
 .input-btn:checked + .label-btn::before{
-    /* button after being checked (triangulo shape) */
+    /* button before being checked (triangulo shape) */
     /* position */
     margin-left: -15px;
     margin-top: 14px;
