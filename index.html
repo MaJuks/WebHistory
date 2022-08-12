@@ -15,23 +15,17 @@
 </head>
 
 <body>
-    <section class="header">
-        <!-- div pai (header)-->
-        <div class="header-pai">
-            <!-- nome do site -->
-            <div class="titulo">
-                <h1><a id="titulo" href="index.html"> Web History</a></h1>
+    <header>
+        <div class="header">
+            <div class="name-web">
+                <h1><a id="name-web" href="index.html">Web History</a></h1>
             </div>
-            <!-- caixa de seleção e topic -->
-            <div class="input-pesquisa">
-                <!-- feather icon de pesquisa -->
-                <div class="icon-pesquisa">
+            <div class="input-search">
+                <div class="icon-search">
                     <i data-feather="search"></i>
                 </div>
-                <!-- escrita do lado da caixa -->
-                <label for="topicos" id="label-topico">Tópicos específicos:</label>
-                <!-- caixa de seleçao e opcoes -->
-                <select name="topicos" id="pesquisa-select" onchange = "location = this.value;">
+                <label for="topics" id="label-topics">Tópicos específicos:</label>
+                <select name="topics" id="search-select" onchange = "location = this.value;">
                     <option value="fases/brasil-colonia.html" selected="selected"></option>
                     <option value="fases/brasil-colonia.html">Sufrágio</option>
                     <option value="fases/brasil-colonia.html">Violência</option>
@@ -48,80 +42,54 @@
                 </select>
             </div>
         </div>
-        <!-- linha que separa o cabeçario -->
         <hr>
-    </section>
+    </header>
 
-
-
-    <section class="main">
-        <div class="main-pai">
-            <!-- titulo do site -->
-            <h1 id="titulo2">A Trajetória da Mulher na<br> História do Brasil</h1>
-            <!-- sombra atras do titulo "a trajetoria da mulher na história" -->
-            <div class="fundo-sombra-titulo"></div>
-            <!-- linha do tempo - linha temporal -->
-            <div class="linha-temporal"></div>
-            <!-- caixas que separam as epocas -->
-            <div class="caixas-epocas">
-                <a  href="fases/brasil-colonia.html">     <img id="caixa1" src="assets/caixa.png" alt="brasil-colonia"></a>
-                <a  href="fases/brasil-imperio.html">     <img id="caixa2" src="assets/caixa 2.png" alt="brasil-imperio"></a>
-                <a  href="fases/primeira-republica.html"> <img id="caixa3" src="assets/caixa 3.png" alt="primeira-republica"></a>
-                <a  href="fases/era-vargas.html">         <img id="caixa4" src="assets/caixa 4.png" alt="era-vargas"></a>
-                <a  href="fases/republica-populista.html"><img id="caixa5" src="assets/caixa 5.png" alt="republica-populista"></a>
-                <a  href="fases/ditadura-militar.html">   <img id="caixa6" src="assets/caixa 6.png" alt="ditadura-militar"></a>
-                <a  href="fases/nova-republica.html">     <img id="caixa7" src="assets/caixa 7.png" alt="nova-republicca"></a>
+    <main>
+        <div class="main">
+            <h1 id="title">A Trajetória da Mulher na<br> História do Brasil</h1>
+            <div class="back-shadow-title"></div>
+            <div class="timeline"></div>
+            <div class="box-time">
+                <a  href="fases/brasil-colonia.html">     <img id="box1" src="assets/caixa.png" alt="brasil-colonia"></a>
+                <a  href="fases/brasil-imperio.html">     <img id="box2" src="assets/caixa 2.png" alt="brasil-imperio"></a>
+                <a  href="fases/primeira-republica.html"> <img id="box3" src="assets/caixa 3.png" alt="primeira-republica"></a>
+                <a  href="fases/era-vargas.html">         <img id="box4" src="assets/caixa 4.png" alt="era-vargas"></a>
+                <a  href="fases/republica-populista.html"><img id="box5" src="assets/caixa 5.png" alt="republica-populista"></a>
+                <a  href="fases/ditadura-militar.html">   <img id="box6" src="assets/caixa 6.png" alt="ditadura-militar"></a>
+                <a  href="fases/nova-republica.html">     <img id="box7" src="assets/caixa 7.png" alt="nova-republicca"></a>
             </div>
-            <!-- sombra atras caixas epocas  -->
-            <div class="fundo-sombra"></div>
+            <div class="back-shadow"></div>
         </div>
-    </section>
+    </main>
 
-
-
-    <section class="footer">
-        <!-- div pai rodape -->
-        <div class="footer-pai">
-            <!-- escrita sobre nos -->
-            <label for="icon-redes" id="sobre-nos">SOBRE NÓS</label>
-            <!-- icones de redes githib insta e linkedin -->
-            <div name="icon-redes" class="icon-redes">
+    <footer>       
+        <div class="footer">
+            <label for="icon-network" id="about-us">SOBRE NÓS</label>
+            <div name="icon-network" class="icon-network">
                 <a href="https://www.instagram.com/maju_raposo" class="insta" target="_blank"><i id="insta1" data-feather="instagram"></i></a>
                 <a href="https://github.com/MaJuks/TCC.git" class="git" target="_blank"><i id="git" data-feather="github"></i></a>
                 <a href="https://www.instagram.com/riitamavila" class="insta" target="_blank" ><i id="insta2" data-feather="instagram"></i></a>
             </div>
         </div>
-    </section>
-
-
+    </footer> 
 
     <section class="shadows">
-        <!-- div pai das sombras -->
-        <div class="shadows-pai">
-            <!-- sombra atras do rodape -->
-            <div class="fundo-sombra-rodape"></div>
-            <!-- vinheta na pagina toda -->
-            <div class="vinheta"></div>
-            <!-- sombra da planta no canto inferior esquerdo -->
-            <div class="sombra-planta1">
-                <img src="assets/sombra_planta1.png" id="sombra-inferior">
-                <img src="assets/pegada.png" id="pegada-inferior">
-            </div>
-
-            <!-- sombra da planta no canto superior direito -->
-            <div class="sombra-planta2">
-                <img src="assets/sombra_planta2.png" id="sombra-superior">
-                <img src="assets/pegada.png" id="pegada-superior">
-            </div>
+        <div class="back-shadow-footer">
+            <div id="back-shadow-footer"></div>
+        </div>
+        <div class="vignette"></div>
+        <div class="shadow-pack1">
+            <img src="assets/sombra_planta1.png" id="bottom-shadowplant">
+            <img src="assets/pegada.png" id="bottom-shadowtrack">
+        </div>
+        <div class="shadow-pack2">
+            <img src="assets/sombra_planta2.png" id="top-shadowplant">
+            <img src="assets/pegada.png" id="top-shadowtrack">
         </div>
     </section>
-
-
-
     <script>
         feather.replace()
     </script>
 </body>
-<script src="tcc.js"></script>
-
 </html>
