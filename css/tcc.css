@@ -405,86 +405,6 @@ footer {
 
 
 
-/* reponsividade 1600 x 900 */
-@media screen and (max-width: 1600px) {
-    .header{
-        height: 96px;
-    }
-    #name-web {
-        top: 2.24rem;
-        left: 56rem;
-        font-size: 48px;
-    }
-    #label-topics {
-        font-size: 25.60px;
-    }
-    .input-search {
-        top: 1.60rem;
-        right: 28rem;
-    }
-    select {
-        width: 20%;
-        height:  20%;
-        padding: 6.40px 0px;
-        font-size: 14.40px;
-    }
-    hr{
-        margin-top: 24px;
-        border: 1.60px solid var(--marromescuro);
-    }
-    .icon-search svg {
-        width: 45.60px;
-        height: 45.60px;
-    }
-    #title{
-        font-size: 52px;
-        line-height: 56px;
-    }
-    .back-shadow-title{
-        margin-top: -12.40rem;
-        height: 12rem;
-    }
-    .timeline {
-        top: 4.20rem;
-        width: 56rem;
-        border: 1.60px solid #5B3E26;
-    }
-    .box-time img {
-        height: 10.40rem;
-    }
-    .back-shadow{
-        margin-top: -12.38rem;
-        height: 16rem;
-    }
-    .footer{
-        padding: 12px;
-        top: 7.20rem;
-    }
-    #about-us {
-        margin-right: 13.33px;
-        font-size: 28px;
-    }
-    .icon-network svg {
-        margin-right: 8px;
-        width: 28px;
-        height: 28px;
-    }
-    
-    .vignette{
-        margin-top: -46.7rem;
-        height: 850px;
-    }
-    #bottom-shadowplant{
-        margin-top: -24.7%;    
-    }
-    #bottom-shadowtrack{
-        margin-top: -19%;
-        margin-left: -13%;
-    }
-    #top-shadowplant{
-        margin-left: 75%;
-    }
-}
 
 @media screen and (max-width: 1745.45px) {
     .header {
@@ -567,6 +487,87 @@ footer {
         margin-left: 75%;
     }
 }
+/* HD+ */
+@media screen and (max-width: 1600px) {
+    .header{
+        height: 96px;
+    }
+    #name-web {
+        top: 2.24rem;
+        left: 56rem;
+        font-size: 48px;
+    }
+    #label-topics {
+        font-size: 25.60px;
+    }
+    .input-search {
+        top: 1.60rem;
+        right: 28rem;
+    }
+    select {
+        width: 20%;
+        height:  20%;
+        padding: 6.40px 0px;
+        font-size: 14.40px;
+    }
+    hr{
+        margin-top: 24px;
+        border: 1.60px solid var(--marromescuro);
+    }
+    .icon-search svg {
+        width: 45.60px;
+        height: 45.60px;
+    }
+    #title{
+        font-size: 52px;
+        line-height: 56px;
+    }
+    .back-shadow-title{
+        margin-top: -12.40rem;
+        height: 12rem;
+    }
+    .timeline {
+        top: 4.20rem;
+        width: 56rem;
+        border: 1.60px solid #5B3E26;
+    }
+    .box-time img {
+        height: 10.40rem;
+    }
+    .back-shadow{
+        margin-top: -12.38rem;
+        height: 16rem;
+    }
+    .footer{
+        padding: 12px;
+        top: 7.20rem;
+    }
+    #about-us {
+        margin-right: 13.33px;
+        font-size: 28px;
+    }
+    .icon-network svg {
+        margin-right: 8px;
+        width: 28px;
+        height: 28px;
+    }
+    
+    .vignette{
+        margin-top: -46.7rem;
+        height: 850px;
+    }
+    #bottom-shadowplant{
+        margin-top: -24.7%;    
+    }
+    #bottom-shadowtrack{
+        margin-top: -19%;
+        margin-left: -13%;
+    }
+    #top-shadowplant{
+        margin-left: 75%;
+    }
+}
+/* HD */
 @media screen and (max-width: 1280px) {
     .header{
         height: 80px;
