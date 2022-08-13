@@ -39,7 +39,6 @@ main,footer{
 .vignette{
     /* position */
     position: absolute;
-    display: flex;
     /* config */
     background-image: url(../assets/vinheta.png);
     height: 7100px;
@@ -221,10 +220,9 @@ hr{
 /* ------------------------------------------------------ */
 
 .main-father{
-    /* position */
-    display: grid;
     /* config */
     justify-items: center;
+    display: grid;
 }
 #title{
     /* "BRASIL COLONIA" */
@@ -446,8 +444,6 @@ hr{
     /* line in select (for accessibility) */
     outline:1px dotted #CCC;
 }
-
-
 .div-box-women{
     /* position */
     display: flex;
@@ -504,6 +500,8 @@ hr{
     /* config */
     width: 80rem;
     justify-content: space-around;
+    /* letter config */
+    font-size: 20px
 }
 #subtitle-native{
     /* config */
@@ -552,6 +550,23 @@ hr{
 .img3,.img4{
     margin: 20px;
 }
+#subtitle-black1,#subtitle-black2{
+    display: flex;
+    position: relative;
+    width: 80rem;
+    height: 0;
+    margin: 0;
+    font-size: 20px;
+    top: -0.5rem;
+
+}
+#subtitle-black1{
+    justify-content: right;
+    margin-right: 12rem;
+}
+#subtitle-black2{
+    margin-left: 12rem;
+}
 .img-white{
     /* position */
     display: flex;
@@ -571,6 +586,8 @@ hr{
     /* config */
     width: 80rem;
     justify-content: space-around;
+    /* letter config */
+    font-size: 20px;
 }
 #subtitle-white{
     /* config */

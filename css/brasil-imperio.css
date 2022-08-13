@@ -6,7 +6,6 @@
 
 /* font-family: 'Shadows Into Light', cursive; */
 
-
 *{
     box-sizing: border-box;
 }
@@ -40,7 +39,6 @@ main,footer{
 .vignette{
     /* position */
     position: absolute;
-    display: flex;
     /* config */
     background-image: url(../assets/vinheta.png);
     height: 6935px;
@@ -55,9 +53,8 @@ main,footer{
 }
 #bottom-shadowtrack{
     /* position */
-    display: flex;
     position: relative;
-    left: 84rem;
+    left: 81rem;
     top: 90rem;
     /* config */
     width: 15%;
@@ -87,7 +84,6 @@ main,footer{
     /* config */
     width: 15%;
 }
-
 /* ------------------------------------------------------ */
 /* header */
 /* ------------------------------------------------------ */
@@ -179,7 +175,6 @@ hr{
     text-align: center;
     color: var(--marromescuro);
     -webkit-text-stroke: 1px var(--preto);
-    border: px solid var(--preto);
     /* for animation*/
     white-space: nowrap;
     overflow: hidden;
@@ -230,8 +225,6 @@ hr{
     width: 21px;
     height: 21px;
     background: var(--amareloclaro);
-    mix-blend-mode: hard-light;
-    opacity: 1;
     border: 1px solid #000000;
     border-radius: 15px;
 }
@@ -260,14 +253,12 @@ hr{
     justify-content: center;
     color: var(--amareloclaro);
 }
-#text-educ1{
-    /* config */
-    height: 101px;
-    text-align: center;
+.text{
+    margin: 30px;
 }
-#text-educ2{  
-    /* config */
-    height: 197px;
+#text-educ1,#text-educ3,
+#text-policy1,#text-midia1,#text-midia2{
+    text-align: center;
 }
 .img-educ{
     /* config */
@@ -285,16 +276,8 @@ hr{
     display: flex;
     width: 80rem;
     justify-content: space-around;
-}
-#text-educ3{
-    /* config */
-    height: 140px;
-    text-align: center;
-}
-#text-policy1{
-    /* config */
-    height: 101px;
-    text-align: center;
+    /* letter config */
+    font-size: 20px;
 }
 .img-policy{
     /* config */
@@ -312,11 +295,8 @@ hr{
     display: flex;
     width: 80rem;
     justify-content: space-around;
-}
-#text-midia1{
-    /* config */
-    height: 96px;
-    text-align: center;
+    /* letter config */
+    font-size: 20px;
 }
 .img-midia{
     /* config */
@@ -327,27 +307,20 @@ hr{
     align-items: center;
 }
 .box-midia1{
-    display: flex;
     flex-flow: column;
     display: flex;
     align-items: center;    
 }
 #img3{
     /* config */
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 22rem;
     padding: 1rem;
 }
 #subtitle-midia{
     /* config */
     width: 245px;
     height: 159px;
-    text-align: center;
-
-}
-#text-midia2{  
-    /* config */
-    height: 161px;
     text-align: center;
 }
 .btn-midia{
@@ -422,7 +395,6 @@ hr{
 .nav-hidden-midia{
     /* position */
     display: none;
-    position: relative;
     /* config */
     width: 80rem;
     height: 15rem;
@@ -430,10 +402,10 @@ hr{
 
 }
 .box-hidden-midia{
-    /* config */
-    display: flex;
+    /* position */
     position: relative;
     top: -80px;
+    /* config */
     justify-content: center;
     width: 60rem;
     height: 14rem;
@@ -443,41 +415,27 @@ hr{
     padding: 0  10px;
     animation: slide-down 0.5s ;
 }
-@keyframes slide-down {
-    0%{
-        top: -90px;
-        opacity: 0;  
-    }
-    25%{
-        opacity: 0;
-    }
-}
 #hidden-text1{
     /* config */
     padding: 0 20px;
-
-    /* config letra */
+    /*  letter config */
     font-family: 'Habibi';
-    font-style: normal;
-    font-weight: 400;
     font-size: 23px;
     line-height: 29px;
     color: var(--marromescuro);
 }
 .btn-especific{
+    /* position */
     z-index: 100;
-    height: 0;
-    width: 80rem;
     top: 10rem;
     display: flex;
     position: relative;
+    /* config */
+    height: 0;
+    width: 80rem;
     justify-content: space-between;
 }
 #btn-right{
-    z-index: 100;
-    /* position */
-    display:flex ;
-    position: relative;
     /* config */
     width: 0;
     height: 0;
@@ -488,12 +446,6 @@ hr{
     border-left: 25px solid var(--roxoescuro);
 }
 #btn-left{
-    z-index: 100;
-
-    /* position */
-    display:flex ;
-    position: relative;
-
     /* config */
     width: 0;
     height: 0;
@@ -504,69 +456,57 @@ hr{
     border-right: 25px solid var(--roxoescuro);
 }
 #woman1{
+    /* config */
     width: 80rem;
     flex-wrap: wrap;
     display: flex;
-    position: relative;
-
 }
 #woman2,#woman3,#woman4,#woman5{
     width: 80rem;
     flex-wrap: wrap;
     display: none;
-    position: relative;
-}
-
-.img-woman{
-    display: flex;
-    position: relative;
 }
 #img6{
-    display: flex;
+    /* position */
     position: relative;
-    width: 80%;
-    height: 80%;
     top: 3rem;
     left: 6rem;
+    /* config */
+    width: 80%;
+    height: 80%;
 }
 #subtitle-woman{
-    display: flex;
-    position: relative;
+    /* position */
     display: flex;
     padding-left: 14rem;
-
+    /* config */
     width: 80rem;
-    font-size: 20px;
     text-align: center;
-
+    /* letter config */
+    font-size: 20px;
 }
 #title-woman{
-    display: flex;
+    /* position */
     position: relative;
-    display: flex;
-
     margin-top: 3rem;
     left: 4.5rem;
-
-
+    /* config */
     width: 550px;
     height: 38px;
-
+    /* letter config */
     font-family: 'Special Elite';
-    font-style: normal;
     font-weight: 400;
     font-size: 38px;
     line-height: 38px;
     color: var(--rosa);
-
 }
 #text-woman{
+    /* position */
     margin-top: 7.5rem;
     margin-left: -30rem;
+    /* config */
     width: 550px;
     height: 227px;
-
-
 }
 @keyframes moviment-plant{
     from{
@@ -604,4 +544,12 @@ hr{
         opacity: 0;
     }
 }
-
+@keyframes slide-down {
+    0%{
+        top: -90px;
+        opacity: 0;  
+    }
+    25%{
+        opacity: 0;
+    }
+}
