@@ -15,7 +15,7 @@
 <body>
 
     <!-- vignette and shadows (plant and track) -->
-    <section class="shadows">
+    <section class="shadows" ondragstart="return false;">
             <div class="vignette"></div>
             <div class="shadows-div">
                 <img src="../assets/sombra_planta2.png" id="top-shadowplant">
@@ -57,8 +57,7 @@
             <div class="introduction"  data-aos="zoom-in">
                 <div class="circle" id="circle1" ></div>
                 <div class="circle" id="circle2" ></div>
-                <div  class="text1">
-                    <p id="text1">Os primeiros portugueses que vieram para o Brasil eram <br>
+                <p class="text" id="text-intro1">Os primeiros portugueses que vieram para o Brasil eram <br>
                         homens. Depois de um período, a Coroa portuguesa <br>
                         enviou <span style="color: var(--rosa)">mulheres</span> a fim de dar início a colonização, mas, <br>
                         ainda assim, faltavam  <span style="color: var(--roxoclaro)">mulheres brancas</span> no Brasil no início <br>
@@ -66,24 +65,24 @@
                         miscigenação de brancos com <span style="color: var(--amareloclaro)"> negras</span> e  <span style="color: var(--rosa)">índias</span> - nos <br>
                         primeiros e pequenos povoados que se formavam, havia <br>
                         tanto <span style="color: var(--roxoclaro)"> mulheres portuguesas</span> quanto<span style="color: var(--rosa)"> índias</span>, <span style="color: var(--amareloclaro)">africanas</span>  e <br>
-                        <span style="color: var(--amareloclaro)">mestiças</span>, sendo estas livres ou escravas.</p>
-                </div>
+                        <span style="color: var(--amareloclaro)">mestiças</span>, sendo estas livres ou escravas.
+                </p>
                 <img src="../assets/teste1.png" id="img1" alt="">
+                <p id="subtitle-intro">legenda</p>
+                <p class="text" id="text-intro2">A sociedade colonizadora como um todo foi explicitamente dividida por etnia, o <br>
+                    que também se aplica às <span style="color: var(--rosa)">mulheres</span>. Enquanto as<span style="color: var(--amareloclaro)"> negras</span> eram escravizadas e vistas <br>
+                    como “objetos” de propriedade dos senhores de engenho, as  <span style="color: var(--roxoclaro)">portuguesas</span> tiveram <br>
+                    sua participação restrita ao cuidado com as crianças e aos trabalhos domésticos. <br>
+                    Nesse contexto, a alfabetização foi fundamental para ampliar a atuação das <br>
+                    <span style="color: var(--rosa)">mulheres</span> na sociedade.
+            </p>
                 <!-- button -->
+                <div class="line"><hr id="hidden-line"></div>
+
                 <div class="btn-intro">
                     <input type="checkbox" class="input-btn" id="btn-intro" onclick="botao_clicado1()">
                     <label for="btn-intro" class="label-btn"></label>
                 </div>
-                <div class="text2">
-                    <p id="text2">A sociedade colonizadora como um todo foi explicitamente dividida por etnia, o <br>
-                        que também se aplica às <span style="color: var(--rosa)">mulheres</span>. Enquanto as<span style="color: var(--amareloclaro)"> negras</span> eram escravizadas e vistas <br>
-                        como “objetos” de propriedade dos senhores de engenho, as  <span style="color: var(--roxoclaro)">portuguesas</span> tiveram <br>
-                        sua participação restrita ao cuidado com as crianças e aos trabalhos domésticos. <br>
-                        Nesse contexto, a alfabetização foi fundamental para ampliar a atuação das <br>
-                        <span style="color: var(--rosa)">mulheres</span> na sociedade.</p>
-                </div>
-                <!-- line for hidden text -->
-                <div class="line"><hr id="hidden-line"></div>
                 <!-- hidden text -->
                 <nav class="div-hidden-text1" id="div-hidden-text1">
                     <div class="box-hidden-text1">
@@ -97,23 +96,26 @@
                         </p>
                     </div>
                 </nav>
+               
+                <!-- line for hidden text -->
+                
             </div>
             <!-- box 2 (3 boxes) -->
-            <div class="div-box-women" data-aos="fade-up" >
+            <div class="div-box-women" data-aos="fade-up" ondragstart="return false;" >
                 <div class="box-women">
-                    <a href="#title-women-native" id="title-women">────────<br>Mulheres Indígenas<br>────────</a>
+                    <a href="#title-women-native"><img src="../assets/box-native.png" id="box-link"></a>
                 </div>
                 <div class="box-women" >
-                    <a href="#title-women-black" id="title-women">────────<br>Mulheres Pretas<br>────────</a>
+                   <a href="#title-women-black"><img src="../assets/box-black.png" id="box-link"></a>
                 </div>
                 <div class="box-women">
-                    <a href="#title-women-white" id="title-women">────────<br>Mulheres Brancas<br>────────</a>
+                    <a href="#title-women-white"><img src="../assets/box-white.png" id="box-link"></a>
                 </div>
             </div>
             <!-- box 3 "Mulheres Indígenas"  -->
             <div class="women-native" data-aos="fade-up">
                 <h1 id="title-women-native">Mulheres Indígenas ─────────────────────────</h1>
-                <p id="text3">Os povos indígenas que habitavam o Brasil no período colonial possuíam costumes muito 
+                <p class="text" id="text-native1">Os povos indígenas que habitavam o Brasil no período colonial possuíam costumes muito 
                         diferentes entre si, o que se reflete nos papéis desempenhados pelas <span style="color: var(--roxoclaro)">mulheres</span>. Algumas eram 
                         escravas de seus maridos; outras, companheiras, tratadas como iguais; e ainda havia aquelas 
                         que chefiavam grupos. Em algumas tribos, as <span style="color: var(--amareloclaro)">mulheres</span> tinham direito de posse de moradias e 
@@ -128,10 +130,10 @@
                     <p id="subtitle-native">legenda</p>
                     <p id="subtitle-native">legenda</p>
                 </div>
-                <p id="text4"><span style="color: var(--amareloclaro)">“</span>Deixemos de fora a cultura anterior ao descobrimento, de tal forma <br>
+                <p class="text" id="text-native2"><span style="color: var(--amareloclaro)">“</span>Deixemos de fora a cultura anterior ao descobrimento, de tal forma <br>
                     esmagada que se torna extremamente difícil seu resgate<span style="color: var(--amareloclaro)">”</span> <span style="color: var(--amareloclaro)">(Breve <br>
                     História do Feminismo no Brasil)</span>.</p>
-                <p id="text5">A <span style="color: var(--rosa)">cultura indígena</span> foi duramente reprimida e apagada. Os
+                <p class="text" id="text-native3">A <span style="color: var(--rosa)">cultura indígena</span> foi duramente reprimida e apagada. Os
                     colonizadores viam os índios da seguinte maneira: os homens para o
                     trabalho escravo e as <span style="color: var(--roxoclaro)">mulheres</span> como concubinas ou empregadas domésticas.
                     Eram proibidos de falar suas línguas nativas e praticar tradições de seus
@@ -149,7 +151,7 @@
                             diretamente relacionadas aos povos indígenas que aqui viviam.
                         </p>
                 </nav>
-                <p id="text5"><span style="color: var(--roxoclaro)">“</span>[...] o indígena, que via na <span style="color: var(--rosa)">mulher</span> uma <span style="color: var(--amareloclaro)">companheira</span>,
+                <p class="text" id="text-native4"><span style="color: var(--roxoclaro)">“</span>[...] o indígena, que via na <span style="color: var(--rosa)">mulher</span> uma <span style="color: var(--amareloclaro)">companheira</span>,
                      não via razão para as diferenças de oportunidades educacionais. Não
                      viam o “perigo” que pudesse representar o fato de suas  <span style="color: var(--roxoclaro)">mulheres</span> aprenderem
                      a ler e a escrever, como os brancos afirmavam. Condenar ao analfabetismo e
@@ -159,15 +161,15 @@
             <!-- box 4 "Mulheres Pretas e Mestiças" -->
             <div class="women-black" data-aos="fade-up">
                 <h1 id="title-women-black">Mulheres Pretas e Mestiças ────────────────────</h1>
-                <p id="text6">As <span style="color: var(--amareloclaro)">negras</span>, quando na lavoura, executavam as mesmas tarefas dos homens. O trabalho era
+                <p class="text" id="text-black1">As <span style="color: var(--amareloclaro)">negras</span>, quando na lavoura, executavam as mesmas tarefas dos homens. O trabalho era
                     de tal forma árduo que a média de vida de um escravo nas plantações ou minas era estimada
                     entre sete e dez anos. Já no meio doméstico, além de trabalharem na casa como tal, eram <span style="color: var(--rosa)">usadas</span>
                     como instrumento de prazer sexual de seu senhor, frequentemente sendo <span style="color: var(--roxoclaro)">“alugadas”</span> a
                     outros ricos.</p>
-                <p id="text7">Em sua condição de escrava, também lhe era atribuída a função de reproduzir a força de
+                <p class="text" id="text-black2">Em sua condição de escrava, também lhe era atribuída a função de reproduzir a força de
                      trabalho.<span style="color: var(--rosa)"> “</span> Muitas resistiram [...], praticando o aborto clandestino como forma de impedir que
                       novos escravos surgissem<span style="color: var(--rosa)">” (Breve História do Feminismo no Brasil)</span>.</p>
-                <p id="text8">
+                <p class="text" id="text-black3">
                     Muitas <span style="color: var(--amareloclaro)">escravas</span> aceitavam ser concubinas para conquistar
                     liberdade e alforria, além da ascensão social e a
                     possibilidade de ter um filho de pele clara, o que muitas
@@ -181,13 +183,13 @@
                 <div class="img4">
                     <img src="../assets/teste1.png" alt="">
                 </div>
-                <p id="text9">Nos quilombos, forma principal de <span style="color: var(--amareloclaro)">resistência negra</span>, as
+                <p class="text" id="text-black4">Nos quilombos, forma principal de <span style="color: var(--amareloclaro)">resistência negra</span>, as
                     <span style="color: var(--amareloclaro)">mulheres</span> eram minoria, sobretudo devido ao tráfico
                       escravo que priorizava homens. Isso trouxe dificuldades
                        para a proposta organizativa dos negros e uma das
                         soluções foi a formação da família poliândrica, em que
                          uma <span style="color: var(--amareloclaro)">mulher </span>tinha até cinco maridos.</p>
-                <p id="text10">Nos séculos XVII e XVIII, organizaram-se as Bandeiras, expedições que percorriam os sertões
+                <p class="text" id="text-black5">Nos séculos XVII e XVIII, organizaram-se as Bandeiras, expedições que percorriam os sertões
                      por meses em busca de metais, pedras preciosas e captura de <span style="color: var(--amareloclaro)">indígenas</span>. Somente <span style="color: var(--rosa)">concubinas</span>
                       e <span style="color: var(--roxoclaro)">mestiças</span> atuaram nas bandeiras, levadas para <span style="color: var(--amareloclaro)">“</span>servir os maridos na cama e na mesa<span style="color: var(--amareloclaro)">” (Breve
                        História do Feminismo no Brasil)</span>.</p>
@@ -195,10 +197,10 @@
             <!-- box 5 "Mulheres Brancas" -->
             <div class="women-white" data-aos="fade-up">
                 <h1 id="title-women-white">Mulheres Brancas ───────────────────────────</h1>
-                <p id="text11">O papel que cabia a <span style="color: var(--roxoclaro)">mulher </span>da classe dominante (branca, <span style="color: var(--rosa)">esposa</span> de proprietários de terras
+                <p class="text" id="text-white1">O papel que cabia a <span style="color: var(--roxoclaro)">mulher </span>da classe dominante (branca, <span style="color: var(--rosa)">esposa</span> de proprietários de terras
                      e escravos) era, obrigatoriamente, o de <span style="color: var(--amareloclaro)">esposa</span> e <span style="color: var(--rosa)">mãe</span>. Suas únicas funções seriam gerar
                       descendentes, realizar os cuidados do lar e satisfazer os maridos.</p>
-                <p id="text12">A valorização do casamento era forte na era colonial, instituindo às <span style="color: var(--ama)">mulheres</span> um padrão
+                <p class="text" id="text-white2">A valorização do casamento era forte na era colonial, instituindo às <span style="color: var(--ama)">mulheres</span> um padrão
                      social de <span style="color: var(--roxoclaro)">“boa esposa”</span>. Somente o casamento constituía uma família. Filhos concebidos fora
                       do casamento não tinham nenhum direito, rotulados como filhos “ilegítimos”. O pai não
                       assumia qualquer responsabilidade por frutos de relacionamentos extraconjugais - quem era
@@ -214,7 +216,7 @@
                     <p id="subtitle-white">legenda</p>
                     <p id="subtitle-white">legenda</p>
                 </div>
-                <p id="text13">
+                <p class="text" id="text-white3">
                     A educação das  <span style="color: var(--roxoclaro)">meninas</span>, que ficava a cargo da Igreja e dos conventos, era extremamente
                     rasa, apenas para reproduzir os costumes da sociedade colonial. Era voltada a atividades do lar
                     como costura e cozinha em vez de instrução propriamente dita: as <span style="color: var(--roxoclaro)">jovens</span> eram ensinadas a
@@ -241,71 +243,70 @@
                 <div class="btn-especific">
                     <button type="button" id="btn-right"></button>
                     <button type="button" id="btn-left"></button>
-                    
                 </div>
-                <div class="woman1"  id="woman1">
-                    <div class="img-woman1">
+                <div class="woman"  id="woman1">
+                    <div class="img-woman">
                         <img src="../assets/teste1.png" id="img6" alt="">
                     </div>
-                    <h1 id="title-woman1">Aqualtune (?-1650)</h1>
-                    <p id="text-woman1">Filha do rei do Congo na África, comandou 10 mil 
+                    <h1 id="title-woman">Aqualtune (?-1650)</h1>
+                    <p id="text-woman">Filha do rei do Congo na África, comandou 10 mil 
                         guerreiros para defender seu reino por volta de 1665. Foi vendida 
                         como escrava para o Brasil e viveu em Pernambuco antes de fugir para 
                         os Palmares, onde foi uma das fundadoras do famoso Quilombo dos Palmares. 
                         É avó de Zumbi dos Palmares.
                     </p>
-                    <p id="subtitle-woman1">legenda</p>
+                    <p id="subtitle-woman">legenda</p>
                 </div>
 
-                <div class="woman1" id="woman2">
-                    <div class="img-woman1">
+                <div class="woman" id="woman2">
+                    <div class="img-woman">
                         <img src="../assets/teste1.png" id="img6" alt="">
                     </div>
-                    <h1 id="title-woman1">Bárbara de Alencar <br>(1760-1832)</h1>
-                    <p id="text-woman1">Nascida em Pernambuco, foi a primeira prisioneira 
+                    <h1 id="title-woman">Bárbara de Alencar <br>(1760-1832)</h1>
+                    <p id="text-woman">Nascida em Pernambuco, foi a primeira prisioneira 
                         política do país. Participou da liderança da Revolução Pernambucana e, 
                         acusada de “traição ao governo”, foi presa em 1817, no Ceará. Libertada 
                         depois de três anos, participou ainda de um segundo levante, a Confederação 
                         do Equador.</p>
-                    <p id="subtitle-woman1">legenda</p>
+                    <p id="subtitle-woman">legenda</p>
                 </div>
 
-                <div class="woman1" id="woman3">
-                    <div class="img-woman1">
+                <div class="woman" id="woman3">
+                    <div class="img-woman">
                         <img src="../assets/teste1.png" id="img6" alt="">
                     </div>
-                    <h1 id="title-woman1">Chica da Silva <br>(1732-1796)</h1>
-                    <p id="text-woman1"> Francisca da Silva de Oliveira foi uma escrava alforriada, 
+                    <h1 id="title-woman">Chica da Silva <br>(1732-1796)</h1>
+                    <p id="text-woman"> Francisca da Silva de Oliveira foi uma escrava alforriada, 
                         que tornou-se uma das mulheres mais ricas da colônia por meio do relacionamento 
                         com o contratador de diamantes da cidade de Diamantina. O casal teve um total de 
                         treze filhos, todos assumidos pelo pai. A riqueza e a influência de seu relacionamento 
                         garantiu-lhe conforto, status e prestígio em uma sociedade escravista e racista, mas nunca 
                         foi totalmente aceita socialmente na região.
                     </p>
-                    <p id="subtitle-woman1">legenda</p>
+                    <p id="subtitle-woman">legenda</p>
                 </div>
 
-                <div class="woman1" id="woman4">
-                    <div class="img-woman1">
+                <div class="woman" id="woman4">
+                    <div class="img-woman">
                         <img src="../assets/teste1.png" id="img6" alt="">
                     </div>
-                    <h1 id="title-woman1">Clara Camarão (?)</h1>
-                    <p id="text-woman1">Indígena potiguara que liderou um 
+                    <h1 id="title-woman">Clara Camarão (?)</h1>
+                    <p id="text-woman">Indígena potiguara que liderou um 
                         grupo de mulheres indígenas na luta contra as invasões 
                         holandesas em meados do século XVII, na região do Pernambuco. 
                         Seu nome está inscrito no Livro dos Heróis e Heroínas da Pátria, 
                         que homenageia personagens que tiveram papel fundamental na construção do Brasil.
 
                     </p>
-                    <p id="subtitle-woman1">legenda</p>
+                    <p id="subtitle-woman">legenda</p>
                 </div>
 
-                <div class="woman1" id="woman5">
-                    <div class="img-woman1">
+                <div class="woman" id="woman5">
+                    <div class="img-woman">
                         <img src="../assets/teste1.png" id="img6" alt="">
                     </div>
-                    <h1 id="title-woman1">Dandara (?-1694)</h1>
-                    <p id="text-woman1">Guerreira negra, rainha do Quilombo dos Palmares e 
+                    <h1 id="title-woman">Dandara (?-1694)</h1>
+                    <p id="text-woman">Guerreira negra, rainha do Quilombo dos Palmares e 
                         companheira de Zumbi. Planejava ações de combate, lutava capoeira e 
                         manuseava armas, liderando seus companheiros na luta pela liberdade. 
                         Após a derrota, preferiu suicidar-se a voltar a vida de escrava. 
@@ -313,36 +314,36 @@
                         por escravos que haviam fugido dos engenhos nas redondezas, o maior centro 
                         de resistência negra a escravidão entre 1597 e 1695. Em seu auge, teve entre 
                         30 mil e 50 mil habitantes.</p>
-                    <p id="subtitle-woman1">legenda</p>
+                    <p id="subtitle-woman">legenda</p>
                 </div>
 
-                <div class="woman1" id="woman6">
-                    <div class="img-woman1">
+                <div class="woman" id="woman6">
+                    <div class="img-woman">
                         <img src="../assets/teste1.png" id="img6" alt="">
                     </div>
-                    <h1 id="title-woman1">Madalena Caramuru <br>(séc. XVI)</h1>
-                    <p id="text-woman1">considerada a primeira brasileira alfabetizada,
+                    <h1 id="title-woman">Madalena Caramuru <br>(séc. XVI)</h1>
+                    <p id="text-woman">considerada a primeira brasileira alfabetizada,
                          era filha de um português com uma índia. Depois de instruída, se 
                          manifestou em defesa do povo, escrevendo uma carta para o padre Manuel 
                          da Nóbrega em 1561 exigindo o fim dos maus-tratos às crianças indígenas e 
                          o início da educação feminina.
                     </p>
-                    <p id="subtitle-woman1">legenda</p>
+                    <p id="subtitle-woman">legenda</p>
                 </div>
 
-                <div class="woman1" id="woman7">
-                    <div class="img-woman1">
+                <div class="woman" id="woman7">
+                    <div class="img-woman">
                         <img src="../assets/teste1.png" id="img6" alt="">
                     </div>
-                    <h1 id="title-woman1">Maria Quitéria <br>(1792-1853)</h1>
-                    <p id="text-woman1"> A chamada ”Mulan brasileira”, fugiu de casa, 
+                    <h1 id="title-woman">Maria Quitéria <br>(1792-1853)</h1>
+                    <p id="text-woman"> A chamada ”Mulan brasileira”, fugiu de casa, 
                         vestiu-se de homem e alistou-se para combater as tropas portuguesas 
                         na Guerra da Independência (1822-1824). Sua valentia nas batalhas que 
                         se seguiram levou-a a atingir o cargo de primeiro-cadete e quando os 
                         portugueses foram derrotados, em 1823, recebeu do próprio D. Pedro I a 
                         condecoração de Cavaleiro da Ordem Imperial do Cruzeiro.
                     </p>
-                    <p id="subtitle-woman1">legenda</p>
+                    <p id="subtitle-woman">legenda</p>
                 </div>
                 <p>
                     Button Clicked <span 
