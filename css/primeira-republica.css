@@ -227,7 +227,7 @@ hr{
 .circle{
     /* position */
     position: absolute;
-    /* configuração */
+    /* config */
     width: 21px;
     height: 21px;
     background: var(--rosaescuro);
