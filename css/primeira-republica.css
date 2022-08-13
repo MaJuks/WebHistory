@@ -128,8 +128,8 @@ main,footer{
     font-family: 'Shadows Into Light', cursive;
     font-weight: 400;
     font-size: 60px;
-    color: var(--rosa);
-    -webkit-text-stroke: 1px var(--rosa);
+    color: var(--rosaescuro);
+    -webkit-text-stroke: 1px var(--rosaescuro);
 }
 #home:hover{
     /* config */
@@ -149,7 +149,7 @@ a{
     /* config */
     width: 50px;
     height: 50px;
-    color: var(--rosa);
+    color: var(--rosaescuro);
 }
 hr{
     /* position */
