@@ -27,36 +27,33 @@ body{
     margin: 0;
     background-image: url("../assets/fundo.png");
 }
+main,header,footer,.shadows{
+    width: 800px;
+}
+main{
+    margin-top: 10rem;
+}
 .header{
-    /* position */
-    margin-top: 0%;
+    margin-top: 10%;
     display: flex;
     justify-content: space-around;
-    /* config */
-    height: 120px;
+    height: 10px;
 }
-#name-web {
-    /* "web history */
-    /* position */
+#name-web{
     position: relative;
-    top: 0.5rem;
-    width: 150%;
-    left: 70rem;
-    /* letter config */
+    top: -4.5rem;
+    left: 28rem;
     font-family: 'Shadows Into Light', cursive;
     font-weight: 400;
-    font-size: 60px;
+    font-size: 40px;
     color: var(--marromescuro2);
     -webkit-text-stroke: 1px var(--preto);
-    text-decoration: none;
 }
 #label-topics{
-    /* "topico especifico" */
-    /* position */
     margin-right: 5px;
     /*letter config */
     font-family: 'Shadows Into Light';
-    font-size: 32px;
+    font-size: 30px;
     color: var(--marromclaro);
     -webkit-text-stroke: 0.5px var(--marromclaro);
 }
@@ -64,8 +61,8 @@ body{
     /* position */
     z-index:100;
     position: relative;
-    top: 1rem;
-    right: 35rem;
+    right: 18rem;
+    top: -1.5rem;
     /* config */
     width: 50%;
     display: flex;
@@ -73,13 +70,11 @@ body{
 }
 select{
     /* select config */
-    text-align: center;
     background-color: var(--marromclaro);
     opacity: 0.5;
     width: 25%;
     height: 25%;
     border-radius: 20px;
-    padding: 8px 0px;
 
     /* letter config */
     font-family: 'Habibi', serif;
@@ -90,12 +85,9 @@ select{
     -webkit-appearance: none;
     -moz-appearance:    none;
     appearance:         none;
-    transition: 0.5s;
-}
-select:hover{
-    border: 2px solid var(--marromescuro);
 }
 hr{
+    width: 50rem;
     /* line */
     /* position */
     margin-top: 30px;
@@ -108,8 +100,8 @@ hr{
 .icon-search svg {
     /* icons */
     /* config */
-    width: 57px;
-    height: 57px;
+    width: 47px;
+    height: 47px;
     color: var(--marromclaro);
 }
 #title {
@@ -118,8 +110,8 @@ hr{
     text-align: center;
     font-family: 'Special Elite', cursive;
     font-weight: 400;
-    font-size: 65px;
-    line-height: 70px;
+    font-size: 50px;
+    line-height: 60px;
     text-align: center;
     color: var(--marromescuro);
     -webkit-text-stroke: 1px var(--preto);
@@ -136,21 +128,21 @@ hr{
 .timeline{
     /* position */
     position: relative;
-    top: 6.5rem;
+    top: 5rem;
     /* config */
-    width: 70rem;
+    width: 30rem;
     margin: auto;
     border: 2px solid #5B3E26;
     background-color: var(--marromescuro);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 .timeline2{
-    display: none;
+    display: flex;
     /* position */
     position: relative;
-    top: 6.5rem;
+    top: 14rem;
     /* config */
-    width: 70rem;
+    width: 14rem;
     margin: auto;
     border: 2px solid #5B3E26;
     background-color: var(--marromescuro);
@@ -165,12 +157,11 @@ hr{
 }
 .box-time img{
     /* config */
-    height: 13rem;
+    height: 9rem;
     transition-duration: 0.5s;
 }
 .box-time img:hover {
     transform: scale(1.1);
-    
 }
 #box1{
     animation: boxes-anim 0.8s ease-in-out 0.5s, boxes-anim 0.8s ease-in-out 3.2s;
@@ -252,7 +243,7 @@ footer {
 .footer{
     /* position */
     position: relative;
-    top: 9rem;
+    top: 20rem;
     display: flex;
     z-index:100;
     /* config */
@@ -307,7 +298,8 @@ footer {
 }
 #back-shadow-footer{
     /* config */
-    margin-top: 3rem;
+    position: relative;
+    top: 13rem;
     background: radial-gradient(50% 50% at 50% 50%, rgba(6, 0, 0, 0.5) 0%, rgba(217, 217, 217, 0) 100%);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     opacity: 0.6;
@@ -316,12 +308,13 @@ footer {
 }
 .vignette{
     /* position */
-    margin-top: -57.7rem;
+    margin-top: -64rem;
     /* config */
-    height: 1030px;
+    height: 1475px;
     background-image: url(../assets/vinheta.png);
+    background-repeat: repeat-y;
     background-size: 100%;
-    opacity: 0.6;
+    opacity: 0.5;
 }
 .shadow-pack1,.shadow-pack2{
     /* position */
@@ -330,7 +323,7 @@ footer {
 }
 #bottom-shadowplant{
     /* position */
-    margin-top: -28%;
+    margin-top: -rem;
     z-index: 100;
     /* config */
     height: 20%;
@@ -340,7 +333,7 @@ footer {
 #bottom-shadowtrack{
     /* position */
     margin-top: -20%;
-    margin-left: -15%;
+    margin-left: -1rem;
     /* config */
     width: 15%;
     height: 15%;
@@ -348,8 +341,8 @@ footer {
 }
 #top-shadowplant{
     /* position */
-    margin-top: -51%;
-    margin-left: 75%;
+    margin-top: -77rem;
+    margin-left: 35rem;
     /* config */
     z-index: 100;
     height: 25%;
@@ -358,8 +351,8 @@ footer {
 }
 #top-shadowtrack{
     /* position */
-    margin-top: -50.3%;
-    margin-left: -16%;
+    margin-top: -70rem;
+    margin-left: -16rem;
     /* config */
     width: 15%;
     height: 15%;
@@ -412,267 +405,5 @@ footer {
         background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--rosaescuro) 52.36%, rgba(217, 217, 217, 0) 100%);
         filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
         
-    }
-}
-
-
-
-
-@media screen and (max-width: 1745.45px) {
-    .header {
-        height: 90px;
-    }
-    #name-web {
-        top: -0.5rem;
-        left: 60rem;
-        font-size: 50px;
-    }
-    #label-topics{
-        font-size: 30px;
-    }
-    .input-search {
-        top: 1rem;
-        right: 29rem;
-    }
-    select{
-        width: 22.73%;
-        height:  22.73%;
-        padding: 7.27px 0px;
-        font-size: 16.36px;
-    }
-    hr{
-        margin-top: 27.27px;
-        border: 1.82px solid var(--marromescuro);
-    }
-    .icon-search svg {
-        width:51.82px;
-        height: 51.82px;
-    }
-    #title {
-        font-size: 59.09px;
-        line-height: 63.64px;
-    }
-    .back-shadow-title{
-        margin-top: -14.09rem;
-        height: 13.64rem;
-    }
-    .timeline{
-        top: 5.5rem;
-        width: 63.64rem;
-        border: 1.82px solid #5B3E26;
-    }
-    .box-time img {
-        height: 11rem;
-    }
-    .back-shadow{
-        height: 18.18rem;
-        margin-top: -13.73rem;
-    }
-    .footer{
-        padding: 13.64px;
-        top: 5rem;
-    }
-    #about-us{
-        margin-right: 18.18px;
-        font-size: 25px;
-    }
-    .icon-network svg {
-        margin-right: 9.09px;
-        width: 25px;
-        height: 25px;
-    }
-    #back-shadow-footer{
-        margin-top: 0rem;
-    }
-    .vignette{
-        margin-top: -52.8rem;
-        height: 950px;
-    }
-    #bottom-shadowplant{
-        margin-top: -24.7%;    
-    }
-    #bottom-shadowtrack{
-        margin-top: -19%;
-        margin-left: -13%;
-    }
-    #top-shadowplant{
-        margin-left: 75%;
-    }
-}
-/* HD+ */
-@media screen and (max-width: 1600px) {
-    .header{
-        height: 96px;
-    }
-    #name-web {
-        top: 2.24rem;
-        left: 56rem;
-        font-size: 48px;
-    }
-    #label-topics {
-        font-size: 25.60px;
-    }
-    .input-search {
-        top: 1.60rem;
-        right: 28rem;
-    }
-    select {
-        width: 20%;
-        height:  20%;
-        padding: 6.40px 0px;
-        font-size: 14.40px;
-    }
-    hr{
-        margin-top: 24px;
-        border: 1.60px solid var(--marromescuro);
-    }
-    .icon-search svg {
-        width: 45.60px;
-        height: 45.60px;
-    }
-    #title{
-        font-size: 52px;
-        line-height: 56px;
-    }
-    .back-shadow-title{
-        margin-top: -12.40rem;
-        height: 12rem;
-    }
-    .timeline {
-        top: 4.20rem;
-        width: 56rem;
-        border: 1.60px solid #5B3E26;
-    }
-    .box-time img {
-        height: 10.40rem;
-    }
-    .back-shadow{
-        margin-top: -12.38rem;
-        height: 16rem;
-    }
-    .footer{
-        padding: 12px;
-        top: 7.20rem;
-    }
-    #about-us {
-        margin-right: 13.33px;
-        font-size: 28px;
-    }
-    .icon-network svg {
-        margin-right: 8px;
-        width: 28px;
-        height: 28px;
-    }
-    
-    .vignette{
-        margin-top: -46.7rem;
-        height: 850px;
-    }
-    #bottom-shadowplant{
-        margin-top: -24.7%;    
-    }
-    #bottom-shadowtrack{
-        margin-top: -19%;
-        margin-left: -13%;
-    }
-    #top-shadowplant{
-        margin-left: 75%;
-    }
-}
-/* HD */
-@media screen and (max-width: 1280px) {
-    .header{
-        height: 80px;
-    }
-    #name-web{
-        position: relative;
-        top: 0.1rem;
-        width: 100%;
-        left: 46.67rem;
-        font-size: 40px;
-    }
-    #label-topics {
-        font-size: 21.33px;
-    }
-    .input-search {
-        /* position */
-        top: 1rem;
-        right: 23.33rem;
-    }
-    select {
-        width: 16.57%;
-        height:  16.57%;
-        padding: 5.33px 0px;
-        font-size: 12px;
-    }
-    hr{
-        margin-top: 20px;
-        border: 1.33px solid var(--marromescuro);
-    }
-    .icon-search svg {
-        width: 38px;
-        height: 38px;
-    }
-    #title {
-        font-size: 43.33px;
-        line-height: 46.67px;
-    }
-    .back-shadow-title{
-        height: 10rem;
-        margin-top: -10.33rem;
-    }
-    .timeline {
-        top: 4.33rem;
-        width: 46.67rem;
-        border: 1.33px solid #5B3E26;
-    }
-    .box-time img {
-        height: 8.67rem;
-    }
-    .back-shadow{
-        height: 13.33rem;
-        margin-top: -10.33rem;
-    }
-    .footer {
-        padding: 10px;
-        top: 6rem;
-    }
-    #about-us {
-        margin-right: 13.33px;
-        font-size: 23.33px;
-    }
-    .icon-network svg {
-        margin-right: 6.67px;
-        width: 23.33px;
-        height: 23.33px;
-    }
-    #back-shadow-footer{
-        /* config */
-        margin-top: 1rem;
-    }
-    .vignette{
-        margin-top: -39rem;
-        height: 650px;
-    }
-    #bottom-shadowplant{
-        margin-top: -28%;    
-    }
-    #bottom-shadowtrack{
-        margin-top: -19%;
-        margin-left: -13%;
-    }
-    #top-shadowplant{
-        margin-left: 75%;
-    }
-}
-
-@media screen and (min-width: 2133.33px) {
-    .vignette{
-        height: 1100px;
-    }
-}
-@media screen and (min-width: 2400px) {
-    .vignette{
-        height: 1200px;
     }
 }
