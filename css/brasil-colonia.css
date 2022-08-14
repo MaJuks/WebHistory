@@ -31,11 +31,9 @@ body{
 main,footer{
     mix-blend-mode: multiply; 
 }
-
 /* ------------------------------------------------------ */
 /* section shadows */
 /* ------------------------------------------------------ */
-
 .vignette{
     /* position */
     position: absolute;
@@ -60,6 +58,18 @@ main,footer{
     mix-blend-mode: multiply;
     width: 15%;
 }
+#mid-shadowplant{
+    /* position */
+    z-index: 100;
+    display: flex;
+    position: relative;
+    left: -3rem;
+    top: 120rem;
+    /* config */
+    opacity: 0.6;
+    width: 40%;
+    animation: moviment-plant 2s ease-in-out infinite alternate;
+}
 #bottom-shadowtrack{
     /* position*/
     display: flex;
@@ -77,25 +87,10 @@ main,footer{
     left: 82rem;
     animation: moviment-plant 2s ease-in-out infinite alternate;
 }
-#mid-shadowplant{
-    /* position */
-    z-index: 100;
-    display: flex;
-    position: relative;
-    left: -3rem;
-    top: 120rem;
-    /* config */
-    opacity: 0.6;
-    width: 40%;
-    animation: moviment-plant 2s ease-in-out infinite alternate;
-}
-
-
 /* ------------------------------------------------------ */
 /* header */
 /* ------------------------------------------------------ */
-
-.header-pai {
+.header-div{
     /* position */
     display: flex;
     /* config */
@@ -127,7 +122,6 @@ main,footer{
     /* "home" + svg */
     /* position */
     display: flex;
-    position: relative;
 }
 #home{
     /* position */
@@ -209,17 +203,10 @@ hr{
     height: 76px;
     animation: slide-right 3s ease-in-out infinite alternate;
 }
-@keyframes slide-right{
-    50%{
-        transform: translatex(10px);
-    }
-}
-
 /* ------------------------------------------------------ */
 /* main */
 /* ------------------------------------------------------ */
-
-.main-father{
+.main-div{
     /* config */
     justify-items: center;
     display: grid;
@@ -265,10 +252,7 @@ hr{
     width: 25em;
     animation: fade 2s ease-in-out;
 }
-.introduction,.women-native,
-.women-black,
-.women-white,
-.women-especific{
+.container{
     /* containers */
     /* position */
     display: flex;
@@ -321,14 +305,9 @@ hr{
     width: 80rem;
     text-align: center;
 }
-#text-black3,#text-black4{
-    width: 43rem;
-    padding:60px 0 0 0;
-}
-#text-black4{
-    text-align: right;
-}
-#img1{
+
+#img-intro,#img-black1,
+#img-black2{
    margin: 30px;
 }
 #subtitle-intro{
@@ -358,36 +337,7 @@ hr{
     border: 3px solid var(--preto);
     filter: blur(1px);
 }
-.div-hidden-text1{
-    /* position */
-    display: none;
-    /* config */
-    width: 80rem;
-    height: 15rem;
-    justify-content: center;
-}
-.box-hidden-text1{
-    /* config */
-    position: relative;
-    top: -81px;
-    /* config */
-    justify-content: center;
-    width: 60rem;
-    height: 14rem;
-    background: var(--marromclaro);
-    border: 1.84865px solid var(--marromescuro);
-    border-radius: 0px 0px 27px 27px;
-    padding: 0  10px;
-    animation: slide-down 0.5s ;
-}
-#hidden-text1{
-    /* config */
-    padding: 0 20px;
-    /* letter config  */
-    font-size: 23px;
-    line-height: 29px;
-    color: var(--marromescuro);
-}
+
 .btn-intro{
     /* button  */
     /* position */
@@ -444,6 +394,36 @@ hr{
     /* line in select (for accessibility) */
     outline:1px dotted #CCC;
 }
+.div-hidden-text1{
+    /* position */
+    display: none;
+    /* config */
+    width: 80rem;
+    height: 15rem;
+    justify-content: center;
+}
+.box-hidden-text1{
+    /* config */
+    position: relative;
+    top: -81px;
+    /* config */
+    justify-content: center;
+    width: 60rem;
+    height: 14rem;
+    background: var(--marromclaro);
+    border: 1.84865px solid var(--marromescuro);
+    border-radius: 0px 0px 27px 27px;
+    padding: 0  10px;
+    animation: slide-down 0.5s ;
+}
+#hidden-text1{
+    /* config */
+    padding: 0 20px;
+    /* letter config  */
+    font-size: 23px;
+    line-height: 29px;
+    color: var(--marromescuro);
+}
 .div-box-women{
     /* position */
     display: flex;
@@ -467,10 +447,7 @@ hr{
     height: 15rem;
     width: 15rem;
 }
-#title-women-native,
-#title-women-black,
-#title-women-white,
-#title-women-especific{
+.title-box{
     /* config */
     width: 80rem;
     height: 59px;
@@ -489,10 +466,13 @@ hr{
     width: 80rem;
     justify-content: space-around;
 }
-#img2{
+#img-native1,#img-native2,
+#img-native3,#img-black1,
+#img-black2,#img-white1,
+#img-white2,#img-white3{
     /* config */
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: 20rem;
 }
 .subtitle-img-native{
     /* position */
@@ -547,9 +527,7 @@ hr{
     color: var(--marromescuro);
 
 }
-.img3,.img4{
-    margin: 20px;
-}
+
 #subtitle-black1,#subtitle-black2{
     display: flex;
     position: relative;
@@ -557,15 +535,22 @@ hr{
     height: 0;
     margin: 0;
     font-size: 20px;
-    top: -0.5rem;
+    top: -1rem;
 
+}
+#text-black3,#text-black4{
+    width: 43rem;
+    padding:60px 0 0 0;
+}
+#text-black4{
+    text-align: right;
 }
 #subtitle-black1{
     justify-content: right;
-    margin-right: 12rem;
+    margin-right: 14rem;
 }
 #subtitle-black2{
-    margin-left: 12rem;
+    margin-left: 9.5rem;
 }
 .img-white{
     /* position */
@@ -573,11 +558,6 @@ hr{
     /* config */
     width: 80rem;
     justify-content: space-around;
-}
-#img5{
-    /* config */
-    width: 15rem;
-    height: 15rem;
 }
 .subtitle-img-white{
     /* position */
@@ -729,6 +709,7 @@ hr{
     height: 227px;
 }
 /* animations */
+
 @keyframes moviment-plant{
     from{
         transform: translate(-20px,-20px);
@@ -740,6 +721,12 @@ hr{
 
     }
 }
+@keyframes slide-right{
+    50%{
+        transform: translatex(10px);
+    }
+}
+
 @keyframes fade {
     0%{
         opacity: 0;

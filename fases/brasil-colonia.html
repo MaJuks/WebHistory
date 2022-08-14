@@ -13,7 +13,6 @@
         <title>My Dames's History</title>
     </head>
 <body>
-
     <!-- vignette and shadows (plant and track) -->
     <section class="shadows" ondragstart="return false;">
             <div class="vignette"></div>
@@ -27,14 +26,12 @@
 
     <!-- header - icon + home + "web history" -->
     <header>
-        <div class="header-pai">
+        <div class="header-div">
             <a href="../index.html"><h1 id="name-web">Web History</h1></a>
             <div class="home-svg">
-                <div class="home">
-                    <a href="../index.html"><h1 id="home">Home</h1></a>
-                </div>
+                <a href="../index.html"><h1 id="home">Home</h1></a>
                 <div class="icon-home">
-                    <a href="../index.html" id="icon-home"><i data-feather="home" ></i></a>
+                    <a href="../index.html"><i data-feather="home" ></i></a>
                 </div>
             </div>
         </div>
@@ -49,25 +46,25 @@
 
     <!-- boxes and texts -->
     <main>
-        <div class="main-father">
+        <div class="main-div">
             <!-- title -->
             <span id="title">BRASIL COLÔNIA<span id="cursor">|</span></span>
             <span id="title2"> (1500 - 1822)</span>
             <!-- box 1 "introdução"-->
-            <div class="introduction"  data-aos="zoom-in">
-                <div class="circle" id="circle1" ></div>
-                <div class="circle" id="circle2" ></div>
+            <div class="container" id="introduction"  data-aos="zoom-in">
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle2"></div>
                 <p class="text" id="text-intro1">Os primeiros portugueses que vieram para o Brasil eram <br>
-                        homens. Depois de um período, a Coroa portuguesa <br>
-                        enviou <span style="color: var(--rosa)">mulheres</span> a fim de dar início a colonização, mas, <br>
-                        ainda assim, faltavam  <span style="color: var(--roxoclaro)">mulheres brancas</span> no Brasil no início <br>
-                        do período colonial, fator que contribuiu para a <br>
-                        miscigenação de brancos com <span style="color: var(--amareloclaro)"> negras</span> e  <span style="color: var(--rosa)">índias</span> - nos <br>
-                        primeiros e pequenos povoados que se formavam, havia <br>
-                        tanto <span style="color: var(--roxoclaro)"> mulheres portuguesas</span> quanto<span style="color: var(--rosa)"> índias</span>, <span style="color: var(--amareloclaro)">africanas</span>  e <br>
-                        <span style="color: var(--amareloclaro)">mestiças</span>, sendo estas livres ou escravas.
+                    homens. Depois de um período, a Coroa portuguesa <br>
+                    enviou <span style="color: var(--rosa)">mulheres</span> a fim de dar início a colonização, mas, <br>
+                    ainda assim, faltavam  <span style="color: var(--roxoclaro)">mulheres brancas</span> no Brasil no início <br>
+                    do período colonial, fator que contribuiu para a <br>
+                    miscigenação de brancos com <span style="color: var(--amareloclaro)"> negras</span> e  <span style="color: var(--rosa)">índias</span> - nos <br>
+                    primeiros e pequenos povoados que se formavam, havia <br>
+                    tanto <span style="color: var(--roxoclaro)"> mulheres portuguesas</span> quanto<span style="color: var(--rosa)"> índias</span>, <span style="color: var(--amareloclaro)">africanas</span>  e <br>
+                    <span style="color: var(--amareloclaro)">mestiças</span>, sendo estas livres ou escravas.
                 </p>
-                <img src="../assets/teste1.png" id="img1" alt="">
+                <img src="../assets/teste1.png" id="img-intro" alt="">
                 <p id="subtitle-intro">legenda</p>
                 <p class="text" id="text-intro2">A sociedade colonizadora como um todo foi explicitamente dividida por etnia, o <br>
                     que também se aplica às <span style="color: var(--rosa)">mulheres</span>. Enquanto as<span style="color: var(--amareloclaro)"> negras</span> eram escravizadas e vistas <br>
@@ -75,10 +72,9 @@
                     sua participação restrita ao cuidado com as crianças e aos trabalhos domésticos. <br>
                     Nesse contexto, a alfabetização foi fundamental para ampliar a atuação das <br>
                     <span style="color: var(--rosa)">mulheres</span> na sociedade.
-            </p>
+                </p>
                 <!-- button -->
                 <div class="line"><hr id="hidden-line"></div>
-
                 <div class="btn-intro">
                     <input type="checkbox" class="input-btn" id="btn-intro" onclick="botao_clicado1()">
                     <label for="btn-intro" class="label-btn"></label>
@@ -95,10 +91,7 @@
                             auxílio não vista em outras instâncias”.
                         </p>
                     </div>
-                </nav>
-               
-                <!-- line for hidden text -->
-                
+                </nav>                
             </div>
             <!-- box 2 (3 boxes) -->
             <div class="div-box-women" data-aos="fade-up" ondragstart="return false;" >
@@ -113,17 +106,17 @@
                 </div>
             </div>
             <!-- box 3 "Mulheres Indígenas"  -->
-            <div class="women-native" data-aos="fade-up">
-                <h1 id="title-women-native">Mulheres Indígenas ─────────────────────────</h1>
+            <div class="container" id="women-native" data-aos="fade-up">
+                <h1 class="title-box">Mulheres Indígenas ─────────────────────────</h1>
                 <p class="text" id="text-native1">Os povos indígenas que habitavam o Brasil no período colonial possuíam costumes muito 
                         diferentes entre si, o que se reflete nos papéis desempenhados pelas <span style="color: var(--roxoclaro)">mulheres</span>. Algumas eram 
                         escravas de seus maridos; outras, companheiras, tratadas como iguais; e ainda havia aquelas 
                         que chefiavam grupos. Em algumas tribos, as <span style="color: var(--amareloclaro)">mulheres</span> tinham direito de posse de moradias e 
                         áreas de cultivo. Em outras, eram somente responsáveis pela plantação e colheita.</p>
                 <div class="img-native">
-                    <img src="../assets/teste1.png" id="img2" alt="">
-                    <img src="../assets/teste1.png" id="img2" alt="">
-                    <img src="../assets/teste1.png" id="img2" alt="">
+                    <img src="../assets/teste1.png" id="img-native1" alt="">
+                    <img src="../assets/teste1.png" id="img-native2" alt="">
+                    <img src="../assets/teste1.png" id="img-native3" alt="">
                 </div>
                 <div class="subtitle-img-native">
                     <p id="subtitle-native">legenda</p>
@@ -159,8 +152,8 @@
                       Ribeiro, A Educação das Mulheres na Colônia</span>.</p>
             </div>
             <!-- box 4 "Mulheres Pretas e Mestiças" -->
-            <div class="women-black" data-aos="fade-up">
-                <h1 id="title-women-black">Mulheres Pretas e Mestiças ────────────────────</h1>
+            <div class="container" id="women-black" data-aos="fade-up">
+                <h1 class="title-box">Mulheres Pretas e Mestiças ────────────────────</h1>
                 <p class="text" id="text-black1">As <span style="color: var(--amareloclaro)">negras</span>, quando na lavoura, executavam as mesmas tarefas dos homens. O trabalho era
                     de tal forma árduo que a média de vida de um escravo nas plantações ou minas era estimada
                     entre sete e dez anos. Já no meio doméstico, além de trabalharem na casa como tal, eram <span style="color: var(--rosa)">usadas</span>
@@ -177,13 +170,9 @@
                     riqueza e prestígio sustentadas por homens ricos sofriam
                     intensa discriminação, consideradas <span style="color: var(--rosa)">“promíscuas”</span> e <span style="color: var(--roxoclaro)">“desvirtuadas”</span>.
                 </p>
-                <div class="img3">
-                    <img src="../assets/teste1.png" alt="">
-                </div>
+                <img src="../assets/teste1.png" id="img-black1" alt="">
                 <p id="subtitle-black1">legenda</p>
-                <div class="img4">
-                    <img src="../assets/teste1.png" alt="">
-                </div>
+                <img src="../assets/teste1.png" id="img-black2" alt="">
                 <p class="text" id="text-black4">Nos quilombos, forma principal de <span style="color: var(--amareloclaro)">resistência negra</span>, as
                     <span style="color: var(--amareloclaro)">mulheres</span> eram minoria, sobretudo devido ao tráfico
                       escravo que priorizava homens. Isso trouxe dificuldades
@@ -197,8 +186,8 @@
                        História do Feminismo no Brasil)</span>.</p>
             </div>
             <!-- box 5 "Mulheres Brancas" -->
-            <div class="women-white" data-aos="fade-up">
-                <h1 id="title-women-white">Mulheres Brancas ───────────────────────────</h1>
+            <div class="container" id="women-white" data-aos="fade-up">
+                <h1 class="title-box">Mulheres Brancas ───────────────────────────</h1>
                 <p class="text" id="text-white1">O papel que cabia a <span style="color: var(--roxoclaro)">mulher </span>da classe dominante (branca, <span style="color: var(--rosa)">esposa</span> de proprietários de terras
                      e escravos) era, obrigatoriamente, o de <span style="color: var(--amareloclaro)">esposa</span> e <span style="color: var(--rosa)">mãe</span>. Suas únicas funções seriam gerar
                       descendentes, realizar os cuidados do lar e satisfazer os maridos.</p>
@@ -209,9 +198,9 @@
                       punida era a <span style="color: var(--rosa)">mãe</span>, que acabava tendo que sustentar <span style="color: var(--amareloclaro)">sozinha</span> o filho, pagando o preço pela
                       “desonra” de ter um filho bastardo.</p>
                 <div class="img-white">
-                    <img src="../assets/teste1.png" id="img5" alt="">
-                    <img src="../assets/teste1.png" id="img5" alt="">
-                    <img src="../assets/teste1.png" id="img5" alt="">
+                    <img src="../assets/teste1.png" id="img-white1" alt="">
+                    <img src="../assets/teste1.png" id="img-white2" alt="">
+                    <img src="../assets/teste1.png" id="img-white3" alt="">
                 </div>
                 <div class="subtitle-img-white">
                     <p id="subtitle-white">legenda</p>
@@ -240,8 +229,8 @@
                 </nav>
             </div>
             <!-- box 6 "Mulheres que se destacaram" -->
-            <div class="women-especific" data-aos="fade-up">
-                <h1 id="title-women-especific">Mulheres que se destacaram <br>────────────</h1>
+            <div class="container" id="women-especific" data-aos="fade-up">
+                <h1 class="title-box">Mulheres que se destacaram <br>────────────</h1>
                 <div class="btn-especific">
                     <button type="button" id="btn-right"></button>
                     <button type="button" id="btn-left"></button>
