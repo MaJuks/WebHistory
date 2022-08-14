@@ -6,55 +6,275 @@
         <!-- feather icons -->
         <script src="https://unpkg.com/feather-icons"></script>
         <!-- icone do site -->
-        <link rel="shortcut icon" href="https://www.freepnglogos.com/uploads/corac-o-rosa-png/corac-o-rosa-contorno-transparente-baixar-hd-7.png" type="image/x-icon">
-        <link rel="stylesheet" href="../css/era-vargas.css">
+        <link rel="shortcut icon" href="../assets/historia.png" type="image">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="../css/era-vargas-republica.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Dames's History</title>
     </head>
 <body>
-
-    <section class="header">
-         <!-- div pai -->
-         <div class="container">
-            <!-- nome do sub-site "ERA VARGAS" -->
-            <div class="titulo">
-                <a href="../index.html"><h1 id="titulo"> Web History</h1></a>
-            </div>
-            <div class="home">
-                <a href="../index.html"><h1 id="home">Home</h1></a>
-            </div>
-            <div class="icon-home">
-                <a href="../index.html" id="icon-home"><i data-feather="home" ></i></a>
-            </div>
-            </div>
-        </div>
-        <!-- linha que separa o cabeçario -->
-        <hr>
-    </section>
-    
-    <section class="main">
-         <!-- titulo do site -->
-         <h1 id="titulo2">ERA VARGAS</h1>
-         <!-- sombra atras do titulo "a trajetoria da mulher na história" -->
-         <div class="fundo-sombra-titulo"></div>
-    </section>
-
-
-    <section class="footer"></section>
+    <!-- vignette and shadows (plant and track) -->
     <section class="shadows">
-         <!-- div pai das sombras -->
-         <div class="sombras-pai">
-            <div class="vinheta"></div>
+        <div class="shadows-pai">
+            <div class="vignette"></div>
+            <div class="shadows-div">
+                <img src="../assets/sombra_planta2.png" id="top-shadowplant">
+                <img src="../assets/sombra-planta3.png" id="mid-shadowplant">
+                <img src="../assets/pegada.png" id="top-shadowtrack">
+                <img src="../assets/pegada.png" id="bottom-shadowtrack">
+            </div>
         </div>
-        <div class="sombra-pegada">
-            <img src="../assets/pegada.png" id="pegada-inferior">
-            <img src="../assets/pegada.png" id="pegada-superior">
-        </div>
-
     </section>
+    <!-- header - icon + home + "web history" -->
+    <header>
+        <div class="header-pai">
+            <a href="../index.html"><h1 id="name-web">Web History</h1></a>
+            <div class="home-svg">
+                <div class="home">
+                    <a href="../index.html"><h1 id="home">Home</h1></a>
+                </div>
+                <div class="icon-home">
+                    <a href="../index.html" id="icon-home"><i data-feather="home" ></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </header>
 
+    <!-- test... click here -->
+
+    <!-- <div class="click-here">
+        <p id="text-click-here">Clique para ler mais</p>
+        <img id="img-click-here" src="../assets/arrow.png" alt="">
+    </div> -->
+        
+    <!-- boxes and texts -->
+    <main>
+        <div class="main-pai">
+            <!-- tile -->
+            <span id="title-vargas">ERA VARGAS<span id="cursor">|</span></span>
+            <span id="title2">(1930 - 1945)</span>
+            <!-- box 1  -->
+            <div class="container" id="vote" data-aos="zoom-in">
+                <div class="circle" id="circle1" ></div>
+                <div class="circle" id="circle2" ></div>
+                <h1 id="title-box">Direito ao voto ───────────────────────────────</h1>
+                <p class="text" id="text-vote1">O direito ao voto para todas as mulheres só se tornou realidade com a 
+                    promulgação do Código Eleitoral de 1932. Foram estabelecidas normas eleitorais e abolidas as restrições 
+                    de gênero, estendendo o direito ao voto e a representação política às mulheres. Com isso, o Brasil se 
+                    tornou o primeiro na América Latina a conquistar o direito ao voto para as mulheres.</p>
+                <img src="../assets/teste1.png" id="img-vote1"alt="">
+                <p id="subtitle-vote1">legenda</p>
+                <img src="../assets/teste1.png" id="img-vote2"alt="">
+                <p class="text" id="text-vote2">As mulheres foram às urnas pela primeira vez em maio de 1933, nas eleições 
+                    para a Assembleia Nacional Constituinte, e no ano seguinte elegeram a primeira deputada federal do Brasil, 
+                    Carlota Pereira de Queirós.</p>
+                <p id="subtitle-vote2">legenda</p>
+
+            </div>
+            <!-- tile -->
+            <span id="title-populista">REPÚBLICA POPULISTA<span id="cursor">|</span></span>
+            <span id="title2">(1945 - 1964)</span>
+            <!-- box 2 "" -->
+            <div class="container" id="achievement" data-aos="fade-up">
+                <h1 id="title-box">Conquistas ──────────────────────────────</h1>
+                <p id="subtitle-achievement">Estatuto da Mulher Casada (1962)</p>
+                <p class="text" id="text-achievement">O Estatuto da Mulher Casada foi aprovado pelo Congresso em 1962. A mulher 
+                    casada não é mais representada por seu marido, passa a ter direito à herança e a possibilidade de pedir 
+                    a guarda dos filhos em casos de separação. Seu consentimento passa a ser mútuo em decisões do casal e não 
+                    é mais necessária a autorização do marido para trabalhar.</p>
+                <p id="subtitle-achievement">Estatuto da Mulher Casada (1962)</p>
+                <p class="text" id="text-achievement">Em 1962, a pílula anticoncepcional passou a ser vendida no Brasil, 
+                    trazendo maior autonomia as mulheres e levantando uma importante discussão sobre os direitos reprodutivos 
+                    e a liberdade sexual feminina.</p>
+            </div>
+            <!-- box 3 "Movimentos e Organizações" -->
+            <div class="container" id="move-org" data-aos="fade-up">
+                <h1 id="title-box">Eventos e Organizações ──────────────────</h1>
+                <div class="timeline-div">
+                    <div id="timeline"></div>
+                    <div class="pinkline" id="pinkline1"></div>
+                    <div class="pinkline" id="pinkline2"></div>
+                    <div class="pinkline" id="pinkline3"></div>
+                </div>
+                <div class="timeline-text">
+                    <div class="num-text" id="num-text1">
+                        <p class="num-years" id="num-years1">1935</p>
+                        <p class="text-years" id="text-years1">
+                            Nasce a União Feminina do Brasil, entidade política criada em defesa dos direitos econômicos, 
+                            sociais, políticos e civis da mulher. Tornou-se clandestina no mesmo ano e muitas de suas 
+                            dirigentes foram presas.</p>
+                    </div>
+                    <div class="num-text" id="num-text2">
+                        <p class="num-years" id="num-years2">1949</p>
+                        <p class="text-years" id="text-years2">
+                            É criada a Federação das Mulheres do Brasil (FMB), presidida por Alice Tibiriçá. Nesse ano, 
+                            também passa-se a comemorar o 8 de Março como Dia das Mulheres no Brasil.
+                        </p>
+                    </div>
+                    <div class="num-text" id="num-text3">
+                        <p class="num-years" id="num-years3">1952</p>
+                        <p class="text-years" id="text-years3">
+                            Realiza-se a primeira Assembleia Nacional de Mulheres, com representantes de 18 estados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- box 5 "Mulheres que se destacaram" -->
+            <div class="container" id="women-especific" data-aos="fade-up">
+                <h1 id="title-box">Mulheres que se destacaram <br>────────────</h1>
+                <div class="btn-especific">
+                    <button type="button" id="btn-left"></button>
+                    <button type="button" id="btn-right"></button>
+                </div>
+
+                <div class="woman"  id="woman1">
+                    <div class="img-woman">
+                        <img src="../assets/teste1.png" id="img-woman" alt="">
+                    </div>
+                    <h1 id="title-woman">Carolina Maria de Jesus (1914-1977)</h1>
+                    <p id="text-woman">Nasceu em Minas Gerais, mas passou a maior parte da vida na capital de São Paulo, 
+                        estabelecendo-se na favela do Canindé. Seu gosto por leitura e escrita a levaram a manter diversos 
+                        diários e cadernos, onde relatava suas vivências sobre a fome, a maternidade e a miséria. Com o auxílio 
+                        do jornalista Audálio Dantas, conseguiu lançar seu primeiro livro, Quarto de Despejo, em 1960, um enorme 
+                        sucesso que já foi traduzido para 16 idiomas.
+                    </p>
+                    <p id="subtitle-woman">legenda</p>
+                </div>
+
+                <div class="woman"  id="woman2">
+                    <div class="img-woman">
+                        <img src="../assets/teste1.png" id="img-woman" alt="">
+                    </div>
+                    <h1 id="title-woman">Clarice Lispector (1925-1977)</h1>
+                    <p id="text-woman">Autora de romances, contos e crônicas, é um dos maiores nomes da literatura brasileira, 
+                        recebendo diversos prêmios. Também cursou Direito e trabalhou como redatora jornalística.
+                    </p>
+                    <p id="subtitle-woman">legenda</p>
+                </div>
+
+                <div class="woman"  id="woman3">
+                    <div class="img-woman">
+                        <img src="../assets/teste1.png" id="img-woman" alt="">
+                    </div>
+                    <h1 id="title-woman">Dorina Nowill (1919-2010)</h1>
+                    <p id="text-woman">Lutou para que pessoas com deficiência visual tivessem autonomia para estudar e trabalhar. 
+                        Criou a Fundação para o Livro do Cego em 1946, fundação responsável pelo lançamento da Campanha de Prevenção 
+                        a Cegueira. Foi convidada para presidir o Conselho Mundial para o Bem-Estar dos Cegos em 1979 e discursou a 
+                        convite das Nações Unidas em 1981. Em 1991, a fundação passou a se chamar Fundação Dorina Nowill para Cegos.
+                    </p>
+                    <p id="subtitle-woman">legenda</p>
+                </div>
+
+                <div class="woman"  id="woman4">
+                    <div class="img-woman">
+                        <img src="../assets/teste1.png" id="img-woman" alt="">
+                    </div>
+                    <h1 id="title-woman">Elis Regina (1945-1982)</h1>
+                    <p id="text-woman">Uma das cantoras mais conhecidas do país, nascida no Rio Grande do Sul, começou a cantar com 
+                        apenas onze anos. Aos 15 foi contratada pela rádio Gaúcha e lançou seu primeiro disco no ano seguinte. Recebeu 
+                        uma série de prêmios e participou de diversos programas de televisão. Foi sucesso de vendas e passou por diversos
+                         gêneros: bossa nova, jazz, MPB, rock e samba.
+
+                    </p>
+                    <p id="subtitle-woman">legenda</p>
+                </div>
+
+                <div class="woman"  id="woman5">
+                    <div class="img-woman">
+                        <img src="../assets/teste1.png" id="img-woman" alt="">
+                    </div>
+                    <h1 id="title-woman">Fernanda Montenegro</h1>
+                    <p id="text-woman">Conhecida como a "grande dama” da dramaturgia brasileira, teve trabalhos reconhecidos
+                         internacionalmente desde o início de sua carreira. Em 1999, foi a primeira mulher latino-americana a receber uma 
+                         indicação ao Oscar. Em 2013, ganhou o Emmy Internacional de melhor atriz.
+                    </p>
+                    <p id="subtitle-woman">legenda</p>
+                </div>
+
+
+                <div class="woman"  id="woman6">
+                    <div class="img-woman">
+                        <img src="../assets/teste1.png" id="img-woman" alt="">
+                    </div>
+                    <h1 id="title-woman">Enedina Alves Marques (1913-1981)</h1>
+                    <p id="text-woman">Paranaense, foi a primeira negra do país a se formar como engenheira e a primeira a concluir o 
+                        curso na Universidade Federal do Paraná, onde ingressou em 1940. Trabalhou no Departamento Estadual de Águas e 
+                        Energia Elétrica do Paraná e integrou a equipe que atuou na construção da usina hidrelétrica Capivari-Cachoeira 
+                        (PR). Atualmente, dá nome ao Instituto de Mulheres Negras de Maringá.
+                    </p>
+                    <p id="subtitle-woman">legenda</p>
+                </div>
+
+                <div class="woman"  id="woman7">
+                    <div class="img-woman">
+                        <img src="../assets/teste1.png" id="img-woman" alt="">
+                    </div>
+                    <h1 id="title-woman">Lygia Fagundes Telles (1923)</h1>
+                    <p id="text-woman">Paulista, publicou o seu primeiro livro de contos quando tinha apenas 15 anos. Formada em Direito, 
+                        recebeu diversos prêmios literários nacionais e internacionais, incluindo o prêmio Jabuti e o Prêmio Camões. Foi a 
+                        primeira mulher brasileira indicada para o Nobel de Literatura.
+
+                    </p>
+                    <p id="subtitle-woman">legenda</p>
+                </div>
+
+                <div class="woman"  id="woman8">
+                    <div class="img-woman">
+                        <img src="../assets/teste1.png" id="img-woman" alt="">
+                    </div>
+                    <h1 id="title-woman">Maria da Penha (1945)</h1>
+                    <p id="text-woman">Farmacêutica bioquímica cearense, dá nome a Lei brasileira n.º 11.340, de 7 de agosto de 2006, de 
+                        proteção da mulher contra a violência doméstica e familiar. Em 1983, foi vítima de tentativa de feminicídio: levou 
+                        dois tiros nas costas enquanto dormia, o que a deixou paraplégica. Fundou o Instituto Maria da Penha, que visa   
+                        contribuir para a monitorização do cumprimento da Lei.
+
+                    </p>
+                    <p id="subtitle-woman">legenda</p>
+                </div>
+
+                <div class="woman"  id="woman9">
+                    <div class="img-woman">
+                        <img src="../assets/teste1.png" id="img-woman" alt="">
+                    </div>
+                    <h1 id="title-woman">Ruth Rocha (1931)</h1>
+                    <p id="text-woman">Autora de alguns dos maiores clássicos da literatura infantil, conta com mais de duzentos 
+                        títulos publicados e a sua produção já foi traduzida para vinte e cinco idiomas. Formada em Ciências Políticas e 
+                        Sociais, começou a carreira trabalhando em uma biblioteca.
+                    </p>
+                    <p id="subtitle-woman">legenda</p>
+                </div>
+
+                <div class="woman"  id="woman10">
+                    <div class="img-woman">
+                        <img src="../assets/teste1.png" id="img-woman" alt="">
+                    </div>
+                    <h1 id="title-woman">Zilda Arns (1934-2010)</h1>
+                    <p id="text-woman">Catarinense, formou-se em Medicina e especializou-se em pediatria. Fundou a Pastoral da Criança, 
+                        instituição ligada a Igreja Católica que tem como objetivo combater a desnutrição infantil, a desigualdade social 
+                        e a violência. A Pastoral atualmente atua em 20 países e estima-se que mais de 2 milhões de crianças tenham sido beneficiadas.
+                    </p>
+                    <p id="subtitle-woman">legenda</p>
+                </div>
+    
+                <p>
+                    Button Clicked <span 
+                    id="display">0</span> Times
+                </p>
+            </div> 
+    </main>
+
+    <footer>
+        <div class="footer-pai">
+
+        </div>
+    </footer>
+    <script src="../js/era-vargas-populista.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        feather.replace()
+      AOS.init({
+        duration: 1000,
+    });
     </script>
 </body>
 </html>

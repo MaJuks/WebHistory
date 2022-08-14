@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+/* font-family: 'Special Elite', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Special+Elite&display=swap');
+
+/* font-family: 'Shadows Into Light', cursive; */
+
+*{
+    box-sizing: border-box;
+}
+:root {
+    --branco2:#ffffff ;
+    --branco: #faf5f0;
+    --marromclaro: #e8dacf;
+    --marromintermediario: #d4bda7;
+    --amareloclaro: #f8ab48;
+    --amareloescuro: #f79d25;
+    --rosaescuro: #AD0039;
+    --rosa: #f2165f;
+    --roxoescuro: #66308d;
+    --roxoclaro: #7c4f9c;
+    --marromescuro: #5b3e26;
+    --marromescuro2: #483322;
+    --marromescuro3:rgba(53, 25, 5, 0.9);
+    --preto: #201d18;
+}
+body{
+    margin: 0;
+    background-image: url("../assets/fundo.png");
+}
+main,footer{
+    mix-blend-mode: multiply; 
+
+}
+/* ------------------------------------------------------ */
+/* section shadows */
+/* ------------------------------------------------------ */
+.vignette{
+    /* position */
+    position: absolute;
+    /* configuração */
+    background-image: url(../assets/vinheta.png);
+    height: 6935px;
+    width: 100%;
+    /* background-size: 100%; */
+    opacity: 0.5;
+}
+.shadows-div{
+    /* config */
+    height: 0rem;
+    z-index: 100;
+    mix-blend-mode: multiply;
+}
+#bottom-shadowtrack{
+    /* position */
+    position: relative;
+    width: 15%;
+    /* config */
+    top: 90rem;
+}
+#top-shadowplant{
+    /* position */
+    position: relative;
+    left: 82rem;
+    /* animations */
+    animation: moviment-plant 2s ease-in-out infinite alternate;
+}
+#mid-shadowplant{
+    /* position */
+    position: relative;
+    left: -40rem;
+    top: 120rem;
+    /* config */
+    width: 40%;
+    opacity: 0.6;
+    /* animações */
+    animation: moviment-plant 2s ease-in-out infinite alternate;
+}
+#top-shadowtrack{
+    /* position */
+    position: relative;
+    left: -80rem;
+    /* config */
+    width: 15%;
+}
+/* ------------------------------------------------------ */
+/* header */
+/* ------------------------------------------------------ */
+.header-pai {
+    /* config */
+    display: flex;
+    height: 120px;
+    align-items: center;
+    z-index: 100;
+}
+#name-web{
+    /*"web history */
+    /* position */
+    position: relative;
+    top: 1rem;
+    left: 80rem;
+    width: 150%;
+    /* letter config*/
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 400;
+    font-size: 60px;
+    color: var(--marromescuro3);
+    -webkit-text-stroke: 1px var(--preto);
+}
+#name-web:hover{
+    /* config */
+    transform: scale(1.05);
+}
+.home-svg{
+    /* "home" + svg */
+    /* position */
+    display: flex;
+    position: relative;
+}
+#home{
+    /* position */
+    position: relative;
+    top: 1rem;
+    width: 150%;
+    /* letter config*/
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 400;
+    font-size: 60px;
+    color: var(--rosaescuro);
+    -webkit-text-stroke: 1px var(--rosaescuro);
+}
+#home:hover{
+    /* config */
+    transform: scale(1.05);
+}
+a{
+    text-decoration: none;
+    color: none;
+}.icon-home{
+    /* position */
+    position: relative;
+    display: flex;
+    left: -85%;
+    top:4.9rem;
+}
+.icon-home svg{
+    /* config */
+    width: 50px;
+    height: 50px;
+    color: var(--rosaescuro);
+}
+hr{
+    /* position */
+    margin-top: 30px;
+    /* config*/
+    border: 2px solid var(--marromescuro3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(-0.04deg);
+    background-color: var(--marromescuro3);
+}
+/* ------------------------------------------------------ */
+/* main */
+/* ------------------------------------------------------ */
+.main-pai{
+    /* config */
+    display: grid;
+    justify-items: center;
+}
+#title-vargas,#title-populista{
+    /* position */
+    /* topo | direita | inferior | esquerda */
+    margin: 5rem 5rem 0 5rem ;
+    /*letter config*/
+    font-family: 'Special Elite', cursive;
+    font-size: 65px;
+    line-height: 100px;
+    text-align: center;
+    color: var(--marromescuro);
+    -webkit-text-stroke: 1px var(--preto);
+    border: px solid var(--preto);
+    /* for animation*/
+    white-space: nowrap;
+    overflow: hidden;
+    width: 25em;
+    animation: type 4s steps(60, end) ;
+}
+#title2{
+    /* position */
+    position: relative;
+    top:-2rem;
+    /* letter config*/
+    font-family: 'Special Elite', cursive;
+    font-size: 45px;
+    line-height: 100px;
+    text-align: center;
+    color: var(--rosa);
+    -webkit-text-stroke: 1px var(--rosa);
+    /* for animation */
+    animation: fade 2s ease-in-out;
+}
+#cursor{
+    /* animation */
+    animation: blink 1s infinite;
+
+}
+.container{
+    /* position */
+    display: flex;
+    position: relative;
+    /* config */
+    padding: 50px 70px 60px 60px;
+    margin: 3rem;
+    flex-wrap: wrap;
+    width: 80rem;
+    border: 1px solid #000000;
+    background:var(--marromescuro2);
+    border-radius: 15px;
+    box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.3), -8px -8px 10px 1px rgba(0, 0, 0, 0.3);
+    /* letter config*/
+    font-family: 'Habibi';
+    font-size: 25px;
+    line-height: 31px;
+    color: var(--branco2);
+}
+.circle{
+    /* position */
+    position: absolute;
+    /* config */
+    width: 21px;
+    height: 21px;
+    background: var(--rosaescuro);
+    border: 1px solid #000000;
+    border-radius: 15px;
+}
+#circle1{
+    /* position */
+    left: 1.5rem;
+    top: 1.5rem;
+}
+#circle2{
+    /* position */
+    left: 77rem;
+    top: 1.5rem;
+}
+#title-box{
+    /* position */
+    position: relative;
+    /* config */
+    width: 80rem;
+    height: 72px;
+    font-family: 'Special Elite';
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+    color: var(--rosa);
+}
+.text{
+    /* config */
+    margin: 30px;
+}
+#text-vote1,#text-vote2{
+    width: 40rem;
+    padding:60px 0 0 0;
+}
+#text-vote2{
+    text-align: right;
+}
+#img-vote1,#img-vote2{
+    /* config */
+    width: 20rem;
+    height: 20rem;
+    margin: 30px;
+}
+#subtitle-vote1,#subtitle-vote2{
+    display: flex;
+    position: relative;
+    width: 80rem;
+    height: 0;
+    margin: 0;
+    font-size: 20px;
+    top: -1rem;
+}
+#subtitle-vote1{
+    margin-left: 53.5rem;
+}
+#subtitle-vote2{
+    margin-left:9.5rem;
+}
+#subtitle-achievement,#text-achievement{
+    width: 80rem;
+    text-align: center;
+}
+#subtitle-achievement{ 
+    font-size: 30px;
+}
+.timeline-div{
+    /* config */
+    display: flex;
+    justify-content: center;
+    width: 80rem;
+}
+#timeline{
+    /* config */
+    z-index: 100; 
+    height: 1000px;
+    border: 3px solid var(--branco2);
+}
+.pinkline{
+    /* config */
+    height: 500.01px;
+    border: 3px solid var(--roxoclaro);
+    transform: rotate(-90deg);
+}
+#pinkline1{
+    /* position */
+    position: relative;
+    top: -6rem;
+    left: 15.30rem;
+}
+#num-text1{
+    /* position */
+    position: relative;
+    top: 2rem;
+    left: 17rem;
+}
+#pinkline2{
+    /* position */
+    position: relative;
+    top:13rem;
+    left: -16.5rem;
+}
+#num-text2{
+    /* position */
+    position: relative;
+    text-align: right;
+    top: -1rem;
+    left: -18.5rem;
+}
+#pinkline3{
+    /* position */
+    position: relative;
+    top:31rem;
+    left: 14.8rem;
+}
+#num-text3{
+    /* position */
+    position: relative;
+    top: -4rem;
+    left: 17rem;
+}
+#pinkline4{
+    /* position */
+    position: relative;
+    top:35rem;
+    left: -17rem;
+}
+#num-text4{
+    /* position */
+    position: relative;
+    text-align: right;
+    top: -6rem;
+    left: -18.5rem;
+}
+.num-years{
+    /* config */
+    width: 116px;
+    height: 30px;
+    font-family: 'Special Elite';
+    font-size: 35px;
+    color:var(--amareloescuro);
+}
+.timeline-text{
+    display: grid;
+    justify-content: center;
+    width: 80rem;
+    margin-top: -60rem;
+}
+.num-years,.text-years{
+    width: 500px;
+}
+.btn-especific{
+    /* position */
+    top: 10rem;
+    display: flex;
+    position: relative;
+    /* config */
+    z-index: 100;
+    height: 0;
+    width: 80rem;
+    justify-content: space-between;
+}
+#btn-right{
+    /* config */
+    width: 0;
+    height: 0;
+    background-color: transparent ;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-left: 25px solid var(--roxoescuro);
+}
+#btn-left{
+    /* config */
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px transparent;
+    border-right: 25px solid var(--roxoescuro);
+}
+#woman1{
+    /* config */
+    width: 80rem;
+    flex-wrap: wrap;
+    display: flex;
+}
+#woman2,#woman3,
+#woman4,#woman5,
+#woman6,#woman7,
+#woman8,#woman9,
+#woman10{
+    /* config */
+    width: 80rem;
+    flex-wrap: wrap;
+    display: none;
+}
+#img-woman{
+    /* position */
+    top: 3rem;
+    left: 6rem;
+    position: relative;
+    /* config */
+    width: 80%;
+    height: 80%; 
+}
+#subtitle-woman{
+    /* position */
+    display: flex;
+    padding-left: 14rem;
+    /* config */
+    width: 80rem;
+    font-size: 20px;
+    text-align: center;
+}
+#title-woman{
+    /* position */
+    position: relative;
+    margin-top: 3rem;
+    left: 4.5rem;
+    /* config */
+    width: 550px;
+    height: 38px;
+    /* letter config */
+    font-family: 'Special Elite';
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 38px;
+    color: var(--amareloclaro);
+}
+#text-woman{
+    /* position */
+    margin-top: 7.5rem;
+    margin-left: -30rem;
+    /* config */
+    width: 550px;
+    height: 227px;
+}
+@keyframes moviment-plant{
+    from{
+        transform: translate(-20px,-20px);
+        z-index: 101;
+
+    }
+    to{
+        z-index: 101;
+
+    }
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    
+}
+@keyframes type{
+    from { width: 0; }
+  }
+
+@keyframes blink{
+    to{opacity: .0;}
+}
+@keyframes fade-left {
+    0%{
+        transform: translatex(-100px);
+        opacity: 0;
+    }
+}
+@keyframes fade-right {
+    0%{
+        transform: translatex(100px);
+        opacity: 0;
+    }
+}
