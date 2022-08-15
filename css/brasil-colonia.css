@@ -621,7 +621,7 @@ hr{
     /* position */
     display: flex;
     position: relative;
-    top: 10rem;
+    top: 18rem;
     z-index: 100;
     /* config */
     height: 0;
@@ -661,6 +661,9 @@ hr{
     cursor: pointer;
     transition-duration: 0.5s;
 }
+.woman{
+    margin: 80px;
+}
 #woman1{
     /* config */
     width: 80rem;
@@ -673,46 +676,56 @@ hr{
     flex-wrap: wrap;
     display: none;
 }
-#img6{
+#img-woman1,#img-woman2,
+#img-woman3,#img-woman4,
+#img-woman5,#img-woman6,
+#img-woman7{
     /* position */
     display: flex;
     position: relative;
-    top: 3rem;
-    left: 6rem;
     /* config */
-    width: 80%;
-    height: 80%;
+    width: 22.5rem;
+    height: 22.5rem;
+    margin: 30px;
     
 }
 #subtitle-woman{
     /* position */
-    display: flex;
-    padding-left: 14rem;
+    position: relative;
+    padding-left: 11rem;
+    top: -3rem;
     /* config */
     font-size: 20px;
     text-align: center;
 }
+.title-div{
+    /* topo | direita | inferior | esquerda */
+    width: 32rem;
+    margin: 15px 30px 30px 20px;
+    text-align: center; 
+}
 #title-woman{
-    /* position */
-    position: relative;
-    margin-top: 3rem;
-    left: 4.5rem;
     /* config */
-    width: 550px;
-    height: 38px;
+    height: 20px;
     /* letter config */
     font-family: 'Special Elite';
     font-weight: 400;
-    font-size: 38px;
-    line-height: 38px;
+    font-size: 40px;
+    line-height: 50px;
+    color: var(--rosa);
+}
+#title-woman2{
+    /* letter config */
+    font-family: 'Special Elite';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 50px;
     color: var(--rosa);
 }
 #text-woman{
     /* position */
-    margin-top: 7.5rem;
-    margin-left: -30rem;
     /* config */
-    width: 550px;
+    width: 32rem;
     height: 227px;
 }
 /* animations */
