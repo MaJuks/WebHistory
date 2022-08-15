@@ -20,6 +20,7 @@
     --rosa: #f2165f;
     --roxoescuro: #66308d;
     --roxoclaro: #7c4f9c;
+    --roxoclaro2: #AC92BE;
     --marromescuro: #5b3e26;
     --marromescuro2: #483322;
     --marromescuro3:rgba(53, 25, 5, 0.9);
@@ -443,7 +444,8 @@ hr{
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
     border-right: 25px solid transparent;
-    border-left: 25px solid var(--roxoescuro);
+    border-left: 25px solid var(--roxoclaro);
+    transition-duration: 0.5s;
 }
 #btn-left{
     /* config */
@@ -453,7 +455,17 @@ hr{
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
     border-left: 25px transparent;
-    border-right: 25px solid var(--roxoescuro);
+    border-right: 25px solid var(--roxoclaro);
+    transition-duration: 0.5s;
+}
+#btn-right:hover,#btn-left:hover{
+    transform: scale(1.2);
+}
+#btn-right:hover{
+    border-left: 25px solid var(--roxoclaro2);
+}
+#btn-left:hover{
+    border-right: 25px solid var(--roxoclaro2);
 }
 #woman1{
     /* config */
