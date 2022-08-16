@@ -397,6 +397,9 @@ hr{
     padding: 50px 0 0 10px;
     width: 45rem;
 }
+#text-suffrage2{
+    text-align: right;
+}
 .timeline-div{
     /* config */
     display: flex;

@@ -27,26 +27,29 @@ body{
     margin: 0;
     background-image: url("../assets/fundo.png");
 }
+header{
+    background-color: rgba(53, 25, 5, 0.5);
+}
 .header{
     /* position */
     margin-top: 0%;
     display: flex;
     justify-content: space-around;
     /* config */
-    height: 120px;
+    height: 80px;
 }
 #name-web {
     /* "web history */
     /* position */
     position: relative;
-    top: 0.5rem;
     width: 150%;
     left: 70rem;
+    z-index: 100;
     /* letter config */
     font-family: 'Shadows Into Light', cursive;
     font-weight: 400;
     font-size: 60px;
-    color: var(--marromescuro2);
+    color: var(--preto);
     -webkit-text-stroke: 1px var(--preto);
     text-decoration: none;
 }
@@ -100,6 +103,7 @@ hr{
     /* position */
     margin-top: 30px;
     /* config */
+    background-color: rgba(53, 25, 5, 0.5);
     border: 2px solid var(--marromescuro);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transform: rotate(-0.04deg);
@@ -114,6 +118,8 @@ hr{
 }
 #title {
     /* "A trajetoria da mulher na História" */
+    /* config */
+    margin: 80px;
     /* letter config */
     text-align: center;
     font-family: 'Special Elite', cursive;
@@ -316,7 +322,7 @@ footer {
 }
 .vignette{
     /* position */
-    margin-top: -57.7rem;
+    margin-top: -59.7rem;
     /* config */
     height: 1030px;
     background-image: url(../assets/vinheta.png);
