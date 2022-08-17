@@ -335,7 +335,7 @@ footer {
     font-family: 'Shadows Into Light';
     font-size: 32px;
     line-height: 144.5%;
-    -webkit-text-stroke: 1px var(--branco);
+    -webkit-text-stroke: 1px var(--marromclaro);
     color: var(--branco);
 }
 .icon-network svg {
