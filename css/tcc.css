@@ -68,10 +68,11 @@ body{
     display: flex;
     position: relative;
     left: 15rem;
-    top: -60rem;
+    top: -52rem;
     /* config */
-    mix-blend-mode: multiply;
     width: 15%;
+    opacity: 0.7;
+
 }
 #bottom-shadowtrack{
     /* position*/
@@ -79,17 +80,18 @@ body{
     position: relative;
     z-index: 100;
     left: 84rem;
-    top: -60rem;
+    top: -50rem;
 
     /* config */
     width: 15%;
+    opacity: 0.7;
 }
 /* ------------------------------------------------------ */
 /* HEADER */
 /* ------------------------------------------------------ */
 header{
     background: rgba(72, 51, 34, 0.29);
-    box-shadow: 0px 5px 20px #483322;
+    box-shadow: 0px 2px 20px #483322;
 }
 .header{
     /* position */
@@ -103,14 +105,13 @@ header{
     /* "web history */
     /* position */
     position: relative;
-    top: -1rem;
     width: 150%;
-    left: 70rem;
+    left: 72rem;
     z-index: 100;
     /* letter config */
     font-family: 'Shadows Into Light', cursive;
     font-weight: 400;
-    font-size: 60px;
+    font-size: 45px;
     color: var(--marromclaro);
     -webkit-text-stroke: 0.5px var(--marromclaro);
     text-decoration: none;
@@ -120,7 +121,7 @@ header{
     z-index:100;
     position: relative;
     top: 1rem;
-    right: 35rem;
+    right: 28rem;
     /* config */
     width: 50%;
     display: flex;
@@ -129,8 +130,8 @@ header{
 .icon-search svg {
     /* icons */
     /* config */
-    width: 57px;
-    height: 57px;
+    width: 48px;
+    height: 48px;
     color: var(--marromclaro);
 }
 #label-topics{
@@ -139,7 +140,7 @@ header{
     margin-right: 5px;
     /*letter config */
     font-family: 'Shadows Into Light';
-    font-size: 32px;
+    font-size: 28px;
     color: var(--marromclaro);
     -webkit-text-stroke: 0.5px var(--marromclaro);
 }
@@ -148,7 +149,7 @@ select{
     text-align: center;
     background-color: var(--marromclaro);
     opacity: 0.5;
-    width: 25%;
+    width: 20%;
     height: 25%;
     border-radius: 20px;
     padding: 8px 0px;
