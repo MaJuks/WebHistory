@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 /* font-family: 'Special Elite', cursive; */
+
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Special+Elite&display=swap');
 /* font-family: 'Shadows Into Light', cursive; */
-* {
+
+
+*{
     box-sizing: border-box;
 }
 :root {
+    --branco2:#ffffff ;
     --branco: #faf5f0;
     --marromclaro: #e8dacf;
     --marromintermediario: #d4bda7;
@@ -15,13 +19,77 @@
     --rosa: #f2165f;
     --roxoescuro: #66308d;
     --roxoclaro: #7c4f9c;
+    --roxoclaro2: #AC92BE;
     --marromescuro: #5b3e26;
     --marromescuro2: #483322;
+    --marromescuro3:rgba(53, 25, 5, 0.9);
     --preto: #201d18;
 }
 body{
     margin: 0;
     background-image: url("../assets/fundo.png");
+}
+/* ------------------------------------------------------ */
+/* section shadows */
+/* ------------------------------------------------------ */
+.vignette{
+    /* position */
+    position: absolute;
+    z-index: 100;
+    /* config */
+    background-image: url(../assets/vinheta.png);
+    height: 1000px;
+    width: 100%;
+    background-size: 100%;
+    opacity: 0.8;
+}
+.shadows-div{
+    /* config */
+    height: 0;
+    mix-blend-mode: multiply;
+}
+#top-shadowplant{
+    z-index: 100;
+    display: flex;
+    position: relative;
+    left: 82rem;
+    width: 25%;
+    animation: moviment-plant 2s ease-in-out infinite alternate;
+}
+#bottom-shadowplant{
+    display: flex;
+    position: relative;
+    top: -4rem;
+    width: 20%;
+    animation: moviment-plant 2s ease-in-out infinite alternate;
+}
+#top-shadowtrack{
+    /* position */
+    display: flex;
+    position: relative;
+    left: 15rem;
+    top: -60rem;
+    /* config */
+    mix-blend-mode: multiply;
+    width: 15%;
+}
+#bottom-shadowtrack{
+    /* position*/
+    display: flex;
+    position: relative;
+    z-index: 100;
+    left: 84rem;
+    top: -60rem;
+
+    /* config */
+    width: 15%;
+}
+/* ------------------------------------------------------ */
+/* HEADER */
+/* ------------------------------------------------------ */
+header{
+    background: rgba(72, 51, 34, 0.29);
+    box-shadow: 0px 5px 20px #483322;
 }
 .header{
     /* position */
@@ -29,32 +97,23 @@ body{
     display: flex;
     justify-content: space-around;
     /* config */
-    height: 120px;
+    height: 80px;
 }
 #name-web {
     /* "web history */
     /* position */
     position: relative;
-    top: 0.5rem;
+    top: -1rem;
     width: 150%;
     left: 70rem;
+    z-index: 100;
     /* letter config */
     font-family: 'Shadows Into Light', cursive;
     font-weight: 400;
     font-size: 60px;
-    color: var(--marromescuro2);
-    -webkit-text-stroke: 1px var(--preto);
-    text-decoration: none;
-}
-#label-topics{
-    /* "topico especifico" */
-    /* position */
-    margin-right: 5px;
-    /*letter config */
-    font-family: 'Shadows Into Light';
-    font-size: 32px;
     color: var(--marromclaro);
     -webkit-text-stroke: 0.5px var(--marromclaro);
+    text-decoration: none;
 }
 .input-search{
     /* position */
@@ -66,6 +125,23 @@ body{
     width: 50%;
     display: flex;
     align-items: center;
+}
+.icon-search svg {
+    /* icons */
+    /* config */
+    width: 57px;
+    height: 57px;
+    color: var(--marromclaro);
+}
+#label-topics{
+    /* "topico especifico" */
+    /* position */
+    margin-right: 5px;
+    /*letter config */
+    font-family: 'Shadows Into Light';
+    font-size: 32px;
+    color: var(--marromclaro);
+    -webkit-text-stroke: 0.5px var(--marromclaro);
 }
 select{
     /* select config */
@@ -95,20 +171,19 @@ hr{
     /* position */
     margin-top: 30px;
     /* config */
-    border: 2px solid var(--marromescuro);
+    opacity: 0.7;
+    border: 1.5px solid var(--marromescuro2);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transform: rotate(-0.04deg);
-    background-color: var(--marromescuro);
+    background-color: var(--marromescuro2);
 }
-.icon-search svg {
-    /* icons */
-    /* config */
-    width: 57px;
-    height: 57px;
-    color: var(--marromclaro);
-}
+/* ------------------------------------------------------ */
+/* MAIN */
+/* ------------------------------------------------------ */
 #title {
     /* "A trajetoria da mulher na História" */
+    /* config */
+    margin: 6rem 6rem 4rem 6rem;
     /* letter config */
     text-align: center;
     font-family: 'Special Elite', cursive;
@@ -139,18 +214,6 @@ hr{
     background-color: var(--marromescuro);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
-.timeline2{
-    display: none;
-    /* position */
-    position: relative;
-    top: 6.5rem;
-    /* config */
-    width: 70rem;
-    margin: auto;
-    border: 2px solid #5B3E26;
-    background-color: var(--marromescuro);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-}
 .box-time {
     /* position */
     position: relative;
@@ -160,7 +223,7 @@ hr{
 }
 .box-time img{
     /* config */
-    height: 13rem;
+    height: 12.5rem;
     transition-duration: 0.5s;
 }
 .box-time img:hover {
@@ -239,15 +302,22 @@ hr{
     opacity: 0.8;
     height: 20rem;
 }
+/* ------------------------------------------------------ */
+/* FOOTER */
+/* ------------------------------------------------------ */
 footer {
     display: flex;
     justify-content: center;
-    
 }
 .footer{
-    /* position */
     position: relative;
-    top: 9rem;
+    display: grid;
+    justify-items: center;
+    top: 5rem;
+    height: 95px;
+}
+.text-icon{
+    /* position */
     display: flex;
     z-index:100;
     /* config */
@@ -296,77 +366,23 @@ footer {
     color: transparent;
 }
 .back-shadow-footer{
-     /* config */
-    display: flex;
-    justify-content: center;
-}
-#back-shadow-footer{
     /* config */
-    margin-top: 3rem;
+    position: relative;
+    top: -5.5rem;
     background: radial-gradient(50% 50% at 50% 50%, rgba(6, 0, 0, 0.5) 0%, rgba(217, 217, 217, 0) 100%);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     opacity: 0.6;
     height: 7rem;
     width: 30rem;
 }
-.vignette{
-    /* position */
-    margin-top: -57.7rem;
-    /* config */
-    height: 1030px;
-    background-image: url(../assets/vinheta.png);
-    background-size: 100%;
-    opacity: 0.6;
-}
-.shadow-pack1,.shadow-pack2{
-    /* position */
-    position: relative;
-    display: flex;
-}
-#bottom-shadowplant{
-    /* position */
-    margin-top: -28%;
-    z-index: 100;
-    /* config */
-    height: 20%;
-    width: 20%;
-    animation: moviment-plant 3s ease-in-out infinite alternate;
-}
-#bottom-shadowtrack{
-    /* position */
-    margin-top: -20%;
-    margin-left: -15%;
-    /* config */
-    width: 15%;
-    height: 15%;
-    opacity: 0.7;
-}
-#top-shadowplant{
-    /* position */
-    margin-top: -51%;
-    margin-left: 75%;
-    /* config */
-    z-index: 100;
-    height: 25%;
-    width: 25%;
-    animation: moviment-plant 3s ease-in-out infinite alternate;
-}
-#top-shadowtrack{
-    /* position */
-    margin-top: -50.3%;
-    margin-left: -16%;
-    /* config */
-    width: 15%;
-    height: 15%;
-    opacity: 0.7;
-}
+
 @keyframes moviment-plant{
     from{
         transform: translate(-20px,-20px);
-        z-index: 101;
+        z-index: 100;
     }
     to{
-        z-index: 101;
+        z-index: 100;
     }
 }
 @keyframes boxes-anim{
@@ -405,14 +421,32 @@ footer {
         
     }
 }
+
 @media screen and (max-width: 1745.45px) {
+    .vignette{
+        height:860px;
+    }
+    #top-shadowplant{
+        width: 24%;
+    }
+    #bottom-shadowplant{
+        top: rem;
+        width: 18%;
+    }
+    #top-shadowtrack{
+        top: -40rem;
+    }
+    #bottom-shadowtrack{
+        /* config */
+        width: 15%;
+    }
     .header {
-        height: 90px;
+        height: 80px;
     }
     #name-web {
         top: -0.5rem;
-        left: 60rem;
-        font-size: 50px;
+        left: 62rem;
+        font-size: 48px;
     }
     #label-topics{
         font-size: 30px;
@@ -439,10 +473,6 @@ footer {
         font-size: 59.09px;
         line-height: 63.64px;
     }
-    .back-shadow-title{
-        margin-top: -14.09rem;
-        height: 13.64rem;
-    }
     .timeline{
         top: 5.5rem;
         width: 63.64rem;
@@ -451,57 +481,42 @@ footer {
     .box-time img {
         height: 11rem;
     }
-    .back-shadow{
-        height: 18.18rem;
-        margin-top: -13.73rem;
-    }
-    .footer{
-        padding: 13.64px;
-        top: 5rem;
-    }
     #about-us{
-        margin-right: 18.18px;
-        font-size: 25px;
+        font-size: 28px;
     }
     .icon-network svg {
-        margin-right: 9.09px;
-        width: 25px;
-        height: 25px;
+        width: 28px;
+        height: 28px;
     }
     #back-shadow-footer{
         margin-top: 0rem;
     }
-    .vignette{
-        margin-top: -52.8rem;
-        height: 950px;
-    }
-    #bottom-shadowplant{
-        margin-top: -24.7%;    
-    }
-    #bottom-shadowtrack{
-        margin-top: -19%;
-        margin-left: -13%;
-    }
-    #top-shadowplant{
-        margin-left: 75%;
-    }
 }
 /* HD+ */
 @media screen and (max-width: 1600px) {
+    #top-shadowplant{
+        width: 24%;
+        top: 2rem;
+        left: 65rem;
+    }
+    #bottom-shadowtrack{
+        /* config */
+        left: 65rem;
+        top: -30rem;
+    }
+    .vignette{
+        height: 790px;
+    }
     .header{
-        height: 96px;
+        height: 50px;
     }
     #name-web {
-        top: 2.24rem;
+        top: -1.2rem;
         left: 56rem;
-        font-size: 48px;
+        font-size: 43px;
     }
     #label-topics {
         font-size: 25.60px;
-    }
-    .input-search {
-        top: 1.60rem;
-        right: 28rem;
     }
     select {
         width: 20%;
@@ -509,13 +524,9 @@ footer {
         padding: 6.40px 0px;
         font-size: 14.40px;
     }
-    hr{
-        margin-top: 24px;
-        border: 1.60px solid var(--marromescuro);
-    }
     .icon-search svg {
-        width: 45.60px;
-        height: 45.60px;
+        width: 45px;
+        height: 45px;
     }
     #title{
         font-size: 52px;
@@ -526,65 +537,56 @@ footer {
         height: 12rem;
     }
     .timeline {
-        top: 4.20rem;
+        top: 5rem;
         width: 56rem;
         border: 1.60px solid #5B3E26;
     }
     .box-time img {
-        height: 10.40rem;
+        height: 10rem;
     }
     .back-shadow{
         margin-top: -12.38rem;
         height: 16rem;
     }
-    .footer{
-        padding: 12px;
-        top: 7.20rem;
-    }
     #about-us {
-        margin-right: 13.33px;
-        font-size: 28px;
+        font-size: 26px;
     }
     .icon-network svg {
         margin-right: 8px;
-        width: 28px;
-        height: 28px;
+        width: 26px;
+        height: 26px;
     }
-    
-    .vignette{
-        margin-top: -46.7rem;
-        height: 850px;
-    }
-    #bottom-shadowplant{
-        margin-top: -24.7%;    
-    }
-    #bottom-shadowtrack{
-        margin-top: -19%;
-        margin-left: -13%;
-    }
-    #top-shadowplant{
-        margin-left: 75%;
-    }
+   
 }
 /* HD */
 @media screen and (max-width: 1280px) {
+    #top-shadowplant{
+        left: 57rem;
+    }
+    #bottom-shadowplant{
+        top: 0.5rem;
+    }
+    #bottom-shadowtrack{
+        /* config */
+        left: 65rem;
+        top: -29rem;
+    }
+    .vignette{
+        height: 650px;
+    }
     .header{
-        height: 80px;
+        height: 40px;
     }
     #name-web{
-        position: relative;
-        top: 0.1rem;
-        width: 100%;
-        left: 46.67rem;
-        font-size: 40px;
+        left: 48rem;
+        font-size: 30px;
     }
     #label-topics {
         font-size: 21.33px;
     }
     .input-search {
         /* position */
-        top: 1rem;
-        right: 23.33rem;
+        right: 20rem;
     }
     select {
         width: 16.57%;
@@ -609,47 +611,24 @@ footer {
         margin-top: -10.33rem;
     }
     .timeline {
-        top: 4.33rem;
+        top: 4rem;
         width: 46.67rem;
         border: 1.33px solid #5B3E26;
     }
     .box-time img {
-        height: 8.67rem;
+        height: 8rem;
     }
-    .back-shadow{
-        height: 13.33rem;
-        margin-top: -10.33rem;
-    }
-    .footer {
-        padding: 10px;
-        top: 6rem;
+    .footer{
+        top: 2rem;
     }
     #about-us {
         margin-right: 13.33px;
-        font-size: 23.33px;
+        font-size: 20px;
     }
     .icon-network svg {
         margin-right: 6.67px;
-        width: 23.33px;
-        height: 23.33px;
-    }
-    #back-shadow-footer{
-        /* config */
-        margin-top: 1rem;
-    }
-    .vignette{
-        margin-top: -39rem;
-        height: 650px;
-    }
-    #bottom-shadowplant{
-        margin-top: -28%;    
-    }
-    #bottom-shadowtrack{
-        margin-top: -19%;
-        margin-left: -13%;
-    }
-    #top-shadowplant{
-        margin-left: 75%;
+        width: 20px;
+        height: 20px;
     }
 }
 @media screen and (min-width: 2133.33px) {

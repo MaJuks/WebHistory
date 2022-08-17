@@ -17,6 +17,16 @@
 </head>
 
 <body>
+    <section class="shadows" ondragstart="return false;">
+        <div class="vignette"></div>
+        <div class="shadows-div">
+            <img src="assets/sombra_planta2.png" id="top-shadowplant">
+            <img src="assets/sombra_planta1.png" id="bottom-shadowplant">
+            <img src="assets/pegada.png" id="top-shadowtrack">
+            <img src="assets/pegada.png" id="bottom-shadowtrack">                
+        </div>
+    </section>
+
     <header>
         <div class="header">
             <div class="name-web">
@@ -49,10 +59,9 @@
 
     <main>
         <div class="main">
-            <h1 id="title">A Trajetória da Mulher na<br> História do Brasil</h1>
+            <h1 id="title">A TRAJETÓRIA DA MULHER NA<br> HISTÓRIA DO BRASIL</h1>
             <div class="back-shadow-title"></div>
             <div class="timeline"></div>
-            <div class="timeline2"></div>
             <div class="box-time" ondragstart="return false;">
                 <a  href="fases/brasil-colonia.html">      <img id="box1" src="assets/caixa.png" alt="brasil-colonia"></a>
                 <a  href="fases/brasil-imperio.html">      <img id="box2" src="assets/caixa 2.png" alt="brasil-imperio"></a>
@@ -68,29 +77,17 @@
 
     <footer>       
         <div class="footer">
-            <label for="icon-network" id="about-us">SOBRE NÓS</label>
-            <div name="icon-network" class="icon-network">
-                <a href="https://www.instagram.com/maju_raposo" class="insta" target="_blank"><i id="insta1" data-feather="instagram"></i></a>
-                <a href="https://github.com/MaJuks/TCC.git" class="git" target="_blank"><i id="git" data-feather="github"></i></a>
-                <a href="https://www.instagram.com/riitamavila" class="insta" target="_blank" ><i id="insta2" data-feather="instagram"></i></a>
+            <div class="text-icon">
+                <label for="icon-network" id="about-us">SOBRE NÓS</label>
+                <div name="icon-network" class="icon-network">
+                    <a href="https://www.instagram.com/maju_raposo" class="insta" target="_blank"><i id="insta1" data-feather="instagram"></i></a>
+                    <a href="https://github.com/MaJuks/TCC.git" class="git" target="_blank"><i id="git" data-feather="github"></i></a>
+                    <a href="https://www.instagram.com/riitamavila" class="insta" target="_blank" ><i id="insta2" data-feather="instagram"></i></a>
+                </div>
             </div>
+            <div class="back-shadow-footer"></div>
         </div>
     </footer> 
-
-    <section class="shadows" ondragstart="return false;">
-        <div class="back-shadow-footer">
-            <div id="back-shadow-footer"></div>
-        </div>
-        <div class="vignette"></div>
-        <div class="shadow-pack1">
-            <img src="assets/sombra_planta1.png" id="bottom-shadowplant">
-            <img src="assets/pegada.png" id="bottom-shadowtrack">
-        </div>
-        <div class="shadow-pack2">
-            <img src="assets/sombra_planta2.png" id="top-shadowplant">
-            <img src="assets/pegada.png" id="top-shadowtrack">
-        </div>
-    </section>
     <script>
         feather.replace()
     </script>
