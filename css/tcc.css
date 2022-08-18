@@ -133,6 +133,8 @@ header{
     width: 48px;
     height: 48px;
     color: var(--marromintermediario);
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+
 }
 #label-topics{
     /* "topico especifico" */

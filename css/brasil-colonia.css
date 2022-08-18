@@ -91,28 +91,34 @@ main,footer{
 /* ------------------------------------------------------ */
 /* header */
 /* ------------------------------------------------------ */
+header{
+    background: rgba(72, 51, 34, 0.3);
+    box-shadow: 0px 2px 20px #483322;
+
+}
 .header-div{
     /* position */
     display: flex;
     /* config */
-    height: 120px;
+    height: 80px;
     align-items: center;
 }
 #name-web{
-    /* "web history" */
+
+    /* "web history */
     /* position */
     position: relative;
-    top: 1rem;
-    left: 470%;
     width: 150%;
+    top: 0.5rem;
+    left: 85rem;
     z-index: 100;
+    transition: 0.5s;
     /* letter config */
-    text-align: center;
     font-family: 'Shadows Into Light', cursive;
-    font-weight: 400;
-    font-size: 60px;
-    color: var(--marromescuro3);
-    -webkit-text-stroke: 1px var(--preto);
+    font-size: 45px;
+    color: var(--marromintermediario);
+    text-decoration: none;
+    text-shadow: 0.1em 0.1em 0.2em black;
 }
 #name-web:hover{
     /* animation cursor*/
@@ -122,13 +128,20 @@ main,footer{
 .home-svg{
     /* "home" + svg */
     /* position */
+    position: relative;
+    top: -0.5rem;
+    left: 9.5rem;
     display: flex;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+
 }
 #home{
     /* position */
     position: relative;
     top: 1rem;
     width: 150%;
+    transition: 0.5s;
+
     /* letter config */
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
@@ -195,6 +208,7 @@ hr{
     font-size: 25px;
     text-align: center;
     color: var(--marromclaro);
+    text-shadow: 0.1em 0.1em 0.2em black;
 }
 #img-click-here{
     /* position */
@@ -202,6 +216,8 @@ hr{
     /* config */
     width: 124px;
     height: 76px;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+
     animation: slide-right 3s ease-in-out infinite alternate;
 }
 /* ------------------------------------------------------ */
@@ -377,7 +393,7 @@ hr{
     height: 0;
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
-    border-left: 25px solid var(--amareloescuro);
+    border-left: 25px solid var(--amareloclaro);
 }
 .input-btn:checked + .label-btn::before{
     /* button before being checked (triangulo shape) */
@@ -491,11 +507,15 @@ hr{
     /* letter config  */
     text-align: center;
 }
+#text-native3{
+    margin-bottom: 90px;
+}
 .btn-native{
     /* position */
     display: flex;
     position: relative;
-    top: -3rem;
+    top: -2.8rem;
+    left: 3rem;
 }
 #btn-native{
     /* position */
@@ -576,11 +596,16 @@ hr{
     height: 30px;
     text-align: center;
 }
+#text-white3{
+    margin-bottom: 80px;
+}
 .btn-white{
     /* position */
     display: flex;
     position: relative;
-    top: -2rem;
+    top: -2.9rem;
+    left: 3rem;
+
 }
 #btn-white{
     /* position */
