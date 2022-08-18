@@ -115,6 +115,7 @@ header{
     color: var(--marromclaro);
     text-decoration: none;
     background: linear-gradient(to right,var(--amareloclaro) 18%, var(--rosa) 29%, var(--roxoclaro) 100%);
+    text-shadow: 0.1em 0.1em 0.2em black;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -146,6 +147,7 @@ header{
     font-size: 28px;
     color: var(--marromclaro);
     -webkit-text-stroke: 0.5px var(--marromclaro);
+    text-shadow: 0.1em 0.1em 0.2em black;
 }
 select{
     /* select config */
@@ -194,11 +196,11 @@ hr{
     font-size: 65px;
     line-height: 70px;
     text-align: center;
-    background: linear-gradient(0.25turn,var(--roxoescuro), var(--marromescuro), var(--roxoescuro));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--marromescuro);
+    text-shadow: 0 0 0.4em var(--roxoescuro); 
     -webkit-text-stroke: 1px var(--marromescuro);
 }
+
 .back-shadow-title{
     /* position */
     margin-top: -15.5rem;
@@ -313,12 +315,18 @@ footer {
     display: flex;
     justify-content: center;
 }
+footer a{
+    text-decoration: none;
+    color: var(--marromclaro);
+}
 .footer{
     position: relative;
     display: grid;
     justify-items: center;
-    top: 7rem;
+    top: 3rem;
     height: 95px;
+    text-decoration: none;
+
 }
 .text-icon{
     /* position */
@@ -337,14 +345,32 @@ footer {
     line-height: 144.5%;
     -webkit-text-stroke: 1px var(--marromclaro);
     color: var(--branco);
+    text-shadow: 0.1em 0.1em 0.2em black
 }
+.references{
+    z-index: 100;
+    position: relative; 
+    top: 1rem;
+    transition: 0.5s;
+}
+.references:hover{
+    transform: scale(1.1);
+    color: var(--rosaescuro);
+}
+#arrow1,#arrow2{
+    animation: colors 3s ease-in-out infinite ;
+}
+
 .icon-network svg {
     /* position */
     margin-right: 10px;
     /* config */
     width: 40px;
     height: 40px;
-    color: var(--marromclaro);
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+
+
+    transition: 0.25s;
 }
 .icon-network svg:hover {
     /* config */
@@ -352,13 +378,26 @@ footer {
 }
 #insta1{
     /* config */
+    color: var(--amareloclaro);
+}
+#insta1:hover{
     color: var(--amareloescuro);
 }
+
 #git {
     /* config */
     color: var(--rosa);
 }
+#git:hover{
+    color: var(--rosaescuro);
+}
+
 #insta2{
+    /* config */
+    color: var(--roxoclaro);
+
+}
+#insta2:hover{
     /* config */
     color: var(--roxoescuro);
 }
@@ -414,7 +453,20 @@ footer {
         
     }
 }
-
+@keyframes neon{
+    100%{text-shadow: 0 0 0.4em var(--amareloclaro);}
+}
+@keyframes colors{
+    0%{ 
+        color: var(--rosaescuro);
+    }
+    50%{
+        color: var(--amareloescuro);
+    }
+    100%{
+        color: var(--roxoescuro);
+    }
+}
 @media screen and (max-width: 1745.45px) {
     .vignette{
         height:860px;

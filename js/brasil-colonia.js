@@ -1,27 +1,27 @@
 feather.replace()
 
-function botao_clicado1(){
+function btn_checked(){
     if(document.getElementById("btn-intro").checked){
-        var xxx = document.getElementById('div-hidden-text1').style.display = 'flex';
+        var xxx = document.getElementById('nav-hidden-intro').style.display = 'flex';
     }
     else{
-        var xxx = document.getElementById('div-hidden-text1').style.display = 'none';
+        var xxx = document.getElementById('nav-hidden-intro').style.display = 'none';
     }
 }
-function botao_clicado2(){
+function btn_checked2(){
     if(document.getElementById("btn-native").checked){
-        var yyy = document.getElementById('div-hidden-text2').style.display = 'flex';
+        var yyy = document.getElementById('nav-hidden-native').style.display = 'flex';
     }
     else{
-        var yyy = document.getElementById('div-hidden-text2').style.display = 'none';
+        var yyy = document.getElementById('nav-hidden-native').style.display = 'none';
     }
 }
-function botao_clicado3(){
+function btn_checked3(){
     if(document.getElementById("btn-white").checked){
-        var zzz = document.getElementById('div-hidden-text3').style.display = 'flex';
+        var zzz = document.getElementById('nav-hidden-white').style.display = 'flex';
     }
     else{
-        var zzz = document.getElementById('div-hidden-text3').style.display = 'none';
+        var zzz = document.getElementById('nav-hidden-white').style.display = 'none';
     }
 }
 var count = 0;

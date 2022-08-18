@@ -6,55 +6,260 @@
         <!-- feather icons -->
         <script src="https://unpkg.com/feather-icons"></script>
         <!-- icone do site -->
-        <link rel="shortcut icon" href="https://www.freepnglogos.com/uploads/corac-o-rosa-png/corac-o-rosa-contorno-transparente-baixar-hd-7.png" type="image/x-icon">
+        <link rel="shortcut icon" href="../assets/historia.png" type="image">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="../css/ditadura-militar.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Dames's History</title>
     </head>
 <body>
-
-    <section class="header">
-         <!-- div pai -->
-         <div class="container">
-            <!-- nome do sub-site "BRASIL DITADURA MILITAR" -->
-            <div class="titulo">
-                <a href="../index.html"><h1 id="titulo"> Web History</h1></a>
-            </div>
-            <div class="home">
-                <a href="../index.html"><h1 id="home">Home</h1></a>
-            </div>
-            <div class="icon-home">
-                <a href="../index.html" id="icon-home"><i data-feather="home" ></i></a>
-            </div>
-            </div>
-        </div>
-        <!-- linha que separa o cabeçario -->
-        <hr>
-    </section>
-    
-    <section class="main">
-         <!-- titulo do site -->
-         <h1 id="titulo2">DITADURA MILITAR</h1>
-         <!-- sombra atras do titulo "a trajetoria da mulher na história" -->
-         <div class="fundo-sombra-titulo"></div>
-    </section>
-
-
-    <section class="footer"></section>
+    <!-- vignette and shadows (plant and track) -->
     <section class="shadows">
-         <!-- div pai das sombras -->
-         <div class="sombras-pai">
-            <div class="vinheta"></div>
+        <div class="shadows-pai">
+            <div class="vignette"></div>
+            <div class="shadows-div">
+                <img src="../assets/sombra_planta2.png" id="top-shadowplant">
+                <img src="../assets/sombra-planta3.png" id="mid-shadowplant">
+                <img src="../assets/pegada.png" id="top-shadowtrack">
+                <img src="../assets/pegada.png" id="bottom-shadowtrack">
+            </div>
         </div>
-        <div class="sombra-pegada">
-            <img src="../assets/pegada.png" id="pegada-inferior">
-            <img src="../assets/pegada.png" id="pegada-superior">
-        </div>
-
     </section>
+    <!-- header - icon + home + "web history" -->
+    <header>
+        <div class="header-pai">
+            <a href="../index.html"><h1 id="name-web">Web History</h1></a>
+            <div class="home-svg">
+                <div class="home">
+                    <a href="../index.html"><h1 id="home">Home</h1></a>
+                </div>
+                <div class="icon-home">
+                    <a href="../index.html" id="icon-home"><i data-feather="home" ></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </header>
+    <!-- boxes and texts -->
+    <main>
+        <div class="main-pai">
+            <!-- tile -->
+            <span id="title">DITADURA MILITAR<span id="cursor">|</span></span>
+            <span id="title2">(1964 - 1985)</span>
+            <!-- box 1  -->
+            <div class="container" id="resistance" data-aos="zoom-in">
+                <div class="circle" id="circle1" ></div>
+                <div class="circle" id="circle2" ></div>
+                <h1 id="title-box">Resistência ──────────────────────────</h1>
+                <p class="text" id="text-resis1">Durante a ditadura militar, as mulheres também foram protagonistas
+                     na luta pela libertação do povo. Participaram de organizações clandestinas, saíram à procura de
+                      filhos e parentes desaparecidos e foram presas e mortas pelos militares.Quando capturadas, enfrentaram violentas torturas, incluindo violência sexual.</p>
+                <p class="text" id="text-resis2">“O corpo da mulher, sempre objeto de atenção, tornou-se presa do desejo 
+                    maligno do torturador e ficou entregue em suas mãos. Autorizado por seus superiores e mandantes, o 
+                    servidor torturador incorporou ingredientes próprios e piores ao ato que, por delegação, lhe foi 
+                    solicitado e previamente permitido.” (O Movimento Feminista no Brasil: Trajetória e Conquistas)
+                </p>
+                <div class="img-resis">
+                    <img src="../assets/teste1.png" id="img-resis1" alt="">
+                    <img src="../assets/teste1.png" id="img-resis2" alt="">
+                    <img src="../assets/teste1.png" id="img-resis3" alt="">
+                </div>
+                <div class="subtitle-img-resis">
+                    <p id="subtitle-resis">legenda</p>
+                    <p id="subtitle-resis">legenda</p>
+                    <p id="subtitle-resis">legenda</p>
+                </div>
+                <p class="text" id="text-resis3">Nas estratégias militares, as mulheres executavam tarefas de observação e 
+                    levantamento de informações, uma vez que eram consideradas mais ágeis e furtivas, capazes de se misturar
+                     na multidão com maior facilidade. Sua inclusão na luta armada se deu somente após muita exigência. 
+                </p>
+            </div>
+            <!-- box 2 "" -->
+            <div class="container" id="worker" data-aos="fade-up">
+                <h1 id="title-box">Operárias ──────────────────────────────</h1>
+                <div class="circle" id="circle1" ></div>
+                <div class="circle" id="circle2" ></div>
+                <img src="../assets/teste1.png" id="img-worker1">
+                <p class="text" id="text-worker1">Com o desenvolvimento tecnológico, houve um amplo ingresso de mulheres nas 
+                    crescentes indústrias e empresas, mas ainda sem os mesmos direitos profissionais dos homens. No fim da década 
+                    de 70, eclodiram diversas greves operárias, das quais as mulheres participaram ativamente.
+                </p>
+                <p class="subtitle" id="subtitle-worker1">legenda</p>
+                <p class="text" id="text-worker2">
+                    Nesta época, a CLT (Consolidação das Leis do Trabalho) ainda proibia o trabalho noturno para mulheres e a presença 
+                    feminina em construções civis. Já havia legislação referente a licença-maternidade desde 1943, mas garantia somente 
+                    84 dias. Na prática, o que acontecia era a demissão das funcionárias quando engravidavam.
+                </p>
+                <img src="../assets/teste1.png" id="img-worker2">
+                <p class="subtitle" id="subtitle-worker2">legenda</p>
+                <div class="line"><hr id="hidden-line"></div>
+                <!-- button -->
+                <div class="btn-worker">
+                    <input type="checkbox" class="input-btn" id="btn-worker" onclick="btn_checked()">
+                    <label for="btn-worker" class="label-btn"></label>
+                </div>
+                <!-- hidden text -->
+                <nav class="nav-hidden" id="nav-hidden-worker">
+                    <div class="box-hidden" id="box-hidden-worker">
+                        <p class="text-hidden" id="text-hidden-worker">
+                            Nesse cenário, ainda haviam trabalhadoras rurais, mesmo que em menor quantidade. Eram submetidas a jornadas de
+                             trabalho exaustivas e não tinham nenhum direito trabalhista como carteira assinada, aposentadoria, licença-maternidade, 
+                             etc. Frequentemente trabalhavam grávidas e tinham de levar os filhos pequenos para o trabalho na roça, pois as creches, 
+                             ainda em desenvolvimento, só existiam nas cidades e em horários que não coincidiam com seus horários de trabalho.</p>
+                    </div>
+                </nav>
+            </div>
+            <!-- box -->
+            <div class="container" id="midia" data-aos="fade-up">
+                <h1 id="title-box">Imprensa ───────────────────────────────</h1>
+                <p class="text" id="text-midia1">
+                    Os jornais femininos desta época já eram muito mais questionadores e revolucionários do que os antigos, marcos tanto da luta feminista 
+                    quanto da resistência a ditadura militar. Assuntos como aborto, violência doméstica e sexual, controle de fertilidade e sexualidade começaram 
+                    a ser discutidos. Contudo, temas que diziam respeito às mulheres em específico eram taxados de sexistas, pois “dividiam os homens e as mulheres, 
+                    desviando-os da luta política”.
+                </p>
+                <nav class="img-midia">
+                    <div class="box-midia1">
+                        <img src="../assets/teste1.png" alt="" id="img-midia">
+                        <p id="subtitle-midia"><span style="color: var(--rosa);text-decoration: underline;">Brasil Mulher:</span><br>circulou de 1975 a 1980, dirigido por Joana Lopes.</p>
+                    </div>
+                    <div class="box-midia1">
+                        <img src="../assets/teste1.png" alt="" id="img-midia">
+                        <p id="subtitle-midia"><span style="color: var(--roxoclaro);text-decoration: underline;">Nós Mulheres:</span><br>circulou de 1976 a 1978, dirigido por Marisa Correa.</p>
+                    </div>
+                    <div class="box-midia1">
+                        <img src="../assets/teste1.png" alt="" id="img-midia">
+                        <p id="subtitle-midia"><span style="color: var(--amareloclaro);text-decoration: underline;">Mulherio:</span><br> circulou de 1981 a 1988, dirigido por Adélia Borges.</p>
+                    </div>
+                </nav>
+                <!-- line for hidden text -->
+                <div class="line"><hr id="hidden-line"></div>
+                <!-- button -->
+                <div class="btn-midia">
+                    <input type="checkbox" class="input-btn" id="btn-midia" onclick="btn_checked2()">
+                    <label for="btn-midia" class="label-btn"></label>
+                </div>
+                <!-- hidden text -->
+                <nav class="nav-hidden-midia" id="nav-hidden-midia">
+                    <div class="box-hidden-midia">
+                        <p id="hidden-text1">
+                            Muitos jornais de mulheres foram censurados pelo governo, incluindo tabelas com estatísticas do IBGE sobre desigualdade salarial e trabalhista em 1976, no jornal 
+                            Movimento.</p>
+                    </div>
+                </nav>
+            </div>
+            <!-- box -->
+            <div class="container" id="move-org" data-aos="fade-up">
+                <h1 id="title-box">Movimentos e Organizações ──────────────────</h1>
+                <div class="timeline-div">
+                    <div id="timeline"></div>
+                    <div class="pinkline" id="pinkline1"></div>
+                    <div class="pinkline" id="pinkline2"></div>
+                    <div class="pinkline" id="pinkline3"></div>
+                    <div class="pinkline" id="pinkline4"></div>
+                    <div class="pinkline" id="pinkline5"></div>
+                    <div class="pinkline" id="pinkline6"></div>
+                </div>
+                <div class="timeline-text">
+                    <div class="num-text" id="num-text1">
+                        <p class="num-years" id="num-years1">1968</p>
+                        <p class="text-years" id="text-years1">
+                            Com as muitas manifestações e protestos estudantis por parte dos jovens, mães se unem para a defesa de seus filhos por meio de organizações como a União 
+                            Brasileira de Mães e o Clube das Mães.
+                        </p>
+                    </div>
+                    <div class="num-text" id="num-text2">
+                        <p class="num-years" id="num-years2">1973</p>
+                        <p class="text-years" id="text-years2">
+                            Surge o Movimento do Custo de Vida, um dos primeiros movimentos populares e de massas após o AI-5. Construído e dirigido por mulheres da periferia, seus 
+                            principais protestos eram em relação ao alto custo de vida, salários baixos e necessidade de creche. Um dos abaixo-assinados elaborados por este grupo 
+                            recebeu 1,3 milhões de assinaturas.</p>
+                    </div>
+                    <div class="num-text" id="num-text3">
+                        <p class="num-years" id="num-years3">1975</p>
+                        <p class="text-years" id="text-years3">
+                            Ocorre o primeiro Encontro de Mulheres do Rio de Janeiro, com o propósito de comemorar o Ano Internacional da Mulher, declarado pela ONU. Neste evento, 
+                            foi criado o Centro de Desenvolvimento da Mulher Brasileira. 
+                            <br> <br> 
+                            ★ Também nesse ano, nasce o Movimento Feminino pela Anistia, que mais tarde fez parte do Comitê Brasileiro pela Anistia e foi decisivo para a aprovação da 
+                            Lei da Anistia, em 28 de agosto de 1979.
+                        </p>
+                    </div>
+                    <div class="num-text" id="num-text4">
+                        <p class="num-years" id="num-years4">1978</p>
+                        <p class="text-years" id="text-years4">
+                            Acontece o I Congresso da Mulher Metalúrgica. Cerca de 300 mulheres participaram, mas só havia homens na mesa de administração. Diversas operárias foram 
+                            demitidas antes e durante o evento para impedir sua participação.</p>
+                    </div>
+                    <div class="num-text" id="num-text5">
+                        <p class="num-years" id="num-years5">1979</p>
+                        <p class="text-years" id="text-years5">
+                            Ocorre o I Congresso da Mulher Paulista, que surtiu muita repercussão e foi 
+                            tratado de maneira muito positiva pela imprensa. Durante o evento, surge o 
+                            Movimento de Luta por Creche, reunindo por volta de 800 mulheres.</p>
+                    </div>
+                    <div class="num-text" id="num-text6">
+                        <p class="num-years" id="num-years6">1980</p>
+                        <p class="text-years" id="text-years6">
+                            Acontece o II Congresso da Mulher Paulista, no qual a questão da violência 
+                            doméstica foi muito discutida. A partir daí, foram criados o SOS-Mulher e 
+                            o Centro de Defesa da Mulher em diversos estados, entidades autônomas com 
+                            o objetivo de atender mulheres vítimas de violência. Em menos de um ano, 
+                            o SOS-Mulher de SP registrou 700 casos de violência contra a mulher. 
+                            Porém, os delegados e juízes ainda majoritariamente absolviam os acusados, 
+                            insistindo em “reconciliação”.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <div class="container" id="achievement" data-aos="fade-up">
+                <div class="circle" id="circle1" ></div>
+                <div class="circle" id="circle2" ></div>
+                <h1 id="title-box">Conquistas ──────────────────────────────</h1>
+                <p id="subtitle-achievement"><span style="color: var(--amareloclaro)">Lei de Igualdade de Oportunidade de Crédito</span><span style="color: var(--roxoclaro)"> (1974)</span></p>
+                <p class="text" id="text-achievement">Aprovada em 1974, permitiu que mulheres portassem um cartão de crédito. 
+                    Até este ano, solteiras ou divorciadas que solicitassem um cartão ou um empréstimo precisavam levar um 
+                    homem para assinar o contrato.</p>
 
+                <p id="subtitle-achievement"><span style="color: var(--amareloclaro)">Lei do Divórcio</span><span style="color: var(--roxoclaro)">  (1977)</span></p>
+                <p class="text" id="text-achievement">Somente a partir de 1977 o divórcio se tornou uma opção legal no Brasil. 
+                    As mulheres também deixaram de ser obrigadas a adotar o sobrenome do marido após o casamento. Porém, mesmo 
+                    anos após a aprovação desta lei, mulheres divorciadas ainda permaneciam mal vistas pela sociedade.</p>
+
+                <p id="subtitle-achievement"><span style="color: var(--amareloclaro)">Permissão para a prática de esportes</span><span style="color: var(--roxoclaro)"> (1979)</span></p>
+                <p class="text" id="text-achievement">Em 1979, foi revogada a proibição de que as mulheres praticassem qualquer 
+                    tipo de esporte, que atuava desde a publicação do decreto 3.199 em 1941: “Às mulheres não se permitirá a prática 
+                    de desportos incompatíveis com as condições de sua natureza [...]”. Contudo, suas consequências refletem no esporte 
+                    feminino até hoje, como o pouco incentivo ao futebol feminino e a falta de patrocinadores.</p>
+
+                <p id="subtitle-achievement"><span style="color: var(--amareloclaro)">Primeira rede municipal de creches</span><span style="color: var(--roxoclaro)"> (1979)</span></p>
+                <p class="text" id="text-achievement">O Movimento de Luta por Creche atingiu grandes proporções no fim da década de 70, 
+                    o que deu origem a primeira rede municipal de creches no Brasil.</p>
+
+                <p id="subtitle-achievement"><span style="color: var(--amareloclaro)">Delegacias Policiais de Defesa da Mulher</span><span style="color: var(--roxoclaro)"> (1985)</span></p>
+                <p class="text" id="text-achievement">Em 1985, foram instaladas várias unidades em quase todos os estados, com funcionamento 
+                    24h e equipes preparadas. No mesmo ano, foi criada a Delegacia de Atendimento Especializado à Mulher (DEAM) em São Paulo. 
+                    Essas delegacias realizavam, essencialmente, ações de proteção e investigação dos crimes de violência doméstica e sexual 
+                    contra as mulheres.</p>
+            </div>
+            <!-- box 5 "Mulheres que se destacaram" -->
+            <div class="container" id="mourning" data-aos="fade-up">
+                <p class="text" id="text-mourning"> 41 mulheres mortas durante a Ditadura Militar são destacadas no livro Breve História do Feminismo no Brasil; quase todas foram violentamente torturadas. 
+                Estima-se, no total, mais de 400 mortes e desaparecimentos políticos no Brasil entre 1964 e 1988.</p>
+            </div>
+    </main>
+
+    <footer>
+        <div class="footer-pai">
+
+        </div>
+    </footer>
+    <script src="../js/ditadura-militar.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        feather.replace()
+      AOS.init({
+        duration: 1000,
+    });
     </script>
 </body>
 </html>

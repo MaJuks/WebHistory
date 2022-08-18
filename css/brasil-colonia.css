@@ -395,7 +395,7 @@ hr{
     /* line in select (for accessibility) */
     outline:1px dotted #CCC;
 }
-.div-hidden-text1{
+.nav-hidden{
     /* position */
     display: none;
     /* config */
@@ -403,7 +403,7 @@ hr{
     height: 15rem;
     justify-content: center;
 }
-.box-hidden-text1{
+.box-hidden-intro{
     /* config */
     position: relative;
     top: -81px;
@@ -417,7 +417,7 @@ hr{
     padding: 0  10px;
     animation: slide-down 0.5s ;
 }
-#hidden-text1{
+#text-hidden-intro{
     /* config */
     padding: 0 20px;
     /* letter config  */
@@ -504,7 +504,7 @@ hr{
     top: -0.4rem;
     left: 1rem;
 }
-.div-hidden-text2{
+#nav-hidden-native{
     /* position */
     display: none;
     /* config */
@@ -512,7 +512,7 @@ hr{
     height: 9rem;
     justify-content: center;
 }
-.box-hidden-text2{
+.box-hidden-native{
     /* position */
     position: relative;
     top: -80px;
@@ -589,15 +589,15 @@ hr{
     top: -0.5rem;
     left: 1rem;
 }
-.div-hidden-text3{
+#nav-hidden-white{
     /* position */
     display: none;
     /* config */
     width: 80rem;
-    height: 15rem;
+    height: 10rem;
     justify-content: center;
 }
-.box-hidden-text3{
+.box-hidden-white{
     /* position */
     position: relative;
     top: -80px;
@@ -611,7 +611,7 @@ hr{
     padding: 0  10px;
     animation: slide-down 0.5s;
 }
-#hidden-text3{
+#text-hidden-white{
     /* config */
     padding: 0 20px;
     /* letter config */

@@ -6,15 +6,11 @@
 
 /* font-family: 'Shadows Into Light', cursive; */
 
-
-/* zera algumas coisas de css */
-* {
+*{
     box-sizing: border-box;
 }
-
-
-/* variaveis das cores */
 :root {
+    --branco2:#ffffff ;
     --branco: #faf5f0;
     --marromclaro: #e8dacf;
     --marromintermediario: #d4bda7;
@@ -24,184 +20,619 @@
     --rosa: #f2165f;
     --roxoescuro: #66308d;
     --roxoclaro: #7c4f9c;
+    --roxoclaro2: #AC92BE;
     --marromescuro: #5b3e26;
     --marromescuro2: #483322;
+    --marromescuro3:rgba(53, 25, 5, 0.9);
     --preto: #201d18;
 }
-
-
-/* imagem de fundo */
 body{
     margin: 0;
     background-image: url("../assets/fundo.png");
 }
+main,footer{
+    mix-blend-mode: multiply; 
 
-/* div pai da sectio header */
-.container {
+}
+/* ------------------------------------------------------ */
+/* section shadows */
+/* ------------------------------------------------------ */
+.vignette{
+    /* position */
+    position: absolute;
+    /* configuração */
+    background-image: url(../assets/vinheta.png);
+    height: 5000px;
+    width: 100%;
+    /* background-size: 100%; */
+    opacity: 0.5;
+}
+.shadows-div{
+    /* config */
+    height: 0rem;
+    z-index: 100;
+    mix-blend-mode: multiply;
+}
+#bottom-shadowtrack{
+    /* position */
+    position: relative;
+    width: 15%;
+    /* config */
+    top: 90rem;
+}
+#top-shadowplant{
+    /* position */
+    position: relative;
+    left: 82rem;
+    /* animations */
+    animation: moviment-plant 2s ease-in-out infinite alternate;
+}
+#mid-shadowplant{
+    /* position */
+    position: relative;
+    left: -40rem;
+    top: 120rem;
+    /* config */
+    width: 40%;
+    opacity: 0.6;
+    /* animações */
+    animation: moviment-plant 2s ease-in-out infinite alternate;
+}
+#top-shadowtrack{
+    /* position */
+    position: relative;
+    left: -80rem;
+    /* config */
+    width: 15%;
+}
+/* ------------------------------------------------------ */
+/* header */
+/* ------------------------------------------------------ */
+.header-pai {
+    /* config */
     display: flex;
     height: 120px;
     align-items: center;
+    z-index: 100;
 }
-
-
-/* titulo da pagina "web history */
-#titulo {
-    /* posicao */
+#name-web{
+    /*"web history */
+    /* position */
     position: relative;
     top: 1rem;
-    left: 470%;
+    left: 80rem;
     width: 150%;
-    z-index: 101;
-    /* configuração da letra */
-    text-align: center;
+    /* letter config*/
     font-family: 'Shadows Into Light', cursive;
-    font-style: normal;
     font-weight: 400;
     font-size: 60px;
-    line-height: 6px;
-    text-decoration: none;
-    /* cor */
-    color: var(--marromescuro2);
+    color: var(--marromescuro3);
     -webkit-text-stroke: 1px var(--preto);
 }
-
-#home{
-     /* posicao */
-     position: relative;
-     top: 1rem;
-     width: 150%;
-     z-index: 101;
-     /* configuração da letra */
-     text-align: center;
-     font-family: 'Shadows Into Light', cursive;
-     font-style: normal;
-     font-weight: 400;
-     font-size: 60px;
-     line-height: 6px;
-     text-decoration: none;
-     /* cor */
-     color: var(--roxoescuro);
-     -webkit-text-stroke: 1px var(--roxoescuro);
+#name-web:hover{
+    /* config */
+    transform: scale(1.05);
 }
-
-/* retirar linha do link */
+.home-svg{
+    /* "home" + svg */
+    /* position */
+    display: flex;
+    position: relative;
+}
+#home{
+    /* position */
+    position: relative;
+    top: 1rem;
+    width: 150%;
+    /* letter config*/
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 400;
+    font-size: 60px;
+    color: var(--roxoescuro);
+    -webkit-text-stroke: 1px var(--roxoescuro);
+}
+#home:hover{
+    /* config */
+    transform: scale(1.05);
+}
 a{
     text-decoration: none;
     color: none;
-}
-
-.icon-home{
+}.icon-home{
+    /* position */
     position: relative;
-    left: -7%;
-    top: 1rem;
     display: flex;
-    z-index: 100;
+    left: -85%;
+    top:4.9rem;
 }
 .icon-home svg{
+    /* config */
     width: 50px;
     height: 50px;
     color: var(--roxoescuro);
 }
-
-/* linhs que separa o cabecalho do main */
 hr{
+    /* position */
     margin-top: 30px;
-    /* cor*/
-    border: 2px solid var(--marromescuro);
+    /* config*/
+    border: 2px solid var(--marromescuro3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transform: rotate(-0.04deg);
-    background-color: var(--marromescuro);
+    background-color: var(--marromescuro3);
 }
-
-
-/* nome do subsite "BRASIL COLONIA" */
-#titulo2 {
-    /* posição */
-    /* configuração da letra */
-    text-align: center;
+/* ------------------------------------------------------ */
+/* main */
+/* ------------------------------------------------------ */
+.main-pai{
+    /* config */
+    display: grid;
+    justify-items: center;
+}
+#title{
+    /* position */
+    /* topo | direita | inferior | esquerda */
+    margin: 5rem 5rem 0 5rem ;
+    /*letter config*/
     font-family: 'Special Elite', cursive;
-    font-style: normal;
-    font-weight: 400;
     font-size: 65px;
-    line-height: 70px;
+    line-height: 100px;
     text-align: center;
-    /* cor*/
     color: var(--marromescuro);
     -webkit-text-stroke: 1px var(--preto);
     border: px solid var(--preto);
-    z-index: 101;
+    /* for animation*/
+    white-space: nowrap;
+    overflow: hidden;
+    width: 25em;
+    animation: type 4s steps(60, end) ;
 }
+#title2{
+    /* position */
+    position: relative;
+    top:-2rem;
+    /* letter config*/
+    font-family: 'Special Elite', cursive;
+    font-size: 45px;
+    line-height: 100px;
+    text-align: center;
+    color: var(--roxoclaro);
+    -webkit-text-stroke: 1px var(--roxoclaro);
+    /* for animation */
+    animation: fade 2s ease-in-out;
+}
+#cursor{
+    /* animation */
+    animation: blink 1s infinite;
 
-/* sombra atras do titulo "a trajetoria da mulher na historia" */
-.fundo-sombra-titulo{
+}
+.container{
+    /* position */
     display: flex;
     position: relative;
-    opacity: 0.4;
-    height: 15rem;
-    width: auto;
-    margin-top: -12.5rem;
+    /* config */
+    padding: 50px 70px 60px 60px;
+    margin: 3rem;
+    flex-wrap: wrap;
+    width: 80rem;
+    border: 1px solid #000000;
+    background:var(--marromescuro2);
+    border-radius: 15px;
+    box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.3), -8px -8px 10px 1px rgba(0, 0, 0, 0.3);
+    /* letter config*/
+    font-family: 'Habibi';
+    font-size: 25px;
+    line-height: 31px;
+    color: var(--branco2);
+}
+.circle{
+    /* position */
+    position: absolute;
+    /* config */
+    width: 21px;
+    height: 21px;
+    background: var(--roxoclaro);
+    border: 1px solid #000000;
+    border-radius: 15px;
+}
+#circle1{
+    /* position */
+    left: 1.5rem;
+    top: 1.5rem;
+}
+#circle2{
+    /* position */
+    left: 77rem;
+    top: 1.5rem;
+}
+#title-box{
+    /* position */
+    position: relative;
+    /* config */
+    width: 80rem;
+    height: 72px;
+    font-family: 'Special Elite';
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+    color: var(--roxoclaro);
+}
+.text{
+    /* config */
+    margin: 30px;
+}
+#text-resis2,#text-midia1,#text-mourning,
+#subtitle-achievement,#text-achievement{
+    width: 80rem;
+    text-align: center;
+}
+
+.img-resis{
+    width: 80rem;
+    display: flex;
+    justify-content: space-around;
+}
+#img-resis1,#img-resis2,#img-resis3,#img-worker1,#img-worker2{
+    width: 20rem;
+    height: 20rem;
+    margin: 30px;
+}
+
+.subtitle-img-resis{
+    /* position */
+    display: flex;
+    /* config */
+    width: 80rem;
+    justify-content: space-around;
+    /* letter config */
+    font-size: 20px
+}
+#text-worker1,#text-worker2{
+    width: 44rem;
+    padding:60px 0 0 0;
+}
+#subtitle-worker1,#subtitle-worker2{
+    display: flex;
+    position: relative;
+    width: 80rem;
+    height: 0;
+    margin: 0;
+    font-size: 20px;
+    top: -1rem;
+}
+#subtitle-worker2{
+    margin-left: 53.5rem;
+}
+#subtitle-worker1{
+    margin-left:9.5rem;
+}
+
+.line{
+    /* position */
+    z-index: 100;
+    /* config */
+    width: 80rem;
+    height: 20px;
+}
+#hidden-line{
+    /* config */
+    width: 61rem;
+    border: 3px solid var(--preto);
+    filter: blur(1px);
+}
+.btn-worker{
+    /* position */
+    position: relative;
+    left: 2.5rem;
+}
+.label-btn{
+    /* hidden checkbox */
+    /* position */
+    position: relative;
+    top: -2.3rem;
+    transition-duration: 0.5s;
+}
+.label-btn:hover{
+    transform: scale(1.1);
+}
+.label-btn{
+    /* moving the label for the top */
+    /* position */
+    z-index: 100;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+}
+.label-btn::before,
+.label-btn::after {
+    content: "";
+}
+.label-btn::before{
+    /* button before being checked (triangulo shape) */
+    /* position */
+    display:flex;
+    /* config */
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid var(--amareloescuro);
+}
+.input-btn:checked + .label-btn::before{
+    /* button after being checked (triangulo shape) */
+    /* position */
+    margin-left: -15px;
+    margin-top: 14px;
+    /* config */
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid var(--amareloescuro);
+}
+.input-btn:focus+.label-btn::before{
+    /* line in select (for accessibility) */
+    outline:1px dotted #CCC;
+}
+.nav-hidden{
+    /* position */
+    display:none;
     /* configuração */
-    background: radial-gradient(50% 50% at 50% 50%, rgba(6, 0, 0, 0.4) 0%, rgba(217, 217, 217, 0) 100%);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 80rem;
+    justify-content: center;
 }
-
-/* seciton shadoes------------------------------------------------------------------ */
-/* sectio pai */
-/* conversar com o professor sobre  */
-.vinheta{
-    margin-top: -24%;
+#nav-hidden-worker{
+    /* config */
+    height: 8rem;
+}
+.box-hidden{
+    /* position */
     position: relative;
-    display: flex;
-    /* conversar com o professor sobre isso  */
-    height: 1010px;
-    width: auto;
-    background-image: url(../assets/vinheta.png);
-    background-size: 100%;
-    /* arrumar opaciodade da imagem */
-    opacity: 0.5;
+    top: -80px;
+    /* config */
+    justify-content: center;
+    width: 60rem;
+    height: 14rem;
+    background: var(--marromclaro);
+    border: 1.84865px solid var(--marromescuro);
+    border-radius: 0px 0px 27px 27px;
+    padding: 0  10px;
+    animation: slide-down 0.5s ;
+}
+#box-hidden-worker{
+    /* config */
+    height: 14rem;
+}
+.text-hidden{
+    /* config */
+    padding: 0 20px;
+    /* letter config */
+    font-family: 'Habibi';
+    font-size: 23px;
+    line-height: 29px;
+    color: var(--marromescuro);
 }
 
-.sombra-pegada{
+
+.img-midia{
+    /* config */
+    flex-wrap: wrap;
+    display: flex;
+    width: 80rem;
+    justify-content: space-around; 
+    align-items: center;
+}
+.box-midia1{
+    flex-flow: column;
+    display: flex;
+    align-items: center;    
+}
+#img-midia{
+    /* config */
+    width: 18rem;
+    height: 22rem;
+    padding: 1rem;
+}
+#subtitle-midia{
+    /* config */
+    width: 245px;
+    height: 159px;
+    text-align: center;
+}
+.btn-midia{
+    /* position */
     position: relative;
+    left: 2.5rem;
+}
+
+.nav-hidden-midia{
+    /* position */
+    display: none;
+    /* config */
+    width: 80rem;
+    height: 7rem;
+    justify-content: center;
+
+}
+.box-hidden-midia{
+    /* position */
+    position: relative;
+    top: -80px;
+    /* config */
+    justify-content: center;
+    width: 60rem;
+    height: 7rem;
+    background: var(--marromclaro);
+    border: 1.84865px solid var(--marromescuro);
+    border-radius: 0px 0px 27px 27px;
+    padding: 0  10px;
+    animation: slide-down 0.5s ;
+}
+#hidden-text1{
+    /* config */
+    padding: 0 20px;
+    /*  letter config */
+    font-family: 'Habibi';
+    font-size: 23px;
+    line-height: 29px;
+    color: var(--marromescuro);
+    text-align: center;
+}
+.timeline-div{
+    /* config */
     display: flex;
-    margin-top: -50%;
-
+    justify-content: center;
+    width: 80rem;
 }
 
-
-#pegada-inferior{
-    /* posição */
-    margin-left: 10rem;
-    margin-top: 40rem;
-
-    /* configuração */
-    width: 15%;
-    height: 15%;
+.num-years{
+    /* config */
+    width: 116px;
+    height: 30px;
+    font-family: 'Special Elite';
+    font-size: 35px;
+    color:var(--amareloescuro);
 }
-#pegada-superior{
-     /* posição */
-    margin-left: 56rem;
-    margin-top: 11rem;
-
-     /* configuração */
-     width: 15%;
-     height: 15%;
+.timeline-text{
+    display: grid;
+    justify-content: center;
+    width: 80rem;
+    margin-top: -60rem;
+}
+.num-years,.text-years{
+    width: 500px;
+}
+#timeline{
+    /* config */
+    z-index: 100; 
+    height: 2000px;
+    border: 3px solid var(--branco2);
+}
+.pinkline{
+    /* config */
+    height: 500.01px;
+    border: 3px solid var(--roxoclaro);
+    transform: rotate(-90deg);
 }
 
+#pinkline1{
+    /* position */
+    position: relative;
+    top: -6rem;
+    left: 15.30rem;
+}
+#num-text1{
+    /* position */
+    position: absolute;
+    top: 15rem;
+    left: 40rem;
+}
 
+#pinkline2{
+    /* position */
+    position: relative;
+    top:8.5rem;
+    left: -16.5rem;
+}
+#num-text2{
+    /* position */
+    text-align: right;
+    position: absolute;
+    top: 19.5em;
+    left: 6rem;
+}
 
-@media screen and (min-width: 1000px) {
-    .vinheta {
-      height: 1030px;
+#pinkline3{
+    /* position */
+    position: relative;
+    top:28.5rem;
+    left: 14.8rem;
+}
+#num-text3{
+    /* position */
+    position: absolute;
+    top:50rem;
+    left: 40rem;
+}
+
+#pinkline4{
+    /* position */
+    position: relative;
+    top:55rem;
+    left: -17rem;
+}
+#num-text4{
+    /* position */
+    position: absolute;
+    text-align: right;
+    top: 77rem;
+    left: 6rem;
+}
+
+#pinkline5{
+    /* position */
+    position: relative;
+    top:68.5rem;
+    left: 14rem;
+}
+#num-text5{
+    /* position */
+    position: absolute;
+    left: 40rem;
+    top: 90rem;
+}
+
+#pinkline6{
+    /* position */
+    position: relative;
+    top:83rem;
+    left: -18rem;
+}
+#num-text6{
+    /* position */
+    position: absolute;
+    text-align: right;
+    left: 6rem;
+    top: 104.5rem;
+}
+
+#subtitle-achievement{ 
+    font-size: 30px;
+}
+#mourning{
+    background:var(--preto);
+}
+@keyframes moviment-plant{
+    from{
+        transform: translate(-20px,-20px);
+        z-index: 101;
+
+    }
+    to{
+        z-index: 101;
+
     }
 }
-@media screen and (min-width: 2200px) {
-    .vinheta {
-      height: 1400px;
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    
+}
+@keyframes type{
+    from { width: 0; }
+  }
+
+@keyframes blink{
+    to{opacity: .0;}
+}
+@keyframes slide-down {
+    0%{
+        top: -90px;
+        opacity: 0;  
+    }
+    25%{
+        opacity: 0;
     }
 }
-
-
-
-
-
