@@ -52,7 +52,7 @@ body{
     z-index: 100;
     display: flex;
     position: relative;
-    left: 82rem;
+    left: 80rem;
     width: 25%;
     animation: moviment-plant 2s ease-in-out infinite alternate;
 }
@@ -102,7 +102,7 @@ header{
     /* config */
     height: 80px;
 }
-#name-web {
+#name-web{
     /* "web history */
     /* position */
     position: relative;
@@ -112,13 +112,9 @@ header{
     /* letter config */
     font-family: 'Shadows Into Light', cursive;
     font-size: 45px;
-    color: var(--marromclaro);
+    color: var(--marromintermediario);
     text-decoration: none;
-    background: linear-gradient(to right,var(--amareloclaro) 18%, var(--rosa) 29%, var(--roxoclaro) 100%);
     text-shadow: 0.1em 0.1em 0.2em black;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
 }
 .input-search{
     /* position */
@@ -136,7 +132,7 @@ header{
     /* config */
     width: 48px;
     height: 48px;
-    color: var(--roxoclaro);
+    color: var(--marromintermediario);
 }
 #label-topics{
     /* "topico especifico" */
@@ -145,8 +141,8 @@ header{
     /*letter config */
     font-family: 'Shadows Into Light';
     font-size: 28px;
-    color: var(--marromclaro);
-    -webkit-text-stroke: 0.5px var(--marromclaro);
+    color: var(--marromintermediario);
+    -webkit-text-stroke: 0.5px var(--marromintermediario);
     text-shadow: 0.1em 0.1em 0.2em black;
 }
 select{
@@ -178,9 +174,9 @@ hr{
     margin-top: 30px;
     /* config */
     opacity: 0.7;
-    border: 2px solid var(--marromescuro3);
+    border: 2px solid var(--preto);
     transform: rotate(-0.04deg);
-    background-color: var(--marromescuro2);
+    background-color: var(--preto);
 }
 /* ------------------------------------------------------ */
 /* MAIN */
@@ -197,7 +193,6 @@ hr{
     line-height: 70px;
     text-align: center;
     color: var(--marromescuro);
-    text-shadow: 0 0 0.4em var(--roxoescuro); 
     -webkit-text-stroke: 1px var(--marromescuro);
 }
 
@@ -323,7 +318,7 @@ footer a{
     position: relative;
     display: grid;
     justify-items: center;
-    top: 3rem;
+    top: 2rem;
     height: 95px;
     text-decoration: none;
 
@@ -453,9 +448,7 @@ footer a{
         
     }
 }
-@keyframes neon{
-    100%{text-shadow: 0 0 0.4em var(--amareloclaro);}
-}
+
 @keyframes colors{
     0%{ 
         color: var(--rosaescuro);
@@ -685,6 +678,9 @@ footer a{
     }
 }
 @media screen and (min-width: 2400px) {
+    #top-shadowplant{
+        left: 99.5rem;
+    }
     .vignette{
         height: 1200px;
     }
