@@ -40,122 +40,141 @@ main,footer{
 .vignette{
     /* position */
     position: absolute;
-    /* configuração */
+    /* config */
     background-image: url(../assets/vinheta.png);
     height: 6935px;
     width: 100%;
-    /* background-size: 100%; */
+    background-size: 100%;
     opacity: 0.5;
 }
 .shadows-div{
     /* config */
     height: 0rem;
-    z-index: 100;
     mix-blend-mode: multiply;
 }
 #bottom-shadowtrack{
     /* position */
     position: relative;
-    width: 15%;
-    /* config */
+    left: 81rem;
     top: 90rem;
+    /* config */
+    width: 15%;
 }
 #top-shadowplant{
     /* position */
     position: relative;
     left: 82rem;
-    /* animations */
+    /* config */
     animation: moviment-plant 2s ease-in-out infinite alternate;
 }
 #mid-shadowplant{
     /* position */
+    display: flex;
     position: relative;
-    left: -40rem;
+    left: -3rem;
     top: 120rem;
     /* config */
-    width: 40%;
     opacity: 0.6;
-    /* animações */
+    width: 40%;
     animation: moviment-plant 2s ease-in-out infinite alternate;
 }
 #top-shadowtrack{
     /* position */
     position: relative;
-    left: -80rem;
+    left: 15rem;
     /* config */
     width: 15%;
 }
 /* ------------------------------------------------------ */
 /* header */
 /* ------------------------------------------------------ */
-.header-pai {
-    /* config */
+header{
+    background: rgba(72, 51, 34, 0.3);
+    box-shadow: 0px 2px 20px #483322;
+
+}
+.header-div{
+    /* position */
     display: flex;
-    height: 120px;
+    /* config */
+    height: 80px;
     align-items: center;
-    z-index: 100;
 }
 #name-web{
-    /*"web history */
+
+    /* "web history */
     /* position */
     position: relative;
-    top: 1rem;
-    left: 80rem;
     width: 150%;
-    /* letter config*/
+    top: 0.5rem;
+    left: 85rem;
+    z-index: 100;
+    transition: 0.5s;
+    /* letter config */
     font-family: 'Shadows Into Light', cursive;
-    font-weight: 400;
-    font-size: 60px;
-    color: var(--marromescuro3);
-    -webkit-text-stroke: 1px var(--preto);
+    font-size: 45px;
+    color: var(--marromintermediario);
+    text-decoration: none;
+    text-shadow: 0.1em 0.1em 0.2em black;
 }
 #name-web:hover{
+    /* animation cursor*/
     /* config */
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 .home-svg{
     /* "home" + svg */
     /* position */
-    display: flex;
     position: relative;
+    top: -0.5rem;
+    left: 9.5rem;
+    display: flex;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+
 }
 #home{
     /* position */
     position: relative;
     top: 1rem;
     width: 150%;
-    /* letter config*/
+    transition: 0.5s;
+
+    /* letter config */
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
     font-weight: 400;
     font-size: 60px;
+    line-height: 6px;
     color: var(--rosaescuro);
     -webkit-text-stroke: 1px var(--rosaescuro);
 }
 #home:hover{
+    /* animation cursor */
     /* config */
     transform: scale(1.05);
 }
 a{
+    /* config link */
     text-decoration: none;
-    color: none;
-}.icon-home{
+}
+.icon-home{
+    /* div-svg */
     /* position */
     position: relative;
     display: flex;
     left: -85%;
-    top:4.9rem;
+    top: 2.2rem;
 }
 .icon-home svg{
-    /* config */
+    /* config*/
     width: 50px;
     height: 50px;
     color: var(--rosaescuro);
 }
 hr{
+    /* line to separate*/
     /* position */
     margin-top: 30px;
-    /* config*/
     border: 2px solid var(--marromescuro3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transform: rotate(-0.04deg);
@@ -164,7 +183,7 @@ hr{
 /* ------------------------------------------------------ */
 /* main */
 /* ------------------------------------------------------ */
-.main-pai{
+.main-div{
     /* config */
     display: grid;
     justify-items: center;
@@ -284,6 +303,7 @@ hr{
     /* position */
     position: relative;
     left: 2.5rem;
+    top: -0.5rem;
 }
 .label-btn{
     /* hidden checkbox */
@@ -316,7 +336,7 @@ hr{
     height: 0;
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
-    border-left: 25px solid var(--amareloescuro);
+    border-left: 25px solid var(--rosa);
 }
 .input-btn:checked + .label-btn::before{
     /* button after being checked (triangulo shape) */
@@ -328,7 +348,7 @@ hr{
     height: 0;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
-    border-top: 25px solid var(--amareloescuro);
+    border-top: 25px solid var(--rosaescuro);
 }
 .input-btn:focus+.label-btn::before{
     /* line in select (for accessibility) */
@@ -371,6 +391,11 @@ hr{
     font-size: 23px;
     line-height: 29px;
     color: var(--marromescuro);
+}
+.btn-worker{
+    position: relative;
+    left: 2.5rem;
+    top: -0.5rem;
 }
 .img-worker,.subtitle-worker{
     /* config */
