@@ -180,6 +180,43 @@ hr{
     transform: rotate(-0.04deg);
     background-color: var(--marromescuro3);
 }
+
+.click-here{
+    /* "clique para ler mais" + png */
+    /* position */
+    z-index: 100;
+    display: flex;
+    position: relative;
+    top: 160rem;
+    left: 13rem;
+    /* config */
+    flex-wrap: wrap;
+    width: 250px;
+    justify-content: center;
+    height: 0;   
+    transform: rotate(-10deg);
+}
+#text-click-here{
+    /* "clique para ler mais" */
+    /* config */
+    width: 200px;
+    height: 44px;
+    margin: 0;
+    font-family: 'Shadows Into Light';
+    font-size: 25px;
+    text-align: center;
+    color: var(--marromclaro);
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+#img-click-here{
+    /* position */
+    margin-top: -2rem;
+    /* config */
+    width: 124px;
+    height: 76px;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+    animation: slide-right 3s ease-in-out infinite alternate;
+}
 /* ------------------------------------------------------ */
 /* main */
 /* ------------------------------------------------------ */
@@ -530,14 +567,14 @@ hr{
     height: 2000px;
     border: 3px solid var(--branco2);
 }
-.pinkline{
+.colorline{
     /* config */
     height: 500.01px;
     border: 3px solid var(--roxoclaro);
     transform: rotate(-90deg);
 }
 
-#pinkline1{
+#colorline1{
     /* position */
     position: relative;
     top: -6rem;
@@ -550,7 +587,7 @@ hr{
     left: 40rem;
 }
 
-#pinkline2{
+#colorline2{
     /* position */
     position: relative;
     top:8.5rem;
@@ -564,7 +601,7 @@ hr{
     left: 6rem;
 }
 
-#pinkline3{
+#colorline3{
     /* position */
     position: relative;
     top:28.5rem;
@@ -577,7 +614,7 @@ hr{
     left: 40rem;
 }
 
-#pinkline4{
+#colorline4{
     /* position */
     position: relative;
     top:55rem;
@@ -591,7 +628,7 @@ hr{
     left: 6rem;
 }
 
-#pinkline5{
+#colorline5{
     /* position */
     position: relative;
     top:68.5rem;
@@ -604,7 +641,7 @@ hr{
     top: 90rem;
 }
 
-#pinkline6{
+#colorline6{
     /* position */
     position: relative;
     top:83rem;
@@ -633,6 +670,11 @@ hr{
     to{
         z-index: 101;
 
+    }
+}
+@keyframes slide-right{
+    50%{
+        transform: translatex(10px);
     }
 }
 @keyframes fade {

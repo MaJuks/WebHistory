@@ -654,13 +654,13 @@ hr{
     justify-content: space-between;
 }
 #btn-right:hover,#btn-left:hover{
-    transform: scale(1.2);
+    transform: scale(0.9);
 }
 #btn-right:hover{
-    border-right: 25px solid var(--roxoclaro2);
+    border-right: 25px solid var(--amareloescuro);
 }
 #btn-left:hover{
-    border-left: 25px solid var(--roxoclaro2);
+    border-left: 25px solid var(--amareloescuro);
 }
 #btn-left{
     /* config */
@@ -670,7 +670,7 @@ hr{
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
     border-right: 25px solid transparent;
-    border-left: 25px solid var(--roxoclaro);
+    border-left: 25px solid var(--amareloclaro);
     cursor: pointer;
     transition-duration: 0.5s;
 }
@@ -682,7 +682,7 @@ hr{
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
     border-left: 25px transparent;
-    border-right: 25px solid var(--roxoclaro);
+    border-right: 25px solid var(--amareloclaro);
     cursor: pointer;
     transition-duration: 0.5s;
 }

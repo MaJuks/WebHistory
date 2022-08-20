@@ -328,13 +328,13 @@ hr{
     height: 1000px;
     border: 3px solid var(--branco2);
 }
-.pinkline{
+.colorline{
     /* config */
     height: 500.01px;
     border: 3px solid var(--roxoclaro);
     transform: rotate(-90deg);
 }
-#pinkline1{
+#colorline1{
     /* position */
     position: relative;
     top: -6rem;
@@ -346,7 +346,7 @@ hr{
     top: 2rem;
     left: 17rem;
 }
-#pinkline2{
+#colorline2{
     /* position */
     position: relative;
     top:13rem;
@@ -359,7 +359,7 @@ hr{
     top: -1rem;
     left: -18.5rem;
 }
-#pinkline3{
+#colorline3{
     /* position */
     position: relative;
     top:31rem;
@@ -371,7 +371,7 @@ hr{
     top: -4rem;
     left: 17rem;
 }
-#pinkline4{
+#colorline4{
     /* position */
     position: relative;
     top:35rem;
@@ -416,33 +416,34 @@ hr{
     /* config */
     width: 0;
     height: 0;
+    cursor: pointer;
     background-color: transparent ;
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
     border-right: 25px solid transparent;
-    border-left: 25px solid var(--roxoclaro);
+    border-left: 25px solid var(--rosa);
     transition-duration: 0.5s;
 }
 #btn-left{
     /* config */
     width: 0;
     height: 0;
+    cursor: pointer;
     background-color: transparent;
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
     border-left: 25px transparent;
-    border-right: 25px solid var(--roxoclaro);
-    -webkit-bor: 105px var(--rosa);
+    border-right: 25px solid var(--rosa);
     transition-duration: 0.5s;
 }
 #btn-right:hover,#btn-left:hover{
-    transform: scale(1.2);
+    transform: scale(0.9);
 }
 #btn-right:hover{
-    border-left: 25px solid var(--roxoclaro2);
+    border-left: 25px solid var(--rosaescuro);
 }
 #btn-left:hover{
-    border-right: 25px solid var(--roxoclaro2);
+    border-right: 25px solid var(--rosaescuro);
 }
 .woman{
     margin: 80px;

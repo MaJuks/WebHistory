@@ -116,6 +116,12 @@ header{
     text-decoration: none;
     text-shadow: 0.1em 0.1em 0.2em black;
 }
+
+#name-web:hover{
+    /* animation cursor*/
+    /* config */
+    transform: scale(1.1);
+}
 .input-search{
     /* position */
     z-index:100;
@@ -128,6 +134,7 @@ header{
     align-items: center;
 }
 .icon-search svg {
+    z-index: 100;
     /* icons */
     /* config */
     width: 48px;

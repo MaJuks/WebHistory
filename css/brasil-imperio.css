@@ -180,6 +180,44 @@ hr{
     transform: rotate(-0.04deg);
     background-color: var(--marromescuro3);
 }
+
+.click-here{
+    /* "clique para ler mais" + png */
+    /* position */
+    z-index: 100;
+    display: flex;
+    position: relative;
+    top: 250rem;
+    left: 12.5rem;
+    /* config */
+    flex-wrap: wrap;
+    width: 250px;
+    justify-content: center;
+    height: 0;   
+    transform: rotate(-10deg);
+}
+#text-click-here{
+    /* "clique para ler mais" */
+    /* config */
+    width: 200px;
+    height: 44px;
+    margin: 0;
+    font-family: 'Shadows Into Light';
+    font-size: 25px;
+    text-align: center;
+    color: var(--marromclaro);
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+#img-click-here{
+    /* position */
+    margin-top: -2rem;
+    /* config */
+    width: 124px;
+    height: 76px;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+
+    animation: slide-right 3s ease-in-out infinite alternate;
+}
 /* ------------------------------------------------------ */
 /* main */
 /* ------------------------------------------------------ */
@@ -463,32 +501,35 @@ hr{
     /* config */
     width: 0;
     height: 0;
+    cursor: pointer;
+
     background-color: transparent ;
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
     border-right: 25px solid transparent;
-    border-left: 25px solid var(--roxoclaro);
+    border-left: 25px solid var(--amareloclaro);
     transition-duration: 0.5s;
 }
 #btn-left{
     /* config */
     width: 0;
     height: 0;
+    cursor: pointer;
     background-color: transparent; ;
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
     border-left: 25px transparent;
-    border-right: 25px solid var(--roxoclaro);
+    border-right: 25px solid var(--amareloclaro);
     transition-duration: 0.5s;
 }
 #btn-right:hover,#btn-left:hover{
-    transform: scale(1.2);
+    transform: scale(0.9);
 }
 #btn-right:hover{
-    border-left: 25px solid var(--roxoclaro2);
+    border-left: 25px solid var(--amareloescuro);
 }
 #btn-left:hover{
-    border-right: 25px solid var(--roxoclaro2);
+    border-right: 25px solid var(--amareloescuro);
 }
 .woman{
     margin: 80px;
@@ -568,6 +609,12 @@ hr{
 
     }
 }
+@keyframes slide-right{
+    50%{
+        transform: translatex(10px);
+    }
+}
+
 @keyframes fade {
     0%{
         opacity: 0;
