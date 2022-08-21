@@ -6,7 +6,7 @@
         <!-- feather icons -->
         <script src="https://unpkg.com/feather-icons"></script>
         <!-- icone do site -->
-        <link rel="shortcut icon" href="../assets/historia.png" type="image">
+        <link rel="shortcut icon" href="../assets/shortcut-icon.png" type="image">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="../css/brasil-imperio.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,10 +18,10 @@
     <section class="shadows">
             <div class="vignette"></div>
             <div class="shadows-div">
-                <img src="../assets/sombra_planta2.png" id="top-shadowplant">
-                <img src="../assets/sombra-planta3.png" id="mid-shadowplant">
-                <img src="../assets/pegada.png" id="top-shadowtrack">
-                <img src="../assets/pegada.png" id="bottom-shadowtrack">
+                <img src="../assets/top-shadow-plant.png" id="top-shadowplant">
+                <img src="../assets/mid-shadow-plant.png" id="mid-shadowplant">
+                <img src="../assets/track.png" id="top-shadowtrack">
+                <img src="../assets/track.png" id="bottom-shadowtrack">
             </div>
     </section>
 
@@ -43,10 +43,10 @@
 
     <!-- test... click here -->
 
-    <div class="click-here">
-        <p id="text-click-here">Clique para ler mais</p>
-        <img id="img-click-here" src="../assets/arrow.png" alt="">
-    </div> 
+    <div class="click-here" ondragstart="return false;">
+        <p id="text-click-here" data-aos="fade-right" >Clique para ler mais</p>
+        <p data-aos="fade-right"><img id="img-click-here" src="../assets/arrow.png" alt=""></p>
+    </div>
         
     <!-- boxes and texts -->
     <main>
@@ -58,7 +58,7 @@
             <div class="container" id="education" data-aos="zoom-in" ondragstart="return false;">
                 <div class="circle" id="circle1" ></div>
                 <div class="circle" id="circle2" ></div>
-                <h1 id="title-box">Educação ───────────────────────────────</h1>
+                <h1 class="title-box">Educação ───────────────────────────────</h1>
                 <p class="text" id="text-educ1">Foi apenas em meados do século XVIII que as <span style="color: var(--rosa)">meninas</span> passaram a 
                     frequentar a escola, ainda com muitas restrições. Com a Lei Geral de 1827, 
                     foi autorizada a abertura de escolas públicas <span style="color: var(--roxoclaro)">femininas</span>, que garantiu apenas 
@@ -70,9 +70,9 @@
                     deixando para as <span style="color: var(--rosa)">mulheres</span> apenas as funções de ensino em sala de aula. As <span style="color: var(--roxoclaro)">professoras</span> 
                     ganhavam sempre menos e se fugissem do esquema educacional, eram duramente criticadas.</p>
                 <div class="img-educ">
-                    <img src="../assets/teste1.png" alt="" id="img1">
-                    <img src="../assets/teste1.png" alt="" id="img1">
-                    <img src="../assets/teste1.png" alt="" id="img1">
+                    <img src="../assets/img-test.png" alt="" id="img1">
+                    <img src="../assets/img-test.png" alt="" id="img1">
+                    <img src="../assets/img-test.png" alt="" id="img1">
                 </div>
                 <div class="subtitle-educ">
                     <p id="subtitle-educ">legenda</p>
@@ -87,14 +87,16 @@
             </div>
             <!-- box 2 "política" -->
             <div class="container" id="policy" data-aos="fade-up">
-                <h1 id="title-box">Política ───────────────────────────────</h1>
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle2"></div>
+                <h1 class="title-box">Política ───────────────────────────────</h1>
                 <p class="text" id="text-policy1">Os ideais abolicionistas estavam em alta durante a década de 1860. 
                     Muitas <span style="color: var(--rosa)">mulheres</span> contribuíram para o movimento colaborando em atividades beneficentes, 
                     uma vez que a atuação política na época era limitada apenas aos homens.</p>
                 <div class="img-policy">
-                    <img src="../assets/teste1.png" alt="" id="img2">
-                    <img src="../assets/teste1.png" alt="" id="img2">
-                    <img src="../assets/teste1.png" alt="" id="img2">
+                    <img src="../assets/img-test.png" alt="" id="img2">
+                    <img src="../assets/img-test.png" alt="" id="img2">
+                    <img src="../assets/img-test.png" alt="" id="img2">
                 </div>
                 <div class="subtitle-policy">
                     <p id="subtitle-policy1">legenda</p>
@@ -104,7 +106,9 @@
             </div>
             <!-- box 3 "imprensa" -->
             <div class="container" id="midia" data-aos="fade-up">
-                <h1 id="title-box">Imprensa ───────────────────────────────</h1>
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle2"></div>
+                <h1 class="title-box">Imprensa ───────────────────────────────</h1>
                 <p class="text" id="text-midia1">
                     Neste período, surgem no Brasil os primeiros jornais editados por <span style="color: var(--rosa)">mulheres</span>, que 
                     tiveram grande papel em estimular e disseminar novas ideias a respeito do papel 
@@ -112,27 +116,27 @@
                 </p>
                 <nav class="img-midia">
                     <div class="box-midia1">
-                        <img src="../assets/teste1.png" alt="" id="img3">
+                        <img src="../assets/img-test.png" alt="" id="img3">
                         <p id="subtitle-midia"><span style="color: var(--amareloclaro);text-decoration: underline;">Jornal das Senhoras:</span><br>circulou de 1852 a 1855, dirigido por Joana de Paula Manso.</p>
                     </div>
                     <div class="box-midia1">
-                        <img src="../assets/teste1.png" alt="" id="img3">
+                        <img src="../assets/img-test.png" alt="" id="img3">
                         <p id="subtitle-midia"><span style="color: var(--amareloclaro);text-decoration: underline;">O Belo Sexo:</span><br>circulou durante 1862, dirigido por Júlia de Albuquerque Sandy Aguiar.</p>
                     </div>
                     <div class="box-midia1">
-                        <img src="../assets/teste1.png" alt="" id="img3">
+                        <img src="../assets/img-test.png" alt="" id="img3">
                         <p id="subtitle-midia"><span style="color: var(--amareloclaro);text-decoration: underline;">O Sexo Feminino:</span><br>circulou de 1873 a 1889, dirigido por Francisca da Motta Diniz.</p>
                     </div>
                     <div class="box-midia1">
-                        <img src="../assets/teste1.png" alt="" id="img3">
+                        <img src="../assets/img-test.png" alt="" id="img3">
                         <p id="subtitle-midia"><span style="color: var(--amareloclaro);text-decoration: underline;">Echo das Damas:</span><br>circulou de 1879 a 1888, dirigido por Amélia Carolina de Silva Couto.</p>
                     </div>
                     <div class="box-midia1">
-                        <img src="../assets/teste1.png" alt="" id="img3">
+                        <img src="../assets/img-test.png" alt="" id="img3">
                         <p id="subtitle-midia"><span style="color: var(--amareloclaro);text-decoration: underline;">A Família:</span><br>circulou de 1888 a 1894, dirigido por Josefina Álvares de Azevedo.</p>
                     </div>
                     <div class="box-midia1">
-                        <img src="../assets/teste1.png" alt="" id="img3">
+                        <img src="../assets/img-test.png" alt="" id="img3">
                         <p id="subtitle-midia"><span style="color: var(--amareloclaro);text-decoration: underline;">A Mensageira:</span><br>circulou de 1897 a 1900, dirigido por Prisciliana Duarte de Almeida.</p>
                     </div>
                 </nav>
@@ -141,7 +145,7 @@
                     notas sobre as “verdadeiras funções” das <span style="color: var(--rosa)">mulheres</span> como forma de combater estes 
                     novos <span style="color: var(--roxoclaro)">jornais femininos</span>. Isso evidencia que, por mais que algumas <span style="color: var(--amareloclaro)">mulheres </span>
                     começassem a se questionar sobre seus direitos, a sociedade ainda acreditava 
-                    que eram inferiores e incapazes, lhes impondo o papel da submissão. 
+                    que eram inferiores e incapazes, impondo-lhes o papel da submissão. 
                 </p>
                 <!-- line for hidden text -->
                 <div class="line"><hr id="hidden-line"></div>
@@ -170,20 +174,22 @@
             </div>
             <!-- box 4 "Mulheres que se destacaram" -->
             <div class="container" id="women-especific" data-aos="fade-up">
-                <h1 id="title-box">Mulheres que se destacaram <br> ────────────</h1>
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle2"></div>
+                <h1 class="title-box">Mulheres que se destacaram <br> ────────────</h1>
                 <div class="btn-especific">
                     <button type="button" id="btn-left"></button>
                     <button type="button" id="btn-right"></button>
                 </div>
                 <div class="woman"  id="woman1">
                     <div class="img-woman">
-                        <img src="../assets/teste1.png" id="img-woman1" alt="">
+                        <img src="../assets/img-test.png" id="img-woman1" alt="">
                     </div>
                     <div class="title-div">
                         <h1 id="title-woman">Ana Néri</h1>
                         <h1 id="title-woman2">(1814-1880)</h1>
                         <p id="text-woman">Baiana, foi a primeira enfermeira de guerra do Brasil. 
-                            Se voluntariou para atuar como enfermeira durante a Guerra do Paraguai, 
+                            Voluntariou-se para atuar como enfermeira durante a Guerra do Paraguai, 
                             de 1865 a 1870, após a convocação de seus filhos. Segundo relatos, atendia 
                             até mesmo soldados inimigos. Primeira mulher a entrar para o Livro dos Heróis 
                             e Heroínas da Pátria, foi condecorada e recebeu homenagens do imperador D.Pedro II.
@@ -194,7 +200,7 @@
     
                 <div class="woman" id="woman2">
                     <div class="img-woman">
-                        <img src="../assets/teste1.png" id="img-woman2" alt="">
+                        <img src="../assets/img-test.png" id="img-woman2" alt="">
                     </div>
                     <div class="title-div">
                         <h1 id="title-woman">Anita Garibaldi</h1>
@@ -209,7 +215,7 @@
 
                 <div class="woman" id="woman3">
                     <div class="img-woman">
-                        <img src="../assets/teste1.png" id="img-woman3" alt="">
+                        <img src="../assets/img-test.png" id="img-woman3" alt="">
                     </div>
                     <div class="title-div">
                         <h1 id="title-woman">Chiquinha Gonzaga</h1>
@@ -227,7 +233,7 @@
     
                 <div class="woman" id="woman4">
                     <div class="img-woman">
-                        <img src="../assets/teste1.png" id="img-woman4" alt="">
+                        <img src="../assets/img-test.png" id="img-woman4" alt="">
                     </div>
                     <div class="title-div">
                         <h1 id="title-woman">Maria Firmina dos Reis</h1>
@@ -243,7 +249,7 @@
     
                 <div class="woman" id="woman5">
                     <div class="img-woman">
-                        <img src="../assets/teste1.png" id="img-woman5" alt="">
+                        <img src="../assets/img-test.png" id="img-woman5" alt="">
                     </div>
                     <div class="title-div">
                         <h1 id="title-woman" style="line-height: 35px">Nísia Floresta Brasileira Augusta</h1>
@@ -266,8 +272,8 @@
     </main>
 
     <footer>       
-        <div class="footer">
-            <p class="references" id="about-us"><a class="references" href="fases/references.html"><span id="arrow1">↠</span><span style="color: var(--marromclaro);-webkit-text-stroke: 1px var(--marromclaro);"> Referências </span><span id="arrow2">↞</span></a></p>
+        <div class="footer" data-aos="zoom-in">
+            <p class="references" id="about-us"><a class="references" href="references.html"><span id="arrow1">↠</span><span style="color: var(--marromclaro);-webkit-text-stroke: 1px var(--marromclaro);"> Referências </span><span id="arrow2">↞</span></a></p>
             <div class="text-icon">
                 <label for="icon-network" id="about-us" style="-webkit-text-stroke: 1px var(--marromclaro);">SOBRE NÓS</label>
                 <div name="icon-network" class="icon-network">

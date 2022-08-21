@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
 /* font-family: 'Special Elite', cursive; */
 
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Special+Elite&display=swap');
-/* font-family: 'Shadows Into Light', cursive; */
 
+/* font-family: 'Shadows Into Light', cursive; */
 
 *{
     box-sizing: border-box;
@@ -27,7 +28,7 @@
 }
 body{
     margin: 0;
-    background-image: url("../assets/fundo.png");
+    background-image: url("../assets/background.png");
 }
 main{
     mix-blend-mode: multiply; 
@@ -39,29 +40,34 @@ main{
     /* position */
     position: absolute;
     /* config */
-    background-image: url(../assets/vinheta.png);
-    height: 7400px;
+    background-image: url(../assets/vignette.png);
+    height: 7500px;
     width: 100%;
     background-size: 100%;
     opacity: 0.5;
 }
 .shadows-div{
     /* config */
-    height: 0;
+    height: 0rem;
     mix-blend-mode: multiply;
 }
-#top-shadowtrack{
+#bottom-shadowtrack{
     /* position */
-    display: flex;
     position: relative;
-    left: 15rem;
+    left: 81rem;
+    top: 90rem;
     /* config */
-    mix-blend-mode: multiply;
     width: 15%;
+}
+#top-shadowplant{
+    /* position */
+    position: relative;
+    left: 82rem;
+    /* config */
+    animation: moviment-plant 2s ease-in-out infinite alternate;
 }
 #mid-shadowplant{
     /* position */
-    z-index: 100;
     display: flex;
     position: relative;
     left: -3rem;
@@ -71,22 +77,12 @@ main{
     width: 40%;
     animation: moviment-plant 2s ease-in-out infinite alternate;
 }
-#bottom-shadowtrack{
-    /* position*/
-    display: flex;
+#top-shadowtrack{
+    /* position */
     position: relative;
-    z-index: 100;
-    left: 84rem;
-    top: 90rem;
+    left: 15rem;
     /* config */
     width: 15%;
-}
-#top-shadowplant{
-    z-index: 100;
-    display: flex;
-    position: relative;
-    left: 82rem;
-    animation: moviment-plant 2s ease-in-out infinite alternate;
 }
 /* ------------------------------------------------------ */
 /* header */
@@ -183,6 +179,7 @@ hr{
     transform: rotate(-0.04deg);
     background-color: var(--marromescuro3);
 }
+
 .click-here{
     /* "clique para ler mais" + png */
     /* position */
@@ -225,61 +222,54 @@ hr{
 /* ------------------------------------------------------ */
 .main-div{
     /* config */
-    justify-items: center;
     display: grid;
+    justify-items: center;
 }
 #title{
-    /* "BRASIL COLONIA" */
     /* position */
     margin: 5rem 5rem 0 5rem;
-    /* letter config*/
-    font-family: 'Special Elite';
+    /*letter config*/
+    font-family: 'Special Elite', cursive;
     font-size: 65px;
     line-height: 100px;
     text-align: center;
     color: var(--marromescuro);
     -webkit-text-stroke: 1px var(--preto);
-    border: px solid var(--preto);
     /* for animation*/
     white-space: nowrap;
     overflow: hidden;
     width: 25em;
     animation: type 4s steps(60, end) ;
 }
-#cursor{
-    /* cursor the end "|" */
-    animation: blink 1s infinite;
-}
 #title2{
-    /* "(1500 - 1822)" */
     /* position */
     position: relative;
     top:-2rem;
-    /* letter config */
-    text-align: center;
-    font-family: 'Special Elite';
+    /* letter config*/
+    z-index: 101;
+    font-family: 'Special Elite', cursive;
     font-size: 45px;
     line-height: 100px;
     text-align: center;
     color: var(--amareloescuro);
     -webkit-text-stroke: 1px var(--amareloescuro);
-    /* for animation*/
-    white-space: nowrap;
-    overflow: hidden;
-    width: 25em;
+    /* for animation */
     animation: fade 2s ease-in-out;
 }
+#cursor{
+    animation: blink 1s infinite;
+}
 .container{
-    /* containers */
     /* position */
     display: flex;
-    /* config */
-    margin: 3rem;
-    padding: 40px;
+    position: relative;
+    /* div config */
+    padding: 50px 70px 60px 60px;
+    margin: 2.5rem;
     flex-wrap: wrap;
     width: 80rem;
-    background: var(--marromescuro2);
-    border: 1px solid var(--preto);
+    border: 1px solid #000000;
+    background:var(--marromescuro2);
     border-radius: 15px;
     box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.3), -8px -8px 10px 1px rgba(0, 0, 0, 0.3);
     /* letter config*/
@@ -294,6 +284,7 @@ hr{
     /* config */
     width: 21px;
     height: 21px;
+    mix-blend-mode: hard-light;
     background: var(--amareloescuro);
     border: 1px solid #000000;
     border-radius: 15px;
@@ -308,8 +299,32 @@ hr{
     left: 77rem;
     top: 1.5rem;
 }
+.title-box{
+    /* position */
+    display: flex;
+    position: relative;
+    /* config */
+    width: 80rem;
+    height: 72px;
+    font-family: 'Special Elite';
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+    justify-content: center;
+    color: var(--amareloclaro);
+}
 .text{
     margin: 30px;
+}
+#text-intro1{
+    width: 39rem;
+    padding:30px 0 0 0;
+
+}
+#img-intro{
+    width: 22rem;
+    height: 22rem;
 }
 #text-intro2,#text-native2,
 #text-native4,#text-black2,
@@ -513,7 +528,7 @@ hr{
     display: flex;
     position: relative;
     top: -2.8rem;
-    left: 3rem;
+    left: 1.5rem;
 }
 #btn-native{
     /* position */
@@ -602,7 +617,7 @@ hr{
     display: flex;
     position: relative;
     top: -2.9rem;
-    left: 3rem;
+    left: 1.5rem;
 
 }
 #btn-white{

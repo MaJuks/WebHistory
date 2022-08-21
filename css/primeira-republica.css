@@ -28,7 +28,7 @@
 }
 body{
     margin: 0;
-    background-image: url("../assets/fundo.png");
+    background-image: url("../assets/background.png");
 }
 main{
     mix-blend-mode: multiply; 
@@ -40,7 +40,7 @@ main{
     /* position */
     position: absolute;
     /* config */
-    background-image: url(../assets/vinheta.png);
+    background-image: url(../assets/vignette.png);
     height: 6300px;
     width: 100%;
     background-size: 100%;
@@ -301,7 +301,7 @@ hr{
     left: 77rem;
     top: 1.5rem;
 }
-#title-box{
+.title-box{
     /* position */
     position: relative;
     /* config */

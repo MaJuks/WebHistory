@@ -6,7 +6,7 @@
         <!-- feather icons -->
         <script src="https://unpkg.com/feather-icons"></script>
         <!-- icone do site -->
-        <link rel="shortcut icon" href="../assets/historia.png" type="image">
+        <link rel="shortcut icon" href="../assets/shortcut-icon.png" type="image">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="../css/brasil-colonia.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,10 +17,10 @@
     <section class="shadows" ondragstart="return false;">
             <div class="vignette"></div>
             <div class="shadows-div">
-                <img src="../assets/sombra_planta2.png" id="top-shadowplant">
-                <img src="../assets/sombra-planta3.png" id="mid-shadowplant">
-                <img src="../assets/pegada.png" id="top-shadowtrack">
-                <img src="../assets/pegada.png" id="bottom-shadowtrack">                
+                <img src="../assets/top-shadow-plant.png" id="top-shadowplant">
+                <img src="../assets/mid-shadow-plant.png" id="mid-shadowplant">
+                <img src="../assets/track.png" id="top-shadowtrack">
+                <img src="../assets/track.png" id="bottom-shadowtrack">                
             </div>
     </section>
 
@@ -38,10 +38,10 @@
         <hr>
     </header>
 
-    <!-- test... click here -->
-    <div class="click-here">
-        <p id="text-click-here">Clique para ler mais</p>
-        <img id="img-click-here" src="../assets/arrow.png" alt="">
+    <!--  click here -->
+    <div class="click-here" ondragstart="return false;">
+        <p id="text-click-here" data-aos="fade-right" >Clique para ler mais</p>
+        <p data-aos="fade-right"><img id="img-click-here" src="../assets/arrow.png" alt=""></p>
     </div>
 
     <!-- boxes and texts -->
@@ -54,17 +54,17 @@
             <div class="container" id="introduction"  data-aos="zoom-in">
                 <div class="circle" id="circle1"></div>
                 <div class="circle" id="circle2"></div>
-                <p class="text" id="text-intro1">Os primeiros portugueses que vieram para o Brasil eram <br>
-                    homens. Depois de um período, a Coroa portuguesa <br>
-                    enviou <span style="color: var(--rosa)">mulheres</span> a fim de dar início a colonização, mas, <br>
-                    ainda assim, faltavam  <span style="color: var(--roxoclaro)">mulheres brancas</span> no Brasil no início <br>
-                    do período colonial, fator que contribuiu para a <br>
-                    miscigenação de brancos com <span style="color: var(--amareloclaro)"> negras</span> e  <span style="color: var(--rosa)">índias</span> - nos <br>
-                    primeiros e pequenos povoados que se formavam, havia <br>
-                    tanto <span style="color: var(--roxoclaro)"> mulheres portuguesas</span> quanto<span style="color: var(--rosa)"> índias</span>, <span style="color: var(--amareloclaro)">africanas</span>  e <br>
-                    <span style="color: var(--amareloclaro)">mestiças</span>, sendo estas livres ou escravas.
+                <p class="text" id="text-intro1">
+                    Os primeiros portugueses que vieram para o Brasil eram 
+                    homens. Depois de um período, a Coroa portuguesa 
+                    enviou <span style="color: var(--rosa)">mulheres</span> a fim de dar início à colonização, mas, 
+                    ainda assim, faltavam <span style="color: var(--roxoclaro)">mulheres brancas</span> no Brasil no período, 
+                    fator que contribuiu para a miscigenação de brancos com <span style="color: var(--amareloclaro)"> negras</span> 
+                    e <span style="color: var(--rosa)">índias</span> - nos primeiros e pequenos povoados que se formavam, havia 
+                    tanto <span style="color: var(--roxoclaro)">mulheres portuguesas</span> quanto <span style="color: var(--rosa)"> índias</span>, <span style="color: var(--amareloclaro)">africanas</span> e 
+                    <span style="color: var(--amareloclaro)">mestiças</span>, sendo estas <span style="color: var(--rosa)">livres</span> ou <span style="color: var(--roxoclaro)">escravizadas</span>.
                 </p>
-                <img src="../assets/teste1.png" id="img-intro" alt="">
+                <img src="../assets/img-test.png" id="img-intro" alt="">
                 <p id="subtitle-intro">legenda</p>
                 <p class="text" id="text-intro2">A sociedade colonizadora como um todo foi explicitamente dividida por etnia, o <br>
                     que também se aplica às <span style="color: var(--rosa)">mulheres</span>. Enquanto as<span style="color: var(--amareloclaro)"> negras</span> eram escravizadas e vistas <br>
@@ -116,9 +116,9 @@
                         que chefiavam grupos. Em algumas tribos, as <span style="color: var(--amareloclaro)">mulheres</span> tinham direito de posse de moradias e 
                         áreas de cultivo. Em outras, eram somente responsáveis pela plantação e colheita.</p>
                 <div class="img-native">
-                    <img src="../assets/teste1.png" id="img-native1" alt="">
-                    <img src="../assets/teste1.png" id="img-native2" alt="">
-                    <img src="../assets/teste1.png" id="img-native3" alt="">
+                    <img src="../assets/img-test.png" id="img-native1" alt="">
+                    <img src="../assets/img-test.png" id="img-native2" alt="">
+                    <img src="../assets/img-test.png" id="img-native3" alt="">
                 </div>
                 <div class="subtitle-img-native">
                     <p id="subtitle-native">legenda</p>
@@ -150,11 +150,13 @@
                      não via razão para as diferenças de oportunidades educacionais. Não
                      viam o “perigo” que pudesse representar o fato de suas  <span style="color: var(--roxoclaro)">mulheres</span> aprenderem
                      a ler e a escrever, como os brancos afirmavam. Condenar ao analfabetismo e
-                     a ignorância o  <span style="color: var(--rosa)">sexo feminino</span> lhes parecia uma ideia absurda.<span style="color: var(--roxoclaro)">”</span> - <span style="color: var(--roxoclaro)">Arilda Inês Miranda
+                     à ignorância o  <span style="color: var(--rosa)">sexo feminino</span> lhes parecia uma ideia absurda.<span style="color: var(--roxoclaro)">”</span> - <span style="color: var(--roxoclaro)">Arilda Inês Miranda
                       Ribeiro, A Educação das Mulheres na Colônia</span>.</p>
             </div>
             <!-- box 4 "Mulheres Pretas e Mestiças" -->
             <div class="container" data-aos="fade-up" id="title-women-black">
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle2"></div>
                 <h1 class="title-box">Mulheres Pretas e Mestiças ────────────────────</h1>
                 <p class="text" id="text-black1">As <span style="color: var(--amareloclaro)">negras</span>, quando na lavoura, executavam as mesmas tarefas dos homens. O trabalho era
                     de tal forma árduo que a média de vida de um escravo nas plantações ou minas era estimada
@@ -172,9 +174,9 @@
                     riqueza e prestígio sustentadas por homens ricos sofriam
                     intensa discriminação, consideradas <span style="color: var(--rosa)">“promíscuas”</span> e <span style="color: var(--roxoclaro)">“desvirtuadas”</span>.
                 </p>
-                <img src="../assets/teste1.png" id="img-black1" alt="">
+                <img src="../assets/img-test.png" id="img-black1" alt="">
                 <p id="subtitle-black1">legenda</p>
-                <img src="../assets/teste1.png" id="img-black2" alt="">
+                <img src="../assets/img-test.png" id="img-black2" alt="">
                 <p class="text" id="text-black4">Nos quilombos, forma principal de <span style="color: var(--amareloclaro)">resistência negra</span>, as
                     <span style="color: var(--amareloclaro)">mulheres</span> eram minoria, sobretudo devido ao tráfico
                       escravo que priorizava homens. Isso trouxe dificuldades
@@ -189,6 +191,8 @@
             </div>
             <!-- box 5 "Mulheres Brancas" -->
             <div class="container" data-aos="fade-up" id="title-women-white">
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle2"></div>
                 <h1 class="title-box">Mulheres Brancas ───────────────────────────</h1>
                 <p class="text" id="text-white1">O papel que cabia a <span style="color: var(--roxoclaro)">mulher </span>da classe dominante (branca, <span style="color: var(--rosa)">esposa</span> de proprietários de terras
                      e escravos) era, obrigatoriamente, o de <span style="color: var(--amareloclaro)">esposa</span> e <span style="color: var(--rosa)">mãe</span>. Suas únicas funções seriam gerar
@@ -200,9 +204,9 @@
                       punida era a <span style="color: var(--rosa)">mãe</span>, que acabava tendo que sustentar <span style="color: var(--amareloclaro)">sozinha</span> o filho, pagando o preço pela
                       “desonra” de ter um filho bastardo.</p>
                 <div class="img-white">
-                    <img src="../assets/teste1.png" id="img-white1" alt="">
-                    <img src="../assets/teste1.png" id="img-white2" alt="">
-                    <img src="../assets/teste1.png" id="img-white3" alt="">
+                    <img src="../assets/img-test.png" id="img-white1" alt="">
+                    <img src="../assets/img-test.png" id="img-white2" alt="">
+                    <img src="../assets/img-test.png" id="img-white3" alt="">
                 </div>
                 <div class="subtitle-img-white">
                     <p id="subtitle-white">legenda</p>
@@ -232,6 +236,8 @@
             </div>
             <!-- box 6 "Mulheres que se destacaram" -->
             <div class="container" id="women-especific" data-aos="fade-up">
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle2"></div>
                 <h1 class="title-box">Mulheres que se destacaram <br>────────────</h1>
                 <div class="btn-especific">
                     <button type="button" id="btn-right"></button>
@@ -239,7 +245,7 @@
                 </div>
                 <div class="woman"  id="woman1">
                     <div class="img-woman">
-                        <img src="../assets/teste1.png" id="img-woman1" alt="">
+                        <img src="../assets/img-test.png" id="img-woman1" alt="">
                     </div>
                     <div class="title-div">
                         <h1 id="title-woman">Aqualtune </h1>
@@ -256,7 +262,7 @@
 
                 <div class="woman" id="woman2">
                     <div class="img-woman">
-                        <img src="../assets/teste1.png" id="img-woman2" alt="">
+                        <img src="../assets/img-test.png" id="img-woman2" alt="">
                     </div>
                     <div class="title-div">
                         <h1 id="title-woman">Bárbara de Alencar </h1>
@@ -272,13 +278,13 @@
 
                 <div class="woman" id="woman3">
                     <div class="img-woman">
-                        <img src="../assets/teste1.png" id="img-woman3" alt="">
+                        <img src="../assets/img-test.png" id="img-woman3" alt="">
                     </div>
                     <div class="title-div">
                         <h1 id="title-woman">Chica da Silva </h1>
                         <h1 id="title-woman2">(1732-1796)</h1>
                         <p id="text-woman"> Francisca da Silva de Oliveira foi uma escrava alforriada, 
-                            que tornou-se uma das mulheres mais ricas da colônia por meio do relacionamento 
+                            que se tornou uma das mulheres mais ricas da colônia por meio do relacionamento 
                             com o contratador de diamantes da cidade de Diamantina. O casal teve um total de 
                             treze filhos, todos assumidos pelo pai. A riqueza e a influência de seu relacionamento 
                             garantiu-lhe conforto, status e prestígio em uma sociedade escravista e racista, mas nunca 
@@ -290,7 +296,7 @@
 
                 <div class="woman" id="woman4">
                     <div class="img-woman">
-                        <img src="../assets/teste1.png" id="img-woman4" alt="">
+                        <img src="../assets/img-test.png" id="img-woman4" alt="">
                     </div>
                     <div class="title-div">
                         <h1 id="title-woman">Clara Camarão </h1>
@@ -307,7 +313,7 @@
 
                 <div class="woman" id="woman5">
                     <div class="img-woman">
-                        <img src="../assets/teste1.png" id="img-woman5" alt="">
+                        <img src="../assets/img-test.png" id="img-woman5" alt="">
                     </div>
                     <div class="title-div">
                         <h1 id="title-woman">Dandara</h1>
@@ -315,7 +321,7 @@
                         <p id="text-woman">Guerreira negra, rainha do Quilombo dos Palmares e 
                             companheira de Zumbi. Planejava ações de combate, lutava capoeira e 
                             manuseava armas, liderando seus companheiros na luta pela liberdade. 
-                            Após a derrota, preferiu suicidar-se a voltar a vida de escrava. <br>  
+                            Após a derrota, preferiu suicidar-se a voltar à vida de escrava. <br>  
                             <br><span style="color: var(--rosa)"><em style="font-size: 20px">★</span>  O Quilombo dos Palmares foi fundado por volta do final do século XVI 
                             por escravos que haviam fugido dos engenhos nas redondezas, o maior centro 
                             de resistência negra a escravidão entre 1597 e 1695. Em seu auge, teve entre 
@@ -326,7 +332,7 @@
 
                 <div class="woman" id="woman6">
                     <div class="img-woman">
-                        <img src="../assets/teste1.png" id="img-woman6" alt="">
+                        <img src="../assets/img-test.png" id="img-woman6" alt="">
                     </div>
                     <div class="title-div">
                         <h1 id="title-woman">Madalena Caramuru </h1>
@@ -343,7 +349,7 @@
 
                 <div class="woman" id="woman7">
                     <div class="img-woman">
-                        <img src="../assets/teste1.png" id="img-woman7" alt="">
+                        <img src="../assets/img-test.png" id="img-woman7" alt="">
                     </div>
                     <div class="title-div">
                         <h1 id="title-woman">Maria Quitéria </h1>
@@ -368,8 +374,8 @@
     </main>
 
     <footer>       
-        <div class="footer">
-            <p class="references" id="about-us"><a class="references" href="fases/references.html"><span id="arrow1">↠</span><span style="color: var(--marromclaro);-webkit-text-stroke: 1px var(--marromclaro);"> Referências </span><span id="arrow2">↞</span></a></p>
+        <div class="footer" data-aos="zoom-in">
+            <p class="references" id="about-us"><a class="references" href="references.html"><span id="arrow1">↠</span><span style="color: var(--marromclaro);-webkit-text-stroke: 1px var(--marromclaro);"> Referências </span><span id="arrow2">↞</span></a></p>
             <div class="text-icon">
                 <label for="icon-network" id="about-us" style="-webkit-text-stroke: 1px var(--marromclaro);">SOBRE NÓS</label>
                 <div name="icon-network" class="icon-network">

@@ -27,7 +27,7 @@
 }
 body{
     margin: 0;
-    background-image: url("../assets/fundo.png");
+    background-image: url("../assets/background.png");
 }
 /* ------------------------------------------------------ */
 /* section shadows */
@@ -37,7 +37,7 @@ body{
     position: absolute;
     z-index: 100;
     /* config */
-    background-image: url(../assets/vinheta.png);
+    background-image: url(../assets/vignette.png);
     height: 1000px;
     width: 100%;
     background-size: 100%;

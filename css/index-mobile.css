@@ -25,7 +25,7 @@
 }
 body{
     margin: 0;
-    background-image: url("../assets/fundo.png");
+    background-image: url("../assets/background.png");
 }
 main,header,footer,.shadows{
     width: 800px;
@@ -311,7 +311,7 @@ footer {
     margin-top: -64rem;
     /* config */
     height: 1475px;
-    background-image: url(../assets/vinheta.png);
+    background-image: url(../assets/vignette.png);
     background-repeat: repeat-y;
     background-size: 100%;
     opacity: 0.5;

@@ -28,7 +28,7 @@
 }
 body{
     margin: 0;
-    background-image: url("../assets/fundo.png");
+    background-image: url("../assets/background.png");
 }
 main{
     mix-blend-mode: multiply; 
@@ -41,10 +41,10 @@ main{
     /* position */
     position: absolute;
     /* configuração */
-    background-image: url(../assets/vinheta.png);
+    background-image: url(../assets/vignette.png);
     height: 5300px;
     width: 100%;
-    /* background-size: 100%; */
+    background-size: 100%;
     opacity: 0.5;
 }
 .shadows-div{
@@ -250,7 +250,8 @@ hr{
     /* config */
     width: 21px;
     height: 21px;
-    background: var(--roxoclaro);
+    mix-blend-mode: hard-light;
+    background: var(--roxoclaro2);
     border: 1px solid #000000;
     border-radius: 15px;
 }

@@ -6,7 +6,7 @@
         <!-- feather icons -->
         <script src="https://unpkg.com/feather-icons"></script>
         <!-- icone do site -->
-        <link rel="shortcut icon" href="../assets/historia.png" type="image">
+        <link rel="shortcut icon" href="../assets/shortcut-icon.png" type="image">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="../css/ditadura-militar.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,10 +18,10 @@
         <div class="shadows-div">
             <div class="vignette"></div>
             <div class="shadows-div">
-                <img src="../assets/sombra_planta2.png" id="top-shadowplant">
-                <img src="../assets/sombra-planta3.png" id="mid-shadowplant">
-                <img src="../assets/pegada.png" id="top-shadowtrack">
-                <img src="../assets/pegada.png" id="bottom-shadowtrack">
+                <img src="../assets/top-shadow-plant.png" id="top-shadowplant">
+                <img src="../assets/mid-shadow-plant.png" id="mid-shadowplant">
+                <img src="../assets/track.png" id="top-shadowtrack">
+                <img src="../assets/track.png" id="bottom-shadowtrack">
             </div>
         </div>
     </section>
@@ -41,10 +41,10 @@
         <hr>
     </header>
     
-    <div class="click-here">
-        <p id="text-click-here">Clique para ler mais</p>
-        <img id="img-click-here" src="../assets/arrow.png" alt="">
-    </div> 
+    <div class="click-here" ondragstart="return false;">
+        <p id="text-click-here" data-aos="fade-right" >Clique para ler mais</p>
+        <p data-aos="fade-right"><img id="img-click-here" src="../assets/arrow.png" alt=""></p>
+    </div>
     <!-- boxes and texts -->
     <main>
         <div class="main-div">
@@ -55,7 +55,7 @@
             <div class="container" id="resistance" data-aos="zoom-in">
                 <div class="circle" id="circle1" ></div>
                 <div class="circle" id="circle2" ></div>
-                <h1 id="title-box">Resistência ──────────────────────────</h1>
+                <h1 class="title-box">Resistência ──────────────────────────</h1>
                 <p class="text" id="text-resis1">Durante a ditadura militar, as mulheres também foram protagonistas
                      na luta pela libertação do povo. Participaram de organizações clandestinas, saíram à procura de
                       filhos e parentes desaparecidos e foram presas e mortas pelos militares.Quando capturadas, enfrentaram violentas torturas, incluindo violência sexual.</p>
@@ -65,9 +65,9 @@
                     solicitado e previamente permitido.” (O Movimento Feminista no Brasil: Trajetória e Conquistas)
                 </p>
                 <div class="img-resis">
-                    <img src="../assets/teste1.png" id="img-resis1" alt="">
-                    <img src="../assets/teste1.png" id="img-resis2" alt="">
-                    <img src="../assets/teste1.png" id="img-resis3" alt="">
+                    <img src="../assets/img-test.png" id="img-resis1" alt="">
+                    <img src="../assets/img-test.png" id="img-resis2" alt="">
+                    <img src="../assets/img-test.png" id="img-resis3" alt="">
                 </div>
                 <div class="subtitle-img-resis">
                     <p id="subtitle-resis">legenda</p>
@@ -81,10 +81,10 @@
             </div>
             <!-- box 2 "" -->
             <div class="container" id="worker" data-aos="fade-up">
-                <h1 id="title-box">Operárias ──────────────────────────────</h1>
+                <h1 class="title-box">Operárias ──────────────────────────────</h1>
                 <div class="circle" id="circle1" ></div>
                 <div class="circle" id="circle2" ></div>
-                <img src="../assets/teste1.png" id="img-worker1">
+                <img src="../assets/img-test.png" id="img-worker1">
                 <p class="text" id="text-worker1">Com o desenvolvimento tecnológico, houve um amplo ingresso de mulheres nas 
                     crescentes indústrias e empresas, mas ainda sem os mesmos direitos profissionais dos homens. No fim da década 
                     de 70, eclodiram diversas greves operárias, das quais as mulheres participaram ativamente.
@@ -92,10 +92,10 @@
                 <p class="subtitle" id="subtitle-worker1">legenda</p>
                 <p class="text" id="text-worker2">
                     Nesta época, a CLT (Consolidação das Leis do Trabalho) ainda proibia o trabalho noturno para mulheres e a presença 
-                    feminina em construções civis. Já havia legislação referente a licença-maternidade desde 1943, mas garantia somente 
+                    feminina em construções civis. Já havia legislação referente à licença-maternidade desde 1943, mas garantia somente 
                     84 dias. Na prática, o que acontecia era a demissão das funcionárias quando engravidavam.
                 </p>
-                <img src="../assets/teste1.png" id="img-worker2">
+                <img src="../assets/img-test.png" id="img-worker2">
                 <p class="subtitle" id="subtitle-worker2">legenda</p>
                 <div class="line"><hr id="hidden-line"></div>
                 <!-- button -->
@@ -116,24 +116,26 @@
             </div>
             <!-- box -->
             <div class="container" id="midia" data-aos="fade-up">
-                <h1 id="title-box">Imprensa ───────────────────────────────</h1>
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle2"></div>
+                <h1 class="title-box">Imprensa ───────────────────────────────</h1>
                 <p class="text" id="text-midia1">
                     Os jornais femininos desta época já eram muito mais questionadores e revolucionários do que os antigos, marcos tanto da luta feminista 
-                    quanto da resistência a ditadura militar. Assuntos como aborto, violência doméstica e sexual, controle de fertilidade e sexualidade começaram 
+                    quanto da resistência à ditadura militar. Assuntos como aborto, violência doméstica e sexual, controle de fertilidade e sexualidade começaram 
                     a ser discutidos. Contudo, temas que diziam respeito às mulheres em específico eram taxados de sexistas, pois “dividiam os homens e as mulheres, 
                     desviando-os da luta política”.
                 </p>
                 <nav class="img-midia">
                     <div class="box-midia1">
-                        <img src="../assets/teste1.png" alt="" id="img-midia">
+                        <img src="../assets/img-test.png" alt="" id="img-midia">
                         <p id="subtitle-midia"><span style="color: var(--rosa);text-decoration: underline;">Brasil Mulher:</span><br>circulou de 1975 a 1980, dirigido por Joana Lopes.</p>
                     </div>
                     <div class="box-midia1">
-                        <img src="../assets/teste1.png" alt="" id="img-midia">
+                        <img src="../assets/img-test.png" alt="" id="img-midia">
                         <p id="subtitle-midia"><span style="color: var(--roxoclaro);text-decoration: underline;">Nós Mulheres:</span><br>circulou de 1976 a 1978, dirigido por Marisa Correa.</p>
                     </div>
                     <div class="box-midia1">
-                        <img src="../assets/teste1.png" alt="" id="img-midia">
+                        <img src="../assets/img-test.png" alt="" id="img-midia">
                         <p id="subtitle-midia"><span style="color: var(--amareloclaro);text-decoration: underline;">Mulherio:</span><br> circulou de 1981 a 1988, dirigido por Adélia Borges.</p>
                     </div>
                 </nav>
@@ -155,7 +157,9 @@
             </div>
             <!-- box -->
             <div class="container" id="move-org" data-aos="fade-up">
-                <h1 id="title-box">Movimentos e Organizações ──────────────────</h1>
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle2"></div>
+                <h1 class="title-box">Movimentos e Organizações ──────────────────</h1>
                 <div class="timeline-div">
                     <div id="timeline"></div>
                     <div class="colorline" id="colorline1"></div>
@@ -186,8 +190,8 @@
                             Ocorre o primeiro Encontro de Mulheres do Rio de Janeiro, com o propósito de comemorar o Ano Internacional da Mulher, declarado pela ONU. Neste evento, 
                             foi criado o Centro de Desenvolvimento da Mulher Brasileira. 
                             <br> <br> 
-                            ★ Também nesse ano, nasce o Movimento Feminino pela Anistia, que mais tarde fez parte do Comitê Brasileiro pela Anistia e foi decisivo para a aprovação da 
-                            Lei da Anistia, em 28 de agosto de 1979.
+                            ★ Também nesse ano, Therezinha Zerbini funda o Movimento Feminino pela Anistia, que mais tarde fez parte do Comitê Brasileiro pela Anistia e foi 
+                            decisivo para a aprovação da Lei da Anistia, em 28 de agosto de 1979.
                         </p>
                     </div>
                     <div class="num-text" id="num-text4">
@@ -220,7 +224,7 @@
             <div class="container" id="achievement" data-aos="fade-up">
                 <div class="circle" id="circle1" ></div>
                 <div class="circle" id="circle2" ></div>
-                <h1 id="title-box">Conquistas ──────────────────────────────</h1>
+                <h1 class="title-box">Conquistas ──────────────────────────────</h1>
                 <p id="subtitle-achievement"><span style="color: var(--amareloclaro)">Lei de Igualdade de Oportunidade de Crédito</span><span style="color: var(--roxoclaro)"> (1974)</span></p>
                 <p class="text" id="text-achievement">Aprovada em 1974, permitiu que mulheres portassem um cartão de crédito. 
                     Até este ano, solteiras ou divorciadas que solicitassem um cartão ou um empréstimo precisavam levar um 
@@ -233,13 +237,13 @@
 
                 <p id="subtitle-achievement"><span style="color: var(--amareloclaro)">Permissão para a prática de esportes</span><span style="color: var(--roxoclaro)"> (1979)</span></p>
                 <p class="text" id="text-achievement">Em 1979, foi revogada a proibição de que as mulheres praticassem qualquer 
-                    tipo de esporte, que atuava desde a publicação do decreto 3.199 em 1941: “Às mulheres não se permitirá a prática 
+                    tipo de esporte, que atuava desde a publicação do decreto 3.199 de 1941: “Às mulheres não se permitirá a prática 
                     de desportos incompatíveis com as condições de sua natureza [...]”. Contudo, suas consequências refletem no esporte 
                     feminino até hoje, como o pouco incentivo ao futebol feminino e a falta de patrocinadores.</p>
 
                 <p id="subtitle-achievement"><span style="color: var(--amareloclaro)">Primeira rede municipal de creches</span><span style="color: var(--roxoclaro)"> (1979)</span></p>
                 <p class="text" id="text-achievement">O Movimento de Luta por Creche atingiu grandes proporções no fim da década de 70, 
-                    o que deu origem a primeira rede municipal de creches no Brasil.</p>
+                    o que deu origem à primeira rede municipal de creches no Brasil.</p>
 
                 <p id="subtitle-achievement"><span style="color: var(--amareloclaro)">Delegacias Policiais de Defesa da Mulher</span><span style="color: var(--roxoclaro)"> (1985)</span></p>
                 <p class="text" id="text-achievement">Em 1985, foram instaladas várias unidades em quase todos os estados, com funcionamento 
@@ -255,8 +259,8 @@
     </main>
 
     <footer>       
-        <div class="footer">
-            <p class="references" id="about-us"><a class="references" href="fases/references.html"><span id="arrow1">↠</span><span style="color: var(--marromclaro);-webkit-text-stroke: 1px var(--marromclaro);"> Referências </span><span id="arrow2">↞</span></a></p>
+        <div class="footer" data-aos="zoom-in">
+            <p class="references" id="about-us"><a class="references" href="references.html"><span id="arrow1">↠</span><span style="color: var(--marromclaro);-webkit-text-stroke: 1px var(--marromclaro);"> Referências </span><span id="arrow2">↞</span></a></p>
             <div class="text-icon">
                 <label for="icon-network" id="about-us" style="-webkit-text-stroke: 1px var(--marromclaro);">SOBRE NÓS</label>
                 <div name="icon-network" class="icon-network">

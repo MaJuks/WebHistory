@@ -28,7 +28,7 @@
 }
 body{
     margin: 0;
-    background-image: url("../assets/fundo.png");
+    background-image: url("../assets/background.png");
 }
 main{
     mix-blend-mode: multiply; 
@@ -283,6 +283,7 @@ hr{
     position: absolute;
     /* config */
     width: 21px;
+    mix-blend-mode: hard-light;
     height: 21px;
     background: var(--amareloclaro);
     border: 1px solid #000000;
@@ -298,7 +299,7 @@ hr{
     left: 77rem;
     top: 1.5rem;
 }
-#title-box{
+.title-box{
     /* position */
     display: flex;
     position: relative;

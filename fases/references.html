@@ -1,48 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- feather icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
-    <!-- icone do site -->
-    <link rel="shortcut icon" href="assets/historia.png" type="image">
-    <!-- referencia ao css -->
-    <link rel="stylesheet" href="../css/references.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS media query em um elemento de link para dispositivos com altura máxima de 800px -->
-    <link rel="stylesheet" media="(max-width: 800px)" href="css/index-mobile.css" />
-    <title>My Dames's History</title>
-</head>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- feather icons -->
+        <script src="https://unpkg.com/feather-icons"></script>
+        <!-- icone do site -->
+        <link rel="shortcut icon" href="../assets/shortcut-icon.png" type="image">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="../css/references.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Dames's History</title>
+    </head>
 <body>
+    <!-- vignette and shadows (plant and track) -->
     <section class="shadows" ondragstart="return false;">
-        <div class="vignette"></div>
-        <div class="shadows-div">
-            <img src="../assets/sombra_planta2.png" id="top-shadowplant">
-            <img src="../assets/sombra_planta1.png" id="bottom-shadowplant">
-            <img src="../assets/pegada.png" id="top-shadowtrack">
-            <img src="../assets/pegada.png" id="bottom-shadowtrack">                
-        </div>
+            <div class="vignette"></div>
+            <div class="shadows-div">
+                <img src="../assets/top-shadow-plant.png" id="top-shadowplant">
+                <img src="../assets/mid-shadow-plant.png" id="mid-shadowplant">
+                <img src="../assets/pegada.png" id="top-shadowtrack">
+                <img src="../assets/pegada.png" id="bottom-shadowtrack">                
+            </div>
     </section>
 
+    <!-- header - icon + home + "web history" -->
     <header>
-        <div class="header">
-            <div class="name-web">
-                <h1><a id="name-web" href="../index.html">Web History</a></h1>
+        <div class="header-div">
+            <a href="../index.html"><h1 id="name-web">Web History</h1></a>
+            <div class="home-svg">
+                <a href="../index.html"><h1 id="home">Home</h1></a>
+                <div class="icon-home">
+                    <a href="../index.html"><i data-feather="home" ></i></a>
+                </div>
             </div>
         </div>
         <hr>
     </header>
 
-    
+    <!-- test... click here -->
+    <!-- <div class="click-here" ondragstart="return false;">
+        <p id="text-click-here" data-aos="fade-right" >Clique para ler mais</p>
+        <p data-aos="fade-right"><img id="img-click-here" src="../assets/arrow.png" alt=""></p>
+    </div> -->
+
+    <!-- boxes and texts -->
+    <main>
+        <div class="main-div">
+            <!-- title -->
+            <span id="title">REFERÊNCIAS<span id="cursor">|</span></span>
+            <span id="title2"> (-)</span>
+            <!-- box 1 "introdução"-->
+            <div class="container" id="References"  data-aos="zoom-in">
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle2"></div>
+                <p class="subtitle-refe">
+                    BURILLE, Celma Faria de Souza. 
+                    <b style="color:var(--marromintermediario)">Trajetória da Mulher na História do Brasil: Submissas ou Ardilosas?</b> 
+                    Disponível em: <a target="_blank" style="color: var(--amareloclaro)" href="https://www.encontro2012.historiaoral.org.br/resources/anais/3/1338343549_ARQUIVO_ARTIGO_TRAJETORIADAMULHERNAHIST_BRASIL.pdf"> Clique Aqui</a> 
+                    Acesso em: 14 jul. 2022.</p>
+                <p class="subtitle-refe">
+                    BAPTISTA, Marisa. COELHO, Leila Machado. 
+                    <b style="color:var(--marromintermediario)">A história da inserção política da mulher no Brasil: uma trajetória do espaço privado ao público</b>. 
+                    Rev. Psicologia Política, v. 9, n.17, jun. 2009. 
+                    Disponível em: <a target="_blank" style="color: var(--roxoclaro)" href="http://pepsic.bvsalud.org/scielo.php?script=sci_arttext&pid=S1519-549X2009000100006"> Clique Aqui</a>. 
+                    Acesso em: 14 jul. 2022.</p>
+                <p class="subtitle-refe">
+                    REIS, Gláucia Maria Teodoro. 
+                    <b style="color:var(--marromintermediario)">A trajetória das mulheres brasileiras num cenário de desigualdades</b>. 
+                    Disponível em: <a target="_blank" style="color: var(--rosa)" href="http://www.sgc.goias.gov.br/upload/arquivos/2013-09/a-trajetoria-das-mulheres-brasileiras-num-cenario-de-desigualdades.pdf"> Clique Aqui</a>. 
+                    Acesso em: 14 jul. 2022.</p>
+                <p class="subtitle-refe">
+                    BESING, Márcia. MULLER, Crisna Maria. 
+                    <b style="color:var(--marromintermediario)">A trajetória histórica da mulher no Brasil: da submissão à cidadania. </b>
+                    Rev. Augustus, v.23, n. 45, jan./jun. 2018. Disponível em: 
+                    <a target="_blank" style="color: var(--amareloclaro)" href="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/54fb3ea7-dd89-444a-9172-6c84a3c91add/147-Texto_do_artigo-478-2-10-20181130.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220714%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220714T182406Z&X-Amz-Expires=86400&X-Amz-Signature=7d35c7b5cfe126510f7364f955f473d6c381fbea11f72d38da5ac0dff7330ec1&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22147-Texto%2520do%2520artigo-478-2-10-20181130.pdf%22&x-id=GetObject"> Clique Aqui</a>. 
+                    Acesso em: 14 jul. 2022.</p>
+                <p class="subtitle-refe">
+                    SILVA, Tânia Maria Gomes da. 
+                    <b style="color:var(--marromintermediario)">Trajetória da historiografia das mulheres no Brasil</b>. 
+                    Rev. Politeia: Hist. e Soc., v.8, n. 1, 2008. Disponível em: 
+                    <a target="_blank" style="color: var(--roxoclaro)" href="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/717e83f9-7a10-4bf3-b766-45ad9c938b35/3871-Texto_do_artigo-6396-1-10-20180605.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220714%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220714T182702Z&X-Amz-Expires=86400&X-Amz-Signature=bf414b1a6c1c33a825863891e72ef8feaf18b46f2b4d880fb3f290d84ae9170e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%223871-Texto%2520do%2520artigo-6396-1-10-20180605.pdf%22&x-id=GetObject"> Clique Aqui</a>. 
+                    Acesso em: 14 jul. 2022.</p>
+                <p class="subtitle-refe">
+                    CARVALHO, Adriana de Souza. FREISLEBEN, Fairuce Angelica da Costa. 
+                    <b style="color:var(--marromintermediario)">O movimento feminista no Brasil: Trajetória e conquistas</b>. 
+                    Disponível em: <a target="_blank" style="color: var(--rosa)" href="https://naomekahlo.com/o-movimento-feminista-no-brasil-trajetoria-e-conquistas/"> Clique Aqui</a>. 
+                    Acesso em: 14 jul. 2022.
+                    </p>
+                <p class="subtitle-refe">
+                    SESC. 
+                    <b style="color:var(--marromintermediario)">Março Delas: Conheça a Trajetória das Lutas pelos Direitos das Mulheres no Brasil</b>. 
+                    Disponível em: <a target="_blank" style="color: var(--amareloclaro)" href="https://www.sescrio.org.br/noticias/assistencia/marco-delas-conheca-a-trajetoria-das-lutas-pelos-direitos-das-mulheres-no-brasil/"> Clique Aqui</a>. 
+                    Acesso em: 14 jul. 2022.
+                </p>
+                <p class="subtitle-refe">
+                    TELES, Maria Amélia de Almeida. 
+                    <b style="color:var(--marromintermediario)">Breve história do feminismo no Brasil e outros ensaios</b>. 
+                    Alameda, 2017.</p>
+                <p class="subtitle-refe">
+                    CARARO, Aryane. SOUZA, Duda Porto de. 
+                    <b style="color:var(--marromintermediario)">Extraordinárias: Mulheres que Revolucionaram o Brasil</b>. 
+                    Seguinte, 2017.</p>
+            </div> 
+        </div>
+    </main>
 
     <footer>       
-        <div class="footer">
-            <p class="references" id="about-us"><a class="references" href="fases/references.html"><span id="arrow1">↠</span>  Referências <span id="arrow2">↞</span></a></p>
+        <div class="footer" data-aos="zoom-in">
             <div class="text-icon">
-                <label for="icon-network" id="about-us">SOBRE NÓS</label>
+                <label for="icon-network" id="about-us" style="-webkit-text-stroke: 1px var(--marromclaro);">SOBRE NÓS</label>
                 <div name="icon-network" class="icon-network">
                     <a href="https://www.instagram.com/maju_raposo" class="insta" target="_blank"><i id="insta1" data-feather="instagram"></i></a>
                     <a href="https://github.com/MaJuks/TCC.git" class="git" target="_blank"><i id="git" data-feather="github"></i></a>
@@ -51,8 +118,12 @@
             </div>
         </div>
     </footer> 
+    <script src="../js/brasil-colonia.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        feather.replace()
+      AOS.init({
+        duration: 1000,
+    });
     </script>
 </body>
 </html>

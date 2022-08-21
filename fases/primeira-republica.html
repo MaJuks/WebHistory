@@ -18,10 +18,10 @@
     <section class="shadows">
             <div class="vignette"></div>
             <div class="shadows-div">
-                <img src="../assets/sombra_planta2.png" id="top-shadowplant">
-                <img src="../assets/sombra-planta3.png" id="mid-shadowplant">
-                <img src="../assets/pegada.png" id="top-shadowtrack">
-                <img src="../assets/pegada.png" id="bottom-shadowtrack">
+                <img src="../assets/top-shadow-plant.png" id="top-shadowplant">
+                <img src="../assets/mid-shadow-plant.png" id="mid-shadowplant">
+                <img src="../assets/track.png" id="top-shadowtrack">
+                <img src="../assets/track.png" id="bottom-shadowtrack">
             </div>
     </section>
 
@@ -43,9 +43,9 @@
 
     <!-- test... click here -->
 
-    <div class="click-here">
-        <p id="text-click-here">Clique para ler mais</p>
-        <img id="img-click-here" src="../assets/arrow.png" alt="">
+    <div class="click-here" ondragstart="return false;">
+        <p id="text-click-here" data-aos="fade-right" >Clique para ler mais</p>
+        <p data-aos="fade-right"><img id="img-click-here" src="../assets/arrow.png" alt=""></p>
     </div>
         
     <!-- boxes and texts -->
@@ -81,7 +81,9 @@
             </div>
             <!-- box 2 "" -->
             <div class="container" id="worker" data-aos="fade-up">
-                <h1 id="title-box">Operárias ──────────────────────────────</h1>
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle2"></div>
+                <h1 class="title-box">Operárias ──────────────────────────────</h1>
                 <p class="text" id="text-worker1">A <span style="color: var(--amareloclaro)">mulher</span> tinha sempre os salários mais baixos e as jornadas de trabalho maiores. 
                     Não havia uma legislação que protegesse o <span style="color: var(--roxoclaro)">trabalho feminino</span>. As reivindicações acerca das péssimas 
                     condições de trabalho, a jornada de trabalho elevada, o <span style="color: var(--rosa)">assédio sexual</span> nas fábricas, entre outros, 
@@ -109,9 +111,9 @@
                     problemas de saúde, devido à posição com que permaneciam trabalhando por longas jornadas.
                 </p>
                 <div class="img-worker">
-                    <img src="../assets/teste1.png" id="img-worker">
-                    <img src="../assets/teste1.png" id="img-worker">
-                    <img src="../assets/teste1.png" id="img-worker">
+                    <img src="../assets/img-test.png" id="img-worker">
+                    <img src="../assets/img-test.png" id="img-worker">
+                    <img src="../assets/img-test.png" id="img-worker">
                 </div>
                 <div class="subtitle-worker">
                     <p id="subtitle-worker">legenda</p>
@@ -125,13 +127,15 @@
             </div>
             <!-- box 3 "sufrágio" -->
             <div class="container" id="suffrage" data-aos="fade-up">
-                <h1 id="title-box">Sufrágio ───────────────────────────────</h1>
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle2"></div>
+                <h1 class="title-box">Sufrágio ───────────────────────────────</h1>
                 <p class="text" id="text-suffrage1">
                     A maioria das Constituições latino-americanas do século XIX sequer proibiam o <span style="color: var(--amareloclaro)">voto feminino</span>, pois o 
                     título de cidadão era dado apenas aos homens. Quando as <span style="color: var(--roxoclaro)">mulheres</span> resolveram, então, reivindicar seu 
                     <span style="color: var(--rosa)">direito de voto</span>, algumas Constituições foram modificadas para estabelecer expressamente que a <span style="color: var(--amareloclaro)">mulher</span> 
                     não podia votar.</p>
-                <img src="../assets/teste1.png" id="img-suffrage1">
+                <img src="../assets/img-test.png" id="img-suffrage1">
                 <p class="text" id="text-suffrage2">O <span style="color: var(--amareloclaro)">voto feminino</span> só se tornou realidade no Brasil graças à intensa 
                     luta das <span style="color: var(--roxoclaro)">mulheres</span> por esse direito. As primeiras iniciativas surgiram no país no final do século XIX, 
                     mobilizando uma parcela expressiva de <span style="color: var(--rosa)">mulheres</span> de diferentes classes sociais.</p>
@@ -140,11 +144,13 @@
                     <span style="color: var(--rosa)">mulheres</span> votaram, mas esses votos não foram reconhecidos a nível federal. No mesmo ano, Alzira Soriano foi 
                     eleita prefeita no município de Lajes (RN) com 60% dos votos, tornando-se a <span style="color: var(--amareloclaro)">primeira mulher</span> do país a atingir 
                     esse cargo.</p>
-                <img src="../assets/teste1.png" id="img-suffrage2">
+                <img src="../assets/img-test.png" id="img-suffrage2">
             </div>
             <!-- box 4 "Movimentos e Organizações" -->
             <div class="container" id="move-org" data-aos="fade-up">
-                <h1 id="title-box">Eventos e Organizações ──────────────────</h1>
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle2"></div>
+                <h1 class="title-box">Eventos e Organizações ──────────────────</h1>
                 <div class="timeline-div">
                     <div id="timeline"></div>
                     <div class="colorline" id="colorline1"></div>
@@ -193,7 +199,9 @@
             </div>
             <!-- box 5 "Mulheres que se destacaram" -->
             <div class="container" id="women-especific" data-aos="fade-up">
-                <h1 id="title-box">Mulheres que se destacaram <br>────────────</h1>
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle2"></div>
+                <h1 class="title-box">Mulheres que se destacaram <br>────────────</h1>
                 <div class="btn-especific">
                     <button type="button" id="btn-left"></button>
                     <button type="button" id="btn-right"></button>
@@ -201,7 +209,7 @@
 
                 <div class="woman"  id="woman1">
                     <div class="img-woman">
-                        <img src="../assets/teste1.png" id="img-woman1" alt="">
+                        <img src="../assets/img-test.png" id="img-woman1" alt="">
                     </div>
                     <div class="title-div">
                         <h1 id="title-woman">Alice Tibiriçá</h1>
@@ -219,7 +227,7 @@
 
                 <div class="woman"  id="woman2">
                     <div class="img-woman">
-                        <img src="../assets/teste1.png" id="img-woman2" alt="">
+                        <img src="../assets/img-test.png" id="img-woman2" alt="">
                     </div>
                     <div class="title-div">
                         <h1 id="title-woman">Anita Malfatti</h1>
@@ -235,7 +243,7 @@
 
                 <div class="woman"  id="woman3">
                     <div class="img-woman">
-                        <img src="../assets/teste1.png" id="img-woman3" alt="">
+                        <img src="../assets/img-test.png" id="img-woman3" alt="">
                     </div>
                     <div class="title-div">
                         <h1 id="title-woman">Bertha Lutz</h1>
@@ -252,7 +260,7 @@
 
                 <div class="woman"  id="woman4">
                     <div class="img-woman">
-                        <img src="../assets/teste1.png" id="img-woman4" alt="">
+                        <img src="../assets/img-test.png" id="img-woman4" alt="">
                     </div>
                     <div class="title-div">
                         <h1 id="title-woman">Carmen Miranda</h1>
@@ -267,7 +275,7 @@
 
                 <div class="woman"  id="woman5">
                     <div class="img-woman">
-                        <img src="../assets/teste1.png" id="img-woman5" alt="">
+                        <img src="../assets/img-test.png" id="img-woman5" alt="">
                     </div>
                     <div class="title-div">
                         <h1 id="title-woman">Cora Coralina</h1>
@@ -285,7 +293,7 @@
 
                 <div class="woman"  id="woman6">
                     <div class="img-woman">
-                        <img src="../assets/teste1.png" id="img-woman6" alt="">
+                        <img src="../assets/img-test.png" id="img-woman6" alt="">
                     </div>
                     <div class="title-div">
                         <h1 id="title-woman">Nise da Silveira</h1>
@@ -302,7 +310,7 @@
 
                 <div class="woman"  id="woman7">
                     <div class="img-woman">
-                        <img src="../assets/teste1.png" id="img-woman7" alt="">
+                        <img src="../assets/img-test.png" id="img-woman7" alt="">
                     </div>
                     <div class="title-div">
                         <h1 id="title-woman">Tarsila do Amaral</h1>
@@ -317,7 +325,7 @@
 
                 <div class="woman"  id="woman8">
                     <div class="img-woman">
-                        <img src="../assets/teste1.png" id="img-woman8" alt="">
+                        <img src="../assets/img-test.png" id="img-woman8" alt="">
                     </div>
                     <div class="title-div">
                         <h1 id="title-woman">Rachel de Queiroz</h1>
@@ -339,8 +347,8 @@
     </main>
 
     <footer>       
-        <div class="footer">
-            <p class="references" id="about-us"><a class="references" href="fases/references.html"><span id="arrow1">↠</span><span style="color: var(--marromclaro);-webkit-text-stroke: 1px var(--marromclaro);"> Referências </span><span id="arrow2">↞</span></a></p>
+        <div class="footer" data-aos="zoom-in">
+            <p class="references" id="about-us"><a class="references" href="references.html"></a><span id="arrow1">↠</span><span style="color: var(--marromclaro);-webkit-text-stroke: 1px var(--marromclaro);"> Referências </span><span id="arrow2">↞</span></a></p>
             <div class="text-icon">
                 <label for="icon-network" id="about-us" style="-webkit-text-stroke: 1px var(--marromclaro);">SOBRE NÓS</label>
                 <div name="icon-network" class="icon-network">
