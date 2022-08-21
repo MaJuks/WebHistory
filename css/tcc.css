@@ -321,7 +321,6 @@ footer {
 }
 footer a{
     text-decoration: none;
-    color: var(--marromclaro);
 }
 .footer{
     position: relative;
@@ -462,14 +461,21 @@ footer a{
 @keyframes colors{
     0%{ 
         color: var(--rosaescuro);
+        -webkit-text-stroke: 1px var(--rosaescuro);
+
     }
     50%{
         color: var(--amareloescuro);
+        -webkit-text-stroke: 1px var(--amareloescuro);
+
     }
     100%{
         color: var(--roxoescuro);
+        -webkit-text-stroke: 1px var(--roxoescuro);
+
     }
 }
+
 @keyframes neon{
     100%{text-shadow: 0 0 0.4em var(--amareloclaro);}
 }
