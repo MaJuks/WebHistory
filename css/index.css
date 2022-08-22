@@ -155,27 +155,30 @@ header{
     text-shadow: 0.1em 0.1em 0.2em black;
 }
 select{
+    position: relative;
+    top: 0.2rem;
+    left: 0.5rem;
     /* select config */
     text-align: center;
-    background-color: var(--marromclaro);
-    opacity: 0.5;
+    background-color: var(--marromintermediario);
+    opacity: 0.3;
     width: 20%;
-    height: 25%;
-    border-radius: 20px;
+    height: 1.5rem;
+    border-radius: 5px;
     padding: 8px 0px;
     /* letter config */
     font-family: 'Habibi', serif;
     font-weight: bold;
     color: var(--preto);
     font-size: 18px;
-    border: 2px solid var(--branco);
+    border: 1px solid var(--preto);
     -webkit-appearance: none;
     -moz-appearance:    none;
     appearance:         none;
     transition: 0.5s;
 }
 select:hover{
-    border: 2px solid var(--rosaescuro);
+    border: 1px solid var(--rosaescuro);
 }
 hr{
     /* line */

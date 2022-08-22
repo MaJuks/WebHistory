@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- feather icons -->
+        <script src="https://unpkg.com/feather-icons"></script>
+        <!-- icone do site -->
+        <link rel="shortcut icon" href="../assets/shortcut-icon.png" type="image">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="../css/topics.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Dames's History</title>
+    </head>
+<body>
+    <!-- vignette and shadows (plant and track) -->
+    <section class="shadows" ondragstart="return false;">
+            <div class="vignette"></div>
+            <div class="shadows-div">
+                <img src="../assets/top-shadow-plant.png" id="top-shadowplant">
+                <img src="../assets/mid-shadow-plant.png" id="mid-shadowplant">
+                <img src="../assets/track.png" id="top-shadowtrack">
+                <img src="../assets/track.png" id="bottom-shadowtrack">                
+            </div>
+    </section>
+
+    <!-- header - icon + home + "web history" -->
+    <header>
+        <div class="header-div">
+            <a href="../index.html"><h1 id="name-web">Web History</h1></a>
+            <div class="home-svg">
+                <a href="../index.html"><h1 id="home">Home</h1></a>
+                <div class="icon-home">
+                    <a href="../index.html"><i data-feather="home" ></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <!-- test... click here -->
+    <!-- <div class="click-here" ondragstart="return false;">
+        <p id="text-click-here" data-aos="fade-right" >Clique para ler mais</p>
+        <p data-aos="fade-right"><img id="img-click-here" src="../assets/arrow.png" alt=""></p>
+    </div> -->
+
+    <!-- boxes and texts -->
+    <main>
+        <div class="main-div">
+            <!-- title -->
+            <span id="title">SUFRÁGIO<span id="cursor">|</span></span>
+            <span id="title2">PRIMEIRA REPÚBLICA</span>
+            <!-- box 1 "introdução"-->
+            <div class="container" id="references"  data-aos="zoom-in">
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle2"></div>
+                <h1 class="title-box" id="suffrage">Sufrágio ───────────────────────────────</h1>
+                <p class="text">A maioria das Constituições latino-americanas do século XIX sequer proibiam 
+                    o voto feminino, pois o título de cidadão era dado apenas aos homens. Quando as mulheres 
+                    resolveram, então, reivindicar seu direito de voto...</p>
+                <a id="read-more" href="/fases/primeira-republica#title-suffrage.html"><img src="../assets/stroke-pink.png" alt=""></a>
+            </div>
+
+            <div class="container" id="references"  data-aos="zoom-in">
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle2"></div>
+                <h1 class="title-box" id="mov-org">Movimentos e Organizações ─────────────────</h1>
+                <div class="circle-line">
+                    <img id="circle-line" src="../assets/circle-line.png" alt="">
+                </div>
+                <div class="timeline-div">
+                    <div id="timeline"></div>
+                    <div class="colorline" id="colorline1"></div>
+                </div>
+                <div class="timeline-text">
+                    <div class="num-text" id="num-text1">
+                        <p class="num-years" id="num-years1">1922</p>
+                        <p class="text-years" id="text-years1">
+                            Surge a Federação Brasileira pelo Progresso Feminino (FBPF), organizada por Bertha Lutz, 
+                            que atuou fortemente na política brasileira em defesa da inserção da mulher no mercado de 
+                            trabalho, o direito à educação e a conquista do voto feminino.
+                        </p>
+                    </div>
+                </div>
+                <a id="read-more" href="/fases/primeira-republica#title-org.html"><img src="../assets/stroke-pink.png" alt=""></a>
+            </div>  
+        </div>
+    </main>
+
+    <footer>       
+        <div class="footer" data-aos="zoom-in">
+            <div class="text-icon">
+                <label for="icon-network" id="about-us" style="-webkit-text-stroke: 1px var(--marromclaro);">SOBRE NÓS</label>
+                <div name="icon-network" class="icon-network">
+                    <a href="https://www.instagram.com/maju_raposo" class="insta" target="_blank"><i id="insta1" data-feather="instagram"></i></a>
+                    <a href="https://github.com/MaJuks/TCC.git" class="git" target="_blank"><i id="git" data-feather="github"></i></a>
+                    <a href="https://www.instagram.com/riitamavila" class="insta" target="_blank" ><i id="insta2" data-feather="instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer> 
+    <script src="../js/brasil-colonia.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+    });
+    </script>
+</body>
+</html>
