@@ -38,10 +38,10 @@ main{
 /* ------------------------------------------------------ */
 .vignette{
     /* position */
-    position: absolute;
+    position: fixed;
     /* config */
     background-image: url(../assets/vignette.png);
-    height: 6300px;
+    height: 1200px;
     width: 100%;
     background-size: 100%;
     opacity: 0.5;
@@ -323,6 +323,7 @@ hr{
     /* config */
     text-align: center;
 }
+
 .line{
     /* position */
     z-index: 100;
@@ -410,8 +411,8 @@ hr{
     justify-content: center;
     width: 60rem;
     height: 14rem;
-    background: var(--marromclaro);
-    border: 1.84865px solid var(--marromescuro);
+    background: var(--branco2);
+    border: 1.84865px solid var(--branco2);
     border-radius: 0px 0px 27px 27px;
     padding: 0  10px;
     animation: slide-down 0.5s ;
@@ -427,7 +428,7 @@ hr{
     font-family: 'Habibi';
     font-size: 23px;
     line-height: 29px;
-    color: var(--marromescuro);
+    color: var(--preto);
 }
 .btn-worker{
     position: relative;
@@ -453,11 +454,40 @@ hr{
     /* config */
     width: 20rem;
     height: 20rem;
+    margin: 30px;
+}
+#icon-suffrage{
+    width: 25px;
+    height: 25px;
+    text-decoration: none;
+    color:var(--roxoclaro2);
+    transition: 0.5s;
+}
+#icon-suffrage:hover{
+    transform: scale(1.1);
+    color: var(--roxoclaro);
+}
+
+#subtitle-suffrage1,#subtitle-suffrage2{
+    display: flex;
+    position: relative;
+    width: 80rem;
+    height: 0;
+    margin: 0;
+    font-size: 20px;
+    top: -1rem;
+}
+
+#subtitle-suffrage2{
+    margin-left: 56.5rem;
+}
+#subtitle-suffrage1{
+    margin-left:9.5rem;
 }
 #text-suffrage2,#text-suffrage3{
     /* config */
     padding: 50px 0 0 10px;
-    width: 45rem;
+    width: 43rem;
 }
 #text-suffrage2{
     text-align: right;

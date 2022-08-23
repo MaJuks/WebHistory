@@ -38,10 +38,10 @@ main{
 /* ------------------------------------------------------ */
 .vignette{
     /* position */
-    position: absolute;
+    position: fixed;
     /* config */
     background-image: url(../assets/vignette.png);
-    height: 3300px;
+    height: 1200px;
     width: 100%;
     background-size: 100%;
     opacity: 0.5;

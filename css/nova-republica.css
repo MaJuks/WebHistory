@@ -39,10 +39,10 @@ main{
 /* ------------------------------------------------------ */
 .vignette{
     /* position */
-    position: absolute;
-    /* configuração */
+    position: fixed;
+    /* config */
     background-image: url(../assets/vignette.png);
-    height: 5300px;
+    height: 1200px;
     width: 100%;
     background-size: 100%;
     opacity: 0.5;
@@ -327,20 +327,20 @@ hr{
     /* position */
     position: absolute;
     top: 15rem;
-    left: 40rem;
+    left: 40.5rem;
 }
 
 #colorline2{
     /* position */
     position: relative;
-    top:8.5rem;
+    top:19.5rem;
     left: -16.5rem;
 }
 #num-text2{
     /* position */
     text-align: right;
     position: absolute;
-    top: 19.5em;
+    top: 26.5em;
     left: 6rem;
 }
 #subtitle-achievement,#text-achievement{
@@ -349,6 +349,17 @@ hr{
 }
 #subtitle-achievement{ 
     font-size: 30px;
+}
+#icon-suffrage{
+    width: 25px;
+    height: 25px;
+    text-decoration: none;
+    color:var(--roxoclaro2);
+    transition: 0.5s;
+}
+#icon-suffrage:hover{
+    transform: scale(1.1);
+    color: var(--roxoclaro);
 }
 
 .btn-especific{

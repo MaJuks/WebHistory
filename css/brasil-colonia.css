@@ -38,10 +38,10 @@ main{
 /* ------------------------------------------------------ */
 .vignette{
     /* position */
-    position: absolute;
+    position: fixed;
     /* config */
     background-image: url(../assets/vignette.png);
-    height: 7500px;
+    height: 1200px;
     width: 100%;
     background-size: 100%;
     opacity: 0.5;
@@ -438,8 +438,8 @@ hr{
     justify-content: center;
     width: 60rem;
     height: 14rem;
-    background: var(--marromclaro);
-    border: 1.84865px solid var(--marromescuro);
+    background: var(--branco2);
+    border: 1.84865px solid var(--branco2);
     border-radius: 0px 0px 27px 27px;
     padding: 0  10px;
     animation: slide-down 0.5s ;
@@ -450,7 +450,7 @@ hr{
     /* letter config  */
     font-size: 23px;
     line-height: 29px;
-    color: var(--marromescuro);
+    color: var(--preto);
 }
 .div-box-women{
     /* position */
@@ -552,13 +552,13 @@ hr{
     /* config */
     width: 60rem;
     height: 10rem;
-    background: var(--marromclaro);
-    border: 2px solid var(--marromescuro);
+    background: var(--branco2);
+    border: 2px solid var(--branco2);
     border-radius: 0px 0px 27px 27px;
     padding: 0  10px;
     animation: slide-down 0.5s ;
     /* letter config */
-    color: var(--marromescuro);
+    color: var(--preto);
 
 }
 
@@ -643,8 +643,8 @@ hr{
     justify-content: center;
     width: 60rem;
     height: 11rem;
-    background: var(--marromclaro);
-    border: 1.84865px solid var(--marromescuro);
+    background: var(--branco2);
+    border: 1.84865px solid var(--branco2);
     border-radius: 0px 0px 27px 27px;
     padding: 0  10px;
     animation: slide-down 0.5s;
@@ -653,7 +653,7 @@ hr{
     /* config */
     padding: 0 20px;
     /* letter config */
-    color: var(--marromescuro);
+    color: var(--preto);
 }
 .btn-especific{
     /* position */

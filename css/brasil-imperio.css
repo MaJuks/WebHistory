@@ -38,10 +38,10 @@ main{
 /* ------------------------------------------------------ */
 .vignette{
     /* position */
-    position: absolute;
+    position: fixed;
     /* config */
     background-image: url(../assets/vignette.png);
-    height: 5700px;
+    height: 1200px;
     width: 100%;
     background-size: 100%;
     opacity: 0.5;
@@ -471,8 +471,8 @@ hr{
     justify-content: center;
     width: 60rem;
     height: 14rem;
-    background: var(--marromclaro);
-    border: 1.84865px solid var(--marromescuro);
+    background: var(--branco2);
+    border: 1.84865px solid var(--branco2);
     border-radius: 0px 0px 27px 27px;
     padding: 0  10px;
     animation: slide-down 0.5s ;
@@ -484,7 +484,7 @@ hr{
     font-family: 'Habibi';
     font-size: 23px;
     line-height: 29px;
-    color: var(--marromescuro);
+    color: var(--preto);
 }
 .btn-especific{
     /* position */

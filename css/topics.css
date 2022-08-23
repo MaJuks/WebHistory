@@ -38,10 +38,10 @@ main{
 /* ------------------------------------------------------ */
 .vignette{
     /* position */
-    position: absolute;
+    position: fixed;
     /* config */
     background-image: url(../assets/vignette.png);
-    height: 3300px;
+    height: 1000px;
     width: 100%;
     background-size: 100%;
     opacity: 0.5;
@@ -187,13 +187,13 @@ hr{
     display: grid;
     justify-items: center;
 }
-#title{
+.title{
     /* position */
     margin: 5rem 5rem 0 5rem;
     /*letter config*/
     font-family: 'Special Elite', cursive;
     font-size: 65px;
-    line-height: 100px;
+    line-height: 200px;
     text-align: center;
     color: var(--marromescuro);
     -webkit-text-stroke: 1px var(--preto);
@@ -203,7 +203,7 @@ hr{
     width: 25em;
     animation: type 4s steps(60, end) ;
 }
-#title2{
+.title2{
     /* position */
     position: relative;
     top:-2rem;
@@ -211,7 +211,7 @@ hr{
     z-index: 101;
     font-family: 'Special Elite', cursive;
     font-size: 35px;
-    line-height: 100px;
+    line-height: 45px;
     text-align: center;
     color: var(--rosaescuro);
     -webkit-text-stroke: 1px var(--rosaescuro);
@@ -236,7 +236,7 @@ hr{
     box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.3), -8px -8px 10px 1px rgba(0, 0, 0, 0.3);
     /* letter config*/
     font-family:'habibi';
-    font-size: 30px;
+    font-size: 25px;
     color: var(--branco2);
 }
 .circle{
@@ -266,25 +266,29 @@ hr{
     /* config */
     width: 80rem;
     height: 72px;
+    margin-left: 30px;
     font-family: 'Special Elite';
     font-weight: 400;
     font-size: 42px;
     line-height: 42px;
-    text-align: center;
     color: var(--rosa);
 }
 .text{
     margin: 30px;
 }
+#text-suffrage{
+    text-align: center;
+}
 #read-more{
     position: relative;
+    top: -5rem;
     left: 55rem;
     transition: 0.5s;
+    height: 20px;
 }
 #read-more:hover{
     transform: scale(1.1);
 }
-
 .timeline-div{
     /* config */
     display: flex;
@@ -299,7 +303,8 @@ hr{
 }
 #circle-line{
     position: relative;
-    left: -0.13rem;
+    width: 0.7%;
+    left: -0.5rem;
 }
 .num-years{
     /* config */
@@ -324,7 +329,13 @@ hr{
 #timeline{
     /* config */
     z-index: 100; 
-    height: 500px;
+    height: 800px;
+    border: 3px solid var(--branco2);
+}
+#timeline2{
+    /* config */
+    z-index: 100; 
+    height: 400px;
     border: 3px solid var(--branco2);
 }
 .colorline{
@@ -345,8 +356,112 @@ hr{
     top: 21rem;
     left: 41rem;
 }
+#colorline2{
+    /* position */
+    position: relative;
+    top: 8rem;
+    left: -16.1rem;
+}
+#num-text2{
+    /* position */    
+    text-align: right;
+    position: absolute;
+    top: 35rem;
+    left: 6.5rem;
+}
+#colorline3{
+    /* position */
+    position: relative;
+    top: 20rem;
+    left: 14.5rem;
+}
+#num-text3{
+    /* position */    
+    position: absolute;
+    top: 47rem;
+    left: 41rem;
+}
+#colorline4{
+    /* position */
+    position: relative;
+    top: -6rem;
+    left: -16rem;
+}
+#num-text4{
+    /* position */ 
+    text-align: right;
+    position: absolute;
+    top: 21.5rem;
+    left: 7rem;
+}
 
+.woman{
+    margin: 80px;
+}
+#woman1{
+    /* config */
+    width: 80rem;
+    flex-wrap: wrap;
+    display: flex;
+}
 
+#img-woman1{
+    /* position */
+    display: flex;
+    position: relative;
+    /* config */
+    width: 22.5rem;
+    height: 22.5rem;
+    margin: 30px;
+    
+}
+#subtitle-woman{
+    /* position */
+    position: relative;
+    padding-left: 11rem;
+    top: -3rem;
+    /* config */
+    font-size: 20px;
+    text-align: center;
+}
+.title-div{
+    width: 32rem;
+    margin: 15px 30px 30px 20px;
+    text-align: center; 
+}
+#title-woman{
+    /* config */
+    height: 20px;
+    /* letter config */
+    font-family: 'Special Elite';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    color: var(--amareloescuro);
+}
+#title-woman2{
+    position: relative;
+    /* letter config */
+    font-family: 'Special Elite';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 50px;
+    color: var(--amareloescuro);
+}
+#text-woman{
+    /* position */
+    /* config */
+    width: 32rem;
+    height: 227px;
+}
+
+#subtitle-achievement,#text-achievement{
+    width: 80rem;
+    text-align: center;
+}
+#subtitle-achievement{ 
+    font-size: 30px;
+}
 /* ------------------------------------------------------ */
 /* FOOTER */
 /* ------------------------------------------------------ */

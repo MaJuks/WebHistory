@@ -351,7 +351,7 @@ footer a{
     line-height: 144.5%;
     -webkit-text-stroke: 1px var(--marromclaro);
     color: var(--branco);
-    text-shadow: 0.1em 0.1em 0.2em black
+    text-shadow: 0.1em 0.10em 0.10em black
 }
 .references{
     z-index: 100;
