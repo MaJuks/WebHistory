@@ -498,9 +498,19 @@ footer a{
     line-height: 144.5%;
     color: var(--branco);
     
-    text-shadow: 0.1em 0.1em 0.2em black
+    text-shadow: 0.1em 0.10em 0.10em black
 }
+.references{
+    z-index: 100;
+    position: relative; 
+    top: 1rem;
+    transition: 0.5s;
 
+}
+.references:hover{
+    transform: scale(1.1);
+    animation: colors 3s ease-in-out infinite ;
+}
 #arrow1,#arrow2{
     animation: colors 3s ease-in-out infinite ;
 }
