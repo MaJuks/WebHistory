@@ -144,8 +144,8 @@ header{
     font-weight: 400;
     font-size: 60px;
     line-height: 6px;
-    color: var(--rosaescuro);
-    -webkit-text-stroke: 1px var(--rosaescuro);
+    color: var(--amareloescuro);
+    -webkit-text-stroke: 1px var(--amareloescuro);
 }
 #home:hover{
     /* animation cursor */
@@ -168,7 +168,7 @@ a{
     /* config*/
     width: 50px;
     height: 50px;
-    color: var(--rosaescuro);
+    color: var(--amareloescuro);
 }
 hr{
     /* line to separate*/
@@ -213,8 +213,8 @@ hr{
     font-size: 35px;
     line-height: 45px;
     text-align: center;
-    color: var(--rosaescuro);
-    -webkit-text-stroke: 1px var(--rosaescuro);
+    color: var(--amareloescuro);
+    -webkit-text-stroke: 1px var(--amareloescuro);
     /* for animation */
     animation: fade 2s ease-in-out;
 }
@@ -246,7 +246,7 @@ hr{
     width: 21px;
     mix-blend-mode: hard-light;
     height: 21px;
-    background: var(--rosaescuro);
+    background: var(--amareloescuro);
     border: 1px solid #000000;
     border-radius: 15px;
 }
@@ -271,7 +271,7 @@ hr{
     font-weight: 400;
     font-size: 42px;
     line-height: 42px;
-    color: var(--rosa);
+    color: var(--amareloescuro);
 }
 .text{
     margin: 30px;

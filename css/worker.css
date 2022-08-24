@@ -127,8 +127,8 @@ header{
     font-weight: 400;
     font-size: 60px;
     line-height: 6px;
-    color: var(--amareloescuro);
-    -webkit-text-stroke: 1px var(--amareloescuro);
+    color: var(--roxoescuro);
+    -webkit-text-stroke: 1px var(--roxoescuro);
 }
 #home:hover{
     /* animation cursor */
@@ -151,7 +151,7 @@ a{
     /* config*/
     width: 50px;
     height: 50px;
-    color: var(--amareloescuro);
+    color: var(--roxoescuro);
 }
 hr{
     /* line to separate*/
@@ -196,8 +196,8 @@ hr{
     font-size: 35px;
     line-height: 45px;
     text-align: center;
-    color: var(--amareloescuro);
-    -webkit-text-stroke: 1px var(--amareloescuro);
+    color: var(--roxoclaro);
+    -webkit-text-stroke: 1px var(--roxoclaro);
     /* for animation */
     animation: fade 2s ease-in-out;
 }
@@ -229,7 +229,7 @@ hr{
     width: 21px;
     mix-blend-mode: hard-light;
     height: 21px;
-    background: var(--amareloescuro);
+    background: var(--roxoclaro2);
     border: 1px solid #000000;
     border-radius: 15px;
 }
@@ -254,7 +254,7 @@ hr{
     font-weight: 400;
     font-size: 42px;
     line-height: 42px;
-    color: var(--amareloescuro);
+    color: var(--roxoclaro);
 }
 .text{
     margin: 30px;
@@ -273,111 +273,6 @@ hr{
     transform: scale(1.1);
 }
 
-
-.woman{
-    margin: 80px;
-}
-#woman1{
-    /* config */
-    width: 80rem;
-    flex-wrap: wrap;
-    display: flex;
-}
-
-#img-woman1{
-    /* position */
-    display: flex;
-    position: relative;
-    /* config */
-    width: 22.5rem;
-    height: 22.5rem;
-    margin: 30px;
-    
-}
-#subtitle-woman{
-    /* position */
-    position: relative;
-    padding-left: 11rem;
-    top: -3rem;
-    /* config */
-    font-size: 20px;
-    text-align: center;
-}
-
-.title-div{
-    width: 32rem;
-    margin: 15px 30px 30px 20px;
-    text-align: center; 
-}
-#title-woman{
-    /* config */
-    height: 20px;
-    /* letter config */
-    font-family: 'Special Elite';
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 50px;
-    color: var(--amareloescuro);
-}
-#title-woman2{
-    position: relative;
-    /* letter config */
-    font-family: 'Special Elite';
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 50px;
-    color: var(--amareloescuro);
-}
-#text-woman{
-    /* position */
-    /* config */
-    width: 32rem;
-    height: 227px;
-}
-
-#hidden-line{
-    /* position */
-    z-index: 100;
-    position: relative;
-    top: -2rem;
-    /* config */
-    width: 61rem;
-    border: 3px solid var(--preto);
-    filter: blur(1px);
-}
-.hidden{
-    position: relative;
-    left: -4rem;
-}
-.nav-hidden{
-    /* position */
-    display: flex;
-    /* config */
-    width: 80rem;
-    height: 15rem;
-    justify-content: center;
-}
-.box-hidden{
-    /* config */
-    position: relative;
-    top: -45px;
-    /* config */
-    justify-content: center;
-    width: 60rem;
-    height: 14rem;
-    background: var(--branco2);
-    border: 1.84865px solid var(--branco2);
-    border-radius: 0px 0px 27px 27px;
-    padding: 0  10px;
-}
-#text-hidden{
-    /* config */
-    padding: 0 20px;
-    /* letter config  */
-    font-size: 23px;
-    line-height: 29px;
-    color: var(--preto);
-}
 
 /* ------------------------------------------------------ */
 /* FOOTER */

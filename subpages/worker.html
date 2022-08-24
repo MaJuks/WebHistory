@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- feather icons -->
+        <script src="https://unpkg.com/feather-icons"></script>
+        <!-- icone do site -->
+        <link rel="shortcut icon" href="../assets/shortcut-icon.png" type="image">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="../css/worker.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Dames's History</title>
+    </head>
+<body>
+    <!-- vignette and shadows (plant and track) -->
+    <section class="shadows" ondragstart="return false;">
+            <div class="vignette"></div>
+            <div class="shadows-div">
+                <img src="../assets/top-shadow-plant.png" id="top-shadowplant">
+                <img src="../assets/track.png" id="top-shadowtrack">
+            </div>
+    </section>
+
+    <!-- header - icon + home + "web history" -->
+    <header>
+        <div class="header-div">
+            <a href="../index.html"><h1 id="name-web">Web History</h1></a>
+            <div class="home-svg">
+                <a href="../index.html"><h1 id="home">Home</h1></a>
+                <div class="icon-home">
+                    <a href="../index.html"><i data-feather="home" ></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <!-- test... click here -->
+    <!-- <div class="click-here" ondragstart="return false;">
+        <p id="text-click-here" data-aos="fade-right" >Clique para ler mais</p>
+        <p data-aos="fade-right"><img id="img-click-here" src="../assets/arrow.png" alt=""></p>
+    </div> -->
+
+    <!-- boxes and texts -->
+    <main>
+        <div class="main-div">
+            <!-- title -->
+            <span class="title" id="suffrage">OPERÁRAS<span id="cursor">|</span></span>
+            <span class="title2" data-aos="zoom-in">PRIMEIRA REPÚBLICA <br>(1889 - 1930)</span>
+            <!-- box 1 "introdução"-->
+            <div class="container" data-aos="zoom-in">
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle2"></div>
+                <h1 class="title-box" >Operárias </h1>
+                <p class="text">A mulher tinha sempre os salários mais baixos e as jornadas de trabalho maiores. 
+                    Não havia uma legislação que protegesse o trabalho feminino. As reivindicações acerca das 
+                    péssimas condições de trabalho, a jornada de trabalho elevada, o assédio sexual nas fábricas, 
+                    entre outros, eram discutidas, mas nenhuma mudança era realizada [...]</p>
+                <a id="read-more" href="../subpages/primeira-republica.html#worker"><img src="../assets/stroke-purple.png" alt=""></a>
+            </div>
+
+            <span class="title2"style="margin:5rem" data-aos="zoom-in">DITADURA MILITAR <br>(1964 - 1985)</span>
+
+            <div class="container" data-aos="zoom-in">
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle2"></div>
+                <h1 class="title-box" >Operárias </h1>
+                <p class="text">Com o desenvolvimento tecnológico, houve um amplo ingresso de mulheres 
+                    nas crescentes indústrias e empresas, mas ainda sem os mesmos direitos profissionais 
+                    dos homens. No fim da década de 70, eclodiram diversas greves operárias, das quais as 
+                    mulheres participaram ativamente. [...]
+                </p>
+                <a id="read-more" href="../subpages/ditadura-militar.html#worker"><img src="../assets/stroke-purple.png" alt=""></a>
+            </div>
+        </div>
+    </main>
+
+    <footer>       
+        <div class="footer" data-aos="zoom-in">
+            <p class="references" id="about-us"><a class="references" href="references.html"><span id="arrow1">↠</span><span style="color: var(--marromclaro);-webkit-text-stroke: 1px var(--marromclaro);"> Referências </span><span id="arrow2">↞</span></a></p>
+            <div class="text-icon">
+                <label for="icon-network" id="about-us" style="-webkit-text-stroke: 1px var(--marromclaro);">SOBRE NÓS</label>
+                <div name="icon-network" class="icon-network">
+                    <a href="https://www.instagram.com/maju_raposo" class="insta" target="_blank"><i id="insta1" data-feather="instagram"></i></a>
+                    <a href="https://github.com/MaJuks/TCC.git" class="git" target="_blank"><i id="git" data-feather="github"></i></a>
+                    <a href="https://www.instagram.com/riitamavila" class="insta" target="_blank" ><i id="insta2" data-feather="instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer> 
+
+    
+    <script src="../js/brasil-colonia.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+    });
+    </script>
+</body>
+</html>
