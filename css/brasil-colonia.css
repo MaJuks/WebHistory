@@ -318,13 +318,31 @@ hr{
     margin: 30px;
 }
 #text-intro1{
-    width: 39rem;
-    padding:30px 0 0 0;
+    width: 35rem;
+    padding:60px 0 0 0;
 
 }
+.img-subtitle{
+    position: relative;
+    top: 2rem;
+    margin: 30px;
+    display: grid;
+    flex-wrap: nowrap;
+    width: 28rem;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+/* | 640 × 372  */
 #img-intro{
-    width: 22rem;
-    height: 22rem;
+   width: 510px;
+   /* height: 242px; */
+   height: 342px;
+   border-radius: 10px;
+}
+#subtitle-intro{
+    font-size: 20px;
+    text-align: center;
 }
 #text-intro2,#text-native2,
 #text-native4,#text-black2,
@@ -334,19 +352,12 @@ hr{
     text-align: center;
 }
 
-#img-intro,#img-black1,
+#img-black1,
 #img-black2{
    margin: 30px;
 }
-#subtitle-intro{
-    position: relative;
-    width: 57rem;
-    height: 0;
-    margin: 0;
-    font-size: 20px;
-    text-align: right;
-    top: -0.5rem;
-}
+
+
 .line{
     /* position */
     z-index: 100;
@@ -503,6 +514,7 @@ hr{
     /* config */
     width: 20rem;
     height: 20rem;
+    border-radius: 10px;
 }
 .subtitle-img-native{
     /* position */
@@ -511,11 +523,13 @@ hr{
     width: 80rem;
     justify-content: space-around;
     /* letter config */
-    font-size: 20px
+    font-size: 20px;
+    margin-bottom: 30px;
+
 }
 #subtitle-native{
     /* config */
-    width: 212px;
+    width: 280px;
     height: 30px;
     /* letter config  */
     text-align: center;
@@ -561,31 +575,23 @@ hr{
     color: var(--preto);
 
 }
-
+#img-sub-black{
+    width: 26rem;
+}
 #subtitle-black1,#subtitle-black2{
-    display: flex;
-    position: relative;
-    width: 80rem;
-    height: 0;
-    margin: 0;
     font-size: 20px;
-    top: -1rem;
+    text-align: center;
 
 }
 #text-black3,#text-black4{
-    width: 43rem;
-    padding:60px 0 0 0;
+    width: 38rem;
+    padding:200px 0 0 0;
 }
 #text-black4{
     text-align: right;
 }
-#subtitle-black1{
-    justify-content: right;
-    margin-right: 14rem;
-}
-#subtitle-black2{
-    margin-left: 9.5rem;
-}
+
+
 .img-white{
     /* position */
     display: flex;
