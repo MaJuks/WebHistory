@@ -37,7 +37,6 @@ main{
 /* section shadows */
 /* ------------------------------------------------------ */
 .vignette{
-    /* position */
     position: fixed;
     /* config */
     background-image: url(../assets/vignette.png);
@@ -100,7 +99,6 @@ header{
     align-items: center;
 }
 #name-web{
-
     /* "web history */
     /* position */
     position: relative;
@@ -179,7 +177,9 @@ hr{
     transform: rotate(-0.04deg);
     background-color: var(--marromescuro3);
 }
-
+/* ------------------------------------------------------ */
+/* CLICK HERE */
+/* ------------------------------------------------------ */
 .click-here{
     /* "clique para ler mais" + png */
     /* position */
@@ -320,18 +320,20 @@ hr{
 #text-intro1{
     width: 35rem;
     padding:60px 0 0 0;
-
 }
+
 .img-subtitle{
     position: relative;
     top: 2rem;
-    margin: 30px;
     display: grid;
     flex-wrap: nowrap;
     width: 28rem;
     justify-content: center;
     align-items: center;
     justify-items: center;
+}
+#img-sub-intro{
+    margin: 30px;
 }
 /* | 640 × 372  */
 #img-intro{
@@ -351,13 +353,15 @@ hr{
     width: 80rem;
     text-align: center;
 }
-
-#img-black1,
-#img-black2{
-   margin: 30px;
+#img-native1,#img-native2,
+#img-native3,#img-black1,
+#img-black2,#img-white1,
+#img-white2,#img-white3{
+    /* config */
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10px;
 }
-
-
 .line{
     /* position */
     z-index: 100;
@@ -376,7 +380,6 @@ hr{
     border: 3px solid var(--preto);
     filter: blur(1px);
 }
-
 .btn-intro{
     /* button  */
     /* position */
@@ -507,15 +510,6 @@ hr{
     width: 80rem;
     justify-content: space-around;
 }
-#img-native1,#img-native2,
-#img-native3,#img-black1,
-#img-black2,#img-white1,
-#img-white2,#img-white3{
-    /* config */
-    width: 20rem;
-    height: 20rem;
-    border-radius: 10px;
-}
 .subtitle-img-native{
     /* position */
     display: flex;
@@ -581,11 +575,13 @@ hr{
 #subtitle-black1,#subtitle-black2{
     font-size: 20px;
     text-align: center;
+    height: 0px;
+    margin: 0  0 5rem 0;
 
 }
 #text-black3,#text-black4{
     width: 38rem;
-    padding:200px 0 0 0;
+    padding:80px 0 0 0;
 }
 #text-black4{
     text-align: right;
@@ -611,9 +607,10 @@ hr{
 }
 #subtitle-white{
     /* config */
-    width: 212px;
+    width: 20rem;
     height: 30px;
     text-align: center;
+    margin-bottom: 50px;
 }
 #text-white3{
     margin-bottom: 80px;
@@ -731,20 +728,16 @@ hr{
     width: 22.5rem;
     height: 22.5rem;
     margin: 30px;
+    border-radius: 10px;
     
 }
 #subtitle-woman{
-    /* position */
-    position: relative;
-    padding-left: 11rem;
-    top: -3rem;
-    /* config */
     font-size: 20px;
     text-align: center;
 }
 .title-div{
     /* topo | direita | inferior | esquerda */
-    width: 32rem;
+    width: 30rem;
     margin: 15px 30px 30px 20px;
     text-align: center; 
 }
