@@ -6,9 +6,9 @@
         <!-- feather icons -->
         <script src="https://unpkg.com/feather-icons"></script>
         <!-- icone do site -->
-        <link rel="shortcut icon" href="../assets/shortcut-icon.png" type="image">
+        <link rel="shortcut icon" href="../../assets/shortcut-icon.png" type="image">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="stylesheet" href="../css/native.css">
+        <link rel="stylesheet" href="../../css/topics/native.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Dames's History</title>
     </head>
@@ -17,19 +17,19 @@
     <section class="shadows" ondragstart="return false;">
             <div class="vignette"></div>
             <div class="shadows-div">
-                <img src="../assets/top-shadow-plant.png" id="top-shadowplant">
-                <img src="../assets/track.png" id="top-shadowtrack">
+                <img src="../../assets/top-shadow-plant.png" id="top-shadowplant">
+                <img src="../../assets/track.png" id="top-shadowtrack">
             </div>
     </section>
 
     <!-- header - icon + home + "web history" -->
     <header>
         <div class="header-div">
-            <a href="../index.html"><h1 id="name-web">Web History</h1></a>
+            <a href="../../index.html"><h1 id="name-web">Web History</h1></a>
             <div class="home-svg">
-                <a href="../index.html"><h1 id="home">Home</h1></a>
+                <a href="../../index.html"><h1 id="home">Home</h1></a>
                 <div class="icon-home">
-                    <a href="../index.html"><i data-feather="home" ></i></a>
+                    <a href="../../index.html"><i data-feather="home" ></i></a>
                 </div>
             </div>
         </div>
@@ -56,7 +56,7 @@
                 <p class="text">Os povos indígenas que habitavam o Brasil no período colonial possuíam costumes muito 
                     diferentes entre si, o que se reflete nos papéis desempenhados pelas mulheres. Algumas eram escravas 
                     de seus maridos; outras, companheiras, tratadas como iguais; e ainda havia aquelas que chefiavam grupos. [...]</p>
-                <a id="read-more" href="../subpages/brasil-colonia.html#women-native"><img src="../assets/stroke-purple.png" alt=""></a>
+                <a id="read-more" href="../../subpages/brasil-colonia.html#women-native"><img src="../../assets/stroke-purple.png" alt=""></a>
             </div>
 
             <div class="container" id="women-especific" data-aos="zoom-in">
@@ -64,8 +64,11 @@
                 <div class="circle" id="circle2"></div>
                 <h1 class="title-box">Mulheres que se destacaram</h1>
                 <div class="woman"  id="woman1">
-                    <div class="img-woman">
-                        <img src="../assets/img-test.png" id="img-woman1" alt="">
+                    <div class="img-subtitle">
+                        <div class="img-woman">
+                            <img src="../../assets/img-colonia/img-woman4.jpg" id="img-woman1" alt="">
+                        </div>
+                        <p id="subtitle-woman">Ilustração retrata a possível imagem da indígena catequisada Clara Camarão</p>
                     </div>
                     <div class="title-div">
                         <h1 id="title-woman">Clara Camarão </h1>
@@ -76,7 +79,6 @@
                             está inscrito no Livro dos Heróis e Heroínas da Pátria, que homenageia personagens 
                             que tiveram papel fundamental na construção do Brasil.</p>
                     </div>
-                    <p id="subtitle-woman">legenda</p>
                 </div>
             </div> 
         </div>
@@ -84,7 +86,7 @@
 
     <footer>       
         <div class="footer" data-aos="zoom-in">
-            <p class="references" id="about-us"><a class="references" href="references.html"><span id="arrow1">↠</span><span style="color: var(--marromclaro);-webkit-text-stroke: 1px var(--marromclaro);"> Referências </span><span id="arrow2">↞</span></a></p>
+            <p class="references" id="about-us"><a class="references" href="../references.html"><span id="arrow1">↠</span><span style="color: var(--marromclaro);-webkit-text-stroke: 1px var(--marromclaro);"> Referências </span><span id="arrow2">↞</span></a></p>
             <div class="text-icon">
                 <label for="icon-network" id="about-us" style="-webkit-text-stroke: 1px var(--marromclaro);">SOBRE NÓS</label>
                 <div name="icon-network" class="icon-network">
@@ -96,13 +98,12 @@
         </div>
     </footer> 
 
-    
-    <script src="../js/brasil-colonia.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({
-        duration: 1000,
-    });
+        feather.replace()
+        AOS.init({
+            duration: 1000,
+        });
     </script>
 </body>
 </html>

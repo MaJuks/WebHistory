@@ -28,7 +28,7 @@
 }
 body{
     margin: 0;
-    background-image: url("../assets/background.png");
+    background-image: url("../../assets/background.png");
 }
 main{
     mix-blend-mode: multiply; 
@@ -40,7 +40,7 @@ main{
     /* position */
     position: fixed;
     /* config */
-    background-image: url(../assets/vignette.png);
+    background-image: url("../../assets/vignette.png");
     height: 1000px;
     width: 100%;
     background-size: 100%;

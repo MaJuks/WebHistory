@@ -28,7 +28,7 @@
 }
 body{
     margin: 0;
-    background-image: url("../assets/background.png");
+    background-image: url("../../assets/background.png");
 }
 main{
     mix-blend-mode: multiply; 
@@ -40,7 +40,7 @@ main{
     /* position */
     position: fixed;
     /* config */
-    background-image: url(../assets/vignette.png);
+    background-image: url(../../assets/vignette.png);
     height: 1000px;
     width: 100%;
     background-size: 100%;
@@ -273,7 +273,15 @@ hr{
     transform: scale(1.1);
 }
 
-
+.img-subtitle{
+    position: relative;
+    display: grid;
+    flex-wrap: nowrap;
+    width: 28rem;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
 .woman{
     margin: 80px;
 }
@@ -292,20 +300,15 @@ hr{
     width: 22.5rem;
     height: 22.5rem;
     margin: 30px;
-    
+    border-radius: 10px; 
 }
 #subtitle-woman{
-    /* position */
-    position: relative;
-    padding-left: 11rem;
-    top: -3rem;
-    /* config */
     font-size: 20px;
     text-align: center;
 }
 
 .title-div{
-    width: 32rem;
+    width: 30rem;
     margin: 15px 30px 30px 20px;
     text-align: center; 
 }

@@ -28,7 +28,7 @@
 }
 body{
     margin: 0;
-    background-image: url("../assets/background.png");
+    background-image: url("../../assets/background.png");
 }
 main{
     mix-blend-mode: multiply; 
@@ -40,7 +40,7 @@ main{
     /* position */
     position: fixed;
     /* config */
-    background-image: url(../assets/vignette.png);
+    background-image: url(../../assets/vignette.png);
     height: 1000px;
     width: 100%;
     background-size: 100%;
@@ -51,14 +51,7 @@ main{
     height: 0rem;
     mix-blend-mode: multiply;
 }
-#bottom-shadowtrack{
-    /* position */
-    position: relative;
-    left: 81rem;
-    top: 90rem;
-    /* config */
-    width: 15%;
-}
+
 #top-shadowplant{
     /* position */
     position: relative;
@@ -66,21 +59,11 @@ main{
     /* config */
     animation: moviment-plant 2s ease-in-out infinite alternate;
 }
-#mid-shadowplant{
-    /* position */
-    display: flex;
-    position: relative;
-    left: -3rem;
-    top: 120rem;
-    /* config */
-    opacity: 0.6;
-    width: 40%;
-    animation: moviment-plant 2s ease-in-out infinite alternate;
-}
+
 #top-shadowtrack{
     /* position */
     position: relative;
-    left: 15rem;
+    left: -15rem;
     /* config */
     width: 15%;
 }
@@ -144,8 +127,8 @@ header{
     font-weight: 400;
     font-size: 60px;
     line-height: 6px;
-    color: var(--amareloescuro);
-    -webkit-text-stroke: 1px var(--amareloescuro);
+    color: var(--roxoescuro);
+    -webkit-text-stroke: 1px var(--roxoescuro);
 }
 #home:hover{
     /* animation cursor */
@@ -168,7 +151,7 @@ a{
     /* config*/
     width: 50px;
     height: 50px;
-    color: var(--amareloescuro);
+    color: var(--roxoescuro);
 }
 hr{
     /* line to separate*/
@@ -213,8 +196,8 @@ hr{
     font-size: 35px;
     line-height: 45px;
     text-align: center;
-    color: var(--amareloescuro);
-    -webkit-text-stroke: 1px var(--amareloescuro);
+    color: var(--roxoclaro);
+    -webkit-text-stroke: 1px var(--roxoclaro);
     /* for animation */
     animation: fade 2s ease-in-out;
 }
@@ -246,7 +229,7 @@ hr{
     width: 21px;
     mix-blend-mode: hard-light;
     height: 21px;
-    background: var(--amareloescuro);
+    background: var(--roxoclaro2);
     border: 1px solid #000000;
     border-radius: 15px;
 }
@@ -271,7 +254,7 @@ hr{
     font-weight: 400;
     font-size: 42px;
     line-height: 42px;
-    color: var(--amareloescuro);
+    color: var(--roxoclaro);
 }
 .text{
     margin: 30px;
@@ -281,23 +264,16 @@ hr{
 }
 #read-more{
     position: relative;
-    top: -3.5rem;
+    top: -5rem;
     left: 55rem;
     transition: 0.5s;
-    height: 50px;
+    height: 20px;
 }
 #read-more:hover{
     transform: scale(1.1);
 }
 
 
-#subtitle-achievement,#text-achievement{
-    width: 80rem;
-    text-align: center;
-}
-#subtitle-achievement{ 
-    font-size: 30px;
-}
 /* ------------------------------------------------------ */
 /* FOOTER */
 /* ------------------------------------------------------ */
