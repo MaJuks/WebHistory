@@ -329,13 +329,7 @@ hr{
     height: 20px;
     justify-content: flex-start;
 }
-/* ------------------------------------------------------ */
-/* INTRO  */
-/* ------------------------------------------------------ */
-#text-intro1{
-    width: 35rem;
-    padding:60px 0 0 0;
-}
+/* one */
 .img-subtitle{
     position: relative;
     top: 2rem;
@@ -345,6 +339,39 @@ hr{
     justify-content: center;
     align-items: center;
     justify-items: center;
+}
+/* many */
+.box-img{  
+    /* position */
+    display: flex;
+    /* config */
+    width: 80rem;
+    justify-content: space-around;
+}
+.box-subtitle{
+    /* position */
+    display: flex;
+    /* config */
+    width: 80rem;
+    justify-content: space-around;
+    /* letter config */
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.nav-hidden{
+    /* position */
+    display: none;
+    /* config */
+    width: 80rem;
+    height: 15rem;
+    justify-content: center;
+}
+/* ------------------------------------------------------ */
+/* INTRO  */
+/* ------------------------------------------------------ */
+#text-intro1{
+    width: 35rem;
+    padding:60px 0 0 0;
 }
 #img-subtitle-intro{
     margin: 30px;
@@ -430,14 +457,6 @@ hr{
     /* line in select (for accessibility) */
     outline:1px dotted #CCC;
 }
-.nav-hidden{
-    /* position */
-    display: none;
-    /* config */
-    width: 80rem;
-    height: 15rem;
-    justify-content: center;
-}
 .box-hidden{
     /* config */
     position: relative;
@@ -494,31 +513,6 @@ hr{
     width: 80rem;
     text-align: center;
 }
-.img-native{
-    /* position */
-    display: flex;
-    /* config */
-    width: 80rem;
-    justify-content: space-around;
-}
-.subtitle-img-native{
-    /* position */
-    display: flex;
-    /* config */
-    width: 80rem;
-    justify-content: space-around;
-    /* letter config */
-    font-size: 20px;
-    margin-bottom: 30px;
-
-}
-#subtitle-native{
-    /* config */
-    width: 280px;
-    height: 30px;
-    /* letter config  */
-    text-align: center;
-}
 #text-native3{
     margin-bottom: 90px;
 }
@@ -539,34 +533,13 @@ hr{
 #nav-hidden-native{
     height: 9rem;
 }
-
 /* ------------------------------------------------------ */
 /* BLACK*/
 /* ------------------------------------------------------ */
-
 #text-black2,#text-black5{
     /* config */
     width: 80rem;
     text-align: center;
-}
-#img-subtitle-black{
-    width: 26rem;
-}
-#subtitle-black1,#subtitle-black2{
-    font-size: 20px;
-    text-align: center;
-    margin: 0  0 5rem 0;
-}
-#subtitle-black2{
-    height: 40px;
-
-}
-#text-black3,#text-black4{
-    width: 38rem;
-    padding:80px 0 0 0;
-}
-#text-black4{
-    text-align: right;
 }
 /* ------------------------------------------------------ */
 /* WHITE*/
@@ -580,24 +553,7 @@ hr{
     width: 80rem;
     justify-content: center;
 }
-.img-white{
-    /* position */
-    display: flex;
-    /* config */
-    width: 80rem;
-    justify-content: space-around;
-}
-.subtitle-img-white{
-    /* position */
-    display: flex;
-    position: relative;
-    /* config */
-    width: 80rem;
-    justify-content: space-around;
-    /* letter config */
-    font-size: 20px;
-}
-#subtitle-white{
+#subtitle-text{
     /* config */
     width: 20rem;
     height: 30px;
@@ -625,7 +581,6 @@ hr{
 #nav-hidden-white{
     height: 10rem;
 }
-
 /* ------------------------------------------------------ */
 /* ESPECIFIC*/
 /* ------------------------------------------------------ */
@@ -699,8 +654,7 @@ hr{
     width: 22.5rem;
     height: 22.5rem;
     margin: 30px;
-    border-radius: 10px;
-    
+    border-radius: 10px; 
 }
 #subtitle-woman{
     font-size: 20px;
