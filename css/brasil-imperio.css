@@ -467,15 +467,6 @@ hr{
     /* line in select (for accessibility) */
     outline:1px dotted #CCC;
 }
-.line{
-    /* position */
-    z-index: 100;
-    display: flex;
-    /* config */
-    width: 80rem;
-    height: 20px;
-    justify-content: flex-start;
-}
 #hidden-line{
     /* position */
     z-index: 100;
