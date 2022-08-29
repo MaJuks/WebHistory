@@ -272,6 +272,13 @@ hr{
     width: 80rem;
     justify-content: space-around;
 }
+.subtitle-text{
+    /* config */
+    width: 20rem;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
 .box-subtitle{
     /* position */
     display: flex;
@@ -290,6 +297,7 @@ hr{
     height: 15rem;
     justify-content: center;
 }
+
 /* ------------------------------------------------------ */
 /* main */
 /* ------------------------------------------------------ */
@@ -394,6 +402,7 @@ hr{
     /* config */
     text-align: center;
 }
+
 /* ------------------------------------------------------ */
 /* worker */
 /* ------------------------------------------------------ */
@@ -402,6 +411,7 @@ hr{
     /* config */
     text-align: center;
 }
+
 #hidden-line{
     /* config */
     width: 61rem;
