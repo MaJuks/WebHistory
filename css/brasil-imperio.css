@@ -498,7 +498,7 @@ hr{
     padding: 0  10px;
     animation: slide-down 0.5s ;
 }
-#hidden-text1{
+#text-hidden{
     /* config */
     padding: 0 20px;
     /*  letter config */
@@ -567,10 +567,7 @@ hr{
     flex-wrap: wrap;
     display: none;
 }
-#img-woman1,#img-woman2,
-#img-woman3,#img-woman4,
-#img-woman5,#img-woman6,
-#img-woman7{
+#img-woman{
     /* position */
     display: flex;
     position: relative;

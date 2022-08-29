@@ -217,8 +217,84 @@ hr{
 
     animation: slide-right 3s ease-in-out infinite alternate;
 }
+
+/* ------------------------------------------------------ */
+/* CLASS GLOBAL  */
+/* ------------------------------------------------------ */
+.title-box{
+    /* position */
+    display: flex;
+    position: relative;
+    /* config */
+    width: 80rem;
+    height: 72px;
+    font-family: 'Special Elite';
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+    justify-content: center;
+    color: var(--light-yellow);
+}
+.text{
+    margin: 30px;
+}
+.img{
+    /* config */
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10px;
+}
+.line{
+    /* position */
+    z-index: 100;
+    /* config */
+    width: 80rem;
+    height: 20px;
+    justify-content: flex-start;
+}
+/* one */
+.img-subtitle{
+    position: relative;
+    top: 2rem;
+    display: grid;
+    flex-wrap: nowrap;
+    width: 28rem;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+/* many */
+.box-img{  
+    /* position */
+    display: flex;
+    /* config */
+    width: 80rem;
+    justify-content: space-around;
+}
+.box-subtitle{
+    /* position */
+    display: flex;
+    /* config */
+    width: 80rem;
+    justify-content: space-around;
+    /* letter config */
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.nav-hidden{
+    /* position */
+    display: none;
+    /* config */
+    width: 80rem;
+    height: 15rem;
+    justify-content: center;
+}
 /* ------------------------------------------------------ */
 /* main */
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+/* intro */
 /* ------------------------------------------------------ */
 .main-div{
     /* config */
@@ -314,22 +390,17 @@ hr{
     text-align: center;
     color: var(--rosa);
 }
-.text{
-    /* config */
-    margin: 30px;
-}
-#text-intro1,#text-worker2,
-#text-worker3,#text-suffrage1{
+#text-intro1{
     /* config */
     text-align: center;
 }
-
-.line{
-    /* position */
-    z-index: 100;
+/* ------------------------------------------------------ */
+/* worker */
+/* ------------------------------------------------------ */
+#text-worker2,
+#text-worker3{
     /* config */
-    width: 80rem;
-    height: 20px;
+    text-align: center;
 }
 #hidden-line{
     /* config */
@@ -392,17 +463,7 @@ hr{
     /* line in select (for accessibility) */
     outline:1px dotted #CCC;
 }
-.nav-hidden{
-    /* position */
-    display: none;
-    /* configuração */
-    width: 80rem;
-    justify-content: center;
-}
-#nav-hidden-intro{
-    /* config */
-    height: 6rem;
-}
+
 .box-hidden{
     /* position */
     position: relative;
@@ -417,10 +478,7 @@ hr{
     padding: 0  10px;
     animation: slide-down 0.5s ;
 }
-#box-hidden-intro{
-    /* config */
-    height: 9rem;
-}
+
 .text-hidden{
     /* config */
     padding: 0 20px;
@@ -435,52 +493,16 @@ hr{
     left: 2.5rem;
     top: -0.5rem;
 }
-.img-worker,.subtitle-worker{
+/* ------------------------------------------------------ */
+/* suffragfe */
+/* ------------------------------------------------------ */
+#text-suffrage1{
     /* config */
-    display: flex;
-    width: 80rem;
-    justify-content: space-around;
+    text-align: center;
 }
-#img-worker{
-    /* config */
-    width: 20rem;
-    height: 20rem;
-}
-#subtitle-worker{
-    /* letter config */
-    font-size: 20px
-}
-#img-suffrage1,#img-suffrage2{
-    /* config */
-    width: 20rem;
-    height: 20rem;
-    margin: 30px;
-}
-
-#subtitle-suffrage1,#subtitle-suffrage2{
-    display: flex;
-    position: relative;
-    width: 80rem;
-    height: 0;
-    margin: 0;
-    font-size: 20px;
-    top: -1rem;
-}
-
-#subtitle-suffrage2{
-    margin-left: 56.5rem;
-}
-#subtitle-suffrage1{
-    margin-left:9.5rem;
-}
-#text-suffrage2,#text-suffrage3{
-    /* config */
-    padding: 50px 0 0 10px;
-    width: 43rem;
-}
-#text-suffrage2{
-    text-align: right;
-}
+/* ------------------------------------------------------ */
+/* mov and org */
+/* ------------------------------------------------------ */
 .timeline-div{
     /* config */
     display: flex;
@@ -566,6 +588,9 @@ hr{
 .num-years,.text-years{
     width: 500px;
 }
+/* ------------------------------------------------------ */
+/* especific */
+/* ------------------------------------------------------ */
 .btn-especific{
     /* position */
     top: 18rem;
@@ -609,8 +634,7 @@ hr{
 }
 #btn-left:hover{
     border-right: 25px solid var(--rosaescuro);
-}
-.woman{
+}.woman{
     margin: 80px;
 }
 #woman1{
@@ -625,9 +649,7 @@ hr{
     flex-wrap: wrap;
     display: none;
 }
-#img-woman1,#img-woman2,
-#img-woman3,#img-woman4,
-#img-woman5,#img-woman6,#img-woman7,#img-woman8{
+#img-woman{
     /* position */
     display: flex;
     position: relative;
@@ -635,40 +657,36 @@ hr{
     width: 22.5rem;
     height: 22.5rem;
     margin: 30px;
-    
+    border-radius: 10px; 
 }
 #subtitle-woman{
-    /* position */
-    position: relative;
-    padding-left: 11rem;
-    top: -3rem;
-    /* config */
     font-size: 20px;
     text-align: center;
 }
 .title-div{
-    width: 32rem;
+    /* topo | direita | inferior | esquerda */
+    width: 30rem;
     margin: 15px 30px 30px 20px;
     text-align: center; 
 }
 #title-woman{
     /* config */
     height: 20px;
+    margin-bottom: 3.5rem;
     /* letter config */
     font-family: 'Special Elite';
     font-weight: 400;
     font-size: 40px;
     line-height: 50px;
-    color: var(--amareloescuro);
+    color: var(--light-pink);
 }
 #title-woman2{
-    position: relative;
     /* letter config */
     font-family: 'Special Elite';
     font-weight: 400;
     font-size: 25px;
-    line-height: 50px;
-    color: var(--amareloescuro);
+    line-height: 70px;
+    color: var(--light-pink);
 }
 #text-woman{
     /* position */
