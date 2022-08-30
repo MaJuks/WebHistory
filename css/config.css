@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+/* font-family: 'Special Elite', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Special+Elite&display=swap');
+/* font-family: 'Shadows Into Light', cursive; */
+
+:root {
+    --white-white:#ffffff ;
+    --light-brown: #e8dacf;
+    --mid-brown: #d4bda7;
+    --dark-brown: #5b3e26;
+    --dark-brown2: #483322;
+    --dark-brown3:rgba(53, 25, 5, 0.9);
+    --black: #201d18;
+    --light-yellow: #f8ab48;
+    --dark-yellow: #f79d25;
+    --light-pink: #f2165f;
+    --dark-pink: #AD0039;
+    --light-purple: #AC92BE;
+    --light-purple2: #7c4f9c;
+    --dark-purple: #66308d;
+
+    --title:'Special Elite', cursive;
+    --web:'Shadows Into Light', cursive;
+    --text:'Habibi';
+}

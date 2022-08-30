@@ -8,6 +8,7 @@
         <!-- icone do site -->
         <link rel="shortcut icon" href="../assets/shortcut-icon.png" type="image">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" href="../css/brasil-imperio.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Dames's History</title>
@@ -52,8 +53,8 @@
     <main>
         <div class="main-div">
             <!-- tile -->
-            <span id="title">BRASIL IMPÉRIO<span id="cursor">|</span></span>
-            <span id="title2">(1822 - 1889)</span>
+            <span class="title">BRASIL IMPÉRIO<span id="cursor">|</span></span>
+            <span class="title2">(1822 - 1889)</span>
             <!-- box 1 "educação" -->
             <div class="container" id="education" data-aos="zoom-in" ondragstart="return false;">
                 <div class="circle" id="circle1" ></div>
@@ -124,29 +125,29 @@
                     tiveram grande papel em estimular e disseminar novas ideias a respeito do papel 
                     das <span style="color: var(--light-purple)">mulheres</span> na sociedade.
                 </p>
-                <nav class="img-midia">
-                    <div class="box-midia1">
-                        <a href="http://memoria.bn.br/pdf/700096/per700096_1852_00001.pdf" target="_blank" rel="noopener noreferrer"><img src="../assets/img-imperio/img-midia1.jpg" alt="" id="img3"></a>
+                <nav class="box-img-midia">
+                    <div class="box-midia">
+                        <a href="http://memoria.bn.br/pdf/700096/per700096_1852_00001.pdf" target="_blank" rel="noopener noreferrer"><img src="../assets/img-imperio/img-midia1.jpg" alt="" id="img-midia"></a>
                         <p id="subtitle-midia"><span style="color: var(--light-yellow);text-decoration: underline;">Jornal das Senhoras:</span><br>circulou de 1852 a 1855, dirigido por Joana de Paula Manso.</p>
                     </div>
-                    <div class="box-midia1">
-                        <a href="http://memoria.bn.br/pdf/736902/per736902_1862_00001.pdf" target="_blank" rel="noopener noreferrer"><img src="../assets/img-imperio/img-midia2.jpg" alt="" id="img3"></a>
+                    <div class="box-midia">
+                        <a href="http://memoria.bn.br/pdf/736902/per736902_1862_00001.pdf" target="_blank" rel="noopener noreferrer"><img src="../assets/img-imperio/img-midia2.jpg" alt="" id="img-midia"></a>
                         <p id="subtitle-midia"><span style="color: var(--light-yellow);text-decoration: underline;">O Belo Sexo:</span><br>circulou durante 1862, dirigido por Júlia de Albuquerque Sandy Aguiar.</p>
                     </div>
-                    <div class="box-midia1">
-                        <a href="http://memoria.bn.br/pdf/706868/per706868_1873_00001.pdf" target="_blank" rel="noopener noreferrer"><img src="../assets/img-imperio/img-midia3.jpg" alt="" id="img3"></a>
+                    <div class="box-midia">
+                        <a href="http://memoria.bn.br/pdf/706868/per706868_1873_00001.pdf" target="_blank" rel="noopener noreferrer"><img src="../assets/img-imperio/img-midia3.jpg" alt="" id="img-midia"></a>
                         <p id="subtitle-midia"><span style="color: var(--light-yellow);text-decoration: underline;">O Sexo Feminino:</span><br>circulou de 1873 a 1889, dirigido por Francisca da Motta Diniz.</p>
                     </div>
-                    <div class="box-midia1">
-                        <a href="http://memoria.bn.br/pdf/248207/per248207_1879_00001.pdf" target="_blank" rel="noopener noreferrer"><img src="../assets/img-imperio/img-midia4.jpg" alt="" id="img3"></a>
+                    <div class="box-midia">
+                        <a href="http://memoria.bn.br/pdf/248207/per248207_1879_00001.pdf" target="_blank" rel="noopener noreferrer"><img src="../assets/img-imperio/img-midia4.jpg" alt="" id="img-midia"></a>
                         <p id="subtitle-midia"><span style="color: var(--light-yellow);text-decoration: underline;">Echo das Damas:</span><br>circulou de 1879 a 1888, dirigido por Amélia Carolina de Silva Couto.</p>
                     </div>
-                    <div class="box-midia1">
-                        <a href="http://memoria.bn.br/DocReader/docreader.aspx?bib=379034&pesq=&pagfis=1" target="_blank" rel="noopener noreferrer"><img src="../assets/img-imperio/img-midia5.jpg" alt="" id="img3"></a>
+                    <div class="box-midia">
+                        <a href="http://memoria.bn.br/DocReader/docreader.aspx?bib=379034&pesq=&pagfis=1" target="_blank" rel="noopener noreferrer"><img src="../assets/img-imperio/img-midia5.jpg" alt="" id="img-midia"></a>
                         <p id="subtitle-midia"><span style="color: var(--light-yellow);text-decoration: underline;">A Família:</span><br>circulou de 1888 a 1894, dirigido por Josefina Álvares de Azevedo.</p>
                     </div>
-                    <div class="box-midia1">
-                        <a href="http://objdigital.bn.br/acervo_digital/div_periodicos/per352438_contente/per352438_item1/index.html" target="_blank" rel="noopener noreferrer"><img src="../assets/img-imperio/img-midia6.jpg" alt="" id="img3"></a>
+                    <div class="box-midia">
+                        <a href="http://objdigital.bn.br/acervo_digital/div_periodicos/per352438_contente/per352438_item1/index.html" target="_blank" rel="noopener noreferrer"><img src="../assets/img-imperio/img-midia6.jpg" alt="" id="img-midia"></a>
                         <p id="subtitle-midia"><span style="color: var(--light-yellow);text-decoration: underline;">A Mensageira:</span><br>circulou de 1897 a 1900, dirigido por Prisciliana Duarte de Almeida.</p>
                     </div>
                 </nav>
@@ -166,7 +167,7 @@
                 </div>
                 <!-- hidden text -->
                 <nav class="nav-hidden-midia" id="nav-hidden-midia">
-                    <div class="box-hidden-midia">
+                    <div class="box-hidden">
                         <p id="text-hidden">
                             “Os Dez Mandamentos da Mulher: 1º Amai a vosso marido sobre todas as coisas; 
                             2º Não lhe jureis falso; 
@@ -188,8 +189,8 @@
                 <div class="circle" id="circle2"></div>
                 <h1 class="title-box">Mulheres que se destacaram <br> ────────────</h1>
                 <div class="btn-especific">
-                    <button type="button" id="btn-left"></button>
                     <button type="button" id="btn-right"></button>
+                    <button type="button" id="btn-left"></button>
                 </div>
                 <div class="woman"  id="woman1">
                     <div class="img-subtitle">
