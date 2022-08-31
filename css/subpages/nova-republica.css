@@ -1,0 +1,113 @@
+
+
+/* ------------------------------------------------------ */
+/* HEADER */
+/* ------------------------------------------------------ */
+#home{
+    color: var(--dark-purple);
+    -webkit-text-stroke: 1px var(--dark-purple);
+}
+.icon-home svg{
+    color: var(--dark-purple);
+}
+/* ------------------------------------------------------ */
+/* main */
+/* ------------------------------------------------------ */
+.circle{
+    background: var(--light-purple);
+}
+.title-box{
+    color: var(--light-purple);
+}
+.title2{
+    color: var(--dark-purple);
+    -webkit-text-stroke: 1px var(--dark-purple);
+
+}
+/* ------------------------------------------------------ */
+/*MOV ORG*/
+/* ------------------------------------------------------ */
+.timeline-div{
+    /* config */
+    display: flex;
+    justify-content: center;
+    width: 80rem;
+}
+.num-years{
+    /* config */
+    width: 116px;
+    height: 30px;
+    font-family: 'Special Elite';
+    font-size: 35px;
+    color:var(--dark-yellow);
+}
+.timeline-text{
+    display: grid;
+    justify-content: center;
+    width: 80rem;
+    margin-top: -60rem;
+}
+.num-years,.text-years{
+    width: 500px;
+}
+#timeline{
+    /* config */
+    z-index: 100; 
+    height: 1000px;
+    border: 3px solid var(--white-white);
+}
+.colorline{
+    /* config */
+    height: 500.01px;
+    border: 3px solid var(--light-purple);
+    transform: rotate(-90deg);
+}
+#colorline1{
+    /* position */
+    position: relative;
+    top: -6rem;
+    left: 15.30rem;
+}
+#num-text1{
+    /* position */
+    position: absolute;
+    top: 15rem;
+    left: 40.5rem;
+}
+
+#colorline2{
+    /* position */
+    position: relative;
+    top:19.5rem;
+    left: -16.5rem;
+}
+#num-text2{
+    /* position */
+    text-align: right;
+    position: absolute;
+    top: 26.5em;
+    left: 6rem;
+}
+
+/* ------------------------------------------------------ */
+/*especfic*/
+/* ------------------------------------------------------ */
+
+#btn-left{
+    border-left: 25px solid var(--light-purple);
+}
+#btn-right{
+    border-right: 25px solid var(--light-purple);
+}
+#btn-left:hover{
+    border-left: 25px solid var(--dark-purple);
+}
+#btn-right:hover{
+    border-right: 25px solid var(--dark-purple);
+}
+#woman2{
+    /* config */
+    width: 80rem;
+    flex-wrap: wrap;
+    display: none;
+}

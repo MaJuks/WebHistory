@@ -1,0 +1,242 @@
+
+
+/* ------------------------------------------------------ */
+/* HEADER */
+/* ------------------------------------------------------ */
+#home{
+    color: var(--dark-purple);
+    -webkit-text-stroke: 1px var(--dark-purple);
+}
+.icon-home svg{
+    color: var(--dark-purple);
+}
+/* ------------------------------------------------------ */
+/* main */
+/* ------------------------------------------------------ */
+.circle{
+    background: var(--light-purple);
+}
+.title-box{
+    color: var(--light-purple);
+}
+.title2{
+    color: var(--dark-purple);
+    -webkit-text-stroke: 1px var(--dark-purple);
+
+}
+/* ------------------------------------------------------ */
+/* CLICKHERE  */
+/* ------------------------------------------------------ */
+.click-here{
+    /* "clique para ler mais" + png */
+    /* position */
+    z-index: 100;
+    display: flex;
+    position: relative;
+    top: 160rem;
+    left: 13rem;
+    /* config */
+    flex-wrap: wrap;
+    width: 250px;
+    justify-content: center;
+    height: 0;   
+    transform: rotate(-10deg);
+}
+
+/* ------------------------------------------------------ */
+/* worker  */
+/* ------------------------------------------------------ */
+.btn-worker{
+    /* position */
+    position: relative;
+    left: 2.5rem;
+    top: -0.5rem;
+}
+.label-btn{
+    /* hidden checkbox */
+    /* position */
+    position: relative;
+    top: -2.3rem;
+    transition-duration: 0.5s;
+}
+.label-btn::before{
+    border-left: 25px solid var(--light-purple);
+}
+.input-btn:checked + .label-btn::before{
+    border-top: 25px solid var(--dark-purple);
+}
+.line{
+    position: relative;
+    top: 30px;
+}
+/* ------------------------------------------------------ */
+/* midia  */
+/* ------------------------------------------------------ */
+.img-midia{
+    /* config */
+    flex-wrap: wrap;
+    display: flex;
+    width: 80rem;
+    justify-content: space-around; 
+    align-items: center;
+}
+.box-midia1{
+    flex-flow: column;
+    display: flex;
+    align-items: center;    
+}
+#img-midia{
+    /* config */
+    width: 18rem;
+    height: 22rem;
+    padding: 1rem;
+}
+#subtitle-midia{
+    /* config */
+    width: 245px;
+    height: 159px;
+    text-align: center;
+}
+.btn-midia{
+    /* position */
+    position: relative;
+    left: 2.5rem;
+    top: -0.5rem;
+}
+.nav-hidden-midia{
+    /* position */
+    display: none;
+    /* config */
+    width: 80rem;
+    height: 7rem;
+    justify-content: center;
+
+}
+
+/* ------------------------------------------------------ */
+/* mov orG */
+/* ------------------------------------------------------ */
+
+.timeline-div{
+    /* config */
+    display: flex;
+    justify-content: center;
+    width: 80rem;
+}
+.num-years{
+    /* config */
+    width: 116px;
+    height: 30px;
+    font-family: 'Special Elite';
+    font-size: 35px;
+    color:var(--light-yellow);
+}
+.timeline-text{
+    display: grid;
+    justify-content: center;
+    width: 80rem;
+    margin-top: -60rem;
+}
+.num-years,.text-years{
+    width: 500px;
+}
+#timeline{
+    /* config */
+    z-index: 100; 
+    height: 2000px;
+    border: 3px solid var(--white-white);
+}
+.colorline{
+    /* config */
+    height: 500.01px;
+    border: 3px solid var(--light-purple);
+    transform: rotate(-90deg);
+}
+
+#colorline1{
+    /* position */
+    position: relative;
+    top: -6rem;
+    left: 15.30rem;
+}
+#num-text1{
+    /* position */
+    position: absolute;
+    top: 15rem;
+    left: 40rem;
+}
+
+#colorline2{
+    /* position */
+    position: relative;
+    top:8.5rem;
+    left: -16.5rem;
+}
+#num-text2{
+    /* position */
+    text-align: right;
+    position: absolute;
+    top: 19.5em;
+    left: 6rem;
+}
+
+#colorline3{
+    /* position */
+    position: relative;
+    top:28.5rem;
+    left: 14.8rem;
+}
+#num-text3{
+    /* position */
+    position: absolute;
+    top:50rem;
+    left: 40rem;
+}
+
+#colorline4{
+    /* position */
+    position: relative;
+    top:55rem;
+    left: -17rem;
+}
+#num-text4{
+    /* position */
+    position: absolute;
+    text-align: right;
+    top: 77rem;
+    left: 6rem;
+}
+
+#colorline5{
+    /* position */
+    position: relative;
+    top:68.5rem;
+    left: 14rem;
+}
+#num-text5{
+    /* position */
+    position: absolute;
+    left: 40rem;
+    top: 90rem;
+}
+
+#colorline6{
+    /* position */
+    position: relative;
+    top:83rem;
+    left: -18rem;
+}
+#num-text6{
+    /* position */
+    position: absolute;
+    text-align: right;
+    left: 6rem;
+    top: 104.5rem;
+}
+
+/* ------------------------------------------------------ */
+/* MOURNING  */
+/* ------------------------------------------------------ */
+#mourning{
+    background:var(--black);
+}

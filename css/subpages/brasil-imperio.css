@@ -20,23 +20,9 @@
 /* main */
 /* ------------------------------------------------------ */
 /* ------------------------------------------------------ */
-/* EDUC */
-/* ------------------------------------------------------ */
-#text-educ1,#text-educ3{
-    text-align: center;
-}
-/* ------------------------------------------------------ */
-/* POLICY */
-/* ------------------------------------------------------ */
-#text-policy1{
-    text-align: center;
-}
-/* ------------------------------------------------------ */
 /* MIDIA */
 /* ------------------------------------------------------ */
-#text-midia1,#text-midia2{
-    text-align: center;
-}
+
 .box-img-midia{
     /* config */
     flex-wrap: wrap;
@@ -44,6 +30,10 @@
     width: 80rem;
     justify-content: space-around; 
     align-items: center;
+}
+.line{
+    position: relative;
+    top: 30px;
 }
 .box-midia{
     flex-flow: column;

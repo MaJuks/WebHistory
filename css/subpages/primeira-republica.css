@@ -10,7 +10,7 @@
 }
 
 /* ------------------------------------------------------ */
-/*CLICK HERE */
+/* CLICK HERE*/
 /* ------------------------------------------------------ */
 .click-here{
     /* "clique para ler mais" + png */
@@ -18,7 +18,7 @@
     z-index: 100;
     display: flex;
     position: relative;
-    top: 34rem;
+    top: 33rem;
     left: 12.5rem;
     /* config */
     flex-wrap: wrap;
@@ -26,10 +26,6 @@
     justify-content: center;
     height: 0;   
     transform: rotate(-10deg);
-}
-#text-intro1{
-    /* config */
-    text-align: center;
 }
 /* ------------------------------------------------------ */
 /* main */
@@ -74,24 +70,13 @@
 /* ------------------------------------------------------ */
 /* worker */
 /* ------------------------------------------------------ */
-#text-worker2,
-#text-worker3{
-    /* config */
-    text-align: center;
-}
 
 .btn-worker{
     position: relative;
     left: 2.5rem;
     top: -0.5rem;
 }
-/* ------------------------------------------------------ */
-/* suffragfe */
-/* ------------------------------------------------------ */
-#text-suffrage1{
-    /* config */
-    text-align: center;
-}
+
 /* ------------------------------------------------------ */
 /* mov and org */
 /* ------------------------------------------------------ */

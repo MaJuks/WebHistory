@@ -92,7 +92,7 @@ header{
     /* config */
     transition: 0.5s;
     /* letter config */
-    font-family: 'Shadows Into Light', cursive;
+    font-family: var(--web);
     font-size: 45px;
     color: var(--mid-brown);
     text-decoration: none;
@@ -120,7 +120,7 @@ header{
     transition: 0.5s;
     /* letter config */
     text-align: center;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: var(--web);
     font-weight: 400;
     font-size: 60px;
     line-height: 6px;
@@ -162,7 +162,7 @@ hr{
     width: 200px;
     height: 44px;
     margin: 0;
-    font-family: 'Shadows Into Light';
+    font-family: var(--web);
     font-size: 25px;
     text-align: center;
     color: var(--light-brown);
@@ -174,7 +174,9 @@ hr{
     /* config */
     width: 124px;
     height: 76px;
-    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));}
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+    animation: slide-right 2s alternate infinite ease-in-out;
+}
 /* ------------------------------------------------------ */
 /* Main  */
 /* ------------------------------------------------------ */
@@ -187,7 +189,7 @@ hr{
     /* position */
     margin: 5rem 5rem 0 5rem;
     /*letter config*/
-    font-family: 'Special Elite', cursive;
+    font-family: var(--title);
     font-size: 65px;
     line-height: 100px;
     text-align: center;
@@ -205,7 +207,7 @@ hr{
     top:-2rem;
     /* letter config*/
     z-index: 101;
-    font-family: 'Special Elite', cursive;
+    font-family: var(--title);
     font-size: 45px;
     line-height: 100px;
     text-align: center;
@@ -231,7 +233,7 @@ hr{
     border-radius: 15px;
     box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.3), -8px -8px 10px 1px rgba(0, 0, 0, 0.3);
     /* letter config*/
-    font-family: 'Habibi';
+    font-family: var(--text);
     font-size: 25px;
     line-height: 31px;
     color: var(--white-white);
@@ -264,7 +266,7 @@ hr{
     /* config */
     width: 80rem;
     height: 72px;
-    font-family: 'Special Elite';
+    font-family: var(--title);
     font-weight: 400;
     font-size: 42px;
     line-height: 42px;
@@ -274,6 +276,10 @@ hr{
 }
 .text{
     margin: 30px;
+}
+#text-center{
+    width: 80rem;
+    text-align: center;
 }
 .img{
     /* config */
@@ -546,7 +552,7 @@ footer a{
     /* position */
     margin-right: 20px;
     /* config */
-    font-family: 'Shadows Into Light';
+    font-family: var(--web);
     font-size: 32px;
     line-height: 144.5%;
     color: var(--white-white);
