@@ -20,13 +20,21 @@ btn_right.onclick = function () {
         var wom2 = document.getElementById('woman2').style.display = 'flex';
         var wom2_anim = document.getElementById('woman2').style.animation = 'fade-right 1s';
     }
-    if(count >= 2 || count == (1*-2)){
+    if(count==2 || count == (1*-2)){
+        var wom1 = document.getElementById('woman1').style.display = 'none';
+        var wom2 = document.getElementById('woman2').style.display = 'none';
+
+        var wom3 = document.getElementById('woman3').style.display = 'flex';
+        var wom3_anim = document.getElementById('woman3').style.animation = 'fade-right 1s';
+    }
+    if(count >= 3 || count == (1*-3)){
         count = 0;
         disp.innerHTML = count;
         var wom1 = document.getElementById('woman1').style.display = 'flex';
         var wom1_anim = document.getElementById('woman1').style.animation = 'fade-right 1s';
 
         var wom2 = document.getElementById('woman2').style.display = 'none';
+        var wom3 = document.getElementById('woman3').style.display = 'none';
     }
 }
 btn_left.onclick = function () {
@@ -44,13 +52,21 @@ btn_left.onclick = function () {
         var wom2 = document.getElementById('woman2').style.display = 'flex';
         var wom2_anim = document.getElementById('woman2').style.animation = 'fade-right 1s';
     }
-    if(count >= 2 || count == (1*-2)){
+    if(count==2 || count == (1*-2)){
+        var wom1 = document.getElementById('woman1').style.display = 'none';
+        var wom2 = document.getElementById('woman2').style.display = 'none';
+
+        var wom3 = document.getElementById('woman3').style.display = 'flex';
+        var wom3_anim = document.getElementById('woman3').style.animation = 'fade-right 1s';
+    }
+    if(count >= 3 || count == (1*-3)){
         count = 0;
         disp.innerHTML = count;
         var wom1 = document.getElementById('woman1').style.display = 'flex';
         var wom1_anim = document.getElementById('woman1').style.animation = 'fade-right 1s';
 
         var wom2 = document.getElementById('woman2').style.display = 'none';
+        var wom3 = document.getElementById('woman3').style.display = 'none';
     }
 }
 
