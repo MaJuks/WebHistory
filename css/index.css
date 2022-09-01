@@ -213,10 +213,10 @@ hr{
 .box-time img{
     /* config */
     height: 12.5rem;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
 }
 .box-time img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     
 }
 #box1{
