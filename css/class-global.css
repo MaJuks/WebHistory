@@ -187,7 +187,7 @@ hr{
 }
 .title{
     /* position */
-    margin: 5rem 5rem 0 5rem;
+    margin: 5rem 5rem 2rem 5rem;
     /*letter config*/
     font-family: var(--title);
     font-size: 65px;
@@ -209,7 +209,7 @@ hr{
     z-index: 101;
     font-family: var(--title);
     font-size: 45px;
-    line-height: 100px;
+    line-height: 55px;
     text-align: center;
     color: var(--dark-yellow);
     -webkit-text-stroke: 1px var(--dark-yellow);
