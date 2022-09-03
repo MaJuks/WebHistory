@@ -23,35 +23,9 @@
 /* MIDIA */
 /* ------------------------------------------------------ */
 
-.box-img-midia{
-    /* config */
-    flex-wrap: wrap;
-    display: flex;
-    width: 80rem;
-    justify-content: space-around; 
-    align-items: center;
-}
 .line{
     position: relative;
     top: 30px;
-}
-.box-midia{
-    flex-flow: column;
-    display: flex;
-    align-items: center;    
-}
-#img-midia{
-    /* config */
-    width: 18rem;
-    height: 22rem;
-    padding: 1rem;
-    border-radius: 25px;
-}
-#subtitle-midia{
-    /* config */
-    width: 245px;
-    height: 159px;
-    text-align: center;
 }
 .btn-midia{
     /* position */

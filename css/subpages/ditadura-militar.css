@@ -72,31 +72,7 @@
 /* ------------------------------------------------------ */
 /* midia  */
 /* ------------------------------------------------------ */
-.img-midia{
-    /* config */
-    flex-wrap: wrap;
-    display: flex;
-    width: 80rem;
-    justify-content: space-around; 
-    align-items: center;
-}
-.box-midia1{
-    flex-flow: column;
-    display: flex;
-    align-items: center;    
-}
-#img-midia{
-    /* config */
-    width: 18rem;
-    height: 22rem;
-    padding: 1rem;
-}
-#subtitle-midia{
-    /* config */
-    width: 245px;
-    height: 159px;
-    text-align: center;
-}
+
 .btn-midia{
     /* position */
     position: relative;
@@ -112,7 +88,6 @@
     justify-content: center;
 
 }
-
 /* ------------------------------------------------------ */
 /* mov orG */
 /* ------------------------------------------------------ */

@@ -286,6 +286,10 @@ hr{
     width: 20rem;
     height: 20rem;
     border-radius: 10px;
+    transition: 0.3s;
+}
+.img:hover, #img-woman:hover, #img-midia:hover{
+    opacity: 0.5;  
 }
 .box-img{  
     /* position */
@@ -366,6 +370,36 @@ hr{
     color: var(--black);
 }
 /* ------------------------------------------------------ */
+/* MIDIA  */
+/* ------------------------------------------------------ */
+.img-midia{
+    /* config */
+    flex-wrap: wrap;
+    display: flex;
+    width: 80rem;
+    justify-content: space-around; 
+    align-items: center;
+}
+.box-midia{
+    flex-flow: column;
+    display: flex;
+    align-items: center;    
+}
+#img-midia{
+    /* config */
+    width: 18rem;
+    height: 22rem;
+    padding: 1rem;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+#subtitle-midia{
+    /* config */
+    width: 245px;
+    height: 159px;
+    text-align: center;
+}
+/* ------------------------------------------------------ */
 /* TEXT HIDDEN  */
 /* ------------------------------------------------------ */
 .label-btn{
@@ -375,7 +409,7 @@ hr{
     cursor: pointer;
     display: flex;
     position: relative;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
 }
 .label-btn:hover{
     transform: scale(1.1);
@@ -486,6 +520,9 @@ hr{
     height: 22.5rem;
     margin: 30px;
     border-radius: 10px; 
+    cursor: pointer;
+    transition: 0.3s;
+
 }
 #subtitle-woman{
     font-size: 20px;

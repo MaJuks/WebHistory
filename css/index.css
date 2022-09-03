@@ -10,7 +10,7 @@ body{
 /* ------------------------------------------------------ */
 .vignette{
     /* position */
-    position: absolute;
+    position: fixed;
     z-index: 100;
     /* config */
     background-image: url(../assets/vignette.png);
@@ -18,6 +18,22 @@ body{
     width: 100%;
     background-size: 100%;
     opacity: 0.65;
+}
+.vignette2{
+    /* position */
+    position: fixed;
+    z-index: 100;
+    /* config */
+    background-image: url(../assets/back.png);
+    height: 1000px;
+    width: 100%;
+    background-size: 100%;
+    opacity: 0.8;
+    mix-blend-mode: multiply;
+
+}
+.vignette2:fullscreen{
+    height: 2100px;
 }
 .shadows-div{
     /* config */
@@ -47,7 +63,7 @@ body{
     top: -52rem;
     /* config */
     width: 15%;
-    opacity: 0.7;
+    opacity: 1;
 
 }
 #bottom-shadowtrack{
@@ -66,9 +82,8 @@ body{
 /* HEADER */
 /* ------------------------------------------------------ */
 header{
-    background: rgba(72, 51, 34, 0.3);
+    background: rgba(72, 51, 34, 0.6);
     box-shadow: 0px 2px 20px #483322;
-
 }
 .header{
     /* position */
@@ -172,6 +187,7 @@ hr{
 #title {
     /* "A trajetoria da mulher na História" */
     /* config */
+    z-index: 100;
     margin: 6rem 6rem 4rem 6rem;
     /* letter config */
     text-align: center;
@@ -180,19 +196,11 @@ hr{
     font-size: 65px;
     line-height: 70px;
     text-align: center;
-    color: var(--dark-brown);
-    -webkit-text-stroke: 1px var(--dark-brown);
+    color: var(--black);
+    -webkit-text-stroke: 1px var(--black);
+    text-shadow: 0 0 1.0em var(--dark-brown);
 }
 
-.back-shadow-title{
-    /* position */
-    margin-top: -15.5rem;
-    /* config*/
-    opacity: 0.6;
-    height: 15rem;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(6, 0, 0, 0.4) 0%, rgba(217, 217, 217, 0) 100%);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
 .timeline{
     /* position */
     position: relative;
@@ -333,11 +341,11 @@ footer a{
     z-index: 100;
     position: relative; 
     top: 1rem;
-    transition: 0.5s;
+    transition: 0.3s;
 
 }
 .references:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     animation: colors 3s ease-in-out infinite ;
 }
 #arrow1,#arrow2{
@@ -458,9 +466,21 @@ footer a{
 @keyframes neon{
     100%{text-shadow: 0 0 0.4em var(--light-yellow);}
 }
+
+/* @media (min-height: 1080px){
+    .vignette,.vignette2{
+        height: 1100px;
+
+    }
+} */
+
+
 @media screen and (max-width: 1745.45px) {
     .vignette{
-        height:860px;
+        height:1000px;
+    }
+    .vignette2{
+        height:1000px;
     }
     #top-shadowplant{
         width: 24%;
@@ -540,8 +560,8 @@ footer a{
         left: 65rem;
         top: -30rem;
     }
-    .vignette{
-        height: 790px;
+    .vignette,.vignette2{
+        height: 865px;
     }
     .header{
         height: 50px;
@@ -549,24 +569,24 @@ footer a{
     #name-web {
         top: -1.2rem;
         left: 56rem;
-        font-size: 43px;
+        font-size: 38px;
     }
     #label-topics {
-        font-size: 25.60px;
+        font-size:20px;
     }
     select {
-        width: 20%;
-        height:  20%;
+        width: 18%;
+        height:   18%;
         padding: 6.40px 0px;
         font-size: 14.40px;
     }
     .icon-search svg {
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
     }
     #title{
-        font-size: 52px;
-        line-height: 56px;
+        font-size: 48px;
+        line-height: 48px;
     }
     .back-shadow-title{
         margin-top: -12.40rem;
@@ -578,14 +598,14 @@ footer a{
         border: 1.60px solid #5B3E26;
     }
     .box-time img {
-        height: 10rem;
+        height: 9.5rem;
     }
     .back-shadow{
         margin-top: -12.38rem;
         height: 16rem;
     }
     #about-us {
-        font-size: 26px;
+        font-size: 20px;
     }
     .icon-network svg {
         margin-right: 8px;
@@ -607,7 +627,7 @@ footer a{
         left: 65rem;
         top: -29rem;
     }
-    .vignette{
+    .vignette,.vignette2{
         height: 650px;
     }
     .header{
@@ -615,10 +635,10 @@ footer a{
     }
     #name-web{
         left: 48rem;
-        font-size: 30px;
+        font-size: 25px;
     }
     #label-topics {
-        font-size: 21.33px;
+        font-size: 17px;
     }
     .input-search {
         /* position */
@@ -635,12 +655,12 @@ footer a{
         border: 1.33px solid var(--dark-brown);
     }
     .icon-search svg {
-        width: 38px;
-        height: 38px;
+        width: 25px;
+        height:  25px;
     }
     #title {
-        font-size: 43.33px;
-        line-height: 46.67px;
+        font-size: 40px;
+        line-height:40px;
     }
     .back-shadow-title{
         height: 10rem;
@@ -652,14 +672,14 @@ footer a{
         border: 1.33px solid #5B3E26;
     }
     .box-time img {
-        height: 8rem;
+        height: 7.5rem;
     }
-    .footer{
-        top: 2rem;
+    .references{
+        top: 0.5rem;
     }
     #about-us {
         margin-right: 13.33px;
-        font-size: 20px;
+        font-size: 15px;
     }
     .icon-network svg {
         margin-right: 6.67px;
