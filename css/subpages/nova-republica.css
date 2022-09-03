@@ -53,7 +53,7 @@
 #timeline{
     /* config */
     z-index: 100; 
-    height: 1000px;
+    height: 1300px;
     border: 3px solid var(--white-white);
 }
 .colorline{
@@ -105,7 +105,7 @@
 #btn-right:hover{
     border-right: 25px solid var(--dark-purple);
 }
-#woman2{
+#woman2,#woman3{
     /* config */
     width: 80rem;
     flex-wrap: wrap;

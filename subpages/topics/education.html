@@ -6,10 +6,9 @@
         <!-- feather icons -->
         <script src="https://unpkg.com/feather-icons"></script>
         <!-- icone do site -->
-        <link rel="shortcut icon" href="../assets/shortcut-icon.png" type="image">
+        <link rel="shortcut icon" href="../../assets/shortcut-icon.png" type="image">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="../../css/main.css">
-        <link rel="stylesheet" href="../../css/topics/worker.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Dames's History</title>
     </head>
@@ -47,32 +46,53 @@
     <main>
         <div class="main-div">
             <!-- title -->
-            <span class="title" id="suffrage">OPERÁRAS<span id="cursor">|</span></span>
-            <span class="title2" data-aos="zoom-in">PRIMEIRA REPÚBLICA <br>(1889 - 1930)</span>
+            <span class="title" id="suffrage">EDUCAÇÃO<span id="cursor">|</span></span>
+            <span class="title2">BRASIL COLÔNIA <br>(1500 - 1822)</span>
             <!-- box 1 "introdução"-->
-            <div class="container" data-aos="zoom-in">
+            <div class="container" id="achievement1"   data-aos="zoom-in">
                 <div class="circle" id="circle1"></div>
                 <div class="circle" id="circle2"></div>
-                <h1 class="title-box" >Operárias </h1>
-                <p class="text">A mulher tinha sempre os salários mais baixos e as jornadas de trabalho maiores. 
-                    Não havia uma legislação que protegesse o trabalho feminino. As reivindicações acerca das 
-                    péssimas condições de trabalho, a jornada de trabalho elevada, o assédio sexual nas fábricas, 
-                    entre outros, eram discutidas, mas nenhuma mudança era realizada [...]</p>
-                <a id="read-more" href="../../subpages/primeira-republica.html#worker"><img src="../../assets/stroke-purple.png" alt=""></a>
+                <h1 class="title-box" >Mulheres brancas </h1>
+                <p class="text">A educação das meninas, que ficava a cargo da Igreja e dos conventos, era extremamente rasa, 
+                    apenas para reproduzir os costumes da sociedade colonial. Era voltada a atividades do lar como costura e 
+                    cozinha em vez de instrução propriamente dita: as jovens eram ensinadas a lavar, coser e fazer renda, com 
+                    o propósito de se tornarem “boas esposas”. </p>
+                <a id="read-more" href="../../subpages/brasil-colonia.html#women-white"><img src="../../assets/stroke-yellow.png" alt=""></a>
             </div>
 
-            <span class="title2"style="margin:5rem" data-aos="zoom-in">DITADURA MILITAR <br>(1964 - 1985)</span>
-
-            <div class="container" data-aos="zoom-in">
+            <div class="container" id="women-especific" data-aos="zoom-in">
                 <div class="circle" id="circle1"></div>
                 <div class="circle" id="circle2"></div>
-                <h1 class="title-box" >Operárias </h1>
-                <p class="text">Com o desenvolvimento tecnológico, houve um amplo ingresso de mulheres 
-                    nas crescentes indústrias e empresas, mas ainda sem os mesmos direitos profissionais 
-                    dos homens. No fim da década de 70, eclodiram diversas greves operárias, das quais as 
-                    mulheres participaram ativamente. [...]
-                </p>
-                <a id="read-more" href="../../subpages/ditadura-militar.html#worker"><img src="../../assets/stroke-purple.png" alt=""></a>
+                <h1 class="title-box">Mulheres que se destacaram</h1>
+                <div class="woman" id="woman1">
+                    <div class="img-subtitle">
+                        <div class="img-woman">
+                            <img src="../../assets/img-colonia/img-woman6.jpg" id="img-woman" alt="">
+                        </div>
+                        <p id="subtitle-woman">Em 14 de novembro de 2001, O correio brasileiro emite um selo em homenagem a Madalena Caramuru.</p>
+                    </div>
+                    <div class="title-div">
+                        <h1 id="title-woman">Madalena Caramuru </h1>
+                        <h1 id="title-woman2">(séc. XVI)</h1>
+                        <p id="text-woman">Considerada a primeira brasileira alfabetizada,
+                            era filha de um português com uma indígena. Depois de instruída, se 
+                            manifestou em defesa do povo, escrevendo uma carta para o padre Manuel 
+                            da Nóbrega em 1561 exigindo o fim dos maus-tratos às crianças indígenas e 
+                            o início da educação feminina.
+                        </p>
+                    </div>
+                </div>
+            </div> 
+
+            <span class="title2" style="margin:5rem" >BRASIL IMPÉRIO <br>(1822 - 1889)</span>
+            <div class="container" id="achievement1"   data-aos="zoom-in">
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle2"></div>
+                <h1 class="title-box" >Educação</h1>
+                <p class="text">Foi apenas em meados do século XVIII que as meninas passaram a frequentar a escola, 
+                    ainda com muitas restrições. Com a Lei Geral de 1827, foi autorizada a abertura de 
+                    escolas públicas femininas, que garantiu apenas os estudos primários: português e contas básicas. </p>
+                <a id="read-more" href="../../subpages/brasil-imperio.html#education"><img src="../../assets/stroke-yellow.png" alt=""></a>
             </div>
         </div>
     </main>
@@ -91,7 +111,6 @@
         </div>
     </footer> 
 
-    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         feather.replace()
