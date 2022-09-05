@@ -91,43 +91,9 @@
 /* ------------------------------------------------------ */
 /* mov orG */
 /* ------------------------------------------------------ */
-
-.timeline-div{
-    /* config */
-    display: flex;
-    justify-content: center;
-    width: 80rem;
-}
-.num-years{
-    /* config */
-    width: 116px;
-    height: 30px;
-    font-family: 'Special Elite';
-    font-size: 35px;
-    color:var(--light-yellow);
-}
-.timeline-text{
-    display: grid;
-    justify-content: center;
-    width: 80rem;
-    margin-top: -60rem;
-}
-.num-years,.text-years{
-    width: 500px;
-}
 #timeline{
-    /* config */
-    z-index: 100; 
     height: 2000px;
-    border: 3px solid var(--white-white);
 }
-.colorline{
-    /* config */
-    height: 500.01px;
-    border: 3px solid var(--light-purple);
-    transform: rotate(-90deg);
-}
-
 #colorline1{
     /* position */
     position: relative;
@@ -140,7 +106,6 @@
     top: 15rem;
     left: 40rem;
 }
-
 #colorline2{
     /* position */
     position: relative;
@@ -154,7 +119,6 @@
     top: 19.5em;
     left: 6rem;
 }
-
 #colorline3{
     /* position */
     position: relative;
@@ -167,7 +131,6 @@
     top:50rem;
     left: 40rem;
 }
-
 #colorline4{
     /* position */
     position: relative;
@@ -181,7 +144,6 @@
     top: 77rem;
     left: 6rem;
 }
-
 #colorline5{
     /* position */
     position: relative;
@@ -194,7 +156,6 @@
     left: 40rem;
     top: 90rem;
 }
-
 #colorline6{
     /* position */
     position: relative;
@@ -208,7 +169,6 @@
     left: 6rem;
     top: 104.5rem;
 }
-
 /* ------------------------------------------------------ */
 /* MOURNING  */
 /* ------------------------------------------------------ */

@@ -293,6 +293,7 @@ hr{
 }
 .box-img{  
     /* position */
+    z-index: 100;
     display: flex;
     /* config */
     width: 80rem;
@@ -308,6 +309,20 @@ hr{
     font-size: 20px;
     margin-bottom: 30px;
 }
+.icon-more{
+    width: 80rem;
+    height: 0;
+    justify-content: space-around;
+    display: flex;
+    position: relative;
+    top: 8rem;
+}
+#plus{
+    color: var(--white-white);
+    width: 50px;
+    height: 50px;
+}
+
 /* ------------------------------------------------------ */
 /* LINE  */
 /* ------------------------------------------------------ */
@@ -370,7 +385,7 @@ hr{
     color: var(--black);
 }
 /* ------------------------------------------------------ */
-/* MIDIA  */
+/* NEWSPAPER  */
 /* ------------------------------------------------------ */
 .img-midia{
     /* config */
@@ -446,6 +461,45 @@ hr{
     outline:1px dotted #CCC;
 }
 /* ------------------------------------------------------ */
+/* Timeline  */
+/* ------------------------------------------------------ */
+.timeline-div{
+    /* config */
+    display: flex;
+    justify-content: center;
+    width: 80rem;
+}
+.num-years{
+    /* config */
+    width: 116px;
+    height: 30px;
+    font-family: var(--title);
+    font-size: 35px;
+    color:var(--dark-yellow);
+}
+.timeline-text{
+    display: grid;
+    justify-content: center;
+    width: 80rem;
+    margin-top: -60rem;
+}
+.num-years,.text-years{
+    width: 500px;
+}
+#timeline{
+    /* config */
+    z-index: 100; 
+    border: 3px solid var(--white-white);
+    border-radius: 2px;
+}
+.colorline{
+    /* config */
+    height: 500.01px;
+    border: 3px solid var(--light-purple);
+    transform: rotate(-90deg);
+    border-radius: 2px;
+}
+/* ------------------------------------------------------ */
 /* women especific  */
 /* ------------------------------------------------------ */
 .btn-especific{
@@ -501,6 +555,8 @@ hr{
     justify-content: center;
     align-items: center;
     justify-items: center;
+    transition: 0.3s;
+
 }
 .woman{
     margin: 80px;
