@@ -77,17 +77,19 @@ header{
 }
 .header-div{
     /* position */
-    display: flex;
+    position: relative;
+    top:1rem;
+    display:flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
     /* config */
     height: 80px;
-    align-items: center;
 }
 #name-web{
     /* position */
     position: relative;
-    width: 150%;
-    top: 0.5rem;
-    left: 85rem;
+    left: -3rem;
     z-index: 100;
     /* config */
     transition: 0.5s;
@@ -105,8 +107,8 @@ header{
 .home-svg{
     /* position */
     position: relative;
-    top: -0.5rem;
-    left: 9.5rem;
+    top: -1.5rem;
+    left:3rem;
     display: flex;
     /* config */
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
