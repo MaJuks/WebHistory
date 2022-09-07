@@ -92,6 +92,7 @@ header{
     display: flex;
     justify-content: center;
     z-index: 100;
+    left: 0;
     /* letter config */
     font-family: var(--web);
     font-size: 14px;
@@ -108,6 +109,7 @@ header{
     /* position */
     z-index:100;
     position: relative;
+    left: 0;
     /* config */
     display: flex;
     align-items: center;

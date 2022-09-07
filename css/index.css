@@ -88,11 +88,12 @@ header{
 .header{
     /* position */
     position: relative;
+    top:1rem;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     justify-items: center;
     align-items: center;
-    top: 1rem;
+    /* config */
     height: 80px;
 }
 
@@ -121,7 +122,6 @@ header{
     position: relative;
     left: 5rem;
     /* config */
-    width: 50%;
     display: flex;
     align-items: center;
 }
