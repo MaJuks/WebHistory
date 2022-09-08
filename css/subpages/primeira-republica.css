@@ -41,6 +41,9 @@
     -webkit-text-stroke: 1px var(--dark-pink);
 
 }
+body::-webkit-scrollbar-thumb {
+    background-color: var(--dark-pink);    
+}
 /* ------------------------------------------------------ */
 /* INTRO */
 /* ------------------------------------------------------ */

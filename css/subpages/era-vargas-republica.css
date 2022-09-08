@@ -94,6 +94,9 @@
     top: -6rem;
     left: -18.5rem;
 }
+body::-webkit-scrollbar-thumb {
+    background-color: var(--dark-pink);    
+}
 /* ------------------------------------------------------ */
 /* WOMANespecific */
 /* ------------------------------------------------------ */
