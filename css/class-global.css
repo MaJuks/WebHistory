@@ -730,6 +730,23 @@ footer a{
     border: transparent;
     color: transparent;
 }
+
+/* ------------------------------------------------------ */
+/* Scrollbar */
+/* ------------------------------------------------------ */
+body::-webkit-scrollbar {
+    width: 12px;               
+}
+body::-webkit-scrollbar-track {
+   background-image: url(../assets/background.png);
+   border: 1px solid var(--black);
+
+   opacity: 0.1;        
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--dark-yellow);    
+    border: 1px solid var(--black);
+}
 @keyframes colors{
     0%{ 
         color: var(--dark-pink);
