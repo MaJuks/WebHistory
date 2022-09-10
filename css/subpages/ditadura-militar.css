@@ -178,3 +178,65 @@ body::-webkit-scrollbar-thumb {
 #mourning{
     background:var(--black);
 }
+
+@media screen and (max-width: 1280px) {
+    .btn-worker, .btn-midia{
+        left: 1.5rem;
+        top: -0.2rem;
+    }
+    .label-btn{
+        top: -2.3rem;
+    }
+    .label-btn::before{
+        border-left: 20px solid var(--light-purple);
+    }
+    .input-btn:checked + .label-btn::before{
+        border-top: 20px solid var(--dark-purple);
+    }
+    .line{
+        top: 20px;
+    }
+    .nav-hidden-midia{
+        width: 60rem;    
+    }
+    #colorline1{
+        left: 13rem;
+    }
+    #num-text1{
+        top: 12rem;
+        left: 30rem;
+    }
+    #colorline2{
+        left: -13.7rem;
+    }
+    #num-text2{
+        top: 21.5em;
+    }
+    #colorline3{
+        left: 12.5rem;
+    }
+    #num-text3{
+        top:47rem;
+        left: 30rem;
+    }
+    #colorline4{
+        left: -14.3rem;
+    }
+    #num-text4{
+        top: 73rem;
+    }
+    #colorline5{
+        left: 12rem;
+    }
+    #num-text5{
+        left: 30rem;
+        top: 87rem;
+    }
+    #colorline6{
+        left: -14.7rem;
+    }
+    #num-text6{
+        top: 101.5rem;
+    }
+
+}

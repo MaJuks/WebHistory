@@ -81,19 +81,6 @@
     top: -4rem;
     left: 17rem;
 }
-#colorline4{
-    /* position */
-    position: relative;
-    top:35rem;
-    left: -17rem;
-}
-#num-text4{
-    /* position */
-    position: relative;
-    text-align: right;
-    top: -6rem;
-    left: -18.5rem;
-}
 body::-webkit-scrollbar-thumb {
     background-color: var(--dark-pink);    
 }
@@ -122,4 +109,47 @@ body::-webkit-scrollbar-thumb {
     width: 80rem;
     flex-wrap: wrap;
     display: none;
+}
+
+@media screen and (max-width: 1280px) {
+    #colorline1{
+        left: 13rem;
+    }
+    #num-text1{
+        top: 1rem;
+        left: 12rem;
+    }
+    #colorline2{
+        left: -13.7rem;
+    }
+    #num-text2{
+        top: -1.5rem;
+        left: -12.5rem;
+    }
+    #colorline3{
+        left: 12.5rem;
+    }
+    #num-text3{
+        left: 12rem;
+    }
+    #btn-left{
+        border-left: 20px solid var(--light-pink);
+    }
+    #btn-right{
+        border-right: 20px solid var(--light-pink);
+    }
+    #btn-left:hover{
+        border-left: 20px solid var(--dark-pink);
+    }
+    #btn-right:hover{
+        border-right: 20px solid var(--dark-pink);
+    }
+    #woman2,#woman3,
+    #woman4,#woman5,
+    #woman6,#woman7,
+    #woman8,#woman9,
+    #woman10,#woman11,
+    #woman12,#woman13{
+        width: 60rem;
+    }
 }

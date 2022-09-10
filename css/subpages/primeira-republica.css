@@ -166,3 +166,75 @@ body::-webkit-scrollbar-thumb {
     flex-wrap: wrap;
     display: none;
 }
+@media screen and (max-width: 1280px){       
+    .line{
+        position: relative;
+        top: 25px;
+    }
+    .btn-intro{
+        top: 0.1rem;
+    }
+    .label-btn{
+        position: relative;
+        top: -2.3rem;
+    }
+    .label-btn::before{
+        border-left: 20px solid var(--light-pink);
+    }
+    .input-btn:checked + .label-btn::before{
+        border-top: 20px solid var(--dark-pink);
+    }
+    .btn-worker{
+        top: 0.1rem;    
+    }
+    #timeline{
+        height: 1000px;
+    }
+    .colorline{
+        border:  solid var(--dark-pink);
+    }
+    #colorline1{
+        left: 13rem;
+    }
+    #num-text1{
+        top: 1rem;
+        left: 11.5rem;
+    }
+    #colorline2{
+        left: -13.8rem;
+    }
+    #num-text2{
+        top: -0.5rem;
+        left: -12.5rem;
+    }
+    #colorline3{
+        left: 12.5rem;
+    }
+    #num-text3{
+        top: -2rem;
+        left: 11.5rem;
+    }
+    #colorline4{
+        left: -14.1rem;
+    }
+    #num-text4{
+        top: -2rem;
+        left: -12.5rem;
+    }
+    #btn-right{
+        border-right: 20px solid var(--light-pink);
+    }
+    #btn-left{
+        border-left: 20px solid var(--light-pink);
+
+    }
+    #btn-right:hover{
+        border-right: 20px solid var(--dark-pink);
+    }
+    #btn-left:hover{
+        border-left: 20px solid var(--dark-pink);
+    }
+    #woman2,#woman3,#woman4,#woman5,#woman6,#woman7,#woman8{
+        width: 60rem;
+    }
+}

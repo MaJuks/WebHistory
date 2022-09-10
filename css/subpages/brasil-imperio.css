@@ -56,3 +56,31 @@
     flex-wrap: wrap;
     display: none;
 }
+
+@media screen and (max-width: 1280px){       
+    .line{
+        position: relative;
+        top: 20px;
+    }
+    .btn-midia{
+        position: relative;
+        left: 2.5rem;
+        top: -0.5rem;
+    }
+    #btn-midia{
+        position: relative;
+        top: -2px;
+    }
+    .label-btn{
+        /* position */
+        position: relative;
+        top: -2rem;
+    }
+    .nav-hidden-midia{
+        width: 60rem;
+        height: 15rem;
+    }
+    #woman2,#woman3,#woman4,#woman5,#woman6,#woman7{
+        width: 60rem;
+    }
+}

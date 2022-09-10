@@ -21,24 +21,15 @@
         /* config */
         width: 15%;
     }
-    .header {
-        height: 80px;
-    }
-    #name-web {
-        top: -0.5rem;
-        left: 62rem;
-        font-size: 48px;
+    #name-web{
+        font-size: 40px;
     }
     #label-topics{
-        font-size: 30px;
-    }
-    .input-search {
-        top: 1rem;
-        right: 29rem;
+        font-size: 25px;
     }
     select{
-        width: 22.73%;
-        height:  22.73%;
+        width: 15rem;
+        height:  .5rem;
         padding: 7.27px 0px;
         font-size: 16.36px;
     }
@@ -60,7 +51,7 @@
         border: 1.82px solid #5B3E26;
     }
     .box-time img {
-        height: 11rem;
+        height: 10.5rem;
     }
     #about-us{
         font-size: 28px;
@@ -91,17 +82,9 @@
     .header{
         height: 50px;
     }
-    #name-web {
-        top: -1.2rem;
-        left: 56rem;
-        font-size: 38px;
-    }
-    #label-topics {
-        font-size:20px;
-    }
     select {
-        width: 18%;
-        height:   18%;
+        width: 15rem;
+        height:   1.2rem;
         padding: 6.40px 0px;
         font-size: 14.40px;
     }
@@ -156,22 +139,17 @@
         height: 650px;
     }
     .header{
-        height: 40px;
+        height: 50px;
     }
     #name-web{
-        left: 48rem;
-        font-size: 25px;
+        font-size: 30px;
     }
-    #label-topics {
-        font-size: 17px;
-    }
-    .input-search {
-        /* position */
-        right: 20rem;
+    #label-topics{
+        font-size: 20px;
     }
     select {
-        width: 16.57%;
-        height:  16.57%;
+        width: 10rem;
+        height:  1rem;
         padding: 5.33px 0px;
         font-size: 12px;
     }
@@ -188,7 +166,7 @@
         line-height:40px;
     }
     .back-shadow-title{
-        height: 10rem;
+        height: 9rem;
         margin-top: -10.33rem;
     }
     .timeline {
@@ -199,12 +177,13 @@
     .box-time img {
         height: 7.5rem;
     }
-    .references{
-        top: 0.5rem;
+    footer{
+        position: relative;
+        top: -2rem;
     }
     #about-us {
         margin-right: 13.33px;
-        font-size: 15px;
+        font-size: 20px;
     }
     .icon-network svg {
         margin-right: 6.67px;

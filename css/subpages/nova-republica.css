@@ -80,3 +80,42 @@ body::-webkit-scrollbar-thumb {
     flex-wrap: wrap;
     display: none;
 }
+
+@media screen and (max-width: 1280px) {
+    #timeline{
+        height: 1000px;
+    }
+    #colorline1{
+        left: 13rem;
+    }
+    #num-text1{
+        top: 12.5rem;
+        left: 30.5rem;
+    }
+    #colorline2{
+        left: -13.8rem;
+    }
+    #num-text2{
+        top: 37.5rem;
+        left: 6rem;
+    }
+    #btn-left{
+        border-left: 20px solid var(--light-purple);
+    }
+    #btn-right{
+        border-right: 20px solid var(--light-purple);
+    }
+    #btn-left:hover{
+        border-left: 20px solid var(--dark-purple);
+    }
+    #btn-right:hover{
+        border-right: 20px solid var(--dark-purple);
+    }
+    #woman2,#woman3{
+        /* config */
+        width: 60rem;
+        flex-wrap: wrap;
+        display: none;
+    }
+
+}

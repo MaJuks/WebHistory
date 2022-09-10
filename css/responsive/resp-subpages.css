@@ -1,0 +1,279 @@
+@media screen and (max-width: 1745.45px) {
+    #top-shadowplant{
+        /* position */
+        position: relative;
+        left: 71rem;
+        /* config */
+    }
+    #bottom-shadowtrack{
+        /* position */
+        position: relative;
+        left: 71rem;
+        top: 90rem;
+        /* config */
+        width: 15%;
+    }
+    #bottom-shadowtrack{
+        /* position */
+        position: relative;
+        left: 51rem;
+        top: 90rem;
+        /* config */
+        width: 15%;
+    }
+}
+@media screen and (max-width: 1600px) {
+    #top-shadowplant{
+        /* position */
+        position: relative;
+        left: 71rem;
+        width: 25%;
+    }   
+    .title{
+        width: 20em;
+    }  
+}
+@media screen and (max-width: 1280px) {
+    .header-div{
+        height: 50px;
+    }
+    #top-shadowplant{
+        left: 55rem;
+        width: 25%;
+    }  
+    #name-web{
+        font-size: 35px;
+    }
+    #home{
+        font-size: 40px;
+    }
+    .icon-home{
+        left: -85%;
+        top:1.7rem;
+    }
+    .icon-home svg{
+        width: 35px;
+        height: 35px;
+    }
+    .title{
+        margin: 3rem 0rem 1rem 0rem;
+        font-size: 50px;
+    }
+    .title2{
+        font-size: 30px;
+    }
+    .circle{
+        width: 15px;
+        height: 15px;
+    }
+    #circle2{
+        /* position */
+        left: 57.5rem;
+    }
+    .container{
+        padding: 25px 35px 30px 30px;
+        margin: 1rem;
+        width: 60rem;
+        font-size: 20px;
+        line-height: 21px;
+    }
+    .title-box{
+        width: 60rem;
+        height: 72px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .text{
+        margin: 20px;
+    }
+    #text-center{
+        width: 60rem;
+    }
+    .img{
+        width: 15rem;
+        height: 15rem;
+    }
+    .box-img{  
+        width: 60rem;
+    }
+    .box-subtitle{
+        width: 56rem;
+        font-size: 15px;
+    }
+    .icon-more{
+        width: 60rem;
+        top: 7rem;
+    }
+    #plus{
+        width: 25px;
+        height: 25px;
+    }
+    .line{
+        width: 60rem;
+        height: 20px;
+    }
+    #hidden-line{
+        top: -2rem;
+        width: 48rem;
+    }
+    .subtitle-text{
+        width: 20rem;
+        height: 30px;
+    }
+    .nav-hidden{
+        width: 60rem;
+        height: 15rem;
+    }
+    .box-hidden{
+        top: -71px;
+        width: 47rem;
+        height: 12rem;
+    }
+    #text-hidden{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    /* ------------------------------------------------------ */
+    /* NEWSPAPER  */
+    /* ------------------------------------------------------ */
+    #img-midia{
+        /* config */
+        width: 16rem;
+        height: 20rem;
+    }
+    /* ------------------------------------------------------ */
+    /* TEXT HIDDEN  */
+    /* ------------------------------------------------------ */
+    .input-btn{
+        position: relative;
+        top: -6px;
+        left: -3px;
+    }
+
+    .label-btn::before{
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 20px solid var(--light-yellow);
+    }
+    .input-btn:checked + .label-btn::before{
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid var(--dark-yellow);
+    }
+    /* ------------------------------------------------------ */
+    /* Timeline  */
+    /* ------------------------------------------------------ */
+    .timeline-div{
+        width: 60rem;
+    }
+    .num-years{
+        font-size: 25px;
+    }
+    .timeline-text{
+        width: 60rem;
+    }
+    .num-years,.text-years{
+        width: 350px;
+    }
+    .text-years{
+        font-size: 20px;
+    }
+    #timeline{
+        background-color: var(--white-white);
+        border: 2px solid var(--white-white);
+    }
+    .colorline{
+        /* config */
+        height: 425px;
+        border: 2px solid var(--light-purple);
+    }
+    /* ------------------------------------------------------ */
+    /* women especific  */
+    /* ------------------------------------------------------ */
+    .btn-especific{
+        top: 18rem;
+        width: 60rem;
+    }
+    #btn-right:hover{
+        border-right: 20px solid var(--dark-yellow);
+    }
+    #btn-left:hover{
+        border-left: 20px solid var(--dark-yellow);
+    }
+    #btn-left{
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-left: 20px solid var(--light-yellow);
+    }
+    #btn-right{
+        background-color: transparent; ;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 20px transparent;
+        border-right: 20px solid var(--light-yellow);
+    }
+    .img-subtitle{
+        top: 2rem;
+        width: 19rem;    
+    }
+    #img-woman{
+        width: 16rem;
+        height: 16rem;
+    }
+    #subtitle-woman{
+        font-size: 15px;
+    }
+    .title-div{
+        width: 20rem;
+        margin: 15px 30px 30px 20px;
+    }
+    #title-woman{
+        /* config */
+        width: 25rem;
+        height: 20px;
+        font-size: 30px;
+        line-height: 50px;
+    }
+    #title-woman2{
+        width: 25rem;
+        font-size: 25px;
+        line-height: 50px;
+    }
+    #text-woman{
+        width: 25rem;
+        height: 227px;
+    }
+    /* ------------------------------------------------------ */
+    /* READ MORE - TOPICS*/
+    /* ------------------------------------------------------ */
+    #read-more{
+        top: -3.5rem;
+        left: 55rem;
+        height: 50px;
+    }
+    /* ------------------------------------------------------ */
+    /* FOOTER */
+    /* ------------------------------------------------------ */
+    .footer{
+        top: 2rem;
+        height: 155px;    
+    }
+    .text-icon{
+        padding: 15px;
+    }
+    #about-us {
+        margin-right: 20px;
+        font-size: 22px;
+        line-height: 144.5%;
+    }
+    .references{
+        top: 1rem;    
+    }
+    .icon-network svg {
+        margin-right: 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+}
