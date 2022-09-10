@@ -67,7 +67,6 @@
         height: 15px;
     }
     #circle2{
-        /* position */
         left: 57.5rem;
     }
     .container{
@@ -149,7 +148,6 @@
         top: -6px;
         left: -3px;
     }
-
     .label-btn::before{
         border-top: 20px solid transparent;
         border-bottom: 20px solid transparent;
@@ -248,9 +246,11 @@
     /* READ MORE - TOPICS*/
     /* ------------------------------------------------------ */
     #read-more{
-        top: -3.5rem;
-        left: 55rem;
-        height: 50px;
+        top: -1.5rem;
+        left: 45rem;
+    }
+    #img-read-more{
+        width: 9rem;
     }
     /* ------------------------------------------------------ */
     /* FOOTER */

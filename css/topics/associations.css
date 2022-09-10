@@ -29,12 +29,7 @@ body::-webkit-scrollbar-thumb {
 /* ------------------------------------------------------ */
 /*TIMELINE */
 /* ------------------------------------------------------ */
-.timeline-div{
-    /* config */
-    display: flex;
-    justify-content: center;
-    width: 80rem;
-}
+
 .circle-line{
     width: 80rem;
     display: flex;
@@ -45,26 +40,6 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     width: 0.7%;
     left: -0.3rem;
-}
-.num-years{
-    /* config */
-    width: 116px;
-    height: 30px;
-    font-family: 'Special Elite';
-    font-size: 35px;
-    color:var(--dark-yellow);
-}
-.timeline-text{
-    display: grid;
-    justify-content: center;
-    width: 80rem;
-    margin-top: -60rem;
-}
-.num-years,.text-years{
-    width: 500px;
-}
-.text-years{
-    font-size: 30x;
 }
 #timeline{
     /* config */
@@ -79,8 +54,6 @@ body::-webkit-scrollbar-thumb {
     border: 3px solid var(--white-white);
 }
 .colorline{
-    /* config */
-    height: 500.01px;
     border: 3px solid var(--dark-pink);
     transform: rotate(-90deg);
 }
@@ -108,4 +81,30 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     top: 30rem;
     left: 6.5rem;
+}
+
+@media screen and (max-width: 1280px) {
+    .circle-line{
+        width: 60rem;
+        margin: 1rem;
+    }
+    #circle-line{
+        position: relative;
+        width: 0.7%;
+        left: -0.3rem;
+    }
+    #colorline1{
+        left: 12.8rem;
+    }
+    #num-text1{
+        top: 12rem;
+        left: 30.5rem;
+    }
+    #colorline2{
+        left: -14rem;
+    }
+    #num-text2{
+        top: 26rem;
+    }
+
 }
