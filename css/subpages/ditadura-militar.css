@@ -24,6 +24,9 @@
     -webkit-text-stroke: 1px var(--dark-purple);
 
 }
+body::-webkit-scrollbar-thumb {
+    background-color: var(--dark-purple);    
+}
 /* ------------------------------------------------------ */
 /* CLICKHERE  */
 /* ------------------------------------------------------ */
