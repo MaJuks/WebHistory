@@ -84,3 +84,23 @@
         width: 60rem;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .btn-midia{
+        left: 0rem;
+        top: 1rem;
+    }
+    #box-hidden-midia{
+        position: relative;
+        top: -41px;
+        height: 25rem;
+    }
+    .nav-hidden-midia{
+        display: none;
+        width: 18rem;
+        height: 25rem;
+    }
+    #woman2,#woman3,#woman4,#woman5,#woman6,#woman7{
+        width: 18rem;
+    }
+}

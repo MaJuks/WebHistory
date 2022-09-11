@@ -5,13 +5,13 @@
 .vignette{
     /* position */
     position: fixed;
-    z-index: 100;
+    z-index: 0;
     /* config */
     background-image: url(../../assets/vignette-mobile.png);
     height: 100vh;
     width: 100vw;
     background-size: 100%;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 .shadows-div{
     /* config */
@@ -243,6 +243,7 @@ hr{
     justify-content: space-around;
     /* letter config */
     font-size: 10px;
+    line-height: 15px;
     margin-bottom: 50px;
 }
 .icon-more{
@@ -332,7 +333,7 @@ hr{
 }
 #img-midia{
     /* config */
-    width: 18rem;
+    width: rem;
     height: 22rem;
     padding: 1rem;
     border-radius: 25px;

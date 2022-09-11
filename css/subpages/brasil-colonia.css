@@ -261,6 +261,8 @@
         text-align: center;
     }
     .btn-intro{
+        z-index: 100;
+
         /* button  */
         /* position */
         position: relative;
