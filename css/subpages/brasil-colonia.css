@@ -106,6 +106,11 @@
 /* ------------------------------------------------------ */
 /* WHITE*/
 /* ------------------------------------------------------ */
+#img-white1{
+    width:31.25rem;
+    height:22rem;
+    border-radius:10px"
+}
 #img-subtitle-white{
     width: 80rem;
     justify-content: center;
@@ -233,5 +238,133 @@
     }
     #woman2,#woman3,#woman4,#woman5,#woman6,#woman7{
         width: 60rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #text-intro1{
+        width: auto;
+        padding: 40px 0 0 0;
+    }
+    #img-subtitle-intro{
+        top: 0;
+        margin: 10px;
+    }
+    #img-intro{
+        width: 210px;
+        /* height: 242px; */
+        height: 142px;
+        border-radius: 10px;
+    }
+    #subtitle-intro{
+        font-size: 10px;
+        text-align: center;
+    }
+    .btn-intro{
+        /* button  */
+        /* position */
+        position: relative;
+        top:-1rem;
+        left: -0.1rem;
+    }
+    #box-hidden-intro{
+        top: -49px;
+    }
+    #btn-intro{
+        top: 10px;
+    }
+    #btn-intro:checked{
+        top: 10px;
+    }
+    /* ------------------------------------------------------ */
+    /* BOX WOMEN */
+    /* ------------------------------------------------------ */
+    .div-box-women{
+        /* position */
+        display: flex;
+        /* config */
+        width: 18rem;
+        justify-content: space-around;
+        margin: 3rem;
+    }
+    .box-women{
+        /* config */
+        transition-duration: 0.3s;
+    }
+    .box-women:hover{
+        /* config */
+        transform: scale(1.05);
+        background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--dark-yellow) 80.36%, rgba(217, 217, 217, 0) 100%);
+        filter: drop-shadow(0px 100px 100px rgba(0, 0, 0, 0.25));
+    }
+    #box-link {
+        /* config */
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+    /* ------------------------------------------------------ */
+    /* NATIVE*/
+    /* ------------------------------------------------------ */
+    #text-native3{
+        margin-bottom: 90px;
+    }
+    .btn-native{
+        /* position */
+        display: flex;
+        position: relative;
+        top: -1rem;
+        left: -1.5rem;
+    }
+    #btn-native{
+        /* position */
+        display: flex;
+        position: relative;
+        top: -0.2rem;
+        left: 1rem;
+    }
+    #nav-hidden-native,#box-hidden-native{
+        height: 12rem;
+    }
+    /* ------------------------------------------------------ */
+    /* WHITE*/
+    /* ------------------------------------------------------ */
+    #img-subtitle-white{
+        position: relative;
+        top: 0;
+        width: 80rem;
+        justify-content: center;
+    }
+    #text-white3{
+        margin-bottom: 80px;
+    }
+    .btn-white{
+        /* position */
+        display: flex;
+        position: relative;
+        top: -1rem;
+        left: -1.5rem;
+    }
+    #btn-white{
+        /* position */
+        display: flex;
+        position: relative;
+        top: -0.1rem;
+        left: 1rem;
+    }
+    #nav-hidden-white{
+        height: 10rem;
+    }
+    #img-white1{
+        width:6.98rem;
+        height:4.95rem;
+    }
+    /* ------------------------------------------------------ */
+    /* ESPECIFIC*/
+    /* ------------------------------------------------------ */
+    #woman2,#woman3,#woman4,#woman5,#woman6,#woman7{
+        /* config */
+        width: 18rem;
+        flex-wrap: wrap;
+        display: none;
     }
 }
