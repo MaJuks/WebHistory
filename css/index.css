@@ -15,7 +15,7 @@ body{
     z-index: 100;
     /* config */
     background-image: url(../assets/vignette.png);
-    height: 1000px;
+    height: 100vh;
     width: 100%;
     background-size: 100%;
     opacity: 0.65;
@@ -26,7 +26,7 @@ body{
     z-index: 100;
     /* config */
     background-image: url(../assets/back.png);
-    height: 1000px;
+    height: 100vh;
     width: 100%;
     background-size: 100%;
     opacity: 0.8;
@@ -406,7 +406,13 @@ footer a{
     border: transparent;
     color: transparent;
 }
-
+#credits{
+    position: relative;
+    top: -1.5rem;
+    z-index: 100;
+    font-family: "Montserrat";
+    color: var(--mid-brown);
+}
 @keyframes moviment-plant{
     from{
         transform: translate(-20px,-20px);

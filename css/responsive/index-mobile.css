@@ -38,7 +38,7 @@ body{
     z-index: 100;
     /* config */
     background-image: url(../../assets/vignette-mobile.png);
-    height: 1000px;
+    height: 100vh;
     width: 100%;
     background-size: 100%;
     opacity: 0.4;
@@ -49,7 +49,7 @@ body{
     z-index: 100;
     /* config */
     background-image: url(../../assets/back-mobile.png);
-    height: 1000px;
+    height: 100vh;
     width: 100%;
     background-size: 100%;
     opacity: 0.6;
@@ -223,7 +223,7 @@ hr{
     
 }
 #box1{
-    animation: boxes-anim 0.8s ease-in-out 0.5s, boxes-anim 0.8s ease-in-out 3.2s;
+    animation: boxes-anim 0.8s ease-in-out 1.5s, boxes-anim 0.8s ease-in-out 4.2s;
 }
 #box1:hover{
     /* back shadow */
@@ -232,7 +232,7 @@ hr{
     filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
 }
 #box2{
-    animation: boxes-anim 0.8s ease-in-out 0.7s, boxes-anim 0.8s ease-in-out 3s;
+    animation: boxes-anim 0.8s ease-in-out 1.7s, boxes-anim 0.8s ease-in-out 4s;
 }
 #box2:hover{
     /* back shadow */
@@ -241,7 +241,7 @@ hr{
     filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
 }
 #box3{
-    animation: boxes-anim 0.8s ease-in-out 0.9s, boxes-anim 0.8s ease-in-out 2.8s;
+    animation: boxes-anim 0.8s ease-in-out 1.9s, boxes-anim 0.8s ease-in-out 3.8s;
 }
 #box3:hover{
     /* back shadow */
@@ -250,7 +250,7 @@ hr{
     filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
 }
 #box4{
-    animation: boxes-anim 0.8s ease-in-out 1.1s, boxes-anim 0.8s ease-in-out 2.6s;
+    animation: boxes-anim 0.8s ease-in-out 2.1s, boxes-anim 0.8s ease-in-out 3.6s;
 }
 #box4:hover{
     /* back shadow */
@@ -259,7 +259,7 @@ hr{
     filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
 }
 #box5{
-    animation: boxes-anim 0.8s ease-in-out 1.3s, boxes-anim 0.8s ease-in-out 2.4s;
+    animation: boxes-anim 0.8s ease-in-out 2.3s, boxes-anim 0.8s ease-in-out 3.4s;
 }
 #box5:hover{
     /* back shadow */
@@ -268,7 +268,7 @@ hr{
     filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
 }
 #box6{
-    animation: boxes-anim 0.8s ease-in-out 1.5s, boxes-anim 0.8s ease-in-out 2.2s;
+    animation: boxes-anim 0.8s ease-in-out 2.5s, boxes-anim 0.8s ease-in-out 3.2s;
 }
 #box6:hover{
     /* back shadow */
@@ -277,7 +277,7 @@ hr{
     filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
 }
 #box7{
-    animation: boxes-anim 0.8s ease-in-out 1.7s, boxes-anim 0.8s ease-in-out 2s;
+    animation: boxes-anim 0.8s ease-in-out 2.7s, boxes-anim 0.8s ease-in-out 3s;
 }
 #box7:hover{
     /* back shadow */

@@ -1,12 +1,7 @@
 
 
 @media screen and (max-width: 1745.45px) {
-    .vignette{
-        height:1000px;
-    }
-    .vignette2{
-        height:1000px;
-    }
+
     #top-shadowplant{
         width: 24%;
     }
@@ -76,9 +71,7 @@
         left: 65rem;
         top: -30rem;
     }
-    .vignette,.vignette2{
-        height: 865px;
-    }
+  
     .header{
         height: 50px;
     }
@@ -135,9 +128,7 @@
         left: 65rem;
         top: -29rem;
     }
-    .vignette,.vignette2{
-        height: 650px;
-    }
+
     .header{
         height: 50px;
     }
@@ -195,15 +186,11 @@
     #top-shadowplant{
         left: 100rem;
     }
-    .vignette{
-        height: 1100px;
-    }
+
 }
 @media screen and (min-width: 2400px) {
     #top-shadowplant{
         left: 99.5rem;
     }
-    .vignette{
-        height: 1200px;
-    }
+
 }
