@@ -139,7 +139,19 @@
     flex-wrap: wrap;
     display: none;
 }
-
+@keyframes modal{
+    from{
+        opacity: 0;
+        transform: translate3d(0,-60px,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+.mostrar .modal{
+    animation: modal 1s;
+}
 
 @media screen and (max-width: 1280px) {
     #text-intro1{

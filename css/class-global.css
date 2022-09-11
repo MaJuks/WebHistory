@@ -289,6 +289,7 @@ hr{
     height: 20rem;
     border-radius: 10px;
     transition: 0.3s;
+    cursor: pointer;
 }
 .img:hover, #img-woman:hover, #img-midia:hover{
     opacity: 0.5;  
@@ -558,7 +559,7 @@ hr{
     align-items: center;
     justify-items: center;
     transition: 0.3s;
-
+    cursor: pointer;
 }
 .woman{
     margin: 80px;
@@ -616,7 +617,46 @@ hr{
     width: 32rem;
     height: 227px;
 }
-
+/* ------------------------------------------------------ */
+/* MODAL CONTAINER*/
+/* ------------------------------------------------------ */
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0,0,0,.5);
+    z-index: 101;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal-container.mostrar{
+    display: flex;
+}
+.modal{
+    display: flex;
+    background-color: var(--dark-brown);
+    width: 75rem;
+    padding: 40px;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+}
+.subtitle-modal{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.font{
+    font-family: var(--text);
+    color: var(--mid-brown);
+}
+.img-modal{
+    width: 40rem;
+    height: 40rem;
+}
 /* ------------------------------------------------------ */
 /* READ MORE - TOPICS*/
 /* ------------------------------------------------------ */
