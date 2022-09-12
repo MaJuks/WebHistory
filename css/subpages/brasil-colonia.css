@@ -28,6 +28,7 @@
     width: 35rem;
     padding:60px 0 0 0;
 }
+
 #img-subtitle-intro{
     margin: 30px;
 }
@@ -45,8 +46,8 @@
     /* button  */
     /* position */
     position: relative;
-    top: -11rem;
-    left: 5rem;
+    top: -2.8rem;
+    left: 3rem;
 }
 .input-btn{
     /* hidden checkbox */
