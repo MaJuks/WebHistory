@@ -239,7 +239,7 @@ hr{
     /* position */
     display: flex;
     /* config */
-    width: 16rem;
+    width: 18rem;
     justify-content: space-around;
     /* letter config */
     font-size: 10px;
@@ -402,20 +402,17 @@ hr{
 }
 .num-years{
     /* config */
-    width: 116px;
-    height: 30px;
-    font-family: var(--title);
-    font-size: 35px;
-    color:var(--dark-yellow);
+    width: 0px;
+    height: 20px;
 }
 .timeline-text{
-    display: grid;
-    justify-content: center;
     width: 20rem;
     margin-top: -60rem;
 }
 .num-years,.text-years{
-    width: 500px;
+    width: 125px;
+    font-size: 15px;
+
 }
 #timeline{
     /* config */
@@ -425,7 +422,7 @@ hr{
 }
 .colorline{
     /* config */
-    height: 500.01px;
+    height: 125px;
     border: 3px solid var(--light-purple);
     transform: rotate(-90deg);
     border-radius: 2px;

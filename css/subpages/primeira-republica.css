@@ -238,3 +238,60 @@ body::-webkit-scrollbar-thumb {
         width: 60rem;
     }
 }
+@media screen and (max-width: 1000px){
+    .btn-intro{
+        left: .5rem;
+        top: 1.5rem;
+    }
+    .label-btn{
+        top: -2.4rem;
+    }
+    .btn-worker{
+        left: .5rem;
+            top: 1.5rem;
+    }
+    .timeline-text{
+       height: 100px;
+    }
+    #timeline{
+        height: 1250px;
+    }
+    #colorline1{
+        top: -0.5rem;
+        left: 3.5rem;
+    }
+    #num-text1{
+        top: -17.5rem;
+        left: 4rem;
+    }
+    #colorline2{
+        top:13rem;
+        left: -4.5rem;
+    }
+    #num-text2{
+        top: -15.5rem;
+        left: -5.5rem;
+    }
+    #colorline3{
+        top:38rem;
+        left: 2.8rem;
+    }
+    #num-text3{
+        top: -15.5rem;
+        left: 4rem;
+    }
+    #colorline4{
+        top:54rem;
+        left:-5.5rem;
+    }
+    #num-text4{
+        top: -15.5rem;
+        left: -5.5rem;
+    }
+    #woman2,#woman3,#woman4,#woman5,#woman6,#woman7,#woman8{
+        /* config */
+        width: 20rem;
+        flex-wrap: wrap;
+        display: none;
+    }
+}
