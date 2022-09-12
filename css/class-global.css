@@ -6,28 +6,29 @@
     position: fixed;
     /* config */
     background-image: url(../assets/vignette.png);
-    height: 1200px;
+    height: 100vh;
     width: 100%;
     background-size: 100%;
-    opacity: 0.5;
+    opacity: 0.65;
 }
 .shadows-div{
     /* config */
     height: 0rem;
+    width: 99vw;
+    display: grid;
+    justify-content: right;
     mix-blend-mode: multiply;
 }
 #bottom-shadowtrack{
     /* position */
     position: relative;
-    left: 81rem;
-    top: 90rem;
+    top: 10rem;
     /* config */
-    width: 15%;
+    width: 55%;
 }
 #top-shadowplant{
     /* position */
     position: relative;
-    left: 82rem;
     /* config */
     animation: moviment-plant 2s ease-in-out infinite alternate;
 }
@@ -35,19 +36,20 @@
     /* position */
     display: flex;
     position: relative;
-    left: -3rem;
+    left: -90rem;
     top: 120rem;
     /* config */
     opacity: 0.6;
-    width: 40%;
+    width: 150%;
     animation: moviment-plant 2s ease-in-out infinite alternate;
 }
 #top-shadowtrack{
     /* position */
     position: relative;
-    left: 15rem;
+    top: 150rem;
+    left: -75rem;
     /* config */
-    width: 15%;
+    width: 55%;
 }
 /* ------------------------------------------------------ */
 /* body */
@@ -294,24 +296,6 @@ hr{
 .img:hover, #img-woman:hover, #img-midia:hover{
     opacity: 0.5;  
 }
-.box-img{  
-    /* position */
-    z-index: 100;
-    display: flex;
-    /* config */
-    width: 80rem;
-    justify-content: space-around;
-}
-.box-subtitle{
-    /* position */
-    display: flex;
-    /* config */
-    width: 80rem;
-    justify-content: space-around;
-    /* letter config */
-    font-size: 20px;
-    margin-bottom: 30px;
-}
 .icon-more{
     width: 80rem;
     height: 0;
@@ -325,7 +309,17 @@ hr{
     width: 50px;
     height: 50px;
 }
-
+.div-img-subtitle{
+    width: 80rem;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+}
+.subtitle{
+    width: 20rem;
+    font-size: 20px;
+    text-align: center;
+}
 /* ------------------------------------------------------ */
 /* LINE  */
 /* ------------------------------------------------------ */
@@ -498,7 +492,7 @@ hr{
 .colorline{
     /* config */
     height: 500.01px;
-    border: 3px solid var(--light-purple);
+    border: 3px solid var(--dark-purple);
     transform: rotate(-90deg);
     border-radius: 2px;
 }
@@ -640,7 +634,7 @@ hr{
     background-color: var(--dark-brown);
     width: 75rem;
     padding: 40px;
-    border: 1px solid var(--black);
+    border: 4px solid var(--mid-brown);
     border-radius: 10px;
 }
 .subtitle-modal{
@@ -656,6 +650,20 @@ hr{
 .img-modal{
     width: 40rem;
     height: 40rem;
+}
+
+@keyframes modal{
+    from{
+        opacity: 0;
+        transform: translate3d(0,-60px,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+.mostrar .modal{
+    animation: modal 1s;
 }
 /* ------------------------------------------------------ */
 /* READ MORE - TOPICS*/
@@ -807,7 +815,7 @@ body::-webkit-scrollbar-thumb {
 
 @keyframes moviment-plant{
     from{
-        transform: translate(-20px,-20px);
+        transform: translatey(-20px);
         z-index: 101;
 
     }

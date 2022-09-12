@@ -11,8 +11,8 @@ function btn_checked(){
 }
 
 var count = 0;
-var btn_right = document.getElementById("btn-right");
-var btn_left = document.getElementById("btn-left");
+var btn_right = document.getElementById("btn-left");
+var btn_left = document.getElementById("btn-right");
 
 var disp = document.getElementById("display");
   

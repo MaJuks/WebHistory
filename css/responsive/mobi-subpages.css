@@ -157,7 +157,7 @@ hr{
     display: flex;
     position: relative;
     /* div config */
-    padding: 10px 15px 13px 13px;
+    padding: 30px 15px 13px 13px;
     margin: 0.5rem;
     flex-wrap: wrap;
     width: 20rem;
@@ -175,22 +175,22 @@ hr{
     /* position */
     position: absolute;
     /* config */
-    width: 10px;
+    width: 15px;
     mix-blend-mode: hard-light;
-    height: 10px;
+    height: 15px;
     background: var(--light-yellow);
     border: 1px solid #000000;
     border-radius: 15px;
 }
 #circle1{
     /* position */
-    left: 1.5rem;
-    top: 1.5rem;
+    left: 0.9rem;
+    top: 1rem;
 }
 #circle2{
     /* position */
-    left: 16rem;
-    top: 1.5rem;
+    left: 18.3rem;
+    top: 1rem;
 }
 .title-box{
     /* position */
@@ -218,8 +218,8 @@ hr{
 }
 .img{
     /* config */
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 15rem;
+    height: 15rem;
     border-radius: 10px;
     transition: 0.3s;
     cursor: pointer;
@@ -227,24 +227,16 @@ hr{
 .img:hover, #img-woman:hover, #img-midia:hover{
     opacity: 0.5;  
 }
-.box-img{  
-    /* position */
-    z-index: 100;
-    display: flex;
-    /* config */
+.div-img-subtitle{
     width: 20rem;
+    z-index: 100;
+    display: grid;
     justify-content: space-around;
 }
-.box-subtitle{
-    /* position */
-    display: flex;
-    /* config */
-    width: 18rem;
-    justify-content: space-around;
-    /* letter config */
-    font-size: 10px;
-    line-height: 15px;
-    margin-bottom: 50px;
+.subtitle{
+    width: 15rem;
+    font-size: 15px;
+    text-align: center;
 }
 .icon-more{
     display: none;
@@ -390,6 +382,14 @@ hr{
 .input-btn:focus+.label-btn::before{
     /* line in select (for accessibility) */
     outline:1px dotted #CCC;
+}
+
+/* ------------------------------------------------------ */
+/* MODAL CONTAINER*/
+/* ------------------------------------------------------ */
+.modal-container,.modal-container.mostrar,
+.modal,.subtitle-modal,.font,.img-modal{
+    display: none;
 }
 /* ------------------------------------------------------ */
 /* Timeline  */
