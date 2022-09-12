@@ -94,19 +94,22 @@
         height: 12rem;
     }
     .timeline {
-        top: 5rem;
-        width: 56rem;
-        border: 1.60px solid #5B3E26;
+        top: 5.5rem;
+        width: 59rem;
+        border: 2px solid #5B3E26;
     }
     .box-time img {
-        height: 9.5rem;
+        height: 11rem;
     }
     .back-shadow{
         margin-top: -12.38rem;
         height: 16rem;
     }
+    .footer{
+        top: -1rem;
+    }
     #about-us {
-        font-size: 20px;
+        font-size: 25px;
     }
     .icon-network svg {
         margin-right: 8px;
