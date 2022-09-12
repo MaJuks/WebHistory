@@ -5,7 +5,7 @@
 /* ------------------------------------------------------ */
 #home{
     color: var(--dark-purple);
-    -webkit-text-stroke: 1px var(--dark-purple);
+    -webkit-text-stroke: 2px var(--dark-purple);
 }
 .icon-home svg{
     color: var(--dark-purple);
