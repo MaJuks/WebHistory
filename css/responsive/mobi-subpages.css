@@ -610,8 +610,8 @@ hr{
 /* ------------------------------------------------------ */
 #read-more{
     position: relative;
-    top: -3.5rem;
-    left: 55rem;
+    top: -1.5rem;
+    left: 9rem;
     transition: 0.5s;
     height: 50px;
 }
