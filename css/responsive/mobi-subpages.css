@@ -412,18 +412,20 @@ hr{
 .num-years,.text-years{
     width: 125px;
     font-size: 15px;
+    padding-left: 10px;
+
 
 }
 #timeline{
     /* config */
     z-index: 100; 
-    border: 3px solid var(--white-white);
+    border: 2px solid var(--white-white);
     border-radius: 2px;
 }
 .colorline{
     /* config */
     height: 125px;
-    border: 3px solid var(--light-purple);
+    border: 2px solid var(--dark-purple);
     transform: rotate(-90deg);
     border-radius: 2px;
 }

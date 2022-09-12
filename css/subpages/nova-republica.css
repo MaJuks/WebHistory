@@ -119,3 +119,31 @@ body::-webkit-scrollbar-thumb {
     }
 
 }
+@media screen and (max-width: 1000px) {
+    #timeline{
+        height: 1000px;
+    }
+    
+    #colorline1{
+        top: -1rem;
+        left: 3.5rem;
+    }
+    #num-text1{
+        top: 9rem;
+        left: 9.5rem;
+    }
+    #colorline2{
+        top: 15.5rem;
+        left: -4.5rem;
+    }
+    #num-text2{
+        top: 25.3rem;
+        left: 0rem;
+    }
+    #woman2,#woman3{
+        /* config */
+        width: 20rem;
+        flex-wrap: wrap;
+        display: none;
+    }
+}

@@ -153,3 +153,40 @@ body::-webkit-scrollbar-thumb {
         width: 60rem;
     }
 }
+@media screen and (max-width: 1000px) {
+    #timeline{
+        height:900px;
+    }
+    #colorline1{
+        top: 1rem;
+        left: 3.5rem;
+    }
+    #num-text1{
+        top: 6rem;
+        left: 4rem;
+    }
+    #colorline2{
+        top: 20rem;
+        left: -4.7rem;
+    }
+    #num-text2{
+        top: 2rem;
+        left: -5.5rem;
+    }
+    #colorline3{
+        top: 38rem;
+        left: 3rem;
+    }
+    #num-text3{
+        top: -2rem;
+        left: 4rem;
+    }
+    #woman2,#woman3,
+    #woman4,#woman5,
+    #woman6,#woman7,
+    #woman8,#woman9,
+    #woman10,#woman11,
+    #woman12,#woman13{
+        width: 20rem;
+    }
+}

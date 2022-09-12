@@ -240,3 +240,71 @@ body::-webkit-scrollbar-thumb {
     }
 
 }
+@media screen and (max-width: 1000px) {
+    .btn-worker{
+        left: 1rem;
+        top: 1.2rem;
+    }
+    .btn-midia{
+        left: 1rem;
+        top: 1.2rem;
+    }
+    #box-hidden-midia{
+        height:10rem;
+
+    }
+    #nav-hidden-midia{
+        height: 12rem;
+    }
+    #timeline{
+        height: 2900px;
+    }
+    #colorline1{
+        top: -1rem;
+        left: 3.5rem;
+    }
+    #num-text1{
+        top: 9rem;
+        left: 9.5rem;
+    }
+    #colorline2{
+        top: 15.5rem;
+        left: -4.5rem;
+    }
+    #num-text2{
+        top: 25.3rem;
+        left: 0rem;
+    }
+    #colorline3{
+        top: 46.5rem;
+        left: 2.87rem;
+    }
+    #num-text3{
+        top: 56rem;
+        left: 9.5rem;
+    }
+    #colorline4{
+        top: 88rem;
+        left: -5.5rem;
+    }
+    #num-text4{
+        top: 98rem;
+        left: 0rem;
+    }
+    #colorline5{
+        top: 110.5rem;
+        left: 2rem;
+    }
+    #num-text5{
+        left: 10rem;
+        top: 120rem;
+    }
+    #colorline6{
+        top: 131rem;
+        left: -6rem;
+    }
+    #num-text6{
+        left: 0rem;
+        top: 140.5rem;
+    }
+}
