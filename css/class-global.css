@@ -7,8 +7,7 @@
     /* config */
     background-image: url(../assets/vignette.png);
     height: 100vh;
-    width: 100vw;
-    background-repeat: no-repeat;
+    width: 100%;
     background-size: 100%;
     opacity: 0.65;
 }
@@ -600,6 +599,7 @@ hr{
 #title-woman{
     /* config */
     height: 20px;
+    margin-bottom: 20px;
     /* letter config */
     font-family: 'Special Elite';
     font-weight: 400;
@@ -608,6 +608,7 @@ hr{
     color: var(--light-pink);
 }
 #title-woman2{
+
     /* letter config */
     font-family: 'Special Elite';
     font-weight: 400;
