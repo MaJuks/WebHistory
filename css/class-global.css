@@ -7,11 +7,21 @@
     /* config */
     background-image: url(../assets/vignette.png);
     height: 100vh;
-    width: 100%;
+    width: 100vw;
+    background-repeat: no-repeat;
     background-size: 100%;
     opacity: 0.65;
 }
+.shadows-div, #bottom-shadowtrack,
+#top-shadowtrack,#top-shadowplant,
+#mid-shadowplant{
+    display:none;
+    height: 0;
+    width: 0;
+}
+
 .shadows-div{
+
     /* config */
     height: 0rem;
     width: 99vw;

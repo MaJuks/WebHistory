@@ -92,16 +92,17 @@
         width: 15rem;
         height: 15rem;
     }
-    .box-img{  
-        width: 60rem;
-    }
-    .box-subtitle{
-        width: 56rem;
-        font-size: 15px;
-    }
     .icon-more{
         width: 60rem;
         top: 7rem;
+    }
+
+    .div-img-subtitle{
+        width: 60rem;
+    }
+    .subtitle{
+        width: 15rem;
+        font-size: 15px;
     }
     #plus{
         width: 25px;

@@ -161,22 +161,16 @@
         font-size: 15px;
     }
     .btn-intro{
-        top: -9rem;
-        left: 5rem;
+        top: -2.5rem;
+        left: 2rem;
     }
     #btn-intro{
-        top: 30px;
-    }
-    #btn-intro:checked{
-        top: 30px;
-        left: -8px;
+        top: 12px;
     }
     .input-btn{
         top: 10px;
     }
-    #box-hidden-intro{
-        top: -90px;
-    }
+   
     .div-box-women{
         width: 60rem;
     }
