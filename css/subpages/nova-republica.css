@@ -51,7 +51,6 @@ body::-webkit-scrollbar-thumb {
 #woman2,#woman3{
     /* config */
     width: 80rem;
-    flex-wrap: wrap;
     display: none;
 }
 
@@ -74,12 +73,16 @@ body::-webkit-scrollbar-thumb {
     #woman2,#woman3{
         /* config */
         width: 60rem;
-        flex-wrap: wrap;
-        display: none;
     }
 }
 @media screen and (max-width: 1000px) {
     #timeline{
         height: 1550px;
+    }
+    #woman2,#woman3{
+        /* config */
+        width: 20rem;
+        flex-direction: column;
+        display: none;
     }
 }

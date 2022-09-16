@@ -458,7 +458,9 @@ hr{
     z-index: 100;
     /* config */
     height: 0;
-    width: 20rem;
+    padding: 0 0 0 0;
+    margin: 0;
+    width: 20.5rem;
     justify-content: space-between;
 }
 #btn-right:hover,#btn-left:hover{
@@ -505,7 +507,7 @@ hr{
     transition: 0.3s;
     cursor: pointer;
 }
-.woman{
+.box-woman{
     display: grid;
     width: 20rem;
     justify-content: center;
@@ -530,15 +532,17 @@ hr{
     transition: 0.3s;
 
 }
-#subtitle-woman{
+
+#subtitle-img-woman{
     width: 16rem;
     font-size: 10px;
     line-height: 10px;
     text-align: center;
 }
-.title-div{
+.box-text-woman{
     /* topo | direita | inferior | esquerda */
     margin: 0;
+    padding: 0;
     width: 20rem;
     position: relative;
     top: -5rem;
@@ -558,7 +562,7 @@ hr{
     line-height: 10px;
     color: var(--light-pink);
 }
-#title-woman2{
+#subtitle-woman{
     /* config */
     width: 20rem;
     /* letter config */

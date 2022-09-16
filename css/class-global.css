@@ -566,6 +566,9 @@ hr{
     cursor: pointer;
     transition-duration: 0.5s;
 }
+.box-woman{
+    padding: 80px;
+}
 .img-subtitle{
     position: relative;
     top: 2rem;
@@ -578,13 +581,10 @@ hr{
     transition: 0.3s;
     cursor: pointer;
 }
-.woman{
-    margin: 80px;
-}
+
 #woman1{
     /* config */
     width: 80rem;
-    flex-wrap: wrap;
     display: flex;
 }
 #img-woman{
@@ -598,17 +598,18 @@ hr{
     border-radius: 10px; 
     cursor: pointer;
     transition: 0.3s;
-
 }
-#subtitle-woman{
+#subtitle-img-woman{
     font-size: 20px;
     text-align: center;
 }
-.title-div{
+.box-text-woman{
     /* topo | direita | inferior | esquerda */
-    width: 30rem;
-    margin: 15px 30px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px 30px 20px;
     text-align: center; 
+    justify-content: center;
 }
 #title-woman{
     /* config */
@@ -621,8 +622,7 @@ hr{
     line-height: 50px;
     color: var(--light-pink);
 }
-#title-woman2{
-
+#subtitle-woman{
     /* letter config */
     font-family: 'Special Elite';
     font-weight: 400;

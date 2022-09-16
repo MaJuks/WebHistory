@@ -73,7 +73,6 @@ body::-webkit-scrollbar-thumb {
 #woman12,#woman13{
     /* config */
     width: 80rem;
-    flex-wrap: wrap;
     display: none;
 }
 
@@ -119,5 +118,7 @@ body::-webkit-scrollbar-thumb {
     #woman10,#woman11,
     #woman12,#woman13{
         width: 20rem;
+        flex-direction: column;
+
     }
 }

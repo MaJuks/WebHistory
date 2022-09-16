@@ -113,7 +113,6 @@ body::-webkit-scrollbar-thumb {
 #woman2,#woman3,#woman4,#woman5,#woman6,#woman7,#woman8{
     /* config */
     width: 80rem;
-    flex-wrap: wrap;
     display: none;
 }
 @media screen and (max-width: 1280px){       
@@ -175,7 +174,5 @@ body::-webkit-scrollbar-thumb {
     #woman2,#woman3,#woman4,#woman5,#woman6,#woman7,#woman8{
         /* config */
         width: 20rem;
-        flex-wrap: wrap;
-        display: none;
     }
 }

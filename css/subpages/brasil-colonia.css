@@ -141,7 +141,6 @@
 #woman2,#woman3,#woman4,#woman5,#woman6,#woman7{
     /* config */
     width: 80rem;
-    flex-wrap: wrap;
     display: none;
 }
 
@@ -347,7 +346,7 @@
     #woman2,#woman3,#woman4,#woman5,#woman6,#woman7{
         /* config */
         width: 18rem;
-        flex-wrap: wrap;
+        flex-direction: column;
         display: none;
     }
 }
