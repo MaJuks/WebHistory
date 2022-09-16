@@ -1,105 +1,31 @@
-/* ------------------------------------------------------ */
-/*TIMELINE */
-/* ------------------------------------------------------ */
-.timeline-div{
-    /* config */
-    display: flex;
-    justify-content: center;
-    width: 80rem;
-}
-.circle-line{
-    width: 80rem;
-    display: flex;
-    justify-content: center;
-    margin: 1rem;
-}
-#circle-line{
-    position: relative;
-    width: 0.7%;
-    left: -0.5rem;
-}
-.num-years{
-    /* config */
-    width: 116px;
-    height: 30px;
-    font-family:var(--title);
-    font-size: 35px;
-    color:var(--dark-yellow);
-}
-.timeline-text{
-    display: grid;
-    justify-content: center;
-    width: 80rem;
-    margin-top: -60rem;
-}
-.num-years,.text-years{
-    width: 500px;
-}
+
 #timeline{
-    /* config */
-    z-index: 100; 
-    height: 800px;
-    border: 3px solid var(--white-white);
+    height: 650px;
 }
 #timeline2{
-    /* config */
-    z-index: 100; 
-    height: 400px;
+    height: 350px;
+    z-index: 100;
     border: 3px solid var(--white-white);
+    border-radius: 10px;
 }
-.colorline{
-    /* config */
-    height: 500.01px;
-    border: 3px solid var(--dark-pink);
-    transform: rotate(-90deg);
+
+@media screen and (max-width: 1280px){
+    #timeline{
+        height:500px;
+    }
+    #timeline2{
+        height: 200px;
+        border: 2px solid var(--white-white);
+
+    }
 }
-#colorline1{
-    /* position */
-    position: relative;
-    top: -6rem;
-    left: 15.30rem;
-}
-#num-text1{
-    /* position */
-    position: absolute;
-    top: 21rem;
-    left: 41rem;
-}
-#colorline2{
-    /* position */
-    position: relative;
-    top: 8rem;
-    left: -16.1rem;
-}
-#num-text2{
-    /* position */    
-    text-align: right;
-    position: absolute;
-    top: 35rem;
-    left: 6.5rem;
-}
-#colorline3{
-    /* position */
-    position: relative;
-    top: 20rem;
-    left: 14.5rem;
-}
-#num-text3{
-    /* position */    
-    position: absolute;
-    top: 47rem;
-    left: 41rem;
-}
-#colorline4{
-    /* position */
-    position: relative;
-    top: -6rem;
-    left: -16rem;
-}
-#num-text4{
-    /* position */ 
-    text-align: right;
-    position: absolute;
-    top: 21.5rem;
-    left: 7rem;
+@media screen and (max-width: 1000px){
+    #timeline{
+        height:650px;
+    }
+    #timeline2{
+        height: 300px;
+
+    }
+
 }

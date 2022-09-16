@@ -42,44 +42,10 @@
 
 }
 #timeline{
-    height: 1000px;
+    height: 900px;
 }
-#colorline1{
-    /* position */
-    position: relative;
-    top: -6rem;
-    left: 15.30rem;
-}
-#num-text1{
-    /* position */
-    position: relative;
-    top: 2rem;
-    left: 17rem;
-}
-#colorline2{
-    /* position */
-    position: relative;
-    top:13rem;
-    left: -16.5rem;
-}
-#num-text2{
-    /* position */
-    position: relative;
-    text-align: right;
-    top: -1rem;
-    left: -18.5rem;
-}
-#colorline3{
-    /* position */
-    position: relative;
-    top:31rem;
-    left: 14.8rem;
-}
-#num-text3{
-    /* position */
-    position: relative;
-    top: -4rem;
-    left: 17rem;
+.colorline{
+    border:  solid var(--dark-pink);
 }
 body::-webkit-scrollbar-thumb {
     background-color: var(--dark-pink);    
@@ -112,25 +78,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media screen and (max-width: 1280px) {
-    #colorline1{
-        left: 13rem;
+    #timeline{
+        height: 700px;
     }
-    #num-text1{
-        top: 1rem;
-        left: 12rem;
-    }
-    #colorline2{
-        left: -13.7rem;
-    }
-    #num-text2{
-        top: -1.5rem;
-        left: -12.5rem;
-    }
-    #colorline3{
-        left: 12.5rem;
-    }
-    #num-text3{
-        left: 12rem;
+    .colorline{
+        border:  solid var(--dark-pink);
     }
     #btn-left{
         border-left: 20px solid var(--light-pink);
@@ -155,31 +107,10 @@ body::-webkit-scrollbar-thumb {
 }
 @media screen and (max-width: 1000px) {
     #timeline{
-        height:900px;
+        height:890px;
     }
-    #colorline1{
-        top: 1rem;
-        left: 3.5rem;
-    }
-    #num-text1{
-        top: 6rem;
-        left: 4rem;
-    }
-    #colorline2{
-        top: 20rem;
-        left: -4.7rem;
-    }
-    #num-text2{
-        top: 2rem;
-        left: -5.5rem;
-    }
-    #colorline3{
-        top: 38rem;
-        left: 3rem;
-    }
-    #num-text3{
-        top: -2rem;
-        left: 4rem;
+    .colorline{
+        border:  solid var(--dark-pink);
     }
     #woman2,#woman3,
     #woman4,#woman5,

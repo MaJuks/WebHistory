@@ -95,82 +95,7 @@ body::-webkit-scrollbar-thumb {
 /* mov orG */
 /* ------------------------------------------------------ */
 #timeline{
-    height: 2000px;
-}
-#colorline1{
-    /* position */
-    position: relative;
-    top: -6rem;
-    left: 15.30rem;
-}
-#num-text1{
-    /* position */
-    position: absolute;
-    top: 15rem;
-    left: 40rem;
-}
-#colorline2{
-    /* position */
-    position: relative;
-    top:8.5rem;
-    left: -16.5rem;
-}
-#num-text2{
-    /* position */
-    text-align: right;
-    position: absolute;
-    top: 19.5em;
-    left: 6rem;
-}
-#colorline3{
-    /* position */
-    position: relative;
-    top:28.5rem;
-    left: 14.8rem;
-}
-#num-text3{
-    /* position */
-    position: absolute;
-    top:50rem;
-    left: 40rem;
-}
-#colorline4{
-    /* position */
-    position: relative;
-    top:55rem;
-    left: -17rem;
-}
-#num-text4{
-    /* position */
-    position: absolute;
-    text-align: right;
-    top: 77rem;
-    left: 6rem;
-}
-#colorline5{
-    /* position */
-    position: relative;
-    top:68.5rem;
-    left: 14rem;
-}
-#num-text5{
-    /* position */
-    position: absolute;
-    left: 40rem;
-    top: 90rem;
-}
-#colorline6{
-    /* position */
-    position: relative;
-    top:83rem;
-    left: -18rem;
-}
-#num-text6{
-    /* position */
-    position: absolute;
-    text-align: right;
-    left: 6rem;
-    top: 104.5rem;
+    height: 2500px;
 }
 /* ------------------------------------------------------ */
 /* MOURNING  */
@@ -199,46 +124,9 @@ body::-webkit-scrollbar-thumb {
     .nav-hidden-midia{
         width: 60rem;    
     }
-    #colorline1{
-        left: 13rem;
+    #timeline{
+        height: 2050px;
     }
-    #num-text1{
-        top: 12rem;
-        left: 30rem;
-    }
-    #colorline2{
-        left: -13.7rem;
-    }
-    #num-text2{
-        top: 21.5em;
-    }
-    #colorline3{
-        left: 12.5rem;
-    }
-    #num-text3{
-        top:47rem;
-        left: 30rem;
-    }
-    #colorline4{
-        left: -14.3rem;
-    }
-    #num-text4{
-        top: 73rem;
-    }
-    #colorline5{
-        left: 12rem;
-    }
-    #num-text5{
-        left: 30rem;
-        top: 87rem;
-    }
-    #colorline6{
-        left: -14.7rem;
-    }
-    #num-text6{
-        top: 101.5rem;
-    }
-
 }
 @media screen and (max-width: 1000px) {
     .btn-worker{
@@ -257,54 +145,6 @@ body::-webkit-scrollbar-thumb {
         height: 12rem;
     }
     #timeline{
-        height: 2900px;
-    }
-    #colorline1{
-        top: -1rem;
-        left: 3.5rem;
-    }
-    #num-text1{
-        top: 9rem;
-        left: 9.5rem;
-    }
-    #colorline2{
-        top: 15.5rem;
-        left: -4.5rem;
-    }
-    #num-text2{
-        top: 25.3rem;
-        left: 0rem;
-    }
-    #colorline3{
-        top: 46.5rem;
-        left: 2.87rem;
-    }
-    #num-text3{
-        top: 56rem;
-        left: 9.5rem;
-    }
-    #colorline4{
-        top: 88rem;
-        left: -5.5rem;
-    }
-    #num-text4{
-        top: 98rem;
-        left: 0rem;
-    }
-    #colorline5{
-        top: 110.5rem;
-        left: 2rem;
-    }
-    #num-text5{
-        left: 10rem;
-        top: 120rem;
-    }
-    #colorline6{
-        top: 131rem;
-        left: -6rem;
-    }
-    #num-text6{
-        left: 0rem;
-        top: 140.5rem;
+        height: 2950px;
     }
 }

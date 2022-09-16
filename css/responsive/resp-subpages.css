@@ -165,26 +165,27 @@
     .timeline-div{
         width: 60rem;
     }
-    .num-years{
-        font-size: 25px;
-    }
-    .timeline-text{
-        width: 60rem;
-    }
-    .num-years,.text-years{
-        width: 350px;
-    }
-    .text-years{
-        font-size: 20px;
-    }
     #timeline{
-        background-color: var(--white-white);
         border: 2px solid var(--white-white);
     }
+    .num-timeline{
+        font-size: 30px;
+    }
+    .text-timeline{
+        font-size: 20px;
+    }
+    .num-timeline,.text-timeline{
+        width: 350px;
+    }
     .colorline{
-        /* config */
-        height: 425px;
-        border: 2px solid var(--light-purple);
+        width: 350px;
+        border: 2px solid var(--dark-purple);
+    }
+    #timeline-text-right{
+        left: 11rem;
+    }
+    #timeline-text-left{
+        right: 11rem;
     }
     /* ------------------------------------------------------ */
     /* women especific  */

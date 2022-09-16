@@ -399,36 +399,47 @@ hr{
     display: flex;
     justify-content: center;
     width: 20rem;
+    height: 0;
+
 }
-.num-years{
-    /* config */
-    width: 0px;
-    height: 20px;
+.timeline-main{
+    width: 20rem;
+    display: grid;
+    justify-content: center;
 }
 .timeline-text{
-    width: 20rem;
-    margin-top: -60rem;
+    display:flex;
+    flex-direction: column;
 }
-.num-years,.text-years{
-    width: 125px;
-    font-size: 15px;
-    padding-left: 10px;
-
-
+#timeline-text-right{
+    position: relative;
+    left: 4.5rem;
 }
-#timeline{
-    /* config */
-    z-index: 100; 
-    border: 2px solid var(--white-white);
-    border-radius: 2px;
+#timeline-text-left{
+    position: relative;
+    right: 4.5rem;
+    text-align: right;
 }
 .colorline{
     /* config */
-    height: 125px;
+    width: 145px;
     border: 2px solid var(--dark-purple);
-    transform: rotate(-90deg);
     border-radius: 2px;
 }
+.num-timeline{
+    /* config */
+    font-family: var(--title);
+    font-size: 20px;
+    color:var(--dark-yellow);
+}
+.text-timeline{
+    font-size: 15px;
+}
+.num-timeline,.text-timeline{
+    width: 145px;
+    padding: 0 10px 0 10px;
+}
+
 /* ------------------------------------------------------ */
 /* women especific  */
 /* ------------------------------------------------------ */

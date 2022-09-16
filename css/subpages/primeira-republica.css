@@ -85,60 +85,10 @@ body::-webkit-scrollbar-thumb {
 /* ------------------------------------------------------ */
 
 #timeline{
-    height: 1000px;
+    height: 1250px;
 }
 .colorline{
-    border: 3px solid var(--dark-pink);
-}
-#colorline1{
-    /* position */
-    position: relative;
-    top: -6rem;
-    left: 15.30rem;
-}
-#num-text1{
-    /* position */
-    position: relative;
-    top: 2rem;
-    left: 17rem;
-}
-#colorline2{
-    /* position */
-    position: relative;
-    top:5rem;
-    left: -16.5rem;
-}
-#num-text2{
-    /* position */
-    position: relative;
-    text-align: right;
-    top: -1rem;
-    left: -18.5rem;
-}
-#colorline3{
-    /* position */
-    position: relative;
-    top:21rem;
-    left: 14.8rem;
-}
-#num-text3{
-    /* position */
-    position: relative;
-    top: -4rem;
-    left: 17rem;
-}
-#colorline4{
-    /* position */
-    position: relative;
-    top:35rem;
-    left: -17rem;
-}
-#num-text4{
-    /* position */
-    position: relative;
-    text-align: right;
-    top: -6rem;
-    left: -18.5rem;
+    border: solid var(--dark-pink);
 }
 /* ------------------------------------------------------ */
 /* especific */
@@ -190,37 +140,6 @@ body::-webkit-scrollbar-thumb {
     #timeline{
         height: 1000px;
     }
-    .colorline{
-        border:  solid var(--dark-pink);
-    }
-    #colorline1{
-        left: 13rem;
-    }
-    #num-text1{
-        top: 1rem;
-        left: 11.5rem;
-    }
-    #colorline2{
-        left: -13.8rem;
-    }
-    #num-text2{
-        top: -0.5rem;
-        left: -12.5rem;
-    }
-    #colorline3{
-        left: 12.5rem;
-    }
-    #num-text3{
-        top: -2rem;
-        left: 11.5rem;
-    }
-    #colorline4{
-        left: -14.6rem;
-    }
-    #num-text4{
-        top: -2rem;
-        left: -12.5rem;
-    }
     #btn-right{
         border-right: 20px solid var(--light-pink);
     }
@@ -250,43 +169,8 @@ body::-webkit-scrollbar-thumb {
         left: .5rem;
             top: 1.5rem;
     }
-    .timeline-text{
-       height: 100px;
-    }
     #timeline{
-        height: 1250px;
-    }
-    #colorline1{
-        top: -0.5rem;
-        left: 3.5rem;
-    }
-    #num-text1{
-        top: -17.5rem;
-        left: 4rem;
-    }
-    #colorline2{
-        top:13rem;
-        left: -4.5rem;
-    }
-    #num-text2{
-        top: -15.5rem;
-        left: -5.5rem;
-    }
-    #colorline3{
-        top:38rem;
-        left: 2.8rem;
-    }
-    #num-text3{
-        top: -15.5rem;
-        left: 4rem;
-    }
-    #colorline4{
-        top:54rem;
-        left:-5.5rem;
-    }
-    #num-text4{
-        top: -15.5rem;
-        left: -5.5rem;
+        height: 1325px;
     }
     #woman2,#woman3,#woman4,#woman5,#woman6,#woman7,#woman8{
         /* config */

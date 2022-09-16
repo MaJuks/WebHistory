@@ -474,23 +474,7 @@ hr{
     display: flex;
     justify-content: center;
     width: 80rem;
-}
-.num-years{
-    /* config */
-    width: 116px;
-    height: 30px;
-    font-family: var(--title);
-    font-size: 35px;
-    color:var(--dark-yellow);
-}
-.timeline-text{
-    display: grid;
-    justify-content: center;
-    width: 80rem;
-    margin-top: -60rem;
-}
-.num-years,.text-years{
-    width: 500px;
+    height: 0;
 }
 #timeline{
     /* config */
@@ -498,13 +482,43 @@ hr{
     border: 3px solid var(--white-white);
     border-radius: 2px;
 }
+.timeline-main{
+    width: 80rem;
+    display: grid;
+    justify-content: center;
+}
+
+.timeline-text{
+    display:flex;
+    flex-direction: column;
+}
+#timeline-text-right{
+    position: relative;
+    left: 15.5rem;
+}
+#timeline-text-left{
+    position: relative;
+    right: 15.5rem;
+    text-align: right;
+}
 .colorline{
     /* config */
-    height: 500.01px;
+    width: 500px;
     border: 3px solid var(--dark-purple);
-    transform: rotate(-90deg);
     border-radius: 2px;
 }
+.num-timeline{
+    /* config */
+    font-family: var(--title);
+    font-size: 35px;
+    color:var(--dark-yellow);
+}
+.num-timeline,.text-timeline{
+    width: 500px;
+    /* superior | direita | inferior | esquerda */
+    padding: 0 25px 0 25px;
+}
+
 /* ------------------------------------------------------ */
 /* women especific  */
 /* ------------------------------------------------------ */

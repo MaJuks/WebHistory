@@ -33,35 +33,9 @@ body::-webkit-scrollbar-thumb {
 #timeline{
     height: 1300px;
 }
-#colorline1{
-    /* position */
-    position: relative;
-    top: -6rem;
-    left: 15.30rem;
-}
-#num-text1{
-    /* position */
-    position: absolute;
-    top: 15rem;
-    left: 40.5rem;
-}
-#colorline2{
-    /* position */
-    position: relative;
-    top:19.5rem;
-    left: -16.5rem;
-}
-#num-text2{
-    /* position */
-    text-align: right;
-    position: absolute;
-    top: 26.5em;
-    left: 6rem;
-}
 /* ------------------------------------------------------ */
 /*especfic*/
 /* ------------------------------------------------------ */
-
 #btn-left{
     border-left: 25px solid var(--light-purple);
 }
@@ -85,20 +59,6 @@ body::-webkit-scrollbar-thumb {
     #timeline{
         height: 1000px;
     }
-    #colorline1{
-        left: 13rem;
-    }
-    #num-text1{
-        top: 12.5rem;
-        left: 30.5rem;
-    }
-    #colorline2{
-        left: -13.8rem;
-    }
-    #num-text2{
-        top: 37.5rem;
-        left: 6rem;
-    }
     #btn-left{
         border-left: 20px solid var(--light-purple);
     }
@@ -117,33 +77,9 @@ body::-webkit-scrollbar-thumb {
         flex-wrap: wrap;
         display: none;
     }
-
 }
 @media screen and (max-width: 1000px) {
     #timeline{
-        height: 1000px;
-    }
-    
-    #colorline1{
-        top: -1rem;
-        left: 3.5rem;
-    }
-    #num-text1{
-        top: 9rem;
-        left: 9.5rem;
-    }
-    #colorline2{
-        top: 15.5rem;
-        left: -4.5rem;
-    }
-    #num-text2{
-        top: 25.3rem;
-        left: 0rem;
-    }
-    #woman2,#woman3{
-        /* config */
-        width: 20rem;
-        flex-wrap: wrap;
-        display: none;
+        height: 1550px;
     }
 }
