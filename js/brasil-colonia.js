@@ -282,10 +282,6 @@ img_blck5.addEventListener('click', () => {
     iniciaModal('modal-id-black5')});
 
 // img-white
-// bloco1
-var img_white1 = document.getElementById('img-white1');
-img_white1.addEventListener('click', () => {
-    iniciaModal('modal-id-white1')});
 // bloco2
 var img_white2 = document.getElementById('img-white2');
 img_white2.addEventListener('click', () => {

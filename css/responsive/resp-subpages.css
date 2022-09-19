@@ -255,6 +255,16 @@
     #font{
         font-family: var(--text);
         color: var(--mid-brown);
+        font-size: 15px;
+
+    }
+    .subtitle-modal{
+        font-size: 15px;
+
+    }
+    #text-modal{
+        font-size: 18px;
+
     }
     .img-modal{
         width: 20rem;

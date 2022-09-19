@@ -410,8 +410,8 @@ footer a{
     position: relative;
     top: -1.5rem;
     z-index: 100;
-    font-family: "Montserrat";
-    color: var(--mid-brown);
+    font-family: var(--text);
+    color: var(--black);
 }
 @keyframes moviment-plant{
     from{
