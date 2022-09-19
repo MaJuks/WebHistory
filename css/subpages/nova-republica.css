@@ -48,7 +48,7 @@ body::-webkit-scrollbar-thumb {
 #btn-right:hover{
     border-right: 25px solid var(--dark-purple);
 }
-#woman2,#woman3{
+#woman2,#woman3,#woman4{
     /* config */
     width: 80rem;
     display: none;
@@ -70,7 +70,7 @@ body::-webkit-scrollbar-thumb {
     #btn-right:hover{
         border-right: 20px solid var(--dark-purple);
     }
-    #woman2,#woman3{
+    #woman2,#woman3,#woman4{
         /* config */
         width: 60rem;
     }
@@ -79,7 +79,7 @@ body::-webkit-scrollbar-thumb {
     #timeline{
         height: 1550px;
     }
-    #woman2,#woman3{
+    #woman2,#woman3,#woman4{
         /* config */
         width: 20rem;
         flex-direction: column;

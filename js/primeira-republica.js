@@ -22,11 +22,9 @@ function btn_checked2(){
 var count = 0;
 var btn_right = document.getElementById("btn-left");
 var btn_left = document.getElementById("btn-right");
-var disp = document.getElementById("display");
   
 btn_right.onclick = function () {
     count++;
-    disp.innerHTML = count;
     if(count==0){
         var wom1 = document.getElementById('woman1').style.display = 'flex';
         var wom1_anim = document.getElementById('woman1').style.animation = 'fade-right 1s';
@@ -131,7 +129,6 @@ btn_right.onclick = function () {
     }
     if(count >= 8 || count == (1*-8)){
         count = 0;
-        disp.innerHTML = count;
         var wom1 = document.getElementById('woman1').style.display = 'flex';
         var wom1_anim = document.getElementById('woman1').style.animation = 'fade-right 1s';
 
@@ -146,7 +143,6 @@ btn_right.onclick = function () {
 }
 btn_left.onclick = function () {
     count--;
-    disp.innerHTML = count;
     if(count==0){
         var wom1 = document.getElementById('woman1').style.display = 'flex';
         var wom1_anim = document.getElementById('woman1').style.animation = 'fade-left 1s';
@@ -252,7 +248,6 @@ btn_left.onclick = function () {
     }
     if(count >= 8 || count == (1*-8)){
         count = 0;
-        disp.innerHTML = count;
         var wom1 = document.getElementById('woman1').style.display = 'flex';
         var wom1_anim = document.getElementById('woman1').style.animation = 'fade-left 1s';
 
