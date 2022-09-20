@@ -97,6 +97,28 @@ body::-webkit-scrollbar-thumb {
 #timeline{
     height: 2500px;
 }
+
+/* ------------------------------------------------------ */
+/*especfic*/
+/* ------------------------------------------------------ */
+#btn-left{
+    border-left: 25px solid var(--light-purple);
+}
+#btn-right{
+    border-right: 25px solid var(--light-purple);
+}
+#btn-left:hover{
+    border-left: 25px solid var(--dark-purple);
+}
+#btn-right:hover{
+    border-right: 25px solid var(--dark-purple);
+}
+#woman2,#woman3{
+    /* config */
+    width: 80rem;
+    display: none;
+}
+
 /* ------------------------------------------------------ */
 /* MOURNING  */
 /* ------------------------------------------------------ */
@@ -127,6 +149,23 @@ body::-webkit-scrollbar-thumb {
     #timeline{
         height: 2050px;
     }
+    
+    #btn-left{
+        border-left: 20px solid var(--light-purple);
+    }
+    #btn-right{
+        border-right: 20px solid var(--light-purple);
+    }
+    #btn-left:hover{
+        border-left: 20px solid var(--dark-purple);
+    }
+    #btn-right:hover{
+        border-right: 20px solid var(--dark-purple);
+    }
+    #woman2,#woman3{
+        /* config */
+        width: 60rem;
+    }
 }
 @media screen and (max-width: 1000px) {
     .btn-worker{
@@ -146,5 +185,11 @@ body::-webkit-scrollbar-thumb {
     }
     #timeline{
         height: 2950px;
+    }
+    #woman2,#woman3{
+        /* config */
+        width: 20rem;
+        flex-direction: column;
+        display: none;
     }
 }

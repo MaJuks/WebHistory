@@ -259,7 +259,7 @@ btn_right.onclick = function () {
 }
 btn_left.onclick = function () {
     count--;
-        if(count==0){
+    if(count==0){
         var wom1 = document.getElementById('woman1').style.display = 'flex';
         var wom1_anim = document.getElementById('woman1').style.animation = 'fade-left 1s';
 
