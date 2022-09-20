@@ -27,7 +27,7 @@
 }
 body{
     margin: 0;
-    background-image: url("../../assets/background.png");
+    background-image: url("../../assets/background/background.png");
 }
 /* ------------------------------------------------------ */
 /* section shadows */
@@ -37,7 +37,7 @@ body{
     position: fixed;
     z-index: 100;
     /* config */
-    background-image: url(../../assets/vignette-mobile.png);
+    background-image: url(../../assets/background/vignette-mobile.png);
     height: 100vh;
     width: 100%;
     background-size: 100%;
@@ -48,7 +48,7 @@ body{
     position: fixed;
     z-index: 100;
     /* config */
-    background-image: url(../../assets/back-mobile.png);
+    background-image: url(../../assets/background/filter-mobile.png);
     height: 100vh;
     width: 100%;
     background-size: 100%;
