@@ -5,6 +5,11 @@
 #timeline{
     height: 550px;
 }
+@media screen and (max-width: 1600px){
+    #timeline{
+        height:500px;
+    }
+}
 @media screen and (max-width: 1280px){
     #timeline{
         height:500px;

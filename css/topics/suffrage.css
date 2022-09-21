@@ -8,7 +8,15 @@
     border: 3px solid var(--white-white);
     border-radius: 10px;
 }
-
+@media screen and (max-width: 1600px){
+    #timeline{
+        height:500px;
+    }
+    #timeline2{
+        height: 250px;
+        border: 2px solid var(--white-white);
+    }
+}
 @media screen and (max-width: 1280px){
     #timeline{
         height:500px;

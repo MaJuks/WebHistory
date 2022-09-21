@@ -27,6 +27,19 @@
     border: 2px solid var(--white-white);
     border-radius: 5px;
 }
+@media screen and (max-width: 1600px){
+    #timeline{
+        height:600px;
+    }
+    #timeline2{
+        height: 575px;
+
+    }
+    #timeline3{
+        height: 800px;
+
+    }
+}
 @media screen and (max-width: 1280px){
     #timeline{
         height:600px;
