@@ -1,14 +1,4 @@
-/* ------------------------------------------------------ */
-/* HEADER */
-/* ------------------------------------------------------ */
-#home{
-    color: var(--dark-pink);
-    -webkit-text-stroke: 1px var(--dark-pink);
-}
-.icon-home svg{
-    color: var(--dark-pink);
-}
-
+@import url(../topics/pink.css);
 /* ------------------------------------------------------ */
 /*CLICK HERE */
 /* ------------------------------------------------------ */
@@ -30,41 +20,13 @@
 /* ------------------------------------------------------ */
 /* main */
 /* ------------------------------------------------------ */
-.circle{
-    background: var(--dark-pink);
-}
-.title-box{
-    color: var(--light-pink);
-}
-.title2{
-    color: var(--dark-pink);
-    -webkit-text-stroke: 1px var(--dark-pink);
-
-}
 #timeline{
     height: 900px;
-}
-.colorline{
-    border:  solid var(--dark-pink);
-}
-body::-webkit-scrollbar-thumb {
-    background-color: var(--dark-pink);    
 }
 /* ------------------------------------------------------ */
 /* WOMANespecific */
 /* ------------------------------------------------------ */
-#btn-left{
-    border-left: 25px solid var(--light-pink);
-}
-#btn-right{
-    border-right: 25px solid var(--light-pink);
-}
-#btn-left:hover{
-    border-left: 25px solid var(--dark-pink);
-}
-#btn-right:hover{
-    border-right: 25px solid var(--dark-pink);
-}
+
 #woman2,#woman3,
 #woman4,#woman5,
 #woman6,#woman7,
@@ -75,7 +37,31 @@ body::-webkit-scrollbar-thumb {
     width: 80rem;
     display: none;
 }
-
+@media screen and (max-width: 1600px){ 
+    #timeline{
+        height: 720px;
+    }
+    #btn-left{
+        border-left: 20px solid var(--light-pink);
+    }
+    #btn-right{
+        border-right: 20px solid var(--light-pink);
+    }
+    #btn-left:hover{
+        border-left: 20px solid var(--dark-pink);
+    }
+    #btn-right:hover{
+        border-right: 20px solid var(--dark-pink);
+    }
+    #woman2,#woman3,
+    #woman4,#woman5,
+    #woman6,#woman7,
+    #woman8,#woman9,
+    #woman10,#woman11,
+    #woman12,#woman13{
+        width: 64rem;
+    }
+}
 @media screen and (max-width: 1280px) {
     #timeline{
         height: 700px;

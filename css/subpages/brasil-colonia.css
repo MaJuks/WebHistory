@@ -143,7 +143,79 @@
     width: 80rem;
     display: none;
 }
+@media screen and (max-width: 1600px) {
+    #text-intro1{
+        width: 28rem;
+        padding:48px 0 0 0;
+    }
 
+    #img-subtitle-intro{
+        margin: 24px;
+    }
+    #img-intro{
+        width: 408px;
+        height: 273.60px;
+    }
+    #subtitle-intro{
+        font-size: 16px;
+    }
+    .btn-intro{
+        top: -2.24rem;
+        left: 2.4rem;
+    }
+    .input-btn{
+        top: 11.20px;
+    }
+    .div-box-women{
+        width: 64rem;
+        margin: 2.4rem;
+    }
+    #box-link {
+        height: 12rem;
+        width: 12rem;
+    }
+    #text-native3{
+        margin-bottom: 72px;
+    }
+    .btn-native{
+        top: -2.24rem;
+        left:1.20rem;
+    }
+    #btn-native{
+        top: -0.32rem;
+        left: 0.8rem;
+    }
+    #nav-hidden-native{
+        height: 7.2rem;
+    }
+    #img-white1{
+        width:25rem;
+        height:17.60rem;
+    }
+    #img-subtitle-white{
+        width: 64rem;
+        font-size: 16px;
+    }
+    #text-white3{
+        margin-bottom: 64px;
+    }
+    .btn-white{
+        top: -2.32rem;
+        left: 1.20rem;
+        }
+    #btn-white{
+        top: -0.4rem;
+        left: 0.8rem;
+    }
+    #nav-hidden-white{
+        height: 8rem;
+    }
+    #woman2,#woman3,#woman4,#woman5,#woman6,#woman7{
+        /* config */
+        width: 64rem;
+        display: none;
+    }
+}
 @media screen and (max-width: 1280px) {
     #text-intro1{
         width: 28rem;

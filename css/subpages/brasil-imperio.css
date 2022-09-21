@@ -55,7 +55,26 @@
     width: 80rem;
     display: none;
 }
-
+@media screen and (max-width: 1600px){ 
+    .line{
+        top: 24px;
+    }
+    .btn-midia{
+        left: 1.92rem;
+        top: -0.4rem;
+    }
+    .label-btn{
+        top: -1.84rem;
+    }
+    .nav-hidden-midia{
+        width: 64rem;
+        height: 12rem;
+    }
+    #woman2,#woman3,#woman4,#woman5,#woman6,#woman7{
+        /* config */
+        width: 64rem;
+    }
+}
 @media screen and (max-width: 1280px){       
     .line{
         position: relative;

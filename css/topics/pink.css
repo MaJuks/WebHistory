@@ -26,3 +26,24 @@
 body::-webkit-scrollbar-thumb {
     background-color: var(--dark-pink);    
 }
+.colorline{
+    border:  solid var(--dark-pink);
+}
+#btn-left{
+    border-left: 25px solid var(--light-pink);
+}
+#btn-right{
+    border-right: 25px solid var(--light-pink);
+}
+#btn-left:hover{
+    border-left: 25px solid var(--dark-pink);
+}
+#btn-right:hover{
+    border-right: 25px solid var(--dark-pink);
+}
+.label-btn::before{
+    border-left: 25px solid var(--light-pink);
+}
+.input-btn:checked + .label-btn::before{
+    border-top: 25px solid var(--dark-pink);
+}

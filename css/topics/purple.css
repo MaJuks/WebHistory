@@ -23,5 +23,23 @@
 
 }
 body::-webkit-scrollbar-thumb {
-    background-color: var(--dark-purples);    
+    background-color: var(--dark-purple);    
+}
+#btn-left{
+    border-left: 25px solid var(--light-purple);
+}
+#btn-right{
+    border-right: 25px solid var(--light-purple);
+}
+#btn-left:hover{
+    border-left: 25px solid var(--dark-purple);
+}
+#btn-right:hover{
+    border-right: 25px solid var(--dark-purple);
+}
+.label-btn::before{
+    border-left: 25px solid var(--light-purple);
+}
+.input-btn:checked + .label-btn::before{
+    border-top: 25px solid var(--dark-purple);
 }

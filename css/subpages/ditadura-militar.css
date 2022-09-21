@@ -1,32 +1,4 @@
-
-
-/* ------------------------------------------------------ */
-/* HEADER */
-/* ------------------------------------------------------ */
-#home{
-    color: var(--dark-purple);
-    -webkit-text-stroke: 1px var(--dark-purple);
-}
-.icon-home svg{
-    color: var(--dark-purple);
-}
-/* ------------------------------------------------------ */
-/* main */
-/* ------------------------------------------------------ */
-.circle{
-    background: var(--light-purple);
-}
-.title-box{
-    color: var(--light-purple);
-}
-.title2{
-    color: var(--dark-purple);
-    -webkit-text-stroke: 1px var(--dark-purple);
-
-}
-body::-webkit-scrollbar-thumb {
-    background-color: var(--dark-purple);    
-}
+@import url(../topics/purple.css);
 /* ------------------------------------------------------ */
 /* CLICKHERE  */
 /* ------------------------------------------------------ */
@@ -45,7 +17,6 @@ body::-webkit-scrollbar-thumb {
     height: 0;   
     transform: rotate(-10deg);
 }
-
 /* ------------------------------------------------------ */
 /* worker  */
 /* ------------------------------------------------------ */
@@ -62,12 +33,6 @@ body::-webkit-scrollbar-thumb {
     top: -2.3rem;
     transition-duration: 0.5s;
 }
-.label-btn::before{
-    border-left: 25px solid var(--light-purple);
-}
-.input-btn:checked + .label-btn::before{
-    border-top: 25px solid var(--dark-purple);
-}
 .line{
     position: relative;
     top: 30px;
@@ -75,7 +40,6 @@ body::-webkit-scrollbar-thumb {
 /* ------------------------------------------------------ */
 /* midia  */
 /* ------------------------------------------------------ */
-
 .btn-midia{
     /* position */
     position: relative;
@@ -89,7 +53,6 @@ body::-webkit-scrollbar-thumb {
     width: 80rem;
     height: 7rem;
     justify-content: center;
-
 }
 /* ------------------------------------------------------ */
 /* mov orG */
@@ -97,22 +60,9 @@ body::-webkit-scrollbar-thumb {
 #timeline{
     height: 2500px;
 }
-
 /* ------------------------------------------------------ */
 /*especfic*/
 /* ------------------------------------------------------ */
-#btn-left{
-    border-left: 25px solid var(--light-purple);
-}
-#btn-right{
-    border-right: 25px solid var(--light-purple);
-}
-#btn-left:hover{
-    border-left: 25px solid var(--dark-purple);
-}
-#btn-right:hover{
-    border-right: 25px solid var(--dark-purple);
-}
 #woman2,#woman3{
     /* config */
     width: 80rem;
@@ -125,7 +75,53 @@ body::-webkit-scrollbar-thumb {
 #mourning{
     background:var(--black);
 }
-
+@media screen and (max-width: 1600px){ 
+    .btn-worker{
+        left: 2rem;
+        top: -0.4rem;
+    }
+    .label-btn{
+        top: -2rem;
+    }
+    .label-btn::before{
+        border-left: 20px solid var(--light-purple);
+    }
+    .input-btn:checked + .label-btn::before{
+        border-top: 20px solid var(--dark-purple);
+    }
+    .line{
+        position: relative;
+        top: 24px;
+    }
+    .btn-midia{
+        left: 2rem;
+        top: -0.4rem;
+    }
+    .nav-hidden-midia{
+        width: 64rem;
+        height: 6.60rem;
+    
+    }
+    #timeline{
+        height: 2000px;
+    }
+   #btn-left{
+        border-left: 20px solid var(--light-purple);
+    }
+    #btn-right{
+        border-right: 20px solid var(--light-purple);
+    }
+    #btn-left:hover{
+        border-left: 20px solid var(--dark-purple);
+    }
+    #btn-right:hover{
+        border-right: 20px solid var(--dark-purple);
+    }
+    #woman2,#woman3{
+        width: 64rem;
+    }
+    
+}
 @media screen and (max-width: 1280px) {
     .btn-worker, .btn-midia{
         left: 1.5rem;

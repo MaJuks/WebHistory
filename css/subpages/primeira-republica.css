@@ -1,14 +1,4 @@
-/* ------------------------------------------------------ */
-/* HEADER */
-/* ------------------------------------------------------ */
-#home{
-    color: var(--dark-pink);
-    -webkit-text-stroke: 1px var(--dark-pink);
-}
-.icon-home svg{
-    color: var(--dark-pink);
-}
-
+@import url(../topics/pink.css);
 /* ------------------------------------------------------ */
 /* CLICK HERE*/
 /* ------------------------------------------------------ */
@@ -26,23 +16,6 @@
     justify-content: center;
     height: 0;   
     transform: rotate(-10deg);
-}
-/* ------------------------------------------------------ */
-/* main */
-/* ------------------------------------------------------ */
-.circle{
-    background: var(--dark-pink);
-}
-.title-box{
-    color: var(--light-pink);
-}
-.title2{
-    color: var(--dark-pink);
-    -webkit-text-stroke: 1px var(--dark-pink);
-
-}
-body::-webkit-scrollbar-thumb {
-    background-color: var(--dark-pink);    
 }
 /* ------------------------------------------------------ */
 /* INTRO */
@@ -64,49 +37,23 @@ body::-webkit-scrollbar-thumb {
     top: -2.3rem;
     transition-duration: 0.5s;
 }
-.label-btn::before{
-    border-left: 25px solid var(--light-pink);
-}
-.input-btn:checked + .label-btn::before{
-    border-top: 25px solid var(--dark-pink);
-}
 /* ------------------------------------------------------ */
 /* worker */
 /* ------------------------------------------------------ */
-
 .btn-worker{
     position: relative;
     left: 2.5rem;
     top: -0.5rem;
 }
-
 /* ------------------------------------------------------ */
 /* mov and org */
 /* ------------------------------------------------------ */
-
 #timeline{
     height: 1250px;
-}
-.colorline{
-    border: solid var(--dark-pink);
 }
 /* ------------------------------------------------------ */
 /* especific */
 /* ------------------------------------------------------ */
-
-#btn-right{
-    border-right: 25px solid var(--light-pink);
-}
-#btn-left{
-    border-left: 25px solid var(--light-pink);
-
-}
-#btn-right:hover{
-    border-right: 25px solid var(--dark-pink);
-}
-#btn-left:hover{
-    border-left: 25px solid var(--dark-pink);
-}
 #title-woman{
     color:var(--light-yellow);
 }
@@ -114,6 +61,49 @@ body::-webkit-scrollbar-thumb {
     /* config */
     width: 80rem;
     display: none;
+}
+@media screen and (max-width: 1600px){ 
+    .line{
+        top: 24px;
+    }
+    .btn-intro{
+        left: 2.5rem;
+        top: -0.5rem;
+    }
+    .label-btn{
+        top: -2rem;
+    }
+    .label-btn::before{
+        border-left: 20px solid var(--light-pink);
+    }
+    .input-btn:checked + .label-btn::before{
+        border-top: 20px solid var(--dark-pink);
+    }
+
+    .btn-worker{
+        position: relative;
+        left: 2rem;
+        top: -0.4rem;
+    }
+    #timeline{
+        height: 1000px;
+    }
+    #btn-right{
+        border-right: 20px solid var(--light-pink);
+    }
+    #btn-left{
+        border-left: 20px solid var(--light-pink);
+
+    }
+    #btn-right:hover{
+        border-right: 20px solid var(--dark-pink);
+    }
+    #btn-left:hover{
+        border-left: 20px solid var(--dark-pink);
+    }
+    #woman2,#woman3,#woman4,#woman5,#woman6,#woman7,#woman8{
+        width: 64rem;
+    }
 }
 @media screen and (max-width: 1280px){       
     .line{
