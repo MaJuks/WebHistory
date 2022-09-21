@@ -84,10 +84,10 @@
         top: -2rem;
     }
     .label-btn::before{
-        border-left: 20px solid var(--light-purple);
+        border-left: 25px solid var(--light-purple);
     }
     .input-btn:checked + .label-btn::before{
-        border-top: 20px solid var(--dark-purple);
+        border-top: 25px solid var(--dark-purple);
     }
     .line{
         position: relative;

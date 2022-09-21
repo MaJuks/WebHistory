@@ -344,7 +344,7 @@ hr{
     /* position */
     z-index: 100;
     position: relative;
-    top: -2rem;
+    top: -1.8rem;
     /* config */
     width: 61rem;
     border: 3px solid var(--black);
@@ -371,7 +371,7 @@ hr{
 .box-hidden{
     /* config */
     position: relative;
-    top: -81px;
+    top: -91px;
     /* config */
     justify-content: center;
     width: 60rem;
@@ -446,9 +446,9 @@ hr{
     /* config */
     width: 0;
     height: 0;
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid transparent;
-    border-left: 25px solid var(--light-yellow);
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid var(--light-yellow);
 }
 .input-btn:checked + .label-btn::before{
     /* button before being checked (triangulo shape) */
@@ -458,9 +458,9 @@ hr{
     /* config */
     width: 0;
     height: 0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-top: 25px solid var(--dark-yellow);
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid var(--dark-yellow);
 }
 .input-btn:focus+.label-btn::before{
     /* line in select (for accessibility) */
@@ -907,7 +907,7 @@ body::-webkit-scrollbar-thumb {
 }
 @keyframes slide-down {
     0%{
-        top: -90px;
+        top: -100px;
         opacity: 0;  
     }
     25%{

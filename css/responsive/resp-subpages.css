@@ -107,20 +107,20 @@
         height: 16px;
     }
     #hidden-line{
-        top: -2rem;
+        top: -1.8rem;
         width: 48.8rem;
     }
     .subtitle-text{
         width: 16rem;
         height: 24px;
         margin-bottom: 40px;
-        }
+    }
     .nav-hidden{
         width: 64rem;
         height: 12rem;
-        }
+    }
     .box-hidden{
-        top: -80px;
+        top: -74px;
         width: 48rem;
         height: 12.5rem;
         padding: 0  8px;
@@ -146,18 +146,18 @@
 
     .label-btn::before{
     
-        border-top: 20px solid transparent;
-        border-bottom: 20px solid transparent;
-        border-left: 20px solid var(--light-yellow);
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-left: 25px solid var(--light-yellow);
     }
     .input-btn:checked + .label-btn::before{
         margin-left: -12px;
         margin-top: 11.2px;
         width: 0;
         height: 0;
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
-        border-top: 20px solid var(--dark-yellow);
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-top: 25px solid var(--dark-yellow);
     }
     .timeline-div{
         width: 64rem;

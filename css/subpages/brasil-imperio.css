@@ -25,26 +25,25 @@
 
 .line{
     position: relative;
-    top: 30px;
 }
 .btn-midia{
-    /* position */
     position: relative;
-    left: 2.5rem;
-    top: -0.5rem;
+    top: -2.8rem;
+    left: 3rem;
 }
-.label-btn{
+.input-btn{
+    /* hidden checkbox */
     /* position */
-    position: relative;
-    top: -2.3rem;
-    transition-duration: 0.5s;
+    position: absolute;
+    top: 14px;
 }
 .nav-hidden-midia{
+    position: relative;
     /* position */
     display: none;
     /* config */
     width: 80rem;
-    height: 15rem;
+    height: 10rem;
     justify-content: center;
 }
 /* ------------------------------------------------------ */
@@ -57,14 +56,13 @@
 }
 @media screen and (max-width: 1600px){ 
     .line{
-        top: 24px;
     }
     .btn-midia{
-        left: 1.92rem;
-        top: -0.4rem;
+        top: -2.24rem;
+        left: 1.4rem;
     }
-    .label-btn{
-        top: -1.84rem;
+    .input-btn{
+        top: 11.20px;
     }
     .nav-hidden-midia{
         width: 64rem;

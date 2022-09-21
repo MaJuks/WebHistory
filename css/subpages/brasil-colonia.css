@@ -39,8 +39,6 @@
     text-align: center;
 }
 .btn-intro{
-    /* button  */
-    /* position */
     position: relative;
     top: -2.8rem;
     left: 3rem;
@@ -90,13 +88,6 @@
     top: -2.8rem;
     left: 1.5rem;
 }
-#btn-native{
-    /* position */
-    display: flex;
-    position: relative;
-    top: -0.4rem;
-    left: 1rem;
-}
 #nav-hidden-native{
     height: 9rem;
 }
@@ -124,13 +115,6 @@
     position: relative;
     top: -2.9rem;
     left: 1.5rem;
-}
-#btn-white{
-    /* position */
-    display: flex;
-    position: relative;
-    top: -0.5rem;
-    left: 1rem;
 }
 #nav-hidden-white{
     height: 10rem;
@@ -181,12 +165,8 @@
         top: -2.24rem;
         left:1.20rem;
     }
-    #btn-native{
-        top: -0.32rem;
-        left: 0.8rem;
-    }
     #nav-hidden-native{
-        height: 7.2rem;
+        height: 9rem;
     }
     #img-white1{
         width:25rem;
@@ -202,10 +182,6 @@
     .btn-white{
         top: -2.32rem;
         left: 1.20rem;
-        }
-    #btn-white{
-        top: -0.4rem;
-        left: 0.8rem;
     }
     #nav-hidden-white{
         height: 8rem;
