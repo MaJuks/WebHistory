@@ -106,16 +106,16 @@
         height: 2000px;
     }
    #btn-left{
-        border-left: 20px solid var(--light-purple);
+        border-left: 25px solid var(--light-purple);
     }
     #btn-right{
-        border-right: 20px solid var(--light-purple);
+        border-right: 25px solid var(--light-purple);
     }
     #btn-left:hover{
         border-left: 20px solid var(--dark-purple);
     }
     #btn-right:hover{
-        border-right: 20px solid var(--dark-purple);
+        border-right: 25px solid var(--dark-purple);
     }
     #woman2,#woman3{
         width: 64rem;
