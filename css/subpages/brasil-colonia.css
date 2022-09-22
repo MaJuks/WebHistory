@@ -230,16 +230,12 @@
     }
     .btn-native,.btn-white{
         top: -2.5rem;
-        left: -0.5rem;
+        left: 1.5rem;
     }
     #btn-native{
-        top: 1px;
-        left: 1rem;
+        top:10px;
     }
-    #btn-native:checked{
-        top: -7px;
-        left: 1rem;
-    }
+   
     #nav-hidden-native{
         height: 12rem;
     }
@@ -254,12 +250,7 @@
         width: 60rem;
     }
     #btn-white{
-        top: 0rem;
-        left: 1rem;
-    }
-    #btn-white:checked{
-        top: -5px;
-        left: 1rem;
+        top: 10px;
     }
     #nav-hidden-white{
         height: 10rem;
