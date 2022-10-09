@@ -602,6 +602,9 @@ hr{
 #subtitle-img-woman{
     font-size: 20px;
     text-align: center;
+    /* position */
+    position: relative;
+    top: -5rem;
 }
 .box-text-woman{
     /* topo | direita | inferior | esquerda */
@@ -623,6 +626,7 @@ hr{
     color: var(--light-pink);
 }
 #subtitle-woman{
+    
     /* letter config */
     font-family: 'Special Elite';
     font-weight: 400;
@@ -634,7 +638,7 @@ hr{
     /* position */
     /* config */
     width: 32rem;
-    height: 227px;
+    height: 427px;
 }
 /* ------------------------------------------------------ */
 /* MODAL CONTAINER*/
