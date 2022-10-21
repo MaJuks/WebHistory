@@ -23,8 +23,12 @@ btn_right.onclick = function () {
         var wom12 = document.getElementById('woman12').style.display = 'none';
         var wom13 = document.getElementById('woman13').style.display = 'none';
         var wom14 = document.getElementById('woman14').style.display = 'none';
+        var wom15 = document.getElementById('woman15').style.display = 'none';
+        var wom16 = document.getElementById('woman16').style.display = 'none';
+        var wom17 = document.getElementById('woman17').style.display = 'none';
+        var wom18 = document.getElementById('woman18').style.display = 'none';
     }
-    if(count==1 || count == (1*-13)){
+    if(count==1 || count == (1*-17)){
         var wom1 = document.getElementById('woman1').style.display = 'none';
 
         var wom2 = document.getElementById('woman2').style.display = 'flex';
@@ -42,8 +46,12 @@ btn_right.onclick = function () {
         var wom12 = document.getElementById('woman12').style.display = 'none';
         var wom13 = document.getElementById('woman13').style.display = 'none';
         var wom14 = document.getElementById('woman14').style.display = 'none';
+        var wom15 = document.getElementById('woman15').style.display = 'none';
+        var wom16 = document.getElementById('woman16').style.display = 'none';
+        var wom17 = document.getElementById('woman17').style.display = 'none';
+        var wom18 = document.getElementById('woman18').style.display = 'none';
     }
-    if(count==2 || count == (1*-12)){
+    if(count==2 || count == (1*-16)){
         var wom1 = document.getElementById('woman1').style.display = 'none';
         var wom2 = document.getElementById('woman2').style.display = 'none';
 
@@ -61,9 +69,13 @@ btn_right.onclick = function () {
         var wom12 = document.getElementById('woman12').style.display = 'none';
         var wom13 = document.getElementById('woman13').style.display = 'none';
         var wom14 = document.getElementById('woman14').style.display = 'none';
+        var wom15 = document.getElementById('woman15').style.display = 'none';
+        var wom16 = document.getElementById('woman16').style.display = 'none';
+        var wom17 = document.getElementById('woman17').style.display = 'none';
+        var wom18 = document.getElementById('woman18').style.display = 'none';
 
     }
-    if(count==3 || count == (1*-11)){
+    if(count==3 || count == (1*-15)){
         var wom1 = document.getElementById('woman1').style.display = 'none';
         var wom2 = document.getElementById('woman2').style.display = 'none';
         var wom3 = document.getElementById('woman3').style.display = 'none';
@@ -81,9 +93,13 @@ btn_right.onclick = function () {
         var wom12 = document.getElementById('woman12').style.display = 'none';
         var wom13 = document.getElementById('woman13').style.display = 'none';
         var wom14 = document.getElementById('woman14').style.display = 'none';
+        var wom15 = document.getElementById('woman15').style.display = 'none';
+        var wom16 = document.getElementById('woman16').style.display = 'none';
+        var wom17 = document.getElementById('woman17').style.display = 'none';
+        var wom18 = document.getElementById('woman18').style.display = 'none';
 
     }
-    if(count==4 || count == (1*-10)){
+    if(count==4 || count == (1*-14)){
         var wom1 = document.getElementById('woman1').style.display = 'none';
         var wom2 = document.getElementById('woman2').style.display = 'none';
         var wom3 = document.getElementById('woman3').style.display = 'none';
@@ -101,9 +117,13 @@ btn_right.onclick = function () {
         var wom12 = document.getElementById('woman12').style.display = 'none';
         var wom13 = document.getElementById('woman13').style.display = 'none';
         var wom14 = document.getElementById('woman14').style.display = 'none';
+        var wom15 = document.getElementById('woman15').style.display = 'none';
+        var wom16 = document.getElementById('woman16').style.display = 'none';
+        var wom17 = document.getElementById('woman17').style.display = 'none';
+        var wom18 = document.getElementById('woman18').style.display = 'none';
 
     }
-    if(count == 5 || count == (1*-9)){
+    if(count == 5 || count == (1*-13)){
         var wom1 = document.getElementById('woman1').style.display = 'none';
         var wom2 = document.getElementById('woman2').style.display = 'none';
         var wom3 = document.getElementById('woman3').style.display = 'none';
@@ -121,9 +141,13 @@ btn_right.onclick = function () {
         var wom12 = document.getElementById('woman12').style.display = 'none';
         var wom13 = document.getElementById('woman13').style.display = 'none';
         var wom14 = document.getElementById('woman14').style.display = 'none';
+        var wom15 = document.getElementById('woman15').style.display = 'none';
+        var wom16 = document.getElementById('woman16').style.display = 'none';
+        var wom17 = document.getElementById('woman17').style.display = 'none';
+        var wom18 = document.getElementById('woman18').style.display = 'none';
 
     }
-    if(count == 6 || count == (1*-8)){
+    if(count == 6 || count == (1*-12)){
         var wom1 = document.getElementById('woman1').style.display = 'none';
         var wom2 = document.getElementById('woman2').style.display = 'none';
         var wom3 = document.getElementById('woman3').style.display = 'none';
@@ -141,9 +165,13 @@ btn_right.onclick = function () {
         var wom12 = document.getElementById('woman12').style.display = 'none';
         var wom13 = document.getElementById('woman13').style.display = 'none';
         var wom14 = document.getElementById('woman14').style.display = 'none';
+        var wom15 = document.getElementById('woman15').style.display = 'none';
+        var wom16 = document.getElementById('woman16').style.display = 'none';
+        var wom17 = document.getElementById('woman17').style.display = 'none';
+        var wom18 = document.getElementById('woman18').style.display = 'none';
 
     }
-    if(count == 7 || count == (1*-7)){
+    if(count == 7 || count == (1*-11)){
         var wom1 = document.getElementById('woman1').style.display = 'none';
         var wom2 = document.getElementById('woman2').style.display = 'none';
         var wom3 = document.getElementById('woman3').style.display = 'none';
@@ -161,9 +189,13 @@ btn_right.onclick = function () {
         var wom12 = document.getElementById('woman12').style.display = 'none';
         var wom13 = document.getElementById('woman13').style.display = 'none';
         var wom14 = document.getElementById('woman14').style.display = 'none';
+        var wom15 = document.getElementById('woman15').style.display = 'none';
+        var wom16 = document.getElementById('woman16').style.display = 'none';
+        var wom17 = document.getElementById('woman17').style.display = 'none';
+        var wom18 = document.getElementById('woman18').style.display = 'none';
 
     }
-    if(count == 8 || count == (1*-6)){
+    if(count == 8 || count == (1*-10)){
         var wom1 = document.getElementById('woman1').style.display = 'none';
         var wom2 = document.getElementById('woman2').style.display = 'none';
         var wom3 = document.getElementById('woman3').style.display = 'none';
@@ -181,9 +213,13 @@ btn_right.onclick = function () {
         var wom12 = document.getElementById('woman12').style.display = 'none';
         var wom13 = document.getElementById('woman13').style.display = 'none';
         var wom14 = document.getElementById('woman14').style.display = 'none';
+        var wom15 = document.getElementById('woman15').style.display = 'none';
+        var wom16 = document.getElementById('woman16').style.display = 'none';
+        var wom17 = document.getElementById('woman17').style.display = 'none';
+        var wom18 = document.getElementById('woman18').style.display = 'none';
 
     }
-    if(count == 9 || count == (1*-5)){
+    if(count == 9 || count == (1*-9)){
         var wom1 = document.getElementById('woman1').style.display = 'none';
         var wom2 = document.getElementById('woman2').style.display = 'none';
         var wom3 = document.getElementById('woman3').style.display = 'none';
@@ -201,9 +237,13 @@ btn_right.onclick = function () {
         var wom12 = document.getElementById('woman12').style.display = 'none';
         var wom13 = document.getElementById('woman13').style.display = 'none';
         var wom14 = document.getElementById('woman14').style.display = 'none';
+        var wom15 = document.getElementById('woman15').style.display = 'none';
+        var wom16 = document.getElementById('woman16').style.display = 'none';
+        var wom17 = document.getElementById('woman17').style.display = 'none';
+        var wom18 = document.getElementById('woman18').style.display = 'none';
 
     }
-    if(count == 10 || count == (1*-4)){
+    if(count == 10 || count == (1*-8)){
         var wom1 = document.getElementById('woman1').style.display = 'none';
         var wom2 = document.getElementById('woman2').style.display = 'none';
         var wom3 = document.getElementById('woman3').style.display = 'none';
@@ -221,9 +261,13 @@ btn_right.onclick = function () {
         var wom12 = document.getElementById('woman12').style.display = 'none';
         var wom13 = document.getElementById('woman13').style.display = 'none';
         var wom14 = document.getElementById('woman14').style.display = 'none';
+        var wom15 = document.getElementById('woman15').style.display = 'none';
+        var wom16 = document.getElementById('woman16').style.display = 'none';
+        var wom17 = document.getElementById('woman17').style.display = 'none';
+        var wom18 = document.getElementById('woman18').style.display = 'none';
 
     }
-    if(count == 11 || count == (1*-3)){
+    if(count == 11 || count == (1*-7)){
         var wom1 = document.getElementById('woman1').style.display = 'none';
         var wom2 = document.getElementById('woman2').style.display = 'none';
         var wom3 = document.getElementById('woman3').style.display = 'none';
@@ -241,9 +285,13 @@ btn_right.onclick = function () {
 
         var wom13 = document.getElementById('woman13').style.display = 'none';
         var wom14 = document.getElementById('woman14').style.display = 'none';
+        var wom15 = document.getElementById('woman15').style.display = 'none';
+        var wom16 = document.getElementById('woman16').style.display = 'none';
+        var wom17 = document.getElementById('woman17').style.display = 'none';
+        var wom18 = document.getElementById('woman18').style.display = 'none';
 
     }
-    if(count == 12 || count == (1*-2)){
+    if(count == 12 || count == (1*-6)){
         var wom1 = document.getElementById('woman1').style.display = 'none';
         var wom2 = document.getElementById('woman2').style.display = 'none';
         var wom3 = document.getElementById('woman3').style.display = 'none';
@@ -261,8 +309,12 @@ btn_right.onclick = function () {
         var wom13_anim = document.getElementById('woman13').style.animation = 'fade-right 1s';
 
         var wom14 = document.getElementById('woman14').style.display = 'none';
+        var wom15 = document.getElementById('woman15').style.display = 'none';
+        var wom16 = document.getElementById('woman16').style.display = 'none';
+        var wom17 = document.getElementById('woman17').style.display = 'none';
+        var wom18 = document.getElementById('woman18').style.display = 'none';
     }
-    if(count == 13 || count == (1*-1)){
+    if(count == 13 || count == (1*-5)){
         var wom1 = document.getElementById('woman1').style.display = 'none';
         var wom2 = document.getElementById('woman2').style.display = 'none';
         var wom3 = document.getElementById('woman3').style.display = 'none';
@@ -279,8 +331,111 @@ btn_right.onclick = function () {
 
         var wom14 = document.getElementById('woman14').style.display = 'flex';
         var wom14_anim = document.getElementById('woman14').style.animation = 'fade-right 1s';
+
+        var wom15 = document.getElementById('woman15').style.display = 'none';
+        var wom16 = document.getElementById('woman16').style.display = 'none';
+        var wom17 = document.getElementById('woman17').style.display = 'none';
+        var wom18 = document.getElementById('woman18').style.display = 'none';
     }
-    if(count >= 14 || count == (1*-14)){
+
+    if(count == 14 || count == (1*-4)){
+        var wom1 = document.getElementById('woman1').style.display = 'none';
+        var wom2 = document.getElementById('woman2').style.display = 'none';
+        var wom3 = document.getElementById('woman3').style.display = 'none';
+        var wom4 = document.getElementById('woman4').style.display = 'none';
+        var wom5 = document.getElementById('woman5').style.display = 'none';
+        var wom6 = document.getElementById('woman6').style.display = 'none';
+        var wom7 = document.getElementById('woman7').style.display = 'none';
+        var wom8 = document.getElementById('woman8').style.display = 'none';
+        var wom9 = document.getElementById('woman9').style.display = 'none';
+        var wom10 = document.getElementById('woman10').style.display = 'none';
+        var wom11 = document.getElementById('woman11').style.display = 'none';
+        var wom12 = document.getElementById('woman12').style.display = 'none';
+        var wom13 = document.getElementById('woman13').style.display = 'none';
+        var wom14 = document.getElementById('woman14').style.display = 'none';
+
+        var wom15 = document.getElementById('woman15').style.display = 'flex';
+        var wom15_anim = document.getElementById('woman15').style.animation = 'fade-right 1s';
+
+
+        var wom16 = document.getElementById('woman16').style.display = 'none';
+        var wom17 = document.getElementById('woman17').style.display = 'none';
+        var wom18 = document.getElementById('woman18').style.display = 'none';
+    }
+
+    if(count == 15 || count == (1*-3)){
+        var wom1 = document.getElementById('woman1').style.display = 'none';
+        var wom2 = document.getElementById('woman2').style.display = 'none';
+        var wom3 = document.getElementById('woman3').style.display = 'none';
+        var wom4 = document.getElementById('woman4').style.display = 'none';
+        var wom5 = document.getElementById('woman5').style.display = 'none';
+        var wom6 = document.getElementById('woman6').style.display = 'none';
+        var wom7 = document.getElementById('woman7').style.display = 'none';
+        var wom8 = document.getElementById('woman8').style.display = 'none';
+        var wom9 = document.getElementById('woman9').style.display = 'none';
+        var wom10 = document.getElementById('woman10').style.display = 'none';
+        var wom11 = document.getElementById('woman11').style.display = 'none';
+        var wom12 = document.getElementById('woman12').style.display = 'none';
+        var wom13 = document.getElementById('woman13').style.display = 'none';
+        var wom14 = document.getElementById('woman14').style.display = 'none';
+        var wom15 = document.getElementById('woman15').style.display = 'none';
+
+        var wom16 = document.getElementById('woman16').style.display = 'flex';
+        var wom16_anim = document.getElementById('woman16').style.animation = 'fade-right 1s';
+
+        var wom17 = document.getElementById('woman17').style.display = 'none';
+        var wom18 = document.getElementById('woman18').style.display = 'none';
+    }
+
+    if(count == 16 || count == (1*-2)){
+        var wom1 = document.getElementById('woman1').style.display = 'none';
+        var wom2 = document.getElementById('woman2').style.display = 'none';
+        var wom3 = document.getElementById('woman3').style.display = 'none';
+        var wom4 = document.getElementById('woman4').style.display = 'none';
+        var wom5 = document.getElementById('woman5').style.display = 'none';
+        var wom6 = document.getElementById('woman6').style.display = 'none';
+        var wom7 = document.getElementById('woman7').style.display = 'none';
+        var wom8 = document.getElementById('woman8').style.display = 'none';
+        var wom9 = document.getElementById('woman9').style.display = 'none';
+        var wom10 = document.getElementById('woman10').style.display = 'none';
+        var wom11 = document.getElementById('woman11').style.display = 'none';
+        var wom12 = document.getElementById('woman12').style.display = 'none';
+        var wom13 = document.getElementById('woman13').style.display = 'none';
+        var wom14 = document.getElementById('woman14').style.display = 'none';
+        var wom15 = document.getElementById('woman15').style.display = 'none';
+        var wom16 = document.getElementById('woman16').style.display = 'none';
+
+        var wom17 = document.getElementById('woman17').style.display = 'flex';
+        var wom17_anim = document.getElementById('woman17').style.animation = 'fade-right 1s';
+
+        var wom18 = document.getElementById('woman18').style.display = 'none';
+    }
+
+    if(count == 17 || count == (1*-1)){
+        var wom1 = document.getElementById('woman1').style.display = 'none';
+        var wom2 = document.getElementById('woman2').style.display = 'none';
+        var wom3 = document.getElementById('woman3').style.display = 'none';
+        var wom4 = document.getElementById('woman4').style.display = 'none';
+        var wom5 = document.getElementById('woman5').style.display = 'none';
+        var wom6 = document.getElementById('woman6').style.display = 'none';
+        var wom7 = document.getElementById('woman7').style.display = 'none';
+        var wom8 = document.getElementById('woman8').style.display = 'none';
+        var wom9 = document.getElementById('woman9').style.display = 'none';
+        var wom10 = document.getElementById('woman10').style.display = 'none';
+        var wom11 = document.getElementById('woman11').style.display = 'none';
+        var wom12 = document.getElementById('woman12').style.display = 'none';
+        var wom13 = document.getElementById('woman13').style.display = 'none';
+        var wom14 = document.getElementById('woman14').style.display = 'none';
+        var wom15 = document.getElementById('woman15').style.display = 'none';
+        var wom16 = document.getElementById('woman16').style.display = 'none';
+        var wom17 = document.getElementById('woman17').style.display = 'none';
+
+        var wom18 = document.getElementById('woman18').style.display = 'flex';
+        var wom18_anim = document.getElementById('woman18').style.animation = 'fade-right 1s';
+
+    }
+
+    if(count >= 18 || count == (1*-18)){
         count = 0;
         var wom1 = document.getElementById('woman1').style.display = 'flex';
         var wom1_anim = document.getElementById('woman1').style.animation = 'fade-right 1s';
@@ -298,6 +453,10 @@ btn_right.onclick = function () {
         var wom12 = document.getElementById('woman12').style.display = 'none';
         var wom13 = document.getElementById('woman13').style.display = 'none';
         var wom14 = document.getElementById('woman14').style.display = 'none';
+        var wom15 = document.getElementById('woman15').style.display = 'none';
+        var wom16 = document.getElementById('woman16').style.display = 'none';
+        var wom17 = document.getElementById('woman17').style.display = 'none';
+        var wom18 = document.getElementById('woman18').style.display = 'none';
     }
 }
 btn_left.onclick = function () {
