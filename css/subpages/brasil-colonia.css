@@ -130,9 +130,8 @@
 @media screen and (max-width: 1600px) {
     #text-intro1{
         width: 28rem;
-        padding:48px 0 0 0;
+        padding: 48px 0 0 0;
     }
-
     #img-subtitle-intro{
         margin: 24px;
     }

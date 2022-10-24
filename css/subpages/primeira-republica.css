@@ -57,7 +57,11 @@
 #title-woman{
     color:var(--light-yellow);
 }
-#woman2,#woman3,#woman4,#woman5,#woman6,#woman7,#woman8,#woman9{
+#woman2,#woman3,
+#woman4,#woman5,
+#woman6,#woman7,
+#woman8,#woman9,
+#woman10{
     /* config */
     width: 80rem;
     display: none;
@@ -101,7 +105,11 @@
     #btn-left:hover{
         border-left: 20px solid var(--dark-pink);
     }
-    #woman2,#woman3,#woman4,#woman5,#woman6,#woman7,#woman8,#woman9{
+    #woman2,#woman3,
+    #woman4,#woman5,
+    #woman6,#woman7,
+    #woman8,#woman9,
+    #woman10{
         width: 64rem;
     }
 }
@@ -142,7 +150,11 @@
     #btn-left:hover{
         border-left: 20px solid var(--dark-pink);
     }
-    #woman2,#woman3,#woman4,#woman5,#woman6,#woman7,#woman8,#woman9{
+    #woman2,#woman3,
+    #woman4,#woman5,
+    #woman6,#woman7,
+    #woman8,#woman9,
+    #woman10{
         width: 60rem;
     }
 }
@@ -161,7 +173,11 @@
     #timeline{
         height: 1325px;
     }
-    #woman2,#woman3,#woman4,#woman5,#woman6,#woman7,#woman8,#woman9{
+    #woman2,#woman3,
+    #woman4,#woman5,
+    #woman6,#woman7,
+    #woman8,#woman9,
+    #woman10{
         /* config */
         width: 20rem;
     }
