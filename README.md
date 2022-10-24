@@ -1,2 +1,3 @@
 # TCC
-TCC - Raju e Mita
+TCC - Mariajulia e Ritamaria
+
