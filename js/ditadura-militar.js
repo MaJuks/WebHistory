@@ -16,11 +16,10 @@ function btn_checked2(){
         var yyy = document.getElementById('nav-hidden-midia').style.display = 'none';
     }
 }
-// variaveis para o carrosel
+// variaveis para o carrossel
 var count = 0;
 var btn_right = document.getElementById("btn-left");
 var btn_left = document.getElementById("btn-right");
-var disp = document.getElementById("display");
 var women_total = 3; //variable page
 
 // função main (clicado) (default)
