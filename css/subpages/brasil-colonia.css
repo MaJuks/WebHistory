@@ -19,12 +19,13 @@
 /* ------------------------------------------------------ */
 /* INTRO  */
 /* ------------------------------------------------------ */
-
+#img-intro,#img-white{
+    box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.3), -8px -8px 10px 1px rgba(0, 0, 0, 0.3);
+}
 #text-intro1{
     width: 35rem;
     padding:60px 0 0 0;
 }
-
 #img-subtitle-intro{
     margin: 30px;
 }
@@ -37,11 +38,12 @@
 #subtitle-intro{
     font-size: 20px;
     text-align: center;
+    text-shadow: 0.1em 0.10em 0.10em black
 }
 .btn-intro{
     position: relative;
     top: -2.8rem;
-    left: 3rem;
+    left: 1.5rem;
 }
 .input-btn{
     /* hidden checkbox */
@@ -95,7 +97,7 @@
 /* ------------------------------------------------------ */
 /* WHITE*/
 /* ------------------------------------------------------ */
-#img-white1{
+#img-white{
     width:31.25rem;
     height:22rem;
     border-radius:10px;

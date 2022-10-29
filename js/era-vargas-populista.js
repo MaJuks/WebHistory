@@ -9,7 +9,6 @@ var women_total = 18; //variable page
 // função main (clicado) (default)
 btn_right.onclick = function () {
     count++;
-    disp.innerHTML = count;
     if(count >= women_total || count == (1*-women_total)){
         count = 0;
         carousel(count,women_total,1)
@@ -18,7 +17,6 @@ btn_right.onclick = function () {
 }
 btn_left.onclick = function () {
     count--;
-    disp.innerHTML = count;
     if(count >= women_total || count == (1*-women_total)){
         count = 0;
         carousel(count,women_total,2)

@@ -27,8 +27,8 @@
 .btn-intro{
     /* position */
     position: relative;
-    left: 2.5rem;
-    top: -0.5rem;
+    top: -0.7rem;
+    left: 1.5rem;
 }
 .label-btn{
     /* hidden checkbox */
@@ -54,9 +54,7 @@
 /* ------------------------------------------------------ */
 /* especific */
 /* ------------------------------------------------------ */
-#title-woman{
-    color:var(--light-yellow);
-}
+
 #woman2,#woman3,
 #woman4,#woman5,
 #woman6,#woman7,

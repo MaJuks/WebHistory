@@ -29,7 +29,7 @@
 .btn-midia{
     position: relative;
     top: -2.8rem;
-    left: 3rem;
+    left: 1.5rem;
 }
 .input-btn{
     /* hidden checkbox */
@@ -55,8 +55,6 @@
     display: none;
 }
 @media screen and (max-width: 1600px){ 
-    .line{
-    }
     .btn-midia{
         top: -2.24rem;
         left: 1.4rem;
