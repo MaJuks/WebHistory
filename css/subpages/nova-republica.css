@@ -9,7 +9,10 @@
 /* ------------------------------------------------------ */
 /*especfic*/
 /* ------------------------------------------------------ */
-#woman2,#woman3,#woman4,#woman5{
+#woman2,#woman3,
+#woman4,#woman5,
+#woman6,#woman7,
+#woman8,#woman9{
     /* config */
     width: 80rem;
     display: none;
@@ -30,7 +33,10 @@
     #btn-right:hover{
         border-right: 20px solid var(--dark-purple);
     }
-    #woman2,#woman3,#woman4,#woman5{
+    #woman2,#woman3,
+    #woman4,#woman5,
+    #woman6,#woman7,
+    #woman8,#woman9{
         width: 64rem;
     }
 }
@@ -50,7 +56,10 @@
     #btn-right:hover{
         border-right: 20px solid var(--dark-purple);
     }
-    #woman2,#woman3,#woman4, #woman5{
+    #woman2,#woman3,
+    #woman4,#woman5,
+    #woman6,#woman7,
+    #woman8,#woman9{
         /* config */
         width: 60rem;
     }
@@ -59,7 +68,10 @@
     #timeline{
         height: 1550px;
     }
-    #woman2,#woman3,#woman4,#woman5{
+    #woman2,#woman3,
+    #woman4,#woman5,
+    #woman6,#woman7,
+    #woman8,#woman9{
         /* config */
         width: 20rem;
         flex-direction: column;

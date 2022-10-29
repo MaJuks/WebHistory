@@ -122,7 +122,10 @@
 /* ------------------------------------------------------ */
 /* ESPECIFIC*/
 /* ------------------------------------------------------ */
-#woman2,#woman3,#woman4,#woman5,#woman6,#woman7{
+#woman2,#woman3,
+#woman4,#woman5,
+#woman6,#woman7,
+#woman8{
     /* config */
     width: 80rem;
     display: none;
@@ -185,7 +188,10 @@
     #nav-hidden-white{
         height: 8rem;
     }
-    #woman2,#woman3,#woman4,#woman5,#woman6,#woman7{
+    #woman2,#woman3,
+    #woman4,#woman5,
+    #woman6,#woman7,
+    #woman8{
         /* config */
         width: 64rem;
         display: none;
@@ -254,7 +260,10 @@
     #nav-hidden-white{
         height: 10rem;
     }
-    #woman2,#woman3,#woman4,#woman5,#woman6,#woman7{
+    #woman2,#woman3,
+    #woman4,#woman5,
+    #woman6,#woman7,
+    #woman8{
         width: 60rem;
     }
 }
@@ -381,7 +390,10 @@
     /* ------------------------------------------------------ */
     /* ESPECIFIC*/
     /* ------------------------------------------------------ */
-    #woman2,#woman3,#woman4,#woman5,#woman6,#woman7{
+    #woman2,#woman3,
+    #woman4,#woman5,
+    #woman6,#woman7,
+    #woman8{
         /* config */
         width: 18rem;
         flex-direction: column;

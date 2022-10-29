@@ -5,7 +5,7 @@ var count = 0;
 var btn_right = document.getElementById("btn-left");
 var btn_left = document.getElementById("btn-right");
 var disp = document.getElementById("display");
-var women_total = 5; //variable page
+var women_total = 9; //variable page
 // função main (clicado) (default)
 btn_right.onclick = function () {
     count++;

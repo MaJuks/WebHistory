@@ -30,7 +30,7 @@ var count = 0;
 var btn_right = document.getElementById("btn-left");
 var btn_left = document.getElementById("btn-right");
 var disp = document.getElementById("display");
-var women_total = 7; //variable
+var women_total = 8; //variable
 
 // função main (clicado) (default)
 btn_right.onclick = function () {
