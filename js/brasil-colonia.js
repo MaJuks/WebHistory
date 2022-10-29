@@ -31,136 +31,70 @@ var count = 0;
 var btn_right = document.getElementById("btn-left");
 var btn_left = document.getElementById("btn-right");
 var disp = document.getElementById("display");
+var women_total = 7; //variable
 
-// função das divs off
+// função das divs off (default)
 function divOff(ids) {
     var idList = ids.split(" ");
     for (var i = 0; i < idList.length; i++) {
         item = document.getElementById(idList[i]).style.display = "none";
     }
 }
-// função das div on
-function divOnRight(id) {
+// função das div on (default)
+function divOn(id,side) {
     item = document.getElementById(id).style.display = "flex";
-    item2 = document.getElementById(id).style.animation = 'fade-right 1s';
-}
-function divOnLeft(id) {
-    item = document.getElementById(id).style.display = "flex";
-    item2 = document.getElementById(id).style.animation = 'fade-left 1s';
-}
-
-// função carrossel
-function carouselRight(num){
-    if (num >= 0){
-        img = "woman" + String(num+1)
-        divOnRight(img)
-        x = ""
-        for (var i = 1; i <= 7; i++) {
-            if (i != num+1){
-                x += "woman" + String(i)+" "
-            }
-        }
-        divOff(x)
+    if (side == 1){
+        item2 = document.getElementById(id).style.animation = 'fade-right 1s';
     }
-    if (num < 0 ){
-        img = "woman" + String(num+8)
-        divOnRight(img)
-        x = ""
-        for (var i = 1; i <= 7; i++) {
-            if (i != num+8){
-                x += "woman" + String(i)+" "
-            }
-        }
-        divOff(x)
+    else if (side== 2 ){
+        item2 = document.getElementById(id).style.animation = 'fade-left 1s';
     }
 }
-function carouselLeft(num){
-    if (num >= 0){
-        img = "woman" + String(num+1)
-        divOnLeft(img)
-        x = ""
-        for (var i = 1; i <= 7; i++) {
-            if (i != num+1){
-                x += "woman" + String(i)+" "
+// função carrossel (default)
+function carousel(num,side){
+    if (num >= 0){  
+        num_img = num+1;
+        id_on = "woman" + String(num_img);
+        divOn(id_on,side);
+        id_off = "";
+        for (var i = 1; i <= women_total; i++) {  
+            if (i != num_img){
+                id_off += "woman" + String(i)+" ";
             }
         }
-        divOff(x)
+        divOff(id_off);
     }
-    if (num < 0 ){
-        img = "woman" + String(num+8)
-        divOnLeft(img)
-        x = ""
-        for (var i = 1; i <= 7; i++) {
-            if (i != num+8){
-                x += "woman" + String(i)+" "
+    if (num < 0 ){ 
+        num_img = num+(women_total+1); 
+        id_on = "woman" + String(num_img);
+        divOn(id_on,side);
+        id_off = "";
+        for (var i = 1; i <= women_total; i++) { 
+            if (i != num_img){
+                id_off += "woman" + String(i)+" ";
             }
         }
-        divOff(x)
+        divOff(id_off);
     }
 }
-
-// função main (clicado)
+// função main (clicado) (default)
 btn_right.onclick = function () {
     count++;
     disp.innerHTML = count;
-    if(count==0){
-        carouselRight(count)
-    }
-    else if(count==1 || count == (1*-6)){
-        carouselRight(count)
-    }
-    else if(count==2 || count == (1*-5)){
-        carouselRight(count)
-    }
-    else if(count==3 || count == (1*-4)){
-        carouselRight(count)
-    }
-    else if(count==4 || count == (1*-3)){
-        carouselRight(count)
-    }
-    else if(count==5  || count == (1*-2)){
-        carouselRight(count)
-    }
-    else if(count==6 || count == (1*-1)){
-        carouselRight(count)
-    }
-    else if(count >= 7){
+    if(count >= women_total || count == (1*-women_total)){
         count = 0;
-        carouselRight(count)
+        carousel(count,1)
     }
+    carousel(count,1)
 }
 btn_left.onclick = function () {
     count--;
     disp.innerHTML = count;
-    if(count >= 7){
+    if(count >= women_total || count == (1*-women_total)){
         count = 0;
-        carouselLeft(count)
+        carousel(count,2)
     }
-    else if(count==0){
-        carouselLeft(count)
-    }
-    else if(count==1 || count == (1*-6)){
-        carouselLeft(count)
-    }
-    else if(count==2 || count == (1*-5)){
-        carouselLeft(count)
-    }
-    else if(count==3 || count == (1*-4)){
-        carouselLeft(count)
-    }
-    else if(count==4 || count == (1*-3)){
-        carouselLeft(count)
-    }
-    else if(count==5  || count == (1*-2)){
-        carouselLeft(count)
-    }
-    else if(count==6 || count == (1*-1)){
-        carouselLeft(count)
-    }
-    else if(count >= 7 || count == (1*-7)){
-        count = 0;
-        carouselLeft(count)
-    }
+    carousel(count,2)
 }
 
 // modal
