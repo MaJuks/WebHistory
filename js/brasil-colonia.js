@@ -1,5 +1,6 @@
 feather.replace()
 
+// função dos botão de mais informações
 function btn_checked(){
     if(document.getElementById("btn-intro").checked){
         var xxx = document.getElementById('nav-hidden-intro').style.display = 'flex';
@@ -24,212 +25,141 @@ function btn_checked3(){
         var zzz = document.getElementById('nav-hidden-white').style.display = 'none';
     }
 }
+
+// variaveis para o carrosel
 var count = 0;
 var btn_right = document.getElementById("btn-left");
 var btn_left = document.getElementById("btn-right");
+var disp = document.getElementById("display");
 
-  
+// função das divs off
+function divOff(ids) {
+    var idList = ids.split(" ");
+    for (var i = 0; i < idList.length; i++) {
+        item = document.getElementById(idList[i]).style.display = "none";
+    }
+}
+// função das div on
+function divOnRight(id) {
+    item = document.getElementById(id).style.display = "flex";
+    item2 = document.getElementById(id).style.animation = 'fade-right 1s';
+}
+function divOnLeft(id) {
+    item = document.getElementById(id).style.display = "flex";
+    item2 = document.getElementById(id).style.animation = 'fade-left 1s';
+}
+
+// função carrossel
+function carouselRight(num){
+    if (num >= 0){
+        img = "woman" + String(num+1)
+        divOnRight(img)
+        x = ""
+        for (var i = 1; i <= 7; i++) {
+            if (i != num+1){
+                x += "woman" + String(i)+" "
+            }
+        }
+        divOff(x)
+    }
+    if (num < 0 ){
+        img = "woman" + String(num+8)
+        divOnRight(img)
+        x = ""
+        for (var i = 1; i <= 7; i++) {
+            if (i != num+8){
+                x += "woman" + String(i)+" "
+            }
+        }
+        divOff(x)
+    }
+}
+function carouselLeft(num){
+    if (num >= 0){
+        img = "woman" + String(num+1)
+        divOnLeft(img)
+        x = ""
+        for (var i = 1; i <= 7; i++) {
+            if (i != num+1){
+                x += "woman" + String(i)+" "
+            }
+        }
+        divOff(x)
+    }
+    if (num < 0 ){
+        img = "woman" + String(num+8)
+        divOnLeft(img)
+        x = ""
+        for (var i = 1; i <= 7; i++) {
+            if (i != num+8){
+                x += "woman" + String(i)+" "
+            }
+        }
+        divOff(x)
+    }
+}
+
+// função main (clicado)
 btn_right.onclick = function () {
     count++;
-        if(count==0){
-        var sete = document.getElementById('woman1').style.display = 'flex';
-        var anim = document.getElementById('woman1').style.animation = 'fade-right 1s';
-
-        var seis = document.getElementById('woman2').style.display = 'none';
-        var cinco = document.getElementById('woman3').style.display = 'none';
-        var quatro = document.getElementById('woman4').style.display = 'none';
-        var tres = document.getElementById('woman5').style.display = 'none';
-        var dois = document.getElementById('woman6').style.display = 'none';
-        var um = document.getElementById('woman7').style.display = 'none';
-
+    disp.innerHTML = count;
+    if(count==0){
+        carouselRight(count)
     }
-    // barbara alencar
-    if(count==1 || count == (1*-6)){
-        var sete = document.getElementById('woman1').style.display = 'none';
-
-        var seis = document.getElementById('woman2').style.display = 'flex';
-        var anim = document.getElementById('woman2').style.animation = 'fade-right 1s';
-
-        var cinco = document.getElementById('woman3').style.display = 'none';
-        var quatro = document.getElementById('woman4').style.display = 'none';
-        var tres = document.getElementById('woman5').style.display = 'none';
-        var dois = document.getElementById('woman6').style.display = 'none';
-        var um = document.getElementById('woman7').style.display = 'none';
+    else if(count==1 || count == (1*-6)){
+        carouselRight(count)
     }
-    if(count==2 || count == (1*-5)){
-        var sete = document.getElementById('woman1').style.display = 'none';
-        var seis = document.getElementById('woman2').style.display = 'none';
-
-        var cinco = document.getElementById('woman3').style.display = 'flex';
-        var anim = document.getElementById('woman3').style.animation = 'fade-right 1s';
-
-        var quatro = document.getElementById('woman4').style.display = 'none';
-        var tres = document.getElementById('woman5').style.display = 'none';
-        var dois = document.getElementById('woman6').style.display = 'none';
-        var um = document.getElementById('woman7').style.display = 'none';
+    else if(count==2 || count == (1*-5)){
+        carouselRight(count)
     }
-    if(count==3 || count == (1*-4)){
-        var sete = document.getElementById('woman1').style.display = 'none';
-        var seis = document.getElementById('woman2').style.display = 'none';
-        var cinco = document.getElementById('woman3').style.display = 'none';
-
-        var quatro = document.getElementById('woman4').style.display = 'flex';
-        var anim = document.getElementById('woman4').style.animation = 'fade-right 1s';
-
-        var tres = document.getElementById('woman5').style.display = 'none';
-        var dois = document.getElementById('woman6').style.display = 'none';
-        var um = document.getElementById('woman7').style.display = 'none';
+    else if(count==3 || count == (1*-4)){
+        carouselRight(count)
     }
-    if(count==4 || count == (1*-3)){
-        var sete = document.getElementById('woman1').style.display = 'none';
-        var seis = document.getElementById('woman2').style.display = 'none';
-        var cinco = document.getElementById('woman3').style.display = 'none';
-        var quatro = document.getElementById('woman4').style.display = 'none';
-
-        var tres = document.getElementById('woman5').style.display = 'flex';
-        var anim = document.getElementById('woman5').style.animation = 'fade-right 1s';
-
-        var dois = document.getElementById('woman6').style.display = 'none';
-        var um = document.getElementById('woman7').style.display = 'none';
+    else if(count==4 || count == (1*-3)){
+        carouselRight(count)
     }
-    if(count==5  || count == (1*-2)){
-        var sete = document.getElementById('woman1').style.display = 'none';
-        var seis = document.getElementById('woman2').style.display = 'none';
-        var cinco = document.getElementById('woman3').style.display = 'none';
-        var quatro = document.getElementById('woman4').style.display = 'none';
-        var tres = document.getElementById('woman5').style.display = 'none';
-
-        var dois = document.getElementById('woman6').style.display = 'flex';
-        var anim = document.getElementById('woman6').style.animation = 'fade-right 1s';
-
-        var um = document.getElementById('woman7').style.display = 'none';
+    else if(count==5  || count == (1*-2)){
+        carouselRight(count)
     }
-    if(count==6 || count == (1*-1)){
-        var sete = document.getElementById('woman1').style.display = 'none';
-        var seis = document.getElementById('woman2').style.display = 'none';
-        var cinco = document.getElementById('woman3').style.display = 'none';
-        var quatro = document.getElementById('woman4').style.display = 'none';
-        var tres = document.getElementById('woman5').style.display = 'none';
-        var dois = document.getElementById('woman6').style.display = 'none';
-
-        var um = document.getElementById('woman7').style.display = 'flex';
-        var anim = document.getElementById('woman7').style.animation = 'fade-right 1s';
-
+    else if(count==6 || count == (1*-1)){
+        carouselRight(count)
     }
-    if(count >= 7){
+    else if(count >= 7){
         count = 0;
-        var sete = document.getElementById('woman1').style.display = 'flex';
-        var anim = document.getElementById('woman1').style.animation = 'fade-right 1s';
-
-        var seis = document.getElementById('woman2').style.display = 'none';
-        var cinco = document.getElementById('woman3').style.display = 'none';
-        var quatro = document.getElementById('woman4').style.display = 'none';
-        var tres = document.getElementById('woman5').style.display = 'none';
-        var dois = document.getElementById('woman6').style.display = 'none';
-        var um = document.getElementById('woman7').style.display = 'none';
+        carouselRight(count)
     }
 }
 btn_left.onclick = function () {
     count--;
+    disp.innerHTML = count;
     if(count >= 7){
         count = 0;
-        
+        carouselLeft(count)
     }
-    if(count==0){
-        var sete = document.getElementById('woman1').style.display = 'flex';
-        var anim = document.getElementById('woman1').style.animation = 'fade-left 1s';
-
-        var seis = document.getElementById('woman2').style.display = 'none';
-        var cinco = document.getElementById('woman3').style.display = 'none';
-        var quatro = document.getElementById('woman4').style.display = 'none';
-        var tres = document.getElementById('woman5').style.display = 'none';
-        var dois = document.getElementById('woman6').style.display = 'none';
-        var um = document.getElementById('woman7').style.display = 'none';
-
+    else if(count==0){
+        carouselLeft(count)
     }
-    // barbara alencar
-    if(count==1 || count == (1*-6)){
-        var sete = document.getElementById('woman1').style.display = 'none';
-
-        var seis = document.getElementById('woman2').style.display = 'flex';
-        var anim = document.getElementById('woman2').style.animation = 'fade-left 1s';
-
-        var cinco = document.getElementById('woman3').style.display = 'none';
-        var quatro = document.getElementById('woman4').style.display = 'none';
-        var tres = document.getElementById('woman5').style.display = 'none';
-        var dois = document.getElementById('woman6').style.display = 'none';
-        var um = document.getElementById('woman7').style.display = 'none';
+    else if(count==1 || count == (1*-6)){
+        carouselLeft(count)
     }
-    if(count==2 || count == (1*-5)){
-        var sete = document.getElementById('woman1').style.display = 'none';
-        var seis = document.getElementById('woman2').style.display = 'none';
-
-        var cinco = document.getElementById('woman3').style.display = 'flex';
-        var anim = document.getElementById('woman3').style.animation = 'fade-left 1s';
-
-        var quatro = document.getElementById('woman4').style.display = 'none';
-        var tres = document.getElementById('woman5').style.display = 'none';
-        var dois = document.getElementById('woman6').style.display = 'none';
-        var um = document.getElementById('woman7').style.display = 'none';
+    else if(count==2 || count == (1*-5)){
+        carouselLeft(count)
     }
-    if(count==3 || count == (1*-4)){
-        var sete = document.getElementById('woman1').style.display = 'none';
-        var seis = document.getElementById('woman2').style.display = 'none';
-        var cinco = document.getElementById('woman3').style.display = 'none';
-
-        var quatro = document.getElementById('woman4').style.display = 'flex';
-        var anim = document.getElementById('woman4').style.animation = 'fade-left 1s';
-
-        var tres = document.getElementById('woman5').style.display = 'none';
-        var dois = document.getElementById('woman6').style.display = 'none';
-        var um = document.getElementById('woman7').style.display = 'none';
+    else if(count==3 || count == (1*-4)){
+        carouselLeft(count)
     }
-    if(count==4 || count == (1*-3)){
-        var sete = document.getElementById('woman1').style.display = 'none';
-        var seis = document.getElementById('woman2').style.display = 'none';
-        var cinco = document.getElementById('woman3').style.display = 'none';
-        var quatro = document.getElementById('woman4').style.display = 'none';
-
-        var tres = document.getElementById('woman5').style.display = 'flex';
-        var anim = document.getElementById('woman5').style.animation = 'fade-left 1s';
-
-        var dois = document.getElementById('woman6').style.display = 'none';
-        var um = document.getElementById('woman7').style.display = 'none';
+    else if(count==4 || count == (1*-3)){
+        carouselLeft(count)
     }
-    if(count==5  || count == (1*-2)){
-        var sete = document.getElementById('woman1').style.display = 'none';
-        var seis = document.getElementById('woman2').style.display = 'none';
-        var cinco = document.getElementById('woman3').style.display = 'none';
-        var quatro = document.getElementById('woman4').style.display = 'none';
-        var tres = document.getElementById('woman5').style.display = 'none';
-
-        var dois = document.getElementById('woman6').style.display = 'flex';
-        var anim = document.getElementById('woman6').style.animation = 'fade-left 1s';
-
-        var um = document.getElementById('woman7').style.display = 'none';
+    else if(count==5  || count == (1*-2)){
+        carouselLeft(count)
     }
-    if(count==6 || count == (1*-1)){
-        var sete = document.getElementById('woman1').style.display = 'none';
-        var seis = document.getElementById('woman2').style.display = 'none';
-        var cinco = document.getElementById('woman3').style.display = 'none';
-        var quatro = document.getElementById('woman4').style.display = 'none';
-        var tres = document.getElementById('woman5').style.display = 'none';
-        var dois = document.getElementById('woman6').style.display = 'none';
-
-        var um = document.getElementById('woman7').style.display = 'flex';
-        var anim = document.getElementById('woman7').style.animation = 'fade-left 1s';
+    else if(count==6 || count == (1*-1)){
+        carouselLeft(count)
     }
-    if(count >= 7 || count == (1*-7)){
+    else if(count >= 7 || count == (1*-7)){
         count = 0;
-        var sete = document.getElementById('woman1').style.display = 'flex';
-        var anim = document.getElementById('woman1').style.animation = 'fade-left 1s';
-
-        var seis = document.getElementById('woman2').style.display = 'none';
-        var cinco = document.getElementById('woman3').style.display = 'none';
-        var quatro = document.getElementById('woman4').style.display = 'none';
-        var tres = document.getElementById('woman5').style.display = 'none';
-        var dois = document.getElementById('woman6').style.display = 'none';
-        var um = document.getElementById('woman7').style.display = 'none';
+        carouselLeft(count)
     }
 }
 
