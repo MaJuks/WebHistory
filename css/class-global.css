@@ -260,7 +260,6 @@ hr{
     font-size: 20px;
     text-align: center;
     text-shadow: 0.1em 0.10em 0.10em black
-
 }
 /* ------------------------------------------------------ */
 /* LINE  */
@@ -487,8 +486,6 @@ hr{
     display: grid;
     flex-wrap: nowrap;
     width: 28rem;
-    height: 200px;
-    
     justify-content: center;
     align-items: center;
     transition: 0.3s;

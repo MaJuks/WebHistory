@@ -274,6 +274,9 @@
     }
 }
 @media screen and (max-width: 1280px) {
+    .img-shadow{
+        display: none;
+    }
     .header-div{
         height: 50px;
     }
