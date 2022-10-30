@@ -3,22 +3,19 @@
     0%{ 
         color: var(--dark-pink);
         -webkit-text-stroke: 1px var(--dark-pink);
-
     }
     50%{
         color: var(--dark-yellow);
         -webkit-text-stroke: 1px var(--dark-yellow);
-
     }
     100%{
         color: var(--dark-purple);
         -webkit-text-stroke: 1px var(--dark-purple);
-
     }
 }
 @keyframes moviment-plant{
     from{
-        transform: translatey(-20px);
+        transform: translate(-20px,-20px);
         z-index: 101;
     }
     to{
@@ -73,4 +70,44 @@
         opacity: 1;
         transform: translate3d(0,0,0);
     }
+}
+
+@keyframes boxes-anim{
+    15%{
+        transform: translatey(0px);  
+        box-sizing: border-box;
+        background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--light-yellow) 52.36%, rgba(217, 217, 217, 0) 100%);
+        filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+    }
+    30%{
+        box-sizing: border-box;
+        background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--dark-yellow) 52.36%, rgba(217, 217, 217, 0) 100%);
+        mix-blend-mode: lighten;
+        filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+    }
+    45%{
+        transform: translatey(-25px);
+        box-sizing: border-box;
+        background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--light-purple) 52.36%, rgba(217, 217, 217, 0) 100%);
+        filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));  
+    }
+    60%{
+        box-sizing: border-box;
+        background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--dark-purple) 52.36%, rgba(217, 217, 217, 0) 100%);
+        filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+    }
+    75%{
+        box-sizing: border-box;
+        background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--light-pink) 52.36%, rgba(217, 217, 217, 0) 100%);
+        filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+    }
+    100%{
+        box-sizing: border-box;
+        background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--dark-pink) 52.36%, rgba(217, 217, 217, 0) 100%);
+        filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+        
+    }
+}
+@keyframes neon{
+    100%{text-shadow: 0 0 0.4em var(--light-yellow);}
 }

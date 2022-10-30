@@ -2,27 +2,20 @@
 /* CLICK HERE*/
 /* ------------------------------------------------------ */
 .click-here{
-    /* "clique para ler mais" + png */
-    /* position */
     z-index: 100;
     display: flex;
     position: relative;
     top: 250rem;
     left: 12.5rem;
-    /* config */
     flex-wrap: wrap;
     width: 250px;
     justify-content: center;
     height: 0;   
     transform: rotate(-10deg);
 }
-/* ------------------------------------------------------ */
 /* main */
-/* ------------------------------------------------------ */
-/* ------------------------------------------------------ */
 /* MIDIA */
 /* ------------------------------------------------------ */
-
 .line{
     position: relative;
 }
@@ -32,16 +25,12 @@
     left: 1.5rem;
 }
 .input-btn{
-    /* hidden checkbox */
-    /* position */
     position: absolute;
     top: 14px;
 }
 .nav-hidden-midia{
     position: relative;
-    /* position */
     display: none;
-    /* config */
     width: 80rem;
     height: 10rem;
     justify-content: center;
@@ -49,8 +38,9 @@
 /* ------------------------------------------------------ */
 /* ESPECIFIC*/
 /* ------------------------------------------------------ */
-#woman2,#woman3,#woman4,#woman5,#woman6,#woman7{
-    /* config */
+#woman2,#woman3,
+#woman4,#woman5,
+#woman6,#woman7{
     width: 80rem;
     display: none;
 }
@@ -66,8 +56,9 @@
         width: 64rem;
         height: 12rem;
     }
-    #woman2,#woman3,#woman4,#woman5,#woman6,#woman7{
-        /* config */
+    #woman2,#woman3,
+    #woman4,#woman5,
+    #woman6,#woman7{
         width: 64rem;
     }
 }
@@ -94,7 +85,9 @@
         width: 60rem;
         height: 15rem;
     }
-    #woman2,#woman3,#woman4,#woman5,#woman6,#woman7{
+    #woman2,#woman3,
+    #woman4,#woman5,
+    #woman6,#woman7{
         width: 60rem;
     }
 }
@@ -114,7 +107,9 @@
         width: 18rem;
         height: 25rem;
     }
-    #woman2,#woman3,#woman4,#woman5,#woman6,#woman7{
+    #woman2,#woman3,
+    #woman4,#woman5,
+    #woman6,#woman7{
         width: 20rem;
         flex-direction: column;
 

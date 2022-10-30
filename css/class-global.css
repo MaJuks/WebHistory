@@ -506,6 +506,8 @@ hr{
     display: grid;
     flex-wrap: nowrap;
     width: 28rem;
+    height: 200px;
+    
     justify-content: center;
     align-items: center;
     transition: 0.3s;

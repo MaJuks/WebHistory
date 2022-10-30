@@ -3,8 +3,6 @@
 /* CLICK HERE*/
 /* ------------------------------------------------------ */
 .click-here{
-    /* "clique para ler mais" + png */
-    /* position */
     z-index: 100;
     display: flex;
     position: relative;
@@ -25,14 +23,11 @@
     top: 30px;
 }
 .btn-intro{
-    /* position */
     position: relative;
     top: -0.7rem;
     left: 1.5rem;
 }
 .label-btn{
-    /* hidden checkbox */
-    /* position */
     position: relative;
     top: -2.3rem;
     transition-duration: 0.5s;
@@ -54,7 +49,6 @@
 /* ------------------------------------------------------ */
 /* especific */
 /* ------------------------------------------------------ */
-
 #woman2,#woman3,
 #woman4,#woman5,
 #woman6,#woman7,
@@ -81,7 +75,6 @@
     .input-btn:checked + .label-btn::before{
         border-top: 25px solid var(--dark-pink);
     }
-
     .btn-worker{
         position: relative;
         left: 2rem;

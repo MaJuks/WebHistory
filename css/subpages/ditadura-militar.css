@@ -3,14 +3,11 @@
 /* CLICKHERE  */
 /* ------------------------------------------------------ */
 .click-here{
-    /* "clique para ler mais" + png */
-    /* position */
     z-index: 100;
     display: flex;
     position: relative;
     top: 160rem;
     left: 13rem;
-    /* config */
     flex-wrap: wrap;
     width: 250px;
     justify-content: center;
@@ -21,14 +18,11 @@
 /* worker  */
 /* ------------------------------------------------------ */
 .btn-worker{
-    /* position */
     position: relative;
     left: 2.5rem;
     top: -0.5rem;
 }
 .label-btn{
-    /* hidden checkbox */
-    /* position */
     position: relative;
     top: -2.3rem;
     transition-duration: 0.5s;
@@ -41,15 +35,12 @@
 /* midia  */
 /* ------------------------------------------------------ */
 .btn-midia{
-    /* position */
     position: relative;
     left: 2.5rem;
     top: -0.5rem;
 }
 .nav-hidden-midia{
-    /* position */
     display: none;
-    /* config */
     width: 80rem;
     height: 7rem;
     justify-content: center;
@@ -64,11 +55,9 @@
 /*especfic*/
 /* ------------------------------------------------------ */
 #woman2,#woman3{
-    /* config */
     width: 80rem;
     display: none;
 }
-
 /* ------------------------------------------------------ */
 /* MOURNING  */
 /* ------------------------------------------------------ */
@@ -100,7 +89,6 @@
     .nav-hidden-midia{
         width: 64rem;
         height: 6.60rem;
-    
     }
     #timeline{
         height: 2000px;

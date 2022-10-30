@@ -3,14 +3,11 @@
 /*CLICK HERE */
 /* ------------------------------------------------------ */
 .click-here{
-    /* "clique para ler mais" + png */
-    /* position */
     z-index: 100;
     display: flex;
     position: relative;
     top: 34rem;
     left: 12.5rem;
-    /* config */
     flex-wrap: wrap;
     width: 250px;
     justify-content: center;
@@ -26,7 +23,6 @@
 /* ------------------------------------------------------ */
 /* WOMANespecific */
 /* ------------------------------------------------------ */
-
 #woman2,#woman3,
 #woman4,#woman5,
 #woman6,#woman7,
@@ -36,7 +32,6 @@
 #woman14,#woman15,
 #woman16,#woman16,
 #woman17,#woman18{
-    /* config */
     width: 80rem;
     display: none;
 }

@@ -1,3 +1,4 @@
+@import url(./animation.css);
 *{
     box-sizing: border-box;
 }
@@ -5,15 +6,12 @@ body{
     margin: 0;
     background-image: url("../assets/background/background.png");
 }
-
 /* ------------------------------------------------------ */
 /* section shadows */
 /* ------------------------------------------------------ */
 .vignette{
-    /* position */
     position: fixed;
     z-index: 100;
-    /* config */
     background-image: url(../assets/background/vignette.png);
     height: 100vh;
     width: 100%;
@@ -21,23 +19,19 @@ body{
     opacity: 0.65;
 }
 .vignette2{
-    /* position */
     position: fixed;
     z-index: 100;
-    /* config */
     background-image: url(../assets/background/filter.png);
     height: 100vh;
     width: 100%;
     background-size: 100%;
     opacity: 0.8;
     mix-blend-mode: multiply;
-
 }
 .vignette2:fullscreen{
     height: 2100px;
 }
 .shadows-div{
-    /* config */
     height: 0;
     mix-blend-mode: multiply;
 }
@@ -57,25 +51,19 @@ body{
     animation: moviment-plant 2s ease-in-out infinite alternate;
 }
 #top-shadowtrack{
-    /* position */
     display: flex;
     position: relative;
     left: 15rem;
     top: -52rem;
-    /* config */
     width: 15%;
     opacity: 1;
-
 }
 #bottom-shadowtrack{
-    /* position*/
     display: flex;
     position: relative;
     z-index: 100;
     left: 84rem;
     top: -50rem;
-
-    /* config */
     width: 15%;
     opacity: 0.7;
 }
@@ -87,61 +75,44 @@ header{
     box-shadow: 0px 2px 20px #483322;
 }
 .header{
-    /* position */
     position: relative;
     top:1rem;
     display:flex;
     justify-content: space-around;
     justify-items: center;
     align-items: center;
-    /* config */
     height: 80px;
 }
-
 #name-web{
-    /* "web history */
-    /* position */
     position: relative;
     z-index: 100;
     left: -5rem;
-    /* letter config */
     font-family: var(--web);
     font-size: 45px;
     color: var(--mid-brown);
     text-decoration: none;
     text-shadow: 0.1em 0.1em 0.2em black;
 }
-
 #name-web:hover{
-    /* animation cursor*/
-    /* config */
     transform: scale(1.1);
 }
 .input-search{
-    /* position */
     z-index:100;
     position: relative;
     left: 5rem;
-    /* config */
     width: 50%;
     display: flex;
     align-items: center;
 }
 .icon-search svg {
     z-index: 100;
-    /* icons */
-    /* config */
     width: 48px;
     height: 48px;
     color: var(--dark-purple);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
 }
 #label-topics{
-    /* "topico especifico" */
-    /* position */
     margin-right: 5px;
-    /*letter config */
     font-family: var(--web);
     font-size: 28px;
     color: var(--mid-brown);
@@ -152,7 +123,6 @@ select{
     position: relative;
     top: 0.2rem;
     left: 0.5rem;
-    /* select config */
     text-align: center;
     background-color: var(--mid-brown);
     opacity: 0.3;
@@ -160,7 +130,6 @@ select{
     height: 1.5rem;
     border-radius: 5px;
     padding: 8px 0px;
-    /* letter config */
     font-family: var(--text);
     font-weight: bold;
     color: var(--black);
@@ -175,10 +144,7 @@ select:hover{
     border: 1px solid var(--dark-pink);
 }
 hr{
-    /* line */
-    /* position */
     margin-top: 30px;
-    /* config */
     opacity: 0.7;
     border: 2px solid var(--black);
     transform: rotate(-0.04deg);
@@ -188,11 +154,8 @@ hr{
 /* MAIN */
 /* ------------------------------------------------------ */
 #title {
-    /* "A trajetoria da mulher na História" */
-    /* config */
     z-index: 100;
     margin: 6rem 6rem 4rem 6rem;
-    /* letter config */
     text-align: center;
     font-family: var(--title);
     font-weight: 400;
@@ -203,12 +166,9 @@ hr{
     -webkit-text-stroke: 1px var(--black);
     text-shadow: 0 0 1.0em var(--dark-brown);
 }
-
 .timeline{
-    /* position */
     position: relative;
     top: 6.5rem;
-    /* config */
     width: 70rem;
     margin: auto;
     border: 2px solid #5B3E26;
@@ -218,26 +178,21 @@ hr{
     display: none;
 }
 .box-time {
-    /* position */
     position: relative;
     z-index:100;
-    /* config */
     text-align: center;
 }
 .box-time img{
-    /* config */
     height: 12.5rem;
     transition-duration: 0.2s;
 }
 .box-time img:hover {
     transform: scale(1.05);
-    
 }
 #box1{
     animation: boxes-anim 0.8s ease-in-out 0.5s, boxes-anim 0.8s ease-in-out 3.2s;
 }
 #box1:hover{
-    /* back shadow */
     box-sizing: border-box;
     background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--dark-yellow) 52.36%, rgba(217, 217, 217, 0) 100%);
     filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
@@ -246,7 +201,6 @@ hr{
     animation: boxes-anim 0.8s ease-in-out 0.7s, boxes-anim 0.8s ease-in-out 3s;
 }
 #box2:hover{
-    /* back shadow */
     box-sizing: border-box;
     background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--dark-yellow) 52.36%, rgba(217, 217, 217, 0) 100%);
     filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
@@ -255,7 +209,6 @@ hr{
     animation: boxes-anim 0.8s ease-in-out 0.9s, boxes-anim 0.8s ease-in-out 2.8s;
 }
 #box3:hover{
-    /* back shadow */
     box-sizing: border-box;
     background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--light-pink) 52.36%, rgba(217, 217, 217, 0) 100%);
     filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
@@ -264,7 +217,6 @@ hr{
     animation: boxes-anim 0.8s ease-in-out 1.1s, boxes-anim 0.8s ease-in-out 2.6s;
 }
 #box4:hover{
-    /* back shadow */
     box-sizing: border-box;
     background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--light-pink) 52.36%, rgba(217, 217, 217, 0) 100%);
     filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
@@ -273,7 +225,6 @@ hr{
     animation: boxes-anim 0.8s ease-in-out 1.3s, boxes-anim 0.8s ease-in-out 2.4s;
 }
 #box5:hover{
-    /* back shadow */
     box-sizing: border-box;
     background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--light-pink) 52.36%, rgba(217, 217, 217, 0) 100%);
     filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
@@ -282,7 +233,6 @@ hr{
     animation: boxes-anim 0.8s ease-in-out 1.5s, boxes-anim 0.8s ease-in-out 2.2s;
 }
 #box6:hover{
-    /* back shadow */
     box-sizing: border-box;
     background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--dark-purple) 52.36%, rgba(217, 217, 217, 0) 100%);
     filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
@@ -291,22 +241,17 @@ hr{
     animation: boxes-anim 0.8s ease-in-out 1.7s, boxes-anim 0.8s ease-in-out 2s;
 }
 #box7:hover{
-    /* back shadow */
     box-sizing: border-box;
     background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--dark-purple) 52.36%, rgba(217, 217, 217, 0) 100%);
     filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
 }
 .back-shadow{
-    /* position */
     margin-top: -15.5rem;
-    /* config*/
     background: radial-gradient(50% 50% at 50% 50%, rgba(6, 0, 0, 0.5) 0%, rgba(217, 217, 217, 0) 100%);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
     opacity: 0.8;
     height: 20rem;
 }
-
-
 /* ------------------------------------------------------ */
 /* FOOTER */
 /* ------------------------------------------------------ */
@@ -324,20 +269,15 @@ footer a{
     top: 2rem;
     height: 95px;
     text-decoration: none;
-
 }
 .text-icon{
-    /* position */
     display: flex;
     z-index:100;
-    /* config */
     align-items: center;
     padding: 15px;
 }
 #about-us {
-    /* position */
     margin-right: 20px;
-    /* config */
     font-family: var(--web);
     font-size: 32px;
     line-height: 144.5%;
@@ -350,7 +290,6 @@ footer a{
     position: relative; 
     top: 1rem;
     transition: 0.3s;
-
 }
 .references:hover{
     transform: scale(1.05);
@@ -359,49 +298,35 @@ footer a{
 #arrow1,#arrow2{
     animation: colors 3s ease-in-out infinite ;
 }
-
 .icon-network svg {
-    /* position */
     margin-right: 10px;
-    /* config */
     width: 40px;
     height: 40px;
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-
-
     transition: 0.25s;
 }
 .icon-network svg:hover {
-    /* config */
     transform: scale(1.1);
 }
 #insta1{
-    /* config */
     color: var(--light-yellow);
 }
 #insta1:hover{
     color: var(--dark-yellow);
 }
-
 #git {
-    /* config */
     color: var(--light-pink);
 }
 #git:hover{
     color: var(--dark-pink);
 }
-
 #insta2{
-    /* config */
     color: var(--light-purple2);
-
 }
 #insta2:hover{
-    /* config */
     color: var(--dark-purple);
 }
 .git, .insta, .linke {
-    /* config */
     background-color: transparent;
     border: transparent;
     color: transparent;
@@ -413,77 +338,3 @@ footer a{
     font-family: var(--text);
     color: var(--black);
 }
-@keyframes moviment-plant{
-    from{
-        transform: translate(-20px,-20px);
-        z-index: 100;
-    }
-    to{
-        z-index: 100;
-    }
-}
-@keyframes boxes-anim{
-    15%{
-        transform: translatey(0px);  
-        box-sizing: border-box;
-        background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--light-yellow) 52.36%, rgba(217, 217, 217, 0) 100%);
-        filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
-    }
-    30%{
-        box-sizing: border-box;
-        background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--dark-yellow) 52.36%, rgba(217, 217, 217, 0) 100%);
-        mix-blend-mode: lighten;
-        filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
-    }
-    45%{
-        transform: translatey(-25px);
-        box-sizing: border-box;
-        background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--light-purple) 52.36%, rgba(217, 217, 217, 0) 100%);
-        filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));  
-    }
-    60%{
-        box-sizing: border-box;
-        background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--dark-purple) 52.36%, rgba(217, 217, 217, 0) 100%);
-        filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
-    }
-    75%{
-        box-sizing: border-box;
-        background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--light-pink) 52.36%, rgba(217, 217, 217, 0) 100%);
-        filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
-    }
-    100%{
-        box-sizing: border-box;
-        background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%,var(--dark-pink) 52.36%, rgba(217, 217, 217, 0) 100%);
-        filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
-        
-    }
-}
-
-@keyframes colors{
-    0%{ 
-        color: var(--dark-pink);
-        -webkit-text-stroke: 1px var(--dark-pink);
-
-    }
-    50%{
-        color: var(--dark-yellow);
-        -webkit-text-stroke: 1px var(--dark-yellow);
-
-    }
-    100%{
-        color: var(--dark-purple);
-        -webkit-text-stroke: 1px var(--dark-purple);
-
-    }
-}
-
-@keyframes neon{
-    100%{text-shadow: 0 0 0.4em var(--light-yellow);}
-}
-
-/* @media (min-height: 1080px){
-    .vignette,.vignette2{
-        height: 1100px;
-
-    }
-} */
