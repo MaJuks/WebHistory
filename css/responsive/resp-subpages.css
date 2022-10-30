@@ -1,34 +1,4 @@
-@media screen and (max-width: 1745.45px) {
-    #top-shadowplant{
-        /* position */
-        position: relative;
-        left: 71rem;
-        /* config */
-    }
-    #bottom-shadowtrack{
-        /* position */
-        position: relative;
-        left: 71rem;
-        top: 90rem;
-        /* config */
-        width: 15%;
-    }
-    #bottom-shadowtrack{
-        /* position */
-        position: relative;
-        left: 51rem;
-        top: 90rem;
-        /* config */
-        width: 15%;
-    }
-}
 @media screen and (max-width: 1600px) {
-    #top-shadowplant{
-        /* position */
-        position: relative;
-        left: 71rem;
-        width: 25%;
-    }   
     .title{
         width: 20em;
         margin: 4rem 0rem 1.6rem 0rem;
@@ -55,7 +25,6 @@
         top:-1.6rem;
         font-size: 36px;
     }  
-        
     .container{
         padding: 40px 56px 48px 48px;
         margin: 2rem;
@@ -308,10 +277,6 @@
     .header-div{
         height: 50px;
     }
-    #top-shadowplant{
-        left: 55rem;
-        width: 25%;
-    }  
     #name-web{
         font-size: 35px;
     }

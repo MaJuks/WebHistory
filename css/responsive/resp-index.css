@@ -1,21 +1,6 @@
 
 
 @media screen and (max-width: 1745.45px) {
-
-    #top-shadowplant{
-        width: 24%;
-    }
-    #bottom-shadowplant{
-        top: rem;
-        width: 18%;
-    }
-    #top-shadowtrack{
-        top: -40rem;
-    }
-    #bottom-shadowtrack{
-        /* config */
-        width: 15%;
-    }
     #name-web{
         font-size: 40px;
     }
@@ -61,17 +46,6 @@
 }
 /* HD+ */
 @media screen and (max-width: 1600px) {
-    #top-shadowplant{
-        width: 24%;
-        top: 2rem;
-        left: 65rem;
-    }
-    #bottom-shadowtrack{
-        /* config */
-        left: 65rem;
-        top: -30rem;
-    }
-  
     .header{
         height: 50px;
     }
@@ -120,18 +94,6 @@
 }
 /* HD */
 @media screen and (max-width: 1280px) {
-    #top-shadowplant{
-        left: 57rem;
-    }
-    #bottom-shadowplant{
-        top: 0.5rem;
-    }
-    #bottom-shadowtrack{
-        /* config */
-        left: 65rem;
-        top: -29rem;
-    }
-
     .header{
         height: 50px;
     }
@@ -184,16 +146,4 @@
         width: 20px;
         height: 20px;
     }
-}
-@media screen and (min-width: 2133.33px) {
-    #top-shadowplant{
-        left: 100rem;
-    }
-
-}
-@media screen and (min-width: 2400px) {
-    #top-shadowplant{
-        left: 99.5rem;
-    }
-
 }

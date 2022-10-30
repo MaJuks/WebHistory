@@ -31,42 +31,6 @@ body{
 .vignette2:fullscreen{
     height: 2100px;
 }
-.shadows-div{
-    height: 0;
-    mix-blend-mode: multiply;
-}
-#top-shadowplant{
-    z-index: 100;
-    display: flex;
-    position: relative;
-    left: 80rem;
-    width: 25%;
-    animation: moviment-plant 2s ease-in-out infinite alternate;
-}
-#bottom-shadowplant{
-    display: flex;
-    position: relative;
-    top: -4rem;
-    width: 20%;
-    animation: moviment-plant 2s ease-in-out infinite alternate;
-}
-#top-shadowtrack{
-    display: flex;
-    position: relative;
-    left: 15rem;
-    top: -52rem;
-    width: 15%;
-    opacity: 1;
-}
-#bottom-shadowtrack{
-    display: flex;
-    position: relative;
-    z-index: 100;
-    left: 84rem;
-    top: -50rem;
-    width: 15%;
-    opacity: 0.7;
-}
 /* ------------------------------------------------------ */
 /* HEADER */
 /* ------------------------------------------------------ */

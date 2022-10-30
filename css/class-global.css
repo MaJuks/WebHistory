@@ -9,43 +9,24 @@
     background-size: 100%;
     opacity: 0.65;
 }
-.shadows-div, #bottom-shadowtrack,
-#top-shadowtrack,#top-shadowplant,
-#mid-shadowplant{
-    display:none;
-    height: 0;
-    width: 0;
-}
 .shadows-div{
-    height: 0rem;
-    width: 99vw;
-    display: grid;
-    justify-content: right;
     mix-blend-mode: multiply;
+    height: 0;
+	text-align: justify;
 }
-#bottom-shadowtrack{
-    position: relative;
-    top: 10rem;
-    width: 55%;
+.shadows-div::after {
+	content: '';
+	display: inline-block;
+	width: 100%;
 }
-#top-shadowplant{
-    position: relative;
-    animation: moviment-plant 2s ease-in-out infinite alternate;
-}
+.box-shadow { display: inline-block; }
 #mid-shadowplant{
-    display: flex;
-    position: relative;
-    left: -90rem;
-    top: 120rem;
-    opacity: 0.6;
-    width: 150%;
-    animation: moviment-plant 2s ease-in-out infinite alternate;
-}
-#top-shadowtrack{
     position: relative;
     top: 150rem;
-    left: -75rem;
-    width: 55%;
+}
+.img-shadow{
+    animation: moviment-plant 2s ease-in-out infinite alternate;
+
 }
 /* ------------------------------------------------------ */
 /* body */

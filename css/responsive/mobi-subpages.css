@@ -13,16 +13,6 @@
     background-size: 100%;
     opacity: 0.6;
 }
-.shadows-div{
-    /* config */
-    height: 0;
-    mix-blend-mode: multiply;
-}
-#top-shadowplant,#mid-shadowplant,#bottom-shadowplant,
-#top-shadowtrack,#bottom-shadowtrack{
-    width: 0;
-    display: none;
-}
 /* ------------------------------------------------------ */
 /* HEADER */
 /* ------------------------------------------------------ */
