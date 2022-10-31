@@ -43,3 +43,7 @@ body::-webkit-scrollbar-thumb {
 .input-btn:checked + .label-btn::before{
     border-top: 30px solid var(--dark-purple);
 }
+
+.box-color{
+    background:var(--dark-pink);
+}
