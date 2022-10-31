@@ -47,18 +47,32 @@ header{
     align-items: center;
     height: 80px;
 }
+.references{
+    text-decoration: none;
+    z-index: 100;
+    font-size: 35px;
+    position: relative; 
+    transition: 0.3s;
+}
+.references:hover{
+    transform: scale(1.05);
+    animation: colors 3s ease-in-out infinite ;
+}
+#arrow{
+    animation: colors 3s ease-in-out infinite ;
+}
 #name-web{
     position: relative;
     z-index: 100;
-    left: -5rem;
     font-family: var(--web);
     font-size: 45px;
     color: var(--mid-brown);
     text-decoration: none;
     text-shadow: 0.1em 0.1em 0.2em black;
+    transition: 0.2s;
 }
 #name-web:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .input-search{
     z-index:100;
@@ -230,7 +244,7 @@ footer a{
     position: relative;
     display: grid;
     justify-items: center;
-    top: 2rem;
+    top: 6rem;
     height: 95px;
     text-decoration: none;
 }
@@ -248,19 +262,6 @@ footer a{
     -webkit-text-stroke: 1px var(--light-brown);
     color: var(--white-white);
     text-shadow: 0.1em 0.10em 0.10em black
-}
-.references{
-    z-index: 100;
-    position: relative; 
-    top: 1rem;
-    transition: 0.3s;
-}
-.references:hover{
-    transform: scale(1.05);
-    animation: colors 3s ease-in-out infinite ;
-}
-#arrow1,#arrow2{
-    animation: colors 3s ease-in-out infinite ;
 }
 .icon-network svg {
     margin-right: 10px;
