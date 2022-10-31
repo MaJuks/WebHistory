@@ -14,6 +14,23 @@
     height: 0;   
     transform: rotate(-10deg);
 }
+
+.btn-seta-pages{
+    position: relative;
+    margin: 0 5rem 0 5rem ;
+    filter: drop-shadow(5px 5px 5px rgb(0 0 0 / 1));
+}
+.btn-seta-pages:hover +.timeline-pages{
+    z-index: 1;
+}
+.timeline-pages{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /* ------------------------------------------------------ */
 /* INTRO  */
 /* ------------------------------------------------------ */
@@ -38,6 +55,8 @@
     text-shadow: 0.1em 0.10em 0.10em black
 }
 .btn-intro{
+    z-index: 2;
+
     position: relative;
     top: -2.8rem;
     left: 1.5rem;
