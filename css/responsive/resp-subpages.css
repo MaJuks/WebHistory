@@ -146,13 +146,9 @@
     .num-timeline{
         font-size: 28px;
     }
-    .num-timeline,.text-timeline{
+    .num-timeline,.text-timeline,.div-color{
         width: 400px;
         padding: 0 20px 0 20px;
-    }
-    .btn-especific{
-        top: 14.40rem;
-        width: 64rem;
     }
     #btn-right:hover{
         border-right: 20px solid var(--dark-yellow);
@@ -312,7 +308,7 @@
         padding: 25px 35px 30px 30px;
         margin: 1rem;
         width: 60rem;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 21px;
     }
     .title-box{
@@ -323,6 +319,9 @@
     }
     .text{
         margin: 20px;
+    }
+    .text-achievement{
+        font-size: 20px;
     }
     #text-center{
         width: 60rem;
@@ -408,12 +407,12 @@
         border: 2px solid var(--white-white);
     }
     .num-timeline{
-        font-size: 30px;
+        font-size: 28px;
     }
-    .text-timeline{
-        font-size: 20px;
+    .text-timeline,.span-color{
+        font-size: 18px;
     }
-    .num-timeline,.text-timeline{
+    .num-timeline,.text-timeline,.div-color{
         width: 350px;
     }
     .colorline{
@@ -429,10 +428,7 @@
     /* ------------------------------------------------------ */
     /* women especific  */
     /* ------------------------------------------------------ */
-    .btn-especific{
-        top: 18rem;
-        width: 60rem;
-    }
+    
     #btn-right:hover{
         border-right: 20px solid var(--dark-yellow);
     }

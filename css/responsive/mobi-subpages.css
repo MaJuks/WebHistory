@@ -13,6 +13,9 @@
     background-size: 100%;
     opacity: 0.6;
 }
+.shadow-div{
+    display: none;
+}
 /* ------------------------------------------------------ */
 /* HEADER */
 /* ------------------------------------------------------ */
@@ -422,6 +425,29 @@ hr{
 .num-timeline,.text-timeline{
     width: 145px;
     padding: 0 10px 0 10px;
+}
+.div-color{
+    width: 145px;
+    padding: 0 10px 0 10px;
+    text-align: center;
+}
+.box-color{
+    background:var(--dark-purple);
+    border-radius: 1.16px;
+    padding-top: 1.25px;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+.span-color{
+    font-family: var(--title);
+    filter: drop-shadow(5px 5px 5px rgb(0 0 0 / 1));
+    font-size:15px;
+
+}
+
+.text-achievement{
+    font-size: 20px;
 }
 
 /* ------------------------------------------------------ */
