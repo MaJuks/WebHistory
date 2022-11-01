@@ -28,6 +28,32 @@
     animation: moviment-plant 2s ease-in-out infinite alternate;
 
 }
+
+.btn-seta-pages{
+    position: relative;
+    z-index: 110;
+    top: 28rem;
+    margin: 0 5rem 0 5rem ;
+    filter: drop-shadow(5px 5px 5px rgb(0 0 0 / 1));
+}
+.timeline-pages{
+    mix-blend-mode: multiply;
+    height: 0;
+    position: fixed;
+	text-align: justify;
+    z-index: 101;
+    width: 100vw;
+}
+.timeline-pages::after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+    z-index: 101;
+}
+.btn-seta-pages{ display: inline-block;
+    z-index: 101;
+ }
+
 /* ------------------------------------------------------ */
 /* body */
 /* ------------------------------------------------------ */
@@ -470,19 +496,19 @@ hr{
     transform: scale(0.9);
 }
 #btn-right:hover{
-    border-right: 25px solid var(--dark-yellow);
+    border-right: 30px solid var(--dark-yellow);
 }
 #btn-left:hover{
-    border-left: 25px solid var(--dark-yellow);
+    border-left: 30px solid var(--dark-yellow);
 }
 #btn-left{
     width: 0;
     height: 0;
     background-color: transparent ;
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-left: 25px solid var(--light-yellow);
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-left: 30px solid var(--light-yellow);
     cursor: pointer;
     transition-duration: 0.2s;
 }
@@ -490,10 +516,10 @@ hr{
     width: 0;
     height: 0;
     background-color: transparent; ;
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid transparent;
-    border-left: 25px solid transparent;
-    border-right: 25px solid var(--light-yellow);
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 30px solid var(--light-yellow);
     cursor: pointer;
     transition-duration: 0.2s;
 }

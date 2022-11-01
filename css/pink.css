@@ -30,15 +30,22 @@ body::-webkit-scrollbar-thumb {
     border:  solid var(--dark-pink);
 }
 #btn-left{
+    z-index: 100;
+
     border-left: 30px solid var(--light-pink);
 }
 #btn-right{
+    z-index: 100;
+
     border-right: 30px solid var(--light-pink);
 }
 #btn-left:hover{
+    z-index: 100;
     border-left: 30px solid var(--dark-pink);
 }
 #btn-right:hover{
+    z-index: 100;
+
     border-right: 30px solid var(--dark-pink);
 }
 .label-btn::before{
