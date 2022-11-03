@@ -29,21 +29,21 @@ body::-webkit-scrollbar-thumb {
 .colorline{
     border:  solid var(--dark-pink);
 }
-#btn-left{
+#btn-left,#btn-left-page{
     z-index: 100;
 
     border-left: 30px solid var(--light-pink);
 }
-#btn-right{
+#btn-right,#btn-right-page{
     z-index: 100;
 
     border-right: 30px solid var(--light-pink);
 }
-#btn-left:hover{
+#btn-left:hover,#btn-left-page:hover{
     z-index: 100;
     border-left: 30px solid var(--dark-pink);
 }
-#btn-right:hover{
+#btn-right:hover,#btn-right-page:hover{
     z-index: 100;
 
     border-right: 30px solid var(--dark-pink);

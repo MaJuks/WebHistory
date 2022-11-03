@@ -492,16 +492,16 @@ hr{
     margin: 0 1rem 0 1rem;
     filter: drop-shadow(5px 5px 5px rgb(0 0 0 / 1));
 }
-#btn-right:hover,#btn-left:hover{
+#btn-right:hover,#btn-left:hover,#btn-left-page:hover,#btn-right-page:hover{
     transform: scale(0.9);
 }
-#btn-right:hover{
+#btn-right:hover,#btn-right-page:hover{
     border-right: 30px solid var(--dark-yellow);
 }
-#btn-left:hover{
+#btn-left:hover,#btn-left-page:hover{
     border-left: 30px solid var(--dark-yellow);
 }
-#btn-left{
+#btn-left,#btn-left-page{
     width: 0;
     height: 0;
     background-color: transparent ;
@@ -512,7 +512,7 @@ hr{
     cursor: pointer;
     transition-duration: 0.2s;
 }
-#btn-right{
+#btn-right,#btn-right-page{
     width: 0;
     height: 0;
     background-color: transparent; ;
