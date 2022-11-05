@@ -29,7 +29,7 @@ function btn_checked3(){
 var count = 0;
 var btn_right = document.getElementById("btn-left");
 var btn_left = document.getElementById("btn-right");
-var women_total = 8; //variable
+var women_total = 9; //variable
 
 // função main (clicado) (default)
 btn_right.onclick = function () {

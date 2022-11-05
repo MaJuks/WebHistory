@@ -118,7 +118,7 @@
 #woman2,#woman3,
 #woman4,#woman5,
 #woman6,#woman7,
-#woman8{
+#woman8,#woman9{
     width: 80rem;
     display: none;
 }
@@ -183,7 +183,7 @@
     #woman2,#woman3,
     #woman4,#woman5,
     #woman6,#woman7,
-    #woman8{
+    #woman8,#woman9{
         width: 64rem;
         display: none;
     }
@@ -254,7 +254,7 @@
     #woman2,#woman3,
     #woman4,#woman5,
     #woman6,#woman7,
-    #woman8{
+    #woman8,#woman9{
         width: 60rem;
     }
 }
@@ -379,7 +379,7 @@
     #woman2,#woman3,
     #woman4,#woman5,
     #woman6,#woman7,
-    #woman8{
+    #woman8,#woman9{
         /* config */
         width: 18rem;
         flex-direction: column;

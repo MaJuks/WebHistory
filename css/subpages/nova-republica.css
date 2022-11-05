@@ -12,7 +12,8 @@
 #woman2,#woman3,
 #woman4,#woman5,
 #woman6,#woman7,
-#woman8,#woman9{
+#woman8,#woman9
+,#woman10{
     width: 80rem;
     display: none;
 }
@@ -35,7 +36,8 @@
     #woman2,#woman3,
     #woman4,#woman5,
     #woman6,#woman7,
-    #woman8,#woman9{
+    #woman8,#woman9
+    ,#woman10{
         width: 64rem;
     }
 }
@@ -58,7 +60,8 @@
     #woman2,#woman3,
     #woman4,#woman5,
     #woman6,#woman7,
-    #woman8,#woman9{
+    #woman8,#woman9
+    ,#woman10{
         /* config */
         width: 60rem;
     }
@@ -70,7 +73,8 @@
     #woman2,#woman3,
     #woman4,#woman5,
     #woman6,#woman7,
-    #woman8,#woman9{
+    #woman8,#woman9
+    ,#woman10{
         /* config */
         width: 20rem;
         flex-direction: column;
