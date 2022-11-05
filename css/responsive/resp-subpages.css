@@ -213,34 +213,6 @@
         width: 25.60rem;
         height:350px;
     }
-    .modal{
-        width: 60rem;
-        padding: 32px;
-        }
-    .img-modal{
-        width: 32rem;
-        height: 32rem;
-        }
-    .subtitle-modal{
-        margin: 0 0px 0 16px;
-        border-radius: 16px;
-        font-size: 16px;
-        padding-bottom: 8px;
-    }
-    #text-modal{
-        font-size: 20px;
-
-    }
-    #font{
-        font-size: 20px;
-
-    }
-    #read-more{
-        position: relative;
-        top: -2.80rem;
-        left: 44rem;
-        height: 40px;
-    }
     .footer{
         top: 1.6rem;
         height: 76px;
@@ -478,42 +450,6 @@
     #text-woman{
         width: 25rem;
         height: 327px;
-    }
-    /* ------------------------------------------------------ */
-    /* modal*/
-    /* ------------------------------------------------------ */
-    .modal{
-
-        width: 50rem;
-        padding: 30px;
-    }
-    #font{
-        font-family: var(--text);
-        color: var(--mid-brown);
-        font-size: 15px;
-
-    }
-    .subtitle-modal{
-        font-size: 15px;
-
-    }
-    #text-modal{
-        font-size: 18px;
-
-    }
-    .img-modal{
-        width: 20rem;
-        height: 20rem;
-    }
-    /* ------------------------------------------------------ */
-    /* READ MORE - TOPICS*/
-    /* ------------------------------------------------------ */
-    #read-more{
-        top: -1.5rem;
-        left: 45rem;
-    }
-    #img-read-more{
-        width: 9rem;
     }
     /* ------------------------------------------------------ */
     /* FOOTER */
