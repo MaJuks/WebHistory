@@ -3,6 +3,8 @@
 /* section shadows */
 /* ------------------------------------------------------ */
 .vignette{
+    display: none;
+
     /* position */
     position: fixed;
     z-index: 0;
