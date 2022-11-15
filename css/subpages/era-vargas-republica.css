@@ -33,7 +33,7 @@
 #woman12,#woman13,
 #woman14,#woman15,
 #woman16,#woman16,
-#woman17,#woman18{
+#woman17,#woman18,#woman19{
     width: 80rem;
     display: none;
 }
@@ -61,7 +61,7 @@
     #woman12,#woman13,
     #woman14,#woman15,
     #woman16,#woman16,
-    #woman17,#woman18{
+    #woman17,#woman18,#woman19{
         width: 64rem;
     }
 }
@@ -92,7 +92,7 @@
     #woman12,#woman13,
     #woman14,#woman15,
     #woman16,#woman16,
-    #woman17,#woman18{
+    #woman17,#woman18,#woman19{
         width: 60rem;
     }
 }
@@ -111,7 +111,7 @@
     #woman12,#woman13,
     #woman14,#woman15,
     #woman16,#woman16,
-    #woman17,#woman18{
+    #woman17,#woman18,#woman19{
         width: 20rem;
         flex-direction: column;
 

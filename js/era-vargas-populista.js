@@ -4,7 +4,7 @@ feather.replace()
 var count = 0;
 var btn_right = document.getElementById("btn-left");
 var btn_left = document.getElementById("btn-right");
-var women_total = 18; //variable page
+var women_total = 19; //variable page
 
 // função main (clicado) (default)
 btn_right.onclick = function () {
