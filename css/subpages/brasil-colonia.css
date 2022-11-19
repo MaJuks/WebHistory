@@ -1,21 +1,5 @@
 
 /* ------------------------------------------------------ */
-/* CLICK HERE */
-/* ------------------------------------------------------ */
-.click-here{
-    position: relative;
-    display: flex;
-    z-index: 100;
-    top: 59rem;
-    left: 15rem;
-    flex-wrap: wrap;
-    width: 250px;
-    justify-content: center;
-    height: 0;   
-    transform: rotate(-10deg);
-}
-
-/* ------------------------------------------------------ */
 /* INTRO  */
 /* ------------------------------------------------------ */
 #img-intro,#img-white{
@@ -39,8 +23,6 @@
     text-shadow: 0.1em 0.10em 0.10em black
 }
 .btn-intro{
-    z-index: 2;
-
     position: relative;
     top: -2.8rem;
     left: 1.5rem;
@@ -259,7 +241,7 @@
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
     #text-intro1{
         width: auto;
         padding: 40px 0 0 0;

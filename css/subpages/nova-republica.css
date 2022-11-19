@@ -66,7 +66,7 @@
         width: 60rem;
     }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
     #timeline{
         height: 1550px;
     }

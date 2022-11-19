@@ -152,7 +152,7 @@
         width: 60rem;
     }
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 500px){
     .btn-intro{
         left: .5rem;
         top: 1.5rem;

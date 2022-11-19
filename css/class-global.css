@@ -370,20 +370,23 @@ hr{
 /* TEXT HIDDEN  */
 /* ------------------------------------------------------ */
 .label-btn{
-    z-index: 100;
+    z-index: 101;
     cursor: pointer;
     display: flex;
     position: relative;
     transition-duration: 0.3s;
 }
 .label-btn:hover{
+    z-index: 101;
     transform: scale(1.1);
 }
 .label-btn::before,
 .label-btn::after {
+    z-index: 101;
     content: "";
 }
 .label-btn::before{
+    z-index: 101;
     display:flex;
     width: 0;
     height: 0;
@@ -393,6 +396,7 @@ hr{
     filter: drop-shadow(5px 5px 5px rgb(0 0 0 / 1));
 }
 .input-btn:checked + .label-btn::before{
+    z-index: 101;
     margin-left: -15px;
     margin-top: 14px;
     width: 0;

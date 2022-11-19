@@ -92,7 +92,7 @@
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
     .btn-midia{
         left: 0rem;
         top: 1rem;
