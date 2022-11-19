@@ -19,22 +19,15 @@
 	display: inline-block;
 	width: 100%;
 }
-.box-shadow { display: inline-block; }
+.box-shadow { 
+    display: inline-block; 
+}
 #mid-shadowplant{
     position: relative;
     top: 150rem;
 }
 .img-shadow{
     animation: moviment-plant 2s ease-in-out infinite alternate;
-
-}
-
-.btn-seta-pages{
-    position: relative;
-    z-index: 110;
-    top: 28rem;
-    margin: 0 5rem 0 5rem ;
-    filter: drop-shadow(5px 5px 5px rgb(0 0 0 / 1));
 }
 .timeline-pages{
     mix-blend-mode: multiply;
@@ -44,19 +37,21 @@
     z-index: 101;
     width: 100vw;
 }
-.timeline-pages::after {
+.timeline-pages::after{
 	content: '';
 	display: inline-block;
 	width: 100%;
-    z-index: 101;
 }
-.btn-seta-pages{ display: inline-block;
-    z-index: 101;
- }
-
-/* ------------------------------------------------------ */
+.btn-seta-pages{
+    position: relative;
+    top: 28rem;
+    margin: 0 5rem 0 5rem;
+    filter: drop-shadow(5px 5px 5px rgb(0 0 0 / 1));
+}
+.btn-seta-pages{ 
+    display: inline-block;
+}
 /* body */
-/* ------------------------------------------------------ */
 *{
     box-sizing: border-box;
 }
@@ -70,9 +65,7 @@ body{
 main{
     mix-blend-mode: multiply; 
 }
-/* ------------------------------------------------------ */
 /* header */
-/* ------------------------------------------------------ */
 header{
     background: rgba(72, 51, 34, 0.3);
     box-shadow: 0px 2px 20px #483322;
@@ -82,19 +75,16 @@ header{
     top:1rem;
     display:flex;
     justify-content: space-around;
-    justify-items: center;
     align-items: center;
     height: 80px;
 }
 #name-web{
     position: relative;
     left: -3rem;
-    z-index: 100;
     transition: 0.3s;
     font-family: var(--web);
     font-size: 45px;
     color: var(--mid-brown);
-    text-decoration: none;
     text-shadow: 0.1em 0.1em 0.2em black;
 }
 #name-web:hover{
@@ -110,9 +100,8 @@ header{
 #home{
     position: relative;
     top: 1rem;
-    width: 150%;
+    margin-left: 2rem;
     transition: 0.3s;
-    text-align: center;
     font-family: var(--web);
     font-weight: 400;
     font-size: 60px;
@@ -136,15 +125,12 @@ header{
 }
 hr{
     margin-top: 30px;
-    /* config */
     border: 2px solid var(--dark-brown3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transform: rotate(-0.04deg);
     background-color: var(--dark-brown3);
 }
-/* ------------------------------------------------------ */
 /* click here  */
-/* ------------------------------------------------------ */
 #text-click-here{
     width: 200px;
     height: 44px;
@@ -162,9 +148,7 @@ hr{
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
     animation: slide-right 2s alternate infinite ease-in-out;
 }
-/* ------------------------------------------------------ */
 /* Main  */
-/* ------------------------------------------------------ */
 .main-div{
     display: grid;
     justify-items: center;
@@ -173,7 +157,6 @@ hr{
     margin: 5rem 0rem 2rem 0rem;
     font-family: var(--title);
     font-size: 65px;
-    line-height: 100px;
     text-align: center;
     color: var(--dark-brown);
     -webkit-text-stroke: 1px var(--black);
@@ -188,7 +171,6 @@ hr{
     z-index: 101;
     font-family: var(--title);
     font-size: 45px;
-    line-height: 55px;
     text-align: center;
     color: var(--dark-yellow);
     -webkit-text-stroke: 1px var(--dark-yellow);

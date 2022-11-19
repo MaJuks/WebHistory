@@ -12,7 +12,7 @@
     background-size: 100%;
     opacity: 0.8;
 }
-.vignette2{
+.filter{
     position: fixed;
     z-index: 100;
     background-image: url(../../assets/background/filter-mobile.png);
