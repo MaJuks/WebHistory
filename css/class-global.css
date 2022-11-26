@@ -157,6 +157,7 @@ hr{
     margin: 5rem 0rem 2rem 0rem;
     font-family: var(--title);
     font-size: 65px;
+    line-height: 100px;
     text-align: center;
     color: var(--dark-brown);
     -webkit-text-stroke: 1px var(--black);
