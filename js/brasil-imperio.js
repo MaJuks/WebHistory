@@ -9,6 +9,15 @@ function btn_checked(){
         var xxx = document.getElementById('nav-hidden-midia').style.display = 'none';
     }
 }
+function btn_checked2(){
+    if(document.getElementById("btn-educ").checked){
+        var xxx = document.getElementById('nav-hidden-educ').style.display = 'flex';
+
+    }
+    else{
+        var xxx = document.getElementById('nav-hidden-educ').style.display = 'none';
+    }
+}
 
 // variaveis para o carrossel
 var count = 0;

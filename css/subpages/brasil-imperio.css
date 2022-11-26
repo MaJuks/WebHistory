@@ -14,12 +14,15 @@
     transform: rotate(-10deg);
 }
 /* main */
+#text-educ2{
+    margin-bottom: 60px;
+}
 /* MIDIA */
 /* ------------------------------------------------------ */
 .line{
     position: relative;
 }
-.btn-midia{
+.btn-midia,.btn-educ{
     position: relative;
     top: -2.8rem;
     left: 1.5rem;
@@ -28,7 +31,7 @@
     position: absolute;
     top: 14px;
 }
-.nav-hidden-midia{
+#nav-hidden-midia,#nav-hidden-educ{
     position: relative;
     display: none;
     width: 80rem;
@@ -45,14 +48,14 @@
     display: none;
 }
 @media screen and (max-width: 1600px){ 
-    .btn-midia{
+    .btn-midia,.btn-educ{
         top: -2.24rem;
         left: 1.4rem;
     }
     .input-btn{
         top: 11.20px;
     }
-    .nav-hidden-midia{
+    #nav-hidden-midia,#nav-hidden-educ{
         width: 64rem;
         height: 12rem;
     }
@@ -67,12 +70,12 @@
         position: relative;
         top: 20px;
     }
-    .btn-midia{
+    .btn-midia,.btn-educ{
         position: relative;
         left: 2.5rem;
         top: -0.5rem;
     }
-    #btn-midia{
+    #btn-midia,#btn-educ{
         position: relative;
         top: -2px;
     }
@@ -81,7 +84,7 @@
         position: relative;
         top: -2rem;
     }
-    .nav-hidden-midia{
+    #nav-hidden-midia,#nav-hidden-educ{
         width: 60rem;
         height: 15rem;
     }
@@ -93,16 +96,16 @@
 }
 
 @media screen and (max-width: 500px) {
-    .btn-midia{
+    .btn-midia,.btn-educ{
         left: 0rem;
         top: 1rem;
     }
-    #box-hidden-midia{
+    #box-hidden-midia,#box-hidden-educ{
         position: relative;
         top: -41px;
         height: 25rem;
     }
-    .nav-hidden-midia{
+    #nav-hidden-midia,#nav-hidden-educ{
         display: none;
         width: 18rem;
         height: 25rem;
