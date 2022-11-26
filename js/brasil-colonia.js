@@ -24,6 +24,14 @@ function btn_checked3(){
         var zzz = document.getElementById('nav-hidden-white').style.display = 'none';
     }
 }
+function btn_checked4(){
+    if(document.getElementById("btn-white2").checked){
+        var zzz = document.getElementById('nav-hidden-white2').style.display = 'flex';
+    }
+    else{
+        var zzz = document.getElementById('nav-hidden-white2').style.display = 'none';
+    }
+}
 
 // variaveis para o carrossel
 var count = 0;

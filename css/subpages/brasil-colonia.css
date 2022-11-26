@@ -74,16 +74,16 @@
     height: 400px;
     text-align: center;
 }
-#text-white3{
+#text-white3,#text-white2{
     margin-bottom: 80px;
 }
-.btn-white{
+.btn-white,.btn-white2{
     display: flex;
     position: relative;
     top: -2.9rem;
     left: 1.5rem;
 }
-#nav-hidden-white{
+#nav-hidden-white,#nav-hidden-white2{
     height: 10rem;
 }
 /* ESPECIFIC*/
@@ -142,14 +142,14 @@
         width: 64rem;
         font-size: 16px;
     }
-    #text-white3{
+    #text-white3,#text-white2{
         margin-bottom: 64px;
     }
-    .btn-white{
+    .btn-white,.btn-white2{
         top: -2.32rem;
         left: 1.20rem;
     }
-    #nav-hidden-white{
+    #nav-hidden-white,#nav-hidden-white2{
         height: 8rem;
     }
     #woman2,#woman3,
@@ -217,10 +217,10 @@
     #img-subtitle-white{
         width: 60rem;
     }
-    #btn-white{
+    #btn-white,#btn-white2{
         top: 10px;
     }
-    #nav-hidden-white{
+    #nav-hidden-white,#nav-hidden-white2{
         height: 10rem;
     }
     #woman2,#woman3,
@@ -321,7 +321,7 @@
         width: 20rem;
         justify-content: center;
     }
-    #text-white3{
+    #text-white3,#text-white2{
         margin-bottom: 80px;
     }
     .btn-white{
@@ -331,14 +331,14 @@
         top: -1rem;
         left: -1.5rem;
     }
-    #btn-white{
+    #btn-white, #btn-white2{
         /* position */
         display: flex;
         position: relative;
         top: -0.1rem;
         left: 1rem;
     }
-    #nav-hidden-white{
+    #nav-hidden-white, #nav-hidden-white2{
         height: 10rem;
     }
     #img-white{
