@@ -4,7 +4,7 @@
 /*MOV ORG*/
 /* ------------------------------------------------------ */
 #timeline{
-    height: 1400px;
+    height: 4275px;
 }
 /* ------------------------------------------------------ */
 /*especfic*/
@@ -19,7 +19,7 @@
 }
 @media screen and (max-width: 1600px){ 
     #timeline{
-        height: 1040px;
+        height: 3575px;
     }
     #btn-left{
         border-left: 20px solid var(--light-purple);
@@ -43,7 +43,7 @@
 }
 @media screen and (max-width: 1280px) {
     #timeline{
-        height: 1000px;
+        height: 3170px;
     }
     #btn-left{
         border-left: 20px solid var(--light-purple);
@@ -68,7 +68,7 @@
 }
 @media screen and (max-width: 500px) {
     #timeline{
-        height: 1550px;
+        height: 5220px;
     }
     #woman2,#woman3,
     #woman4,#woman5,
