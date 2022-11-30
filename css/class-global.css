@@ -71,6 +71,7 @@ header{
     box-shadow: 0px 2px 20px #483322;
 }
 .header-div{
+    z-index: 1000;
     position: relative;
     top:1rem;
     display:flex;
@@ -79,6 +80,7 @@ header{
     height: 80px;
 }
 #name-web{
+    z-index: 1000;
     position: relative;
     left: -3rem;
     transition: 0.3s;
@@ -91,6 +93,7 @@ header{
     transform: scale(1.05);
 }
 .home-svg{
+    z-index: 1000;
     position: relative;
     top: -1.5rem;
     left:3rem;
@@ -98,6 +101,7 @@ header{
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 #home{
+    z-index: 1000;
     position: relative;
     top: 1rem;
     margin-left: 2rem;
@@ -113,12 +117,14 @@ header{
     transform: scale(1.05);
 }
 .icon-home{
+    z-index: 1000;
     position: relative;
     display: flex;
     left: -85%;
     top: 2.2rem;
 }
 .icon-home svg{
+    z-index: 1000;
     width: 50px;
     height: 50px;
     color: var(--dark-yellow);
